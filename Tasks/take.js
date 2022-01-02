@@ -1,12 +1,12 @@
 // Copy all listed keys from dictionary
+'use strict';
 
 function take(object,...keys) {
-  T = Object.keys(object);
-  T.forEach((_) => {
-    if (!keys.includes(_)){
-      delete object[_];
+  for(const key in object){
+    if(!keys.includes(key)){
+      delete object[key];
     }
-  });
+  }
   return object;
 }
 
