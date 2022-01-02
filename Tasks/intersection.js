@@ -1,8 +1,7 @@
 // Finde an intersection of two dictionaries
 
 const intersection = (obj1,obj2) => {
-obj1Keys = Object.keys(obj1);
-for (key of obj1Keys){
+for (key in obj1){
 if (key !== '' && obj2[key]) {
 obj2[key] = obj1[key];
 } else{
