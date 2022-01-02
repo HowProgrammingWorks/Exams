@@ -5,11 +5,11 @@ function planeArray (arr, res=[]) {
     const value = arr[i];
     if (Array.isArray(value)) {
       res.push(...planeArray(value));
-      arr[i] = res[i - 1];
     } else {
-      arr[i] = res[i - 1];
       res.push(value);
     }
+
+    arr[i] = res[i - 1];
   }
   return res;
 }
