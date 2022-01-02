@@ -5,15 +5,15 @@ function quotes(s) {
  open = false;
  for (c of s) {
    if (c === '"') {
-          if (!open) {
-               res.push('«');
-               open = true;
-          } else {
-               res.push('»');
-               open = false;
-          }
+       if (!open) {
+           res.push('«');
+           open = true;
+       } else {
+           res.push('»');
+           open = false;
+       }
    } else {
-          res.push(c);
+       res.push(c);
    }
  }
  return res.join('');
