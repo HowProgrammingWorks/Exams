@@ -3,9 +3,7 @@
 function take(object,...keys) {
   T = Object.keys(object);
   T.forEach((_) => {
-    if (keys.includes(_)){
-
-    } else {
+    if (!keys.includes(_)){
       delete object[_];
     }
   },21);
