@@ -7,9 +7,9 @@ const replace = (str, subStr, newStr) => {
   }
   let res = '';
   while (str.indexOf(subStr) !== -1) {
-    const start = str.substring(0, str.indexOf(subStr));
+    const startStr = str.substring(0, str.indexOf(subStr));
     str = str.substring(str.indexOf(subStr) + subStr.length, str.length);
-    res += start + newStr;
+    res += startStr + newStr;
   }
   return res + str;
 };
