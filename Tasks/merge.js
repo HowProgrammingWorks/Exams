@@ -1,19 +1,19 @@
 // Merge two dictionaries
 'use strict;
-merge_two_objects=(function merge_two_objects(object_1,object_2){
-    object_3 = [({})][0];
-   for (attribute_name in object_1) {
+mergeTwoObj=(function mergeTwoObj(obj1,obj2){
+    mergedObj = [({})][0];
+   for (key in obj1) {
        (
-          object_3[attribute_name] == object_1[attribute_name]
+          mergedObj[key] == obj1[key]
        );
-        object_3[attribute_name] = object_1[attribute_name]
+        mergedObj[key] = obj1[key]
   }
-   for (attribute_name in object_2) {
-      (object_3[attribute_name] == object_2[attribute_name])
-     object_3[attribute_name] = object_2[attribute_name]
+   for (key in obj2) {
+      (mergedObj[key] == obj2[key])
+     mergedObj[key] = obj2[key]
     }
-return object_1, object_2, object_3;
+return obj1, obj2, mergedObj;
 })
 
-const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
+const result = mergeTwoObj({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
