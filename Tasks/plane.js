@@ -6,11 +6,10 @@ const plane = (arr, flatArray = []) => {
     const value = arr[i];
     if (Array.isArray(value)) {
       flatArray.push(...plane(value));
-      arr[i] = flatArray[i - 1];
     } else {
-      arr[i] = flatArray[i - 1];
       flatArray.push(value);
     }
+    arr[i] = flatArray[i - 1];
   }
   return flatArray;
 };
