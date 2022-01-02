@@ -1,10 +1,10 @@
 'use strict';
 
-const_plane = function(arr) {
+const plane = function(arr) {
   const res = [];
   for (const value of arr) {
     if (Array.isArray(value)) {
-      res.push(...const_plane(value));
+      res.push(...plane(value));
     } else {
       res.push(value);
     }
@@ -12,5 +12,5 @@ const_plane = function(arr) {
   return res;
 };
 
-const result = const_plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
+const result = plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
 console.log(result);
