@@ -10,10 +10,10 @@ const plane = function(arr, res=[]) {
     } else{
     res.push(value);
     }
-    arr[index] = res[index - 1]
+    arr[index] = res[index - 1];
   }
 
-  return res
+  return res;
 }
 
 const result = plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
