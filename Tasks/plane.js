@@ -1,11 +1,12 @@
 // Make nested array plane
 
-const plane = function(arr, res=[]) {
-  for(let value of arr){
-    if (Array.isArray(value)) res.push(...plane(value));
-    else res.push(value);
+const plane = function(arr){
+  if(!plane.res) plane.res = [];
+  for(let item of arr){
+    if (Array.isArray(item)) plane(item);
+    else plane.res.push(item);
   }
-  return res
+  return plane.res
 }
 
 const result = plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
