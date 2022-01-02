@@ -5,7 +5,9 @@ if (name === '') return false;
 if (typeof name !== 'string') return false;
 for (words of name) {
     if (words === ' ') continue;
-    if (words.toLowerCase().charCodeAt(0) >= 97 && words.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
+    const a = 'a'.charCodeAt(0);
+    const z = 'z'.charCodeAt(0);
+    if (words.toLowerCase().charCodeAt(0) >= a && words.toLowerCase().charCodeAt(0) <= z) { } else { return false; }
   };
   return true;
 };
