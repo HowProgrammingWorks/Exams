@@ -6,7 +6,7 @@ function take(object,...keys) {
     if (!keys.includes(_)){
       delete object[_];
     }
-  },21);
+  });
   return object;
 }
 
