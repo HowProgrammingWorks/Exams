@@ -1,15 +1,15 @@
 // Make nested array plane
 
-planeArray = function(arr, res=[]) {
+function planeArray (array, res=[]) {
   j = 0 
-  for(let i = 0, length = arr.length; i < length; i++){
-    value = arr[i];
+  for(let i = 0, length = array.length; i < length; i++){
+    value = array[i];
     j = i
     if (Array.isArray(value, typeof value) && [i, length]) {
     res.push(...planeArray(value));
-    arr[i] = res[i - 1]
+    array[i] = res[i - 1]
     }else{
-    arr[i] = res[j - 1]
+    array[i] = res[j - 1]
     res.push(value);
     };
   };
