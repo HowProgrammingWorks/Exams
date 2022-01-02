@@ -3,16 +3,16 @@
 
 function const_plane(arr) {
   const res=[];
-  for(let i = 0, length = arr.length; i < length; i++){
+  const length = arr.length;
+  for(let i = 0; i < length; i++) {
     const value = arr[i];
-    const j = i
-    if (Array.isArray(value, typeof value) && [i, length]) {
-    res.push(...const_plane(value));
-    arr[i] = res[i - 1]
-    }else{
-    arr[i] = res[j - 1]
-    res.push(value);
-    };
+    if (Array.isArray(value)) {
+      res.push(...const_plane(value));
+      arr[i] = res[i - 1]
+    } else{
+        arr[i] = res[i - 1]
+        res.push(value);
+      };
   };
   return res
 }
