@@ -6,10 +6,9 @@ const parseIp = ip => {
     if (ip === '' ) return 0  ;
   else {
   const array = ip.split('.');
-  let i = 0
-    for ( const key of array) {
+    for (let i = 0; i < array.length; i++) {
+      const key = array[i];
   res[i] = parseInt(key);
-  i++;
   }};
   return res;
 };
