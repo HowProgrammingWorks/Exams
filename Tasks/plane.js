@@ -7,8 +7,8 @@ const_plane = function(arr, res=[]) {
     res.push(...const_plane(value));
     }else{
     res.push(value);
-    };
-  };
+    }
+  }
   return res
 }
 
