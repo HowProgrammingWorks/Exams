@@ -1,3 +1,5 @@
+'use strict';
+
 // Validate person name
 
 const isValidate = (personName) => {
