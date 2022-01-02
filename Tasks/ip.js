@@ -2,7 +2,7 @@
 'use strict';
 
 const parseIp = ip => {
-  const res = []
+  const res = [];
   if (ip === '') return 0;
   else {
     const array = ip.split('.');
@@ -10,9 +10,9 @@ const parseIp = ip => {
       const key = array[i];
       res[i] = parseInt(key);
     }
-  };
+  }
   return res;
 };
 
-const result = parseIp('127.0.0.1')
-console.log(result)
+const result = parseIp('127.0.0.1');
+console.log(result);
