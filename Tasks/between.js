@@ -6,9 +6,8 @@ const getvaluebetween = (str, start, end) => {
     if ( firstIndex === -1 || lastIndex === -1) return ''
     else {
       str =  str.substring(firstIndex)
-      if (end) {
-          return  '' } else { str =  str.substring(0 , lastIndex)
-            }}
+      str =  str.substring(0 , lastIndex)
+    }
   return str
 }
 
