@@ -7,12 +7,12 @@ const skip = (array,...remove) => {
     for (const valueToDel of remove) {
       if (value === valueToDel) {
         array.splice(index, 1);
-      };
+      }
     }
     index++;
   }
   return array;
-}
+};
 
 const result = skip([1, 2, 3, 4, 5], 2, 5);
 console.log(result);
