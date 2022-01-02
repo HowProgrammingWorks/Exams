@@ -1,17 +1,18 @@
+'use strict';
 // Validate person name
 
-const isValidate = (T) => {
-if (!T) return false;
-if (T === '') return false;
-if (typeof T !== 'string') return false;
-if (T.length === 0) return false;
-if (!T.includes(' ')) return false; {
-  for (C of T) {
-    if (C === ' ') continue;
-    if (C.toLowerCase().charCodeAt(0) >= 97 && C.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
-  };
-  return true;
-};
+const isValidate = name => {
+  if (!name) return false;
+  if (name === '') return false;
+  if (typeof name !== 'string') return false;
+  if (name.length === 0) return false;
+  if (!name.includes(' ')) return false; {
+    for (const letter of name) {
+      if (letter === ' ') continue;
+      if (letter.toLowerCase().charCodeAt(0) >= 97 && letter.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
+    }
+    return true;
+  }
 };
 
 const result = isValidate('Marcus Aurelius');
