@@ -2,14 +2,11 @@
 'use strict'
 
 const merge = (obj1,obj2) => {
-   const obj3 = [({})][0];
-   for (const name in obj1) {
-        obj3[name] = obj1[name]
-  }
+   const obj3 = {...obj1};
    for (const name in obj2) {
-     obj3[name] = obj2[name]
-    }
-return obj1, obj2, obj3;
+        obj3[name] = obj2[name]
+  }
+return obj3;
 };
 
 const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
