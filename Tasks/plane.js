@@ -1,4 +1,4 @@
-// Make nested array plane
+'use strict';
 
 const plane = function(arr){
   if(!plane.res) plane.res = [];

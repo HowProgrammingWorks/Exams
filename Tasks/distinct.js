@@ -1,4 +1,4 @@
-// Deduplicate values in array
+'use strict';
 
 const distinct = data => Array.from(new Set(data));
 
