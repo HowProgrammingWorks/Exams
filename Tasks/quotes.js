@@ -13,9 +13,7 @@ quotes=function(s) {
                open = false;
           }
    } else {
-      if (c !== '"') {
           res.push(c);
-      }
    }
  }
  return res.join('');
