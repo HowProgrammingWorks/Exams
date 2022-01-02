@@ -3,16 +3,16 @@
 // Replace substring with newstr
 
 const replace = (string, subString, newString) => {
+  let result;
   if ((subString === '') || (!string.includes(subString))) {
-    return string;
+    result = string;
   } else {
-    let result = '';
     const index = string.indexOf(subString);
-    const part = string.substring(index + subString.length, string.length);
     const start = string.substring(0, index);
-    result += start + newString + part;
-    return result;
+    const end = string.substring(index + subString.length, string.length);
+    result = start + newString + end;
   }
+  return result;
 };
 
 const result = replace('Hello <username> and bye!', '<username>', 'Marcus');
