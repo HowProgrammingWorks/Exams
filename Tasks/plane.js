@@ -2,8 +2,8 @@
 
 const plane = arr => {
   const res = [];
-  for (const value of arr)
-    Array.isArray(value) ? res.push(...plane(value)) : res.push(value);
+  for (const val of arr)
+    Array.isArray(val) ? res.push(...plane(val)) : res.push(val);
   return res;
 };
 
