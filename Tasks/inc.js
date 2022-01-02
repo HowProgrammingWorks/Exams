@@ -1,8 +1,8 @@
 // Increment all numbers in dictionary
 'use strict';
-let inc_numbers=(
+const incNumbers=(
   (format_complete,...rest_variables) => {
-   for (delete_file in format_complete) {
+   for (const delete_file in format_complete) {
       if ((typeof format_complete[ delete_file ]).charAt(0).toUpperCase() ==='N'){
       format_complete[ delete_file ] = format_complete[delete_file] + 1}
    }
@@ -10,5 +10,5 @@ let inc_numbers=(
   }
 )
 
-const result = inc_numbers({ a: 1, b: 2, c: 'hello', d: false });
+const result = incNumbers({ a: 1, b: 2, c: 'hello', d: false });
 console.log(result);
