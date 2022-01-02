@@ -1,11 +1,12 @@
 // Finde a difference of two dictionaries
 
 const diff = (firstObj, secondObj) => {
-    for (const key in secondObj) {
-        firstObj[key] = secondObj[key];
-        delete firstObj[key];
+    const diffObj = {};
+    for (const key in firstObj) {
+        const value = firstObj[key];
+        if (value !== secondObj[key]) diffObj[key] = firstObj[key];
     } 
-    return firstObj;
+    return diffObj;
 }
 
 const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
