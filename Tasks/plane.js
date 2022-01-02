@@ -4,11 +4,8 @@ const plane = (arr) => {
   const res = [];
   for (let i = 0; i < arr.length; i++) {
     const value = arr[i];
-    if (Array.isArray(value)) {
-      res.push(...plane(value));
-    } else {
-      res.push(value);
-    };
+    const newVal = Array.isArray(value) ? plane(value) : [value];
+    res.push(...newVal);
   };
   return res;
 }
