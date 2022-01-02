@@ -19,5 +19,4 @@ function quotes(s) {
  return res.join('');
 }
 
-const result = quotes('Hello "Marcus"! Ave "Marcus"!');
-console.log(result)
+console.log(quotes('Hello "Marcus"! Ave "Marcus"!'))
