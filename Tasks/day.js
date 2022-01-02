@@ -2,10 +2,10 @@
 
 let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-parseDay = searhedDay => {
+parseDay = searchedDay => {
   let i; 
   for(i = 0; i < days.length; i++){
-    if(searhedDay.startsWith(days[i].toLowerCase())){
+    if(searchedDay.startsWith(days[i].toLowerCase())){
       return i + 1;
     };
   };
