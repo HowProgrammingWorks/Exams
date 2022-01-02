@@ -5,8 +5,6 @@ const intersection = (obj1,obj2) => {
   for (key in obj1){
     if (obj2[key]) {
       result[key] = obj1[key];
-    } else{
-      delete obj1[key];
     }
   }
   return result;
