@@ -1,7 +1,7 @@
 // Delete listed keys from dictionary
 'use strict';
-drop=(obj,...keysToDrop)=>{
-  allKeys = Object.keys(obj);
+const drop=(obj,...keysToDrop)=>{
+  const allKeys = Object.keys(obj);
   allKeys.forEach((keyObj) => {
   if (keysToDrop.includes(keyObj)) {
 delete obj[keyObj];
