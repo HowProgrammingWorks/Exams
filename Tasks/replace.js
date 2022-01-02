@@ -2,12 +2,12 @@
 
 // Replace substring with newstr
 
- Replace = (str, substr,newstr)=>{
+ const Replace = (str, substr,newstr)=>{
   if (substr    === ''){
   return str
   } else{
-  src = str
-  res = ''
+  let src = str
+  let res = ''
   do {
    const _index = src.indexOf( substr) ; 
    if (_index === -1) { return res + src }else{
