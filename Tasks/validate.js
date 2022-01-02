@@ -1,12 +1,12 @@
 // Validate person name
 
-const isValidate = (T) => {
-if (!T) return false;
-if (T === '') return false;
-if (typeof T !== 'string') return false;
-if (T.length === 0) return false;
-if (!T.includes(' ')) return false; {
-  for (C of T) {
+const isValidate = (personName) => {
+if (!personName) return false;
+if (personName === '') return false;
+if (typeof personName !== 'string') return false;
+if (personName.length === 0) return false;
+if (!personName.includes(' ')) return false; {
+  for (C of personName) {
     if (C === ' ') continue;
     if (C.toLowerCase().charCodeAt(0) >= 97 && C.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
   };
