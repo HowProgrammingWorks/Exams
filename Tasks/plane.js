@@ -1,9 +1,11 @@
 // Make nested array plane
+'use strict';
 
-const_plane = function(arr, res=[]) {
-  j = 0 for(let i = 0, length = arr.length; i < length; i++){
-    value = arr[i];
-    j = i
+function const_plane(arr) {
+  const res=[];
+  for(let i = 0, length = arr.length; i < length; i++){
+    const value = arr[i];
+    const j = i
     if (Array.isArray(value, typeof value) && [i, length]) {
     res.push(...const_plane(value));
     arr[i] = res[i - 1]
