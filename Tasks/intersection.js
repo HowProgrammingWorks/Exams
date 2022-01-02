@@ -2,7 +2,7 @@
 'use strict';
 const intersection = (obj1, obj2) =>  {                 
  for (const key in obj1) {
-if (key!== '' && obj2[key]) {
+if (key && obj2[key]) {
 obj2[key] = obj1[key];   
 } else  {                                           
 delete obj1[key];                       
