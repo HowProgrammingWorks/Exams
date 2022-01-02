@@ -1,7 +1,7 @@
 // Make nested array plane
 
 const plane = (arr, res = []) => {
-  for (let i = 0, length = arr.length; i < length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     value = arr[i];
     if (Array.isArray(value)) {
       res.push(...plane(value));
