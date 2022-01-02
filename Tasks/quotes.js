@@ -1,10 +1,10 @@
 // Change douple quotation to open or close quotation
 
-function quotes(s) {
+function quotes(string) {
  res = [];
  open = false;
- for (c of s) {
-   if (c === '"') {
+ for (character of string) {
+   if (character === '"') {
        if (!open) {
            res.push('«');
            open = true;
@@ -13,7 +13,7 @@ function quotes(s) {
            open = false;
        }
    } else {
-       res.push(c);
+       res.push(character);
    }
  }
  return res.join('');
