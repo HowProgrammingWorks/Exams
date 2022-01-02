@@ -4,7 +4,7 @@
 const planeArray = arr => {
   const res = [];
   for (const value of arr) {
-    if (Array.isArray(value, typeof value) && [i, length]) {
+    if (Array.isArray(value)) {
     res.push(...planeArray(value));
     }else{
     res.push(value);
