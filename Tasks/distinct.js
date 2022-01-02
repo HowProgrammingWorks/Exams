@@ -1,18 +1,18 @@
 // Deduplicate values in array
 
-const DISTINCT =data=> {
-    const A=new Set();
-    let w=0;
+const distinct =data=> {
+    const unicalElements=new Set();
+    let index=0;
     data.forEach((a) => {
-        if (A.has(a)) {
-        data.splice(w, 1);
+        if (unicalElements.has(a)) {
+        data.splice(index, 1);
         } else {
-        A.add(a);
+        unicalElements.add(a);
         }
-        w++;
+        index++;
     });
   return data
 }
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
