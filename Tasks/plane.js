@@ -3,7 +3,9 @@
 
 const_plane = function(arr) {
   const res = [];
-  j = 0; for(let i = 0, length = arr.length; i < length; i++){
+ const  j = 0;
+ const length = arr.length;
+ for(let i = 0; i < length; i++){
     value = arr[i];
     j = i
     if (Array.isArray(value, typeof value) && [i, length]) {
