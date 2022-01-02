@@ -2,9 +2,9 @@
 'use strict';
 
 const replace = (str, substr, newstr) => {
-  if (substr    === ''){
-  return str
-  } else{
+  if (substr === '') {
+    return str;
+  }
   src = str
   res = ''
   do {
@@ -13,7 +13,7 @@ const replace = (str, substr, newstr) => {
    const start = src.substring(0,_index);
    src = src.substring(_index+substr.length,src.length)
    res += start + newstr
- }} while (true); }; };
+ }} while (true);  };
 
 const result = replace('Hello <username> and bye!', '<username>', 'Marcus')
 console.log(result)
