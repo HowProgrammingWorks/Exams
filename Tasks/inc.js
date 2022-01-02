@@ -1,7 +1,7 @@
 // Increment all numbers in dictionary
 
-let incNumbers = (dictionary) => {
-  for (key in dictionary) {
+const incNumbers = (dictionary) => {
+  for (const key in dictionary) {
     if ((typeof dictionary[key]).charAt(0).toUpperCase() === 'N') {
       dictionary[key] = dictionary[key] + 1;
     }
