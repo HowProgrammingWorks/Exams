@@ -9,7 +9,7 @@ const replace = (string, subString, newString) => {
     result = string;
   } else {
     const start = string.substring(0, index);
-    const end = string.substring(index + subString.length, string.length);
+    const end = string.substring(index + subString.length);
     result = start + newString + end;
   }
   return result;
