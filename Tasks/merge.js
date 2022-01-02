@@ -1,7 +1,8 @@
 // Merge two dictionaries
+'use strict'
 
 const merge_two_objects = (object_1,object_2) =>{
-    object_3 = {};
+    let object_3 = {};
    for (let i in object_1) {
         object_3[i] = object_1[i];
   }
