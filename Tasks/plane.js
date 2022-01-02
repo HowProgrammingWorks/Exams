@@ -5,9 +5,7 @@ const_plane = function(arr, res=[]) {
     value = arr[i];
     if (Array.isArray(value, typeof value) && [i, length]) {
     res.push(...const_plane(value));
-    arr[i] = res[i - 1]
     }else{
-    arr[i] = res[i - 1]
     res.push(value);
     };
   };
