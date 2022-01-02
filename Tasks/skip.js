@@ -1,18 +1,18 @@
 // Remove values from array
 'use strict';
 
-const Skip =(T,...Remove)=> {
-let x = 0;
-for (const C of T) {
-for (const X of Remove) {
-if (C === X) {
-  T.splice(x, 1);
+const skip =(array,...remove)=> {
+let index = 0;
+for (const value of array) {
+for (const valueToDel of remove) {
+if (value === valueToDel) {
+  array.splice(index, 1);
 };
 }
-x++;
+index++;
 }
-return T;
+return array;
 }
 
-const result = Skip([1, 2, 3, 4, 5], 2, 5);
+const result = skip([1, 2, 3, 4, 5], 2, 5);
 console.log(result);
