@@ -1,6 +1,6 @@
 // Merge two dictionaries
 function mergeTwoDictionaries(first, second){
-    mergedDic = [({})][0];
+    mergedDic = {};
    for (key in first) {
        (
           mergedDic[key] == first[key]
