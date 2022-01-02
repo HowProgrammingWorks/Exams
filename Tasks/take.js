@@ -1,9 +1,9 @@
 // Copy all listed keys from dictionary
 'use strict';
 
-function take(object,...keys) {
-  for(const key in object){
-    if(!keys.includes(key)){
+function take(object, ...keys) {
+  for (const key in object) {
+    if (!keys.includes(key)) {
       delete object[key];
     }
   }
