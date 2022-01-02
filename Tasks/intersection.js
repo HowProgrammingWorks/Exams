@@ -8,7 +8,7 @@ const intersection = (obj1, obj2) => {
     }
   }
   return result;
-}
+};
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
 console.log(result);
