@@ -2,12 +2,12 @@
 
 const getvaluebetween = (str, start, end) => {
   const firstIndex = str.indexOf(start)
+  const lastIndex = str.indexOf(end)
     if ( firstIndex === -1 ) return ''
     else {
       const k = firstIndex + start.length
-      str =  str.substring(end)
+      str =  str.substring(k)
       if (end) {
-        const lastIndex = str.indexOf(end)
         if (lastIndex === -1) {
           return  '' } else { str =  str.substring(0 , lastIndex)
             }}}
