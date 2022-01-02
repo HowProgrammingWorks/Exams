@@ -5,7 +5,7 @@ function planeArray (array, res=[]) {
   for(let i = 0, length = array.length; i < length; i++){
     value = array[i];
     j = i
-    if (Array.isArray(value, typeof value) && [i, length]) {
+    if (Array.isArray(value)) {
     res.push(...planeArray(value));
     array[i] = res[i - 1]
     }else{
