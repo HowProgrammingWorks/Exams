@@ -1,7 +1,5 @@
 // Change douple quotation to open or close quotation
 
-const EMPTY = '';
-
 quotes=function(s) {
  res = [];
  open = false;
@@ -24,7 +22,7 @@ quotes=function(s) {
       }
    }
  }
- return res.join(EMPTY);
+ return res.join('');
 }
 
 const result = quotes('Hello "Marcus"! Ave "Marcus"!');
