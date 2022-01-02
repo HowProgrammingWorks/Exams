@@ -5,13 +5,12 @@ const replace = (str, substr, newstr) => {
   if (substr === '') {
     return str;
   }
-  src = str
   res = ''
   do {
-   const _index = src.indexOf( substr) ; 
+   const _index = str.indexOf( substr) ; 
    if (_index === -1) { return res + src }else{
-   const start = src.substring(0,_index);
-   src = src.substring(_index+substr.length,src.length)
+   const start = str.substring(0,_index);
+   str = str.substring(_index+substr.length,str.length)
    res += start + newstr
  }} while (true);  };
 
