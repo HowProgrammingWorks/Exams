@@ -1,9 +1,9 @@
 // Deduplicate values in array
 
-const distinct =data=> {
-    const unicalElements=new Set();
+const distinct = data => {
+    const unicalElements = new Set();
     data.forEach((a, index) => {
-        if (unicalElements.has(a)) data.splice(index, 1);
+        if(unicalElements.has(a)) data.splice(index, 1);
         else unicalElements.add(a);
     });
   return data
