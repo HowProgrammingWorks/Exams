@@ -3,9 +3,7 @@
 const Parseip = i => {
   a = [];
   if (i === '') return 0;
-  else {
-    a = i.split('.').map((e) => parseInt(e));
-  }
+  else a = i.split('.').map((e) => parseInt(e));
   return a;
 };
 
