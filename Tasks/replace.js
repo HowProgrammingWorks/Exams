@@ -1,6 +1,7 @@
 // Replace substring with newstr
+'use strict';
 
- Replace = (str, substr,newstr)=>{
+const replace = (str, substr, newstr) => {
   if (substr    === ''){
   return str
   } else{
@@ -14,5 +15,5 @@
    res += start + newstr
  }} while (true); }; };
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus')
+const result = replace('Hello <username> and bye!', '<username>', 'Marcus')
 console.log(result)
