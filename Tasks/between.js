@@ -3,13 +3,12 @@
 const getvaluebetween = (str, start, end) => {
   const firstIndex = str.indexOf(start) + start.length
   const lastIndex = str.indexOf(end)
-    if ( firstIndex === -1 ) return ''
+    if ( firstIndex === -1 || lastIndex === -1) return ''
     else {
       str =  str.substring(firstIndex)
       if (end) {
-        if (lastIndex === -1) {
           return  '' } else { str =  str.substring(0 , lastIndex)
-            }}}
+            }}
   return str
 }
 
