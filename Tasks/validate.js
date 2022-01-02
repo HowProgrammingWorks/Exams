@@ -7,9 +7,9 @@ const isValidate = (personName) => {
   if (typeof personName !== 'string') return false;
   if (!personName.includes(' ')) return false;
 
-  for (C of personName) {
-    if (C === ' ') continue;
-    if (C.toLowerCase().charCodeAt(0) >= 97 && C.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
+  for (const letter of personName) {
+    if (letter === ' ') continue;
+    if (letter.toLowerCase().charCodeAt(0) >= 97 && letter.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
   }
 
   return true;
