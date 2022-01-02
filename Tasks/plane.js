@@ -1,4 +1,4 @@
-// Make nested array plane
+'use strict';
 
 const plane = function(arr, result=[]) {
   for(let item of arr){
