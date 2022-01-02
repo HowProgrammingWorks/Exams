@@ -5,7 +5,6 @@ quotes=function(s) {
  open = false;
  for (c of s) {
    if (c === '"') {
-      for (i of c) {
           if (!open) {
                res.push('«');
                open = true;
@@ -13,12 +12,9 @@ quotes=function(s) {
                res.push('»');
                open = false;
           }
-      }
    } else {
       if (c !== '"') {
-          for (i of c) {
-               res.push(i);
-          }
+          res.push(c);
       }
    }
  }
