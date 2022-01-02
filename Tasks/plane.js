@@ -7,9 +7,9 @@ function planeArray (array, res=[]) {
     
     if (Array.isArray(value)) {
     res.push(...planeArray(value));
-    array[index] = res[index - 1]
+    
     }else{
-    array[index] = res[index - 1]
+
     res.push(value);
     };
   };
