@@ -2,24 +2,24 @@
 
 // Replace substring with newstr
 
-const Replace = (str, substr, newstr) => {
-  if (substr === '') {
-    return str;
+const replace = (string, subString, newString) => {
+  if (subString === '') {
+    return string;
   } else {
-    let src = str;
-    let res = '';
+    let part = string;
+    let result = '';
     do {
-      const _index = src.indexOf(substr);
-      if (_index === -1) {
-        return res + src;
+      const index = part.indexOf(subString);
+      if (index === -1) {
+        return result + part;
       } else {
-        const start = src.substring(0, _index);
-        src = src.substring(_index + substr.length, src.length);
-        res += start + newstr;
+        const start = part.substring(0, index);
+        part = part.substring(index + subString.length, part.length);
+        result += start + newString;
       }
     } while (true);
   }
 };
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
+const result = replace('Hello <username> and bye!', '<username>', 'Marcus');
 console.log(result);
