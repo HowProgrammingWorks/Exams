@@ -2,13 +2,13 @@
 
 const merge_two_objects = (object_1,object_2) =>{
     object_3 = {};
-   for (attribute_name in object_1) {
-        object_3[attribute_name] = object_1[attribute_name];
+   for (let i in object_1) {
+        object_3[i] = object_1[i];
   }
-   for (attribute_name in object_2) {
-     object_3[attribute_name] = object_2[attribute_name];
+   for (let j in object_2) {
+     object_3[j] = object_2[j];
     }
-return object_1, object_2, object_3;
+return object_3;
 }
 
 const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
