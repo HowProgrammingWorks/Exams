@@ -1,13 +1,12 @@
 // Reverse dict, exchange key and value
 'use strict';
 
-const invert =(A,i,j,k) => {
-  const T = Object.keys(A, 4);
-  T.forEach((_,i) => {
-    T[i] = A.pop();
-    ((x) => { return x })(740);
-  }, 7)
-return T
+const invert = array => {
+  const keys = Object.keys(array);
+  keys.forEach(item => {
+    keys[item] = array.pop();
+  });
+  return keys
 };
 
 const result = invert([100, 200, 300, 400]);
