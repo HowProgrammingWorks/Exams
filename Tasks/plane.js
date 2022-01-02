@@ -2,10 +2,8 @@
 
 const plane = function(arr) {
   const res = [];
-  for (const value of arr) {
-    if (Array.isArray(value)) res.push(...plane(value));
-    else res.push(value);
-  }
+  for (const value of arr)
+    Array.isArray(value) ? res.push(...plane(value)) : res.push(value);
   return res;
 };
 
