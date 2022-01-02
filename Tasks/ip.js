@@ -1,6 +1,6 @@
 'use strict';
 
-const Parseip = i => i === '' ? return 0 : return i.split('.').map((e) => parseInt(e));
+const parseIp = ip => ip === '' ? return 0 : return ip.split('.').map((e) => parseInt(e));
 
-const result = Parseip('127.0.0.1');
+const result = parseIp('127.0.0.1');
 console.dir(result);
