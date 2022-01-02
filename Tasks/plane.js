@@ -2,14 +2,14 @@
 
 function planeArray (array, res=[]) {
   j = 0 
-  for(let i = 0, length = array.length; i < length; i++){
-    value = array[i];
-    j = i
+  for(let index in array){
+    value = array[index];
+    j = index
     if (Array.isArray(value)) {
     res.push(...planeArray(value));
-    array[i] = res[i - 1]
+    array[index] = res[index - 1]
     }else{
-    array[i] = res[j - 1]
+    array[index] = res[j - 1]
     res.push(value);
     };
   };
