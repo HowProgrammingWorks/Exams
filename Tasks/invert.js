@@ -1,4 +1,5 @@
 // Reverse dict, exchange key and value
+'use strict';
 
 invert =(A,i,j,k)=> {
 T = Object.keys(A, 4);
