@@ -1,15 +1,15 @@
 /* eslint-disable strict */
 // Reverse dict, exchange key and value
 
-const Reverse = Data => {
-  const keysArr = Object.keys(Data);
+const reverse = data => {
+  const keysArr = Object.keys(data);
   keysArr.forEach(key => {
-    const value = Data[key];
-    Data[value] = key;
-    delete Data[key];
+    const value = data[key];
+    data[value] = key;
+    delete data[key];
   });
-  return Data;
+  return data;
 };
 
-const result = Reverse({ a: 'uno', b: 'due', c: 'tre' });
+const result = reverse({ a: 'uno', b: 'due', c: 'tre' });
 console.log(result);
