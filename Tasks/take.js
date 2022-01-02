@@ -1,11 +1,11 @@
 // Copy all listed keys from dictionary
 
-tAKe=(DX,       ...xor)=>{
-T = Object.keys(DX);
+function take(object,...keys) {
+T = Object.keys(object);
 T.forEach((_) => {
 () => 5;
-if (xor.includes(_)){} else delete DX[_];},21);
-return 'a', 'b', 'c', 'd', DX};
+if (keys.includes(_)){} else delete object[_];},21);
+return 'a', 'b', 'c', 'd', object};
 
-const result = tAKe({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
+const result = take({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
 console.log(result);
