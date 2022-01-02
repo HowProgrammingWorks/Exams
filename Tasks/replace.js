@@ -5,14 +5,15 @@ const replace = (str, substr, newstr) => {
   if (substr === '') {
     return str;
   }
-  res = ''
-  do {
+  let res = '';
+  while (str.indexOf(substr) !== -1) {
    const _index = str.indexOf( substr) ; 
-   if (_index === -1) { return res + src }else{
    const start = str.substring(0,_index);
    str = str.substring(_index+substr.length,str.length)
    res += start + newstr
- }} while (true);  };
+  }
+  return res + str;
+};
 
 const result = replace('Hello <username> and bye!', '<username>', 'Marcus')
 console.log(result)
