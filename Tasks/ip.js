@@ -1,12 +1,12 @@
 // Split string by the first occurrence of separator
 'use strict';
 
-Parseip = i => {
-  a = []
+const Parseip = i => {
+  const a = []
     if (i === '' ) return 0  ;
   else {
-  B = i.split('.');
-  j = 0
+  const B = i.split('.');
+  let j = 0
     for ( const b of B) {
   a[j] = parseInt(b);
   j++;
