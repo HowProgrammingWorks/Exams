@@ -12,8 +12,8 @@ const plane = function(arr, res=[]) {
     } else{
     arr[index] = res[j - 1]
     res.push(value);
-    };
-  };
+    }
+  }
 
   return res
 }
