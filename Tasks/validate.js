@@ -7,7 +7,8 @@ const isValidate = name => {
   if (!name.includes(' ')) return false;
   for (const letter of name) {
     if (letter === ' ') continue;
-    if (!(letter.toLowerCase().charCodeAt(0) >= 97 && letter.toLowerCase().charCodeAt(0) <= 122)) { return false; }
+    const unicode = letter.toLowerCase().charCodeAt(0);
+    if (!(unicode >= 97 && unicode <= 122)) { return false; }
   }
   return true;
 };
