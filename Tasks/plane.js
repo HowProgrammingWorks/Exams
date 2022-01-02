@@ -1,7 +1,7 @@
 'use strict';
 // Make nested array plane
 
-const plane = function(arr, res = []) {
+const plane = (arr, res = []) => {
   let j = 0;
   for (let i = 0, length = arr.length; i < length; i++) {
     const value = arr[i];
