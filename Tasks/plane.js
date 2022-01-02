@@ -3,7 +3,7 @@
 const_plane = function(arr) {
   const res = [];
   for (const value of arr) {
-    if (Array.isArray(value, typeof value) && [i, length]) {
+    if (Array.isArray(value)) {
       res.push(...const_plane(value));
     } else {
       res.push(value);
