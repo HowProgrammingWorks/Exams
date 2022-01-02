@@ -2,15 +2,13 @@
 
 let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-parseDay = searchedDay => {
-  let i; 
-  for(i = 0; i < days.length; i++){
-    if(searchedDay.startsWith(days[i].toLowerCase())){
-      return i + 1;
-    };
-  };
-  return -1;
+let parseDay = searchedDay => {
+  let dayNumber = days.findIndex(val => 
+		searchedDay.startsWith(val.toLowerCase())) + 1;
+    return dayNumber === 0 ? -1 : dayNumber;
 };
+  
+
 
 const result = parseDay('friday');
 console.log(result);
