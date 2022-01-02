@@ -6,13 +6,12 @@ let compare= ( firstValues, secondValues) => {
    const secondKeys = Object.keys(secondValues);
   
    if (firstKeys.join('-') !== secondKeys.join('-')) return false;
-   let e = true;
   
   for (key of firstKeys) {
-    if (firstKeys[key] === secondValues[key]) e = e && true
-    else { e = e && false }
-    }
-  return e;
+    if (firstKeys[key] !== secondValues[key]) return false; 
+  }
+   
+  return true;
 }
 
 const result = compare({ a: 1, c: 'hello' }, { a: 1, c: 'hello' });
