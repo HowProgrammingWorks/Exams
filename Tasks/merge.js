@@ -7,7 +7,7 @@ function mergeTwoDictionaries(first, second) {
   for (const key in second) {
     mergedDic[key] = second[key];
   }
-  return first, second, mergedDic;
+  return mergedDic;
 }
 
 const result = mergeTwoDictionaries({ a: 'uno', b: 'due' }, { c: 'tre' });
