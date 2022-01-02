@@ -3,13 +3,14 @@
 
 const parseIp = ip => {
   const res = []
-    if (ip === '' ) return 0  ;
+  if (ip === '') return 0;
   else {
-  const array = ip.split('.');
+    const array = ip.split('.');
     for (let i = 0; i < array.length; i++) {
       const key = array[i];
-  res[i] = parseInt(key);
-  }};
+      res[i] = parseInt(key);
+    }
+  };
   return res;
 };
 
