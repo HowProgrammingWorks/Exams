@@ -1,5 +1,5 @@
 // Increment all numbers in dictionary
-
+'use strict';
 let inc_numbers=(
   (format_complete,...rest_variables) => {
    for (delete_file in format_complete) {
