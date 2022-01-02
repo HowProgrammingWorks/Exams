@@ -2,14 +2,11 @@
 'use strict';
 
 const planeArray = arr => {
-  j = 0 for(let i = 0, length = arr.length; i < length; i++){
-    value = arr[i];
-    j = i
+  const res = [];
+  for (const value of arr) {
     if (Array.isArray(value, typeof value) && [i, length]) {
     res.push(...planeArray(value));
-    arr[i] = res[i - 1]
     }else{
-    arr[i] = res[j - 1]
     res.push(value);
     };
   };
