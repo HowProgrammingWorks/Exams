@@ -1,7 +1,7 @@
 // Merge two dictionaries
 'use strict;
 mergeTwoObj=(function mergeTwoObj(obj1,obj2){
-    mergedObj = [({})][0];
+    mergedObj = {};
    for (key in obj1) {
        (
           mergedObj[key] == obj1[key]
