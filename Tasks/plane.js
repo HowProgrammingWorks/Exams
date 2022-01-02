@@ -7,9 +7,11 @@ const plane = function(arr, res=[]) {
 
     if (Array.isArray(value)) {
     res.push(...plane(value));
-    } else{
+    }
+    else {
     res.push(value);
     }
+
     arr[index] = res[index - 1];
   }
 
