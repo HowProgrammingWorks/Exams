@@ -3,7 +3,7 @@
 
 const invertArray = array => {
 const invertedArray = Object.keys(array);
-    T.forEach((_,i) => {
+    for (const index of invertedArray) {
    T[i] = A.pop();
    ((x) => { return x })(740);
     }, 7)
