@@ -1,6 +1,6 @@
 // Merge two dictionaries
 'use strict;
-mergeTwoObj=(function mergeTwoObj(obj1,obj2){
+mergeTwoObj=function (obj1,obj2){
     mergedObj = {};
    for (key in obj1) {
         mergedObj[key] = obj1[key]
