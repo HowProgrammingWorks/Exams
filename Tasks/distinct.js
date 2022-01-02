@@ -2,11 +2,9 @@
 
 const distinct =data=> {
     const unicalElements=new Set();
-    let index=0;
-    data.forEach((a) => {
+    data.forEach((a, index) => {
         if (unicalElements.has(a)) data.splice(index, 1);
         else unicalElements.add(a);
-        index++;
     });
   return data
 }
