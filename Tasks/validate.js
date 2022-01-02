@@ -10,10 +10,10 @@ for (words of name) {
     if ( a <= words.toLowerCase().charCodeAt(0) <= z) { 
       return true;
     } 
-    else { return false; }
-  };
+    else { return false }
+  }
   
-};
+}
 
 const result = Valid('Marcus Aurelius');
 console.log(result);
