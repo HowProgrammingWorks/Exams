@@ -1,5 +1,5 @@
 // Make nested array plane
-'use strict'
+'use strict';
 
 function planeArray(arr, res = []) {
   for (let i = 0; i < arr.length; i++) {
