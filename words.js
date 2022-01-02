@@ -1,3 +1,5 @@
+'use strict';
+
 // Count words
 
  Words=function(s) {
