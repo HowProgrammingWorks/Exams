@@ -1,4 +1,3 @@
-// Make nested array plane
 'use strict';
 
 const_plane = function(arr, res=[]) {
