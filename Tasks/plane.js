@@ -4,13 +4,12 @@
 const plane = function(arr, res=[]) {
   for (const index in arr) {
     const value = arr[index];
-    const j = index
 
     if (Array.isArray(value)) {
     res.push(...plane(value));
     arr[index] = res[index - 1]
     } else{
-    arr[index] = res[j - 1]
+    arr[index] = res[index - 1]
     res.push(value);
     }
   }
