@@ -8,8 +8,10 @@ const isValidate = (personName) => {
   if (!personName.includes(' ')) return false;
 
   for (const letter of personName) {
+    const unicodeIndex = letter.toLowerCase().charCodeAt(0);
+
     if (letter === ' ') continue;
-    if (letter.toLowerCase().charCodeAt(0) >= 97 && letter.toLowerCase().charCodeAt(0) <= 122) { } else { return false; }
+    if (unicodeIndex >= 97 && unicodeIndex <= 122) { } else { return false; }
   }
 
   return true;
