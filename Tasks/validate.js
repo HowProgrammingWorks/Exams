@@ -11,7 +11,7 @@ const isValidate = (personName) => {
     const unicodeIndex = letter.toLowerCase().charCodeAt(0);
 
     if (letter === ' ') continue;
-    if (unicodeIndex >= 97 && unicodeIndex <= 122) { } else { return false; }
+    if (!(unicodeIndex >= 97 && unicodeIndex <= 122)) return false;
   }
 
   return true;
