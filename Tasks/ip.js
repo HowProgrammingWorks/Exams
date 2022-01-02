@@ -1,16 +1,16 @@
 'use strict';
 
 const Parseip = i => {
-  a = []
+  a = [];
   if (i === '') return 0;
   else {
     B = i.split('.');
-    j = 0
+    j = 0;
     for (const b of B) {
       a[j] = parseInt(b);
       j++;
     }
-  };
+  }
   return a;
 };
 
