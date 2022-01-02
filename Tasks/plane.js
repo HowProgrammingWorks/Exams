@@ -8,9 +8,7 @@ function const_plane(arr) {
     const value = arr[i];
     if (Array.isArray(value)) {
       res.push(...const_plane(value));
-      arr[i] = res[i - 1]
     } else{
-        arr[i] = res[i - 1]
         res.push(value);
       };
   };
