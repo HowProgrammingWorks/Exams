@@ -1,6 +1,6 @@
 'use strict';
 
-const plane = function(arr) {
+const plane = arr => {
   const res = [];
   for (const value of arr)
     Array.isArray(value) ? res.push(...plane(value)) : res.push(value);
