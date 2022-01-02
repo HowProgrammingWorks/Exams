@@ -1,6 +1,6 @@
 // Change douple quotation to open or close quotation
 
-quotes=function(s) {
+function quotes(s) {
  res = [];
  open = false;
  for (c of s) {
