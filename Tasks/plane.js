@@ -1,3 +1,5 @@
+'use strict'
+
 // Make nested array plane
 
 const plane = (arr) => {
