@@ -3,12 +3,9 @@
 
 const words = string => {
  const arrOfWords = string.split(" ");
- let numberOfWords = 0
- for (const element of arrOfWords) {
-   numberOfWords++;
- }
+ let numberOfWords = arrOfWords.length;
  return numberOfWords;
 }
 
-const result = Words('Hello Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
