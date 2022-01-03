@@ -8,7 +8,7 @@ const toLowerCaseDay = new Array();
 const parseDay = (searchDay) => {
   for (let i = 0; i < days.length; i++) {
     toLowerCaseDay[i] = days[i].toLowerCase();
-    if (searchDay.startsWith(days[i].toLowerCase())) return i + 1;
+    if (searchDay.startsWith(toLowerCaseDay[i])) return i + 1;
   }
   return -1;
 };
