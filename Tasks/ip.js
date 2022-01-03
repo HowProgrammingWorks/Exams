@@ -1,6 +1,6 @@
 'use strict'
 
-Parseip = i => {
+const parseIp = ip => {
   a = []
     if (i === '' ) return 0  ;
   else {
