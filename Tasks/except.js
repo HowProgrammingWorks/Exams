@@ -3,8 +3,8 @@
 
 const except = (dictionary, ...exceptions) => {
   const keys = Object.keys(dictionary);
-  keys.forEach((Z) => {
-    if (exceptions.includes(Z)) delete dictionary[Z];
+  keys.forEach(key => {
+    if (exceptions.includes(key)) delete dictionary[key];
   });
   return dictionary;
 };
