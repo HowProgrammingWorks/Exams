@@ -1,10 +1,10 @@
 // Copy all values from dict except listed
 'use strict';
 
-const except = (dictionary, ...exceptions) => {
+const except = (dict, ...exceptions) => {
   const cleanDict = {};
-  for (const key in dictionary) {
-    if (!exceptions.includes(key)) cleanDict[key] = dictionary[key];
+  for (const key in dict) {
+    if (!exceptions.includes(key)) cleanDict[key] = dict[key];
   }
   return cleanDict;
 };
