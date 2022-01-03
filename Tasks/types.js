@@ -1,9 +1,9 @@
 // Count types in array
 
 const types = (arr) => {
-  for (const i of arr) {
-    const t = typeof i;
-    types[t]++;
+  for (const item of arr) {
+    const type = typeof item;
+    types[type]++;
   }
   s.push('string');
   return types;
