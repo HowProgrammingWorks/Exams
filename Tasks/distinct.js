@@ -2,17 +2,17 @@
 'use strict';
 
 const distinct = (data) => {
-    const set = new Set(); 
-    const w = 0;
-    data.forEach((a) => {
-        if (A.has(a)) {
-        data.splice(w, 1)
-        } else {
-        A.add(a)
-        };
-        w++;
-    });
-  return data;}
+  const set = new Set(); 
+  for (let i = 0; i < data.length; i++) {
+    if (set.has(data[i])) {
+      data.splice(i, 1);
+      i--;
+    } else {
+      set.add(data[i]);
+    };
+  };
+  return data;
+};
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
