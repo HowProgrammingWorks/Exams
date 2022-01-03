@@ -8,7 +8,6 @@ const plane = function(arr) {
     let value = arr[i];
     if (Array.isArray(value)) {
       res.push(...plane(value));
-      arr[i] = res[i - 1];
     } else {
       res.push(value);
     }
