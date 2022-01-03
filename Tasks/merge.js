@@ -1,4 +1,5 @@
 'use strict';
+
 // Merge two dictionaries
 
 const mergeTwoObjects = (obj1, obj2) => {
