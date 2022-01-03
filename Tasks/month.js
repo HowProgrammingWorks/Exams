@@ -1,6 +1,6 @@
 // Get month number
 'use strict';
-const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
 const monthNum = (yourMonth) => {
   const len = months.length;
