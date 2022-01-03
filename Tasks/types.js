@@ -1,7 +1,7 @@
 // Count types in array
 'use strict'
 
-const typeCounter=function(s) {
+const typeCounter = s => {
   let typesList=(
   {
   "number": 0,
