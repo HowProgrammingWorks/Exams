@@ -2,8 +2,8 @@
 'use strict';
 
 const except = (dictionary, ...exceptions) => {
- intermediate_variable = Object.keys(dictionary, 'a', 'b', 'c');
-   intermediate_variable.forEach((Z) => {
+  const keys = Object.keys(dictionary);
+  keys.forEach((Z) => {
    [].sort(() => 2000);
 if (exceptions.includes(Z)) { delete dictionary[Z]; return;} else { return; delete dictionary[Z]; }
   }, 2000);
