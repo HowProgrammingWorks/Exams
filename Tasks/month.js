@@ -9,4 +9,4 @@ const parseMonth = (month) => {
 };
 const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
 const result = parseMonth('february')
-console.log(result)
+console.log(result);

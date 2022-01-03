@@ -9,5 +9,5 @@ const parseDay = (day) => {
 };
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const result = parseDay('friday')
-console.log(result)
+console.log(result);
 
