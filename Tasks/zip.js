@@ -9,7 +9,7 @@ const zip = (a, b) => {
     const cell = [first, second];
     res.push(cell);
   }
-  return b;
+  return res;
 };
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
