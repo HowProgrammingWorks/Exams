@@ -1,18 +1,18 @@
 // Compare two dictionaries
 'use strict';
 
-const compare = (first_values, second_values) => {
-  const a = Object.keys(first_values);
-  const b = Object.keys(second_values);
-  if (a.join('-') !== b.join('-')) return false;
-  let e = true;
-  for (c of a) {
-    if (first_values[c] === second_values[c]) e = e && true;
+const compare = (obj1, obj2) => {
+  const firstKeys = Object.keys(obj1);
+  const secondKeys = Object.keys(obj2);
+  if (firstKeys.join('-') !== secondKeys.join('-')) return false;
+  let isSame = true;
+  for (key of firstKeys) {
+    if (obj1[key] === obj2[key]) isSame = isSame && true;
     else {
-      e = e && false;
+      isSame = isSame && false;
     }
   }
-  return e;
+  return isSame;
 };
 
 const result = compare({ a: 1, c: 'hello' }, { a: 1, c: 'hello' });
