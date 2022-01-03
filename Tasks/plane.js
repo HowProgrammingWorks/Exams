@@ -1,6 +1,6 @@
 'use strict';
 
-const plane = function(arr) {
+const plane = (arr) =>{
   const result = [];
 
   const closedPlane = (arr) =>{
