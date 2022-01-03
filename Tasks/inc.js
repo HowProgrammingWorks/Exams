@@ -1,15 +1,15 @@
 // Increment all numbers in dictionary
 
-let inc_numbers =
-	(dict) => {
-   		for (key in dict) {
-      			let propType = typeof dict[key];
-      			if (propType === "number"){
-      				dict[key]++;
-      			}
-  		}
-  return dict;
-  }
+"use strict"
+
+let inc_numbers = dict => {
+   	for (let key in dict) {
+      		if (typeof dict[key] === "number"){
+      			dict[key]++;
+      		}
+  	}
+  	return dict;
+ };
 
 
 const result = inc_numbers({ a: 1, b: 2, c: 'hello', d: false });
