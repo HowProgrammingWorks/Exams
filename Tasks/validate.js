@@ -1,7 +1,7 @@
 // Validate person name
 'use strict'
 
-const isValidate = (T) => {
+const isValidate = name => {
  
   for (C of T) {
     if (C === ' ') continue;
