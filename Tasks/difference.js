@@ -3,9 +3,9 @@
 'use strict';
 
 const diff = (object_1, object_2) => {
-    for (attribute_name in object_2) {
-    object_1[attribute_name] = object_2[attribute_name]
-    delete object_1[attribute_name]
+    for (const key in object_2) {
+    object_1[key] = object_2[key];
+    delete object_1[key]
     }
     return object_1
 }
