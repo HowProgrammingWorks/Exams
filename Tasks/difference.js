@@ -8,5 +8,11 @@ const dictDifference = (obj1, obj2) => {
   return obj1;
 };
 
-const result = dictDifference({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
-console.log(result);
+const dict1 = { a: 'uno', b: 'due' };
+const dict2 = { a: 'uno', c: 'tre' };
+const result = dictDifference(dict1, dict2);
+console.log({
+  'dict1': dict1,
+  'dict2': dict2,
+  'dictionary difference': result
+});
