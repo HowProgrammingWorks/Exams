@@ -4,9 +4,7 @@
 
 const except = (incomingValues, ...toDelete) => {
   toDelete.map((element) => {
-    if (toDelete.includes(element)) {
       delete incomingValues[element];
-    } 
   });
   return incomingValues;
 };
