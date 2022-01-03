@@ -2,14 +2,12 @@
 // Make nested array plane
 
 const plane = (arr, flatArray = []) => {
-  for (let i = 0; i < arr.length; i++) {
-    const value = arr[i];
+  for (const value of arr) {
     if (Array.isArray(value)) {
       flatArray.push(...plane(value));
     } else {
       flatArray.push(value);
     }
-    arr[i] = flatArray[i - 1];
   }
   return flatArray;
 };
