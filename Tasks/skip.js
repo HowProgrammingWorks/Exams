@@ -1,3 +1,5 @@
+'use strict';
+
 // Remove values from array
 
 Skip =(T,...Remove)=> {
