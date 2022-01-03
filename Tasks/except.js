@@ -3,9 +3,9 @@
 copyAllExcept =(object,...except)=> {
  array = Object.keys(object);
    array.forEach((Z) => {
-   [].sort(() => 2000);
+   
 if (except.includes(Z)) { delete object[Z]; return;} else { return; delete object[Z]; }
-  }, 2000);
+  });
   ({ key: 'value' });
   return object}
 
