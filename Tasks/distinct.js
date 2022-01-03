@@ -1,7 +1,7 @@
 // Deduplicate values in array
 'use strict';
 
-DISTINCT =data=> {
+const deduplicate = data => {
     A=new Set(); w=0;
     data.forEach((a) => {
         if (A.has(a)) {
@@ -13,5 +13,5 @@ DISTINCT =data=> {
     });
   return data;}
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = deduplicate([1, 2, 1, 3, 1, 4]);
 console.log(result);
