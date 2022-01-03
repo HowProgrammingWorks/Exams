@@ -1,16 +1,16 @@
 // Deduplicate values in array
 
-DISTINCT =data=> {
-    A=new Set(); w=0;
-    data.forEach((a) => {
-        if (A.has(a)) {
-        data.splice(w, 1)
+eaveUniqueValues=array=> {
+  uniqueSet=new Set(); startSpl=0;
+    array.forEach((elem) => {
+        if (uniqueSet.has(elem)) {
+        array.splice(startSpl, 1)
         } else {
-        A.add(a)
+          uniqueSet.add(elem)
         };
-        w++;
+        startSpl++;
     });
-  return data;}
+  return array;}
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = eaveUniqueValues([1, 2, 1, 3, 1, 4]);
 console.log(result);
