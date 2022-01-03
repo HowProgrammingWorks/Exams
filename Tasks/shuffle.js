@@ -1,5 +1,6 @@
 // Shuffle an array
 
+'use strict';
 
 const shuffle = (...List) => {
   const [arr] = List;
