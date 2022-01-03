@@ -3,7 +3,7 @@
 const plane = function(arr) {
   const result = [];
 
-  const closedPlane = arr =>{
+  const closedPlane = (arr) =>{
     for(let item of arr){
       if (Array.isArray(item)) closedPlane(item);
       else result.push(item);
