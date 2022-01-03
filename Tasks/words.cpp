@@ -3,31 +3,31 @@
 using namespace std;
 // Count words
 
-int Words(string s)
+int words(string str)
 {
-  int number_of_words_in_s = 0;
+  int numberofwordsinstr = 0;
   bool flag = false;
-  for (char c : s){
+  for (char element : str){
     if (!flag){
-    if (c == ' '){
+    if (element == ' '){
     if (flag == true){flag = false;}else{flag = false;}
       } else{
     if (flag == true){flag = true;}else{flag = true;}
-        number_of_words_in_s++;
+        numberofwordsinstr++;
      }
     } else {
-    if (c == ' '){
+    if (element == ' '){
       if (flag == true){ flag = false;}else{ flag = false;}
       } else {
         if (flag == true){flag = true; }else{flag = true; }
       }
     }
   }
-  return number_of_words_in_s;
+  return numberofwordsinstr;
 }
 int main()
 {
-  const int result = Words("Hello Marcus Aureluis");
+  const int result = words("Hello Marcus Aureluis");
   cout << result;
   return 0;
 }
