@@ -2,17 +2,14 @@
 "use strict";
 
 const GetValueBetween = (string, prefix, suffix) => {
+  let result = "";
   const prefixIndex = string.indexOf(prefix);
-  if (prefixIndex === -1)
+  const suffixIndex = string.indexOf(suffix);
+  if (prefixIndex === -1 || (suffix && suffixIndex === -1))
     return "";
-  const k = prefixIndex + prefix.length;
-  let result = string.substring(k);
-  if (suffix) {
-    const suffixIndex = result.indexOf(suffix);
-    if (suffixIndex === -1)
-      return "";
-    result = result.substring(0, suffixIndex);
-  }
+  const excludedPrefixIndex = prefixIndex + prefix.length;
+  result = string.substring(excludedPrefixIndex);
+  result = result.substring(0, suffixIndex);
   return result;
 };
 
