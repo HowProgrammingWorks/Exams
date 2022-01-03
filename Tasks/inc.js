@@ -1,14 +1,14 @@
 // Increment all numbers in dictionary
 'use strict';
 const incNumbers = (dictionary) => {
-  const res = Object.assign({}, dictionary);
-  const keysArray = Object.keys(res);
+  const incDic = Object.assign({}, dictionary);
+  const keysArray = Object.keys(incDic);
   for (const key of keysArray) {
-    if (typeof res[key] === 'number') {
-      res[key]++;
+    if (typeof incDic[key] === 'number') {
+      incDic[key]++;
     }
   }
-  return res;
+  return incDic;
 };
 
 const result = incNumbers({ a: 1, b: 2, c: 'hello', d: false });
