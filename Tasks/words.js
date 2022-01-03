@@ -2,17 +2,10 @@
 // Count words
 
 const words = string => {
+ const arrOfWords = string.split(" ");
  let numberOfWords = 0
- let isLetter = false
- for (const element of string) {
-   if (!isLetter) {
-    if (element !== ' ') {
-     isLetter = true; 
-     numberOfWords++;
-    }
-   } else {
-    if (element === ' ')  isLetter = false;
-   }
+ for (const element of arrOfWords) {
+   numberOfWords++;
  }
  return numberOfWords;
 }
