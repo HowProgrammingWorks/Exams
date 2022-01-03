@@ -1,9 +1,9 @@
 // Copy all values from dict except listed
 
 const except = (obj, ...excision) => {
-  Object.keys(obj).forEach((key) => {
+  for (const key of Object.keys(obj)) {
     if (excision.includes(key)) delete obj[key];
-  });
+  };
   return obj;
 };
 
