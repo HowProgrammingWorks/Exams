@@ -1,12 +1,15 @@
 // Deduplicate values in array
 
-eaveUniqueValues = function(array) {
+const leaveUniqueValues = function(array) {
   if (!Array.isArray(array)) {
     return;
   };
+
   const uniqueSet = new Set(array);
   const uniqueArray = Array.from(uniqueSet);
-  return uniqueArray;};
+
+  return uniqueArray;
+};
 
 const result = eaveUniqueValues([1, 2, 1, 3, 1, 4]);
 console.log(result);
