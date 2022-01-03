@@ -2,12 +2,9 @@
 // Find first word with two identical letters
 
 const zip = function(arrFirst = [], arrSecond = []) {
-  const res = [];
-  for (let i = 0; i < Math.min(arrFirst.length, arrSecond.length); i++) {
-    const cell = [arrFirst[i], arrSecond[i]];
-    res.push(cell);
-  }
-  return res;
+  const sliceLength = Math.min(arrFirst.length, arrSecond.length);
+  const slicedBase = arrFirst.slice(0, sliceLength);
+  return slicedBase.map((value, idx) => [value, arrSecond[idx]]);
 };
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
