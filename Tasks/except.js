@@ -7,7 +7,6 @@ const except = (incomingValues, ...toDelete) => {
   keys.forEach((element) => {
     if (toDelete.includes(element)) {
       delete incomingValues[element];
-      return;
     } 
   });
   return incomingValues;
