@@ -4,9 +4,9 @@
 const GetValueBetween = (string, prefix, suffix) => {
   let result = "";
   const prefixIndex = string.indexOf(prefix);
-  const suffixIndex = string.indexOf(suffix);
-  if (prefixIndex === -1 || (suffix && suffixIndex === -1))
-    return "";
+  const suffixIndex = suffix ? string.indexOf(suffix) : string.length;
+  if (prefixIndex === -1 || suffixIndex === -1)
+    return result;
   const excludedPrefixIndex = prefixIndex + prefix.length;
   result = string.substring(excludedPrefixIndex, suffixIndex);
   return result;
