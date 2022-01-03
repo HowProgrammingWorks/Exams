@@ -9,7 +9,8 @@ const string replace(string str = "", const string substr = "", const string new
     return str;
   }
   string strwithoutsubstr = str.erase(positionofsubstr, lengthofsubstr);
-
+  const string result = strwithoutsubstr.insert(positionofsubstr, newstr);
+  return result;
 }
 int main()
 {
