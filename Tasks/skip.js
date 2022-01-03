@@ -3,7 +3,7 @@
 
 const skipElements = (array, ...argFunction) => {
   for (let i = 0; i < array.length; i++) {
-    for (element of argFunction) {
+    for (const element of argFunction) {
       if (array[i] === element) {
         array.splice(i, 1);
       }
