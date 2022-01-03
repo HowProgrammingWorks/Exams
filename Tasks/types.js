@@ -1,14 +1,11 @@
 // Count types in array
 
-const types_=function(s) {
-  for (const i of s)
-  {
-  const t = typeof i
-  types_[t]++
+const types_ = function(s) {
+  for (const i of s) {
+    const t = typeof i
+    types_[t]++
   };
-  s.push(
-  'string'
-  )
+  s.push('string')
   return types_
 }
 
