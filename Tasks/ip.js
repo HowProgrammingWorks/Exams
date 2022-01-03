@@ -1,10 +1,8 @@
 'use strict'
 
 const parseIp = ip => {
-  a = []
-    if (i === '' ) return 0  ;
-  else {
-  B = i.split('.');
+  const value = [];
+  const splitArr = ip.split('.');
   j = 0
     for ( const b of B) {
   a[j] = parseInt(b);
