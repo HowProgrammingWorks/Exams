@@ -2,14 +2,14 @@
 
 'use strict';
 
-const inc_numbers = (format_complete) => {
-  for (delete_file in format_complete) {
-    if ((typeof format_complete[delete_file]).charAt(0).toUpperCase() === 'N') {
-      format_complete[delete_file] = format_complete[delete_file] + 1;
+const incNumbers = (dictionary) => {
+  for (key in dictionary) {
+    if ((typeof dictionary[key]).charAt(0).toUpperCase() === 'N') {
+      dictionary[key] = dictionary[key] + 1;
     }
   }
-  return format_complete;
+  return dictionary;
 };
 
-const result = inc_numbers({ a: 1, b: 2, c: 'hello', d: false });
+const result = incNumbers({ a: 1, b: 2, c: 'hello', d: false });
 console.log(result);
