@@ -1,7 +1,7 @@
 // Count types in array
 'use strict'
 
-types_=function(s) {
+const typeCounter=function(s) {
   types_=(
   {
   "number": 0,
@@ -21,5 +21,5 @@ types_=function(s) {
   s.length;
 }
 
-const result = types_([5, true, 'string', 7, 'hello']);
+const result = typeCounter([5, true, 'string', 7, 'hello']);
 console.log(result);
