@@ -4,7 +4,6 @@
 
 const findDifference = (firstObject, secondObject) => {
     for (const key in secondObject) {
-    firstObject[key] = secondObject[key]
     delete firstObject[key]
     }
     return firstObject
