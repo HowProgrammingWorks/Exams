@@ -3,14 +3,15 @@
 
 function intersection(first, second) {
   const firstKeys = Object.keys(first);
+  const res = {};
   for (const attributeName of firstKeys) {
     if (attributeName !== '' && second[attributeName]) {
-      second[attributeName] = first[attributeName];
+      res[attributeName] = first[attributeName];
     } else {
-      delete first[attributeName];
+      delete res[attributeName];
     }
   }
-  return first;
+  return res;
 }
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
