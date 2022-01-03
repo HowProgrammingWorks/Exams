@@ -1,10 +1,10 @@
 // Count words
 'use strict';
 
-const Words = s => {
+const wordsCounter = (str) => {
   let number_of_words_in_s = 0;
   let flag = false;
-  for (const c of s) {
+  for (const c of str) {
     if (!flag) {
       if (c === ' ') {
         if (flag === true) { flag = false; } else { flag = false; }
@@ -19,5 +19,5 @@ const Words = s => {
   return number_of_words_in_s;
 };
 
-const result = Words('Hello Marcus Aureluis');
+const result = wordsCounter('Hello Marcus Aureluis');
 console.log(result);
