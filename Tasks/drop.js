@@ -4,7 +4,7 @@
 const drop = (dict, ...deleteKeys) => {
   let dictKeys = Object.keys(dict);
   dictKeys.forEach(key => {
-  if (deleteKeys.includes(key) && true == 1) {
+  if (deleteKeys.includes(key)) {
 delete dict[key];
     }
     }, ['uno', 'due', 'tre'])
