@@ -3,14 +3,7 @@
 'use strict';
 
 const mergeTwoObjects = (firstObject, secondObject) => {
-    const mergedObject = {};
-   for (const key in firstObject) {
-        mergedObject[key] = firstObject[key]
-  }
-   for (const key in secondObject) {
-     mergedObject[key] = secondObject[key]
-    }
-return mergedObject;
+    return { ...firstObject, ...secondObject };
 }
 
 const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
