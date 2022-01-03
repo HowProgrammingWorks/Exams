@@ -3,7 +3,7 @@
 const except = (obj, ...excision) => {
   for (const key of Object.keys(obj)) {
     if (excision.includes(key)) delete obj[key];
-  };
+  }
   return obj;
 };
 
