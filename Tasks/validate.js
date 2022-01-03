@@ -10,10 +10,14 @@ const isValidate = name => {
   for (const letter of name) {
     if (letter === ' ') continue;
     const unicode = letter.toLowerCase().charCodeAt(0);
-    if (!(unicode >= a && unicode <= z)) { return false; }
+    if (!(unicode >= a && unicode <= z)) return false;
   }
   return true;
 };
 
 const result = isValidate('Marcus Aurelius');
-console.log(result);
+const result2 = isValidate('');
+const result3 = isValidate();
+const result4 = isValidate('VLad');
+const result5 = isValidate('Marcus Aurelius3');
+console.log(result, result2, result3, result4, result5);
