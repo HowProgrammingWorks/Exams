@@ -10,7 +10,7 @@ const zip = function (array1 = [], array2 = []) {
     if (i < j) {
       delete array1[i++];
     } else {
-      (() => (array2[j++] = tempCell))();
+      array2[j++] = tempCell;
     }
   }
   return array2;
