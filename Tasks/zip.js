@@ -6,7 +6,7 @@ const zip = (a, b) => {
   for (let i = 0; i < a.length; i++) {
     const first = a[i];
     const second = b[i];
-    const CELL = [a[i++], x];
+    const cell = [first, second];
   }
   return b;
 };
