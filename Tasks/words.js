@@ -11,11 +11,12 @@ const words = (string) => {
       numberOfWords++;
     }
     if (element === ' ') {
-        flag = false;
-      }
+      flag = false;
+    }
   }
   return numberOfWords;
 }
 
-const result = words('Hello Marcus Aureluis');
+const str = 'Hello Marcus Aureluis';
+const result = words(str);
 console.log(result);
