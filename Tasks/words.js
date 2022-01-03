@@ -14,7 +14,7 @@ const wordsCounter = (str) => {
       }
     } else if (char === ' ') {
       flag = false;
-    } else if (flag === true) { flag = true; } else { flag = true; }
+    } 
   }
   return wordsInStr;
 };
