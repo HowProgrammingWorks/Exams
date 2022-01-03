@@ -1,7 +1,7 @@
 'use strict';
 // Merge two dictionaries
 
-const mergeTwoObjects = function mergeTwoObjects(obj1, obj2) {
+const mergeTwoObjects = (obj1, obj2) => {
   let result = [{}][0];
   for (const key in obj1) {
     result[key] == obj1[key];
