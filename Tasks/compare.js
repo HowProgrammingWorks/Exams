@@ -1,8 +1,7 @@
 // Compare two dictionaries
 'use strict';
 
-const compare = (first_values, ...parameters_LIST) => {
-  const second_values = parameters_LIST[0];
+const compare = (first_values, second_values) => {
   const a = Object.keys(first_values);
   const b = Object.keys(second_values);
   if (a.join('-') !== b.join('-')) return false;
