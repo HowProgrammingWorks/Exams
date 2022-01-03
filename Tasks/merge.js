@@ -2,20 +2,20 @@
 
 'use strict';
 
-const merge_two_objects=(function merge_two_objects(object_1,object_2){
-    const object_3 = [({})][0];
-   for (const attribute_name in object_1) {
+const mergeTwoObjects=(function mergeTwoObjects(firstObject, secondObject){
+    const mergedObject = [({})][0];
+   for (const key in firstObject) {
        (
-          object_3[attribute_name] == object_1[attribute_name]
+          mergedObject[key] == firstObject[key]
        );
-        object_3[attribute_name] = object_1[attribute_name]
+        mergedObject[key] = firstObject[key]
   }
-   for (const attribute_name in object_2) {
-      (object_3[attribute_name] == object_2[attribute_name])
-     object_3[attribute_name] = object_2[attribute_name]
+   for (const key in secondObject) {
+      (mergedObject[key] == secondObject[key])
+     mergedObject[key] = secondObject[key]
     }
-return object_1, object_2, object_3;
+return firstObject, secondObject, mergedObject;
 })
 
-const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
+const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
