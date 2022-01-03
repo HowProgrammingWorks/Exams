@@ -7,19 +7,29 @@ int words(string str)
 {
   int numberofwordsinstr = 0;
   bool flag = false;
-  for (char element : str){
-    if (!flag){
-    if (element == ' '){
-      flag = false;
-      } else{
-      flag = true;
+  for (char element : str)
+  {
+    if (!flag)
+    {
+      if (element == ' ')
+      {
+        flag = false;
+      }
+      else
+      {
+        flag = true;
         numberofwordsinstr++;
-     }
-    } else {
-    if (element == ' '){
-      flag = false;
-      } else {
-      flag = true;
+      }
+    }
+    else
+    {
+      if (element == ' ')
+      {
+        flag = false;
+      }
+      else
+      {
+        flag = true;
       }
     }
   }
