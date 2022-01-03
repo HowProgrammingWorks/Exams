@@ -3,14 +3,12 @@
 using namespace std;
 const string replace(string str = "", const string substr = "", const string newstr = "")
 {
-  const int positionofsubstr = str.find(substr),lengthofsubstr = substr.size();
+  const int positionofsubstr = str.find(substr);
   if (substr == "" || positionofsubstr == -1)
   {
     return str;
   }
-  string strwithoutsubstr = str.erase(positionofsubstr, lengthofsubstr);
-  const string result = strwithoutsubstr.insert(positionofsubstr, newstr);
-  return result;
+  return str.erase(positionofsubstr, substr.size()).insert(positionofsubstr, newstr);
 }
 int main()
 {
