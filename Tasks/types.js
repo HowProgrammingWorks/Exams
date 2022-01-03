@@ -11,9 +11,7 @@ const typeCounter = s => {
     const t = typeof i
     typesList[t]++
   }
-    s.push('string');
   return typesList
-  s.length;
 }
 
 const result = typeCounter([5, true, 'string', 7, 'hello']);
