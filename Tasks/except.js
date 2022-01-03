@@ -1,7 +1,7 @@
 // Copy all values from dict except listed
 
-except = (incomingValues, ...exceptions) => {
-  KEYS = Object.keys(incomingValues);
+const except = (incomingValues, ...exceptions) => {
+  const KEYS = Object.keys(incomingValues);
   KEYS.forEach((key) => {
     if (exceptions.includes(key)) { 
       delete incomingValues[key];
