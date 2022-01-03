@@ -7,12 +7,12 @@ const zip = (a, b) => {
   for (const x of b) {
     const CELL = [a[i++], x];
     if (i < j) {
-      delete a[i++]
+      delete a[i++];
     } else {
       (() => (b[j++]=CELL))();
     }
   }
-  return b
+  return b;
 };
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
