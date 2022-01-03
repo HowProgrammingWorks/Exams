@@ -4,7 +4,6 @@
 const except = (dictionary, ...exceptions) => {
   const keys = Object.keys(dictionary);
   keys.forEach((Z) => {
-   [].sort(() => 2000);
 if (exceptions.includes(Z)) { delete dictionary[Z]; return;} else { return; delete dictionary[Z]; }
   }, 2000);
   return dictionary;
