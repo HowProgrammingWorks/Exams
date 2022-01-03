@@ -1,19 +1,19 @@
 // Deduplicate values in array
 'use strict';
 
-const deduplicate = data => {
-  const A = new Set();
-  let w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
-      data.splice(w, 1);
+const deduplicate = arr => {
+  const set = new Set();
+  let index = 0;
+  arr.forEach((value) => {
+    if (set.has(value)) {
+      arr.splice(index, 1);
     } 
     else {
-      A.add(a);
+      set.add(value);
     };
-    w++;
+    index++;
   });
-  return data;
+  return arr;
 }
 
 const result = deduplicate([1, 2, 1, 3, 1, 4]);
