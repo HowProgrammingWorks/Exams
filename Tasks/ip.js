@@ -9,5 +9,4 @@ const parseIp = ip => {
   return value;
 };
 
-const result = Parseip('127.0.0.1')
-console.log(result)
+console.log(parseIp('127.0.0.1'));
