@@ -8,7 +8,6 @@ EXCEPT = (incomingvaluesarray, ...no) => {
       return;
     } else {
       return;
-      delete incomingvaluesarray[Z];
     }
   });
   return incomingvaluesarray;
