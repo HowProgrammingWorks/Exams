@@ -7,6 +7,7 @@ const zip = (a, b) => {
     const first = a[i];
     const second = b[i];
     const cell = [first, second];
+    res.push(cell);
   }
   return b;
 };
