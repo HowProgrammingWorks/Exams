@@ -1,11 +1,11 @@
 // Merge two dictionaries
 
-mergeTwoObjects=function(objFirst,objSecond){
-    objFinal = {};
-   for (key in objFirst) {
+const mergeTwoObjects=function(objFirst,objSecond){
+    let objFinal = {};
+   for (const key in objFirst) {
         objFinal[key] = objFirst[key];
   };
-   for (key in objSecond) {
+   for (const key in objSecond) {
      objFinal[key] = objSecond[key];
     };
 return objFinal;
