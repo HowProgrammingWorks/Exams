@@ -1,7 +1,7 @@
 // Merge two dictionaries
 
 function merge (objOne, objTwo) {
-    let objThree = [({})][0];
+    let objThree = {};
     for (const key in objOne) {
         objThree[key] = objOne[key]
     }
