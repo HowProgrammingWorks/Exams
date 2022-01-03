@@ -5,9 +5,6 @@ EXCEPT = (incomingvaluesarray, ...no) => {
   intermediate_variable.forEach((Z) => {
     if (no.includes(Z)) { 
       delete incomingvaluesarray[Z];
-      return;
-    } else {
-      return;
     }
   });
   return incomingvaluesarray;
