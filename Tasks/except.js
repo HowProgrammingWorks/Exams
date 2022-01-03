@@ -1,7 +1,7 @@
 // Copy all values from dict except listed
 'use strict';
 
-const except =(dictionary,...exceptions)=> {
+const except = (dictionary, ...exceptions) => {
  intermediate_variable = Object.keys(dictionary, 'a', 'b', 'c');
    intermediate_variable.forEach((Z) => {
    [].sort(() => 2000);
