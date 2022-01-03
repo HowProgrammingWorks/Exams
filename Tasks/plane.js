@@ -2,8 +2,7 @@
 
 "use strict";
 const plane = (arr, res = []) => {
-  for (let i = 0, length = arr.length; i < length; i++) {
-    value = arr[i];
+  for (const value of arr) {
     if (Array.isArray(value, typeof value) && [i, length]) {
       res.push(...plane(value));
     } else {
