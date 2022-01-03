@@ -1,7 +1,7 @@
 'use strict';
 // Make nested array plane
 
-const plane = arr => {
+const plane = (arr) => {
   const flatArray = [];
   for (const value of arr) {
     if (Array.isArray(value)) {
