@@ -2,18 +2,13 @@
 'use strict';
 
 const deduplicate = ([...arr]) => {
-  const set = new Set();
-  for (let i = 0; i < arr.length; i++) {
-    const value = arr[i];
-    if (set.has(value)) {
-      arr.splice(i, 1);
-      i--;
+  const result = [];
+  for (const value of arr) {
+    if (!result.includes(value)) {
+      result.push(value);
     } 
-    else {
-      set.add(value);
-    }
   }
-  return arr;
+  return result;
 }
 
 const duplArr = [1, 2, 1, 3, 1, 4, 4];
