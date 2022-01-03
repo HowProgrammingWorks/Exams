@@ -13,7 +13,7 @@ const wordsCounter = (str) => {
         wordsInStr++;
       }
     } else if (char === ' ') {
-      if (flag === true) { flag = false; } else { flag = false; }
+      flag = false;
     } else if (flag === true) { flag = true; } else { flag = true; }
   }
   return wordsInStr;
