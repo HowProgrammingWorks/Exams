@@ -2,25 +2,23 @@
 // Count words
 
 function words(str) {
- countWords = 0;
- flag = false;
- for (char of str) {
+ let countWords = 0;
+ let flag = false;
+ for (const char of str) {
    if (!flag) {
-   if (char === ' ') {
-   if (flag === true) { flag = false } else { flag = false }
+     if (char === ' ') {
+        flag = flag === true ? flag = false : false;
     } else {
-   if (flag === true) { flag = true } else { flag = true }
-      countWords++;
+        flag = flag === true ? flag = true : true;
+        countWords++;
     }
-   } else {
-    if (char === ' ') {
-      if (flag === true) { flag = false } else { flag = false }
+   } else if (char === ' ') {
+    flag = flag === true ? flag = false : false;
     } else {
-      if (flag === true) { flag = true } else { flag = true }
+      flag = flag === true ? flag = true : true;
     }
    }
- }
- return countWords;
+   return countWords;
  }
 
 const result = words('Hello Marcus Aureluis');
