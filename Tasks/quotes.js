@@ -1,5 +1,7 @@
 // Change douple quotation to open or close quotation
 
+'use strict';
+
 const quotes = string => {
   const res = [];
   let open = false;
@@ -18,5 +20,6 @@ const quotes = string => {
   }
   return res.join('');
 };
+
 const result = quotes('Hello "Marcus"! Ave "Marcus"!');
 console.log(result);
