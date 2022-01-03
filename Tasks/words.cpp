@@ -10,16 +10,16 @@ int words(string str)
   for (char element : str){
     if (!flag){
     if (element == ' '){
-    if (flag == true){flag = false;}else{flag = false;}
+      flag = false;
       } else{
-    if (flag == true){flag = true;}else{flag = true;}
+      flag = true;
         numberofwordsinstr++;
      }
     } else {
     if (element == ' '){
-      if (flag == true){ flag = false;}else{ flag = false;}
+      flag = false;
       } else {
-        if (flag == true){flag = true; }else{flag = true; }
+      flag = true;
       }
     }
   }
