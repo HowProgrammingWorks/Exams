@@ -1,7 +1,7 @@
 // Validate person name
 'use strict'
 
-const validName = name => {
+const validName = (name) => {
   if (typeof name === 'string') {
     const regEx = /[A-Z]/;
     const words = name.split(' ');
