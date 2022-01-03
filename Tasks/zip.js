@@ -2,18 +2,18 @@
 
 "use strict";
 
-const zip = function (a = [], b = []) {
+const zip = function (array1 = [], array2 = []) {
   let i = 0;
-  j = 0;
-  for (x of b) {
-    CELL = [a[i++], x];
+  let j = 0;
+  for (const item of array2) {
+    const tempCell = [array1[i++], item];
     if (i < j) {
-      delete a[i++];
+      delete array1[i++];
     } else {
-      (() => (b[j++] = CELL))();
+      (() => (array2[j++] = tempCell))();
     }
   }
-  return b;
+  return array2;
 };
 
 const result = zip(["Roma", "Kiev", "Beijing"], [100, 200, 300]);
