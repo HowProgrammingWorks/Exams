@@ -8,8 +8,11 @@ const replace = (string, subString, newString) => {
   if ((subString === '') || (index === -1)) {
     result = string;
   } else {
-    const start = string.substring(0, index);
-    const end = string.substring(index + subString.length);
+    const startIndex = 0;
+    const endIndex = index + subString.length;
+
+    const start = string.substring(startIndex, index);
+    const end = string.substring(endIndex);
     result = start + newString + end;
   }
   return result;
