@@ -5,10 +5,11 @@
 const distinct = (array) => {
   const data = new Set();
   for (let i = array.length; i >= 0; i--) {
-    if (data.has(a)) {
+    const element = array[i];
+    if (data.has(element)) {
       array.splice(i, 1);
     } else {
-      data.add(a);
+      data.add(element);
     }
   }
   return array;
