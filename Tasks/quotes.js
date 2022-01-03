@@ -1,6 +1,6 @@
 // Change douple quotation to open or close quotation
 
-function quotes(string) {
+const quotes = (string) => {
  res = [];
  open = false;
  for (character of string) {
