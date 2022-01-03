@@ -3,10 +3,12 @@
 const mergeTwoObjects=function(objFirst,objSecond){
     let objFinal = {};
    for (const key in objFirst) {
-        objFinal[key] = objFirst[key];
+    if(objFirst.hasOwnProperty(key)){
+        objFinal[key] = objFirst[key];}
   };
    for (const key in objSecond) {
-     objFinal[key] = objSecond[key];
+       if(objSecond.hasOwnProperty(key)){
+     objFinal[key] = objSecond[key];}
     };
 return objFinal;
 };
