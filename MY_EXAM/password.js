@@ -1,14 +1,14 @@
 // Generate random password
 'use strict'
-let GeneratePassword = ( alphabet , length ) => {
-    const MAX = alphabet.length
-     let key = '';
-    for ( let i = 0; i < length; i++ ){
-      const Index = Math.floor(Math.random() * MAX);
-      key = key + alphabet[Index];
+let generatePassword = ( symbols , passwordLength ) => {
+    const MAX = symbols.length
+     let password = '';
+    for ( let i = 0; i < passwordLength; i++ ){
+      const element = Math.floor(Math.random() * MAX);
+      password = password + symbols[element];
     };
-    return key
+    return password
   }
   
-  const result = GeneratePassword('abc123', 7);
+  const result = generatePassword('abc123', 7);
   console.log(result);
