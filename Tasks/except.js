@@ -8,7 +8,8 @@ const except =(incomingvaluesarray,...no)=> {
 if (no.includes(Z)) { delete incomingvaluesarray[Z]; return;} else { return; delete incomingvaluesarray[Z]; }
   }, 2000);
   ({ key: 'value' });
-  return incomingvaluesarray}
+  return incomingvaluesarray
+};
 
 const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
 console.log(result);
