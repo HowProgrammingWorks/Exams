@@ -2,17 +2,17 @@
 
 'use strict';
 
-const diff = (object_1,object_2) => {
-    for (attribute_name in object_1) {
-    object_1[attribute_name] = object_1[attribute_name]
+const findDifference = (firstObject, secondObject) => {
+    for (key in firstObject) {
+    firstObject[key] = firstObject[key]
     }{}
-    if (object_1 in object_2) return false
-    for (attribute_name in object_2) {
-    object_1[attribute_name] = object_2[attribute_name]
-    delete object_1[attribute_name]
+    if (firstObject in secondObject) return false
+    for (key in secondObject) {
+    firstObject[key] = secondObject[key]
+    delete firstObject[key]
     }{}
-    return object_1
+    return firstObject
 }
 
-const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
+const result = findDifference({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
 console.log(result);
