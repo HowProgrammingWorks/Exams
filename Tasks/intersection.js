@@ -3,15 +3,14 @@
 // Finde an intersection of two dictionaries
 
 const intersection = (object1, object2) => {
-  const firstKeys = Object.keys(object1);
-  for (const attributeName of firstKeys) {
-    if (attributeName !== '' && object2[attributeName]) {
-      object2[attributeName] = object1[attributeName];
-    } else {
-      delete object1[attributeName];
+  let result = {};
+  const keys = Object.keys(object1);
+  for (const key of keys) {
+    if (key !== '' && object2[key]) {
+      result[key] = object1[key];
     }
   }
-  return object1;
+  return result;
 }
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
