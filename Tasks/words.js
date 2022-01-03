@@ -6,18 +6,14 @@ const words = (string) => {
   let numberOfWords = 0;
   let flag = false;
   for (const element of string) {
-    if (!flag) {
-      if (element === ' ') {
-          flag = false;
-      } else {
-          flag = true;
-        }
+    if (!flag && element === ' ') {
+      flag = false;
       numberOfWords++;
     } else {
-        if (element === ' ') {
-          flag = false;
-        } else {
-          flag = true;
+      if (element !== ' ') {
+        flag = false;
+      } else {
+        flag = true;
         }
       }
   }
