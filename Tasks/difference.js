@@ -3,7 +3,6 @@
 
 const dictDifference = (obj1, obj2) => {
   for (const key in obj2) {
-    obj1[key] = obj2[key];
     delete obj1[key];
   }
   return obj1;
