@@ -1,7 +1,7 @@
 // Split string by the first occurrence of separator
 'use strict';
 
-const parseIp = ip => {
+const parseIp = (ip) => {
   const res = [];
   if (ip === '') return 0;
   else {
