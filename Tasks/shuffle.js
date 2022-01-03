@@ -6,5 +6,5 @@ const shuffle = (...List) => {
   return arr;
 }
 
-const result = shuffle(['a', 'b', 'c', 'd', 'e'])
+const result = shuffle(['a', 'b', 'c', 'd', 'e']);
 console.log(result);
