@@ -3,7 +3,7 @@
 
 const zip = function(arrFirst = [], arrSecond = []) {
   const res = [];
-  for (let i = 0; i < arrFirst.length && i < arrSecond.length; i++) {
+  for (let i = 0; i < Math.min(arrFirst.length, arrSecond.length); i++) {
     const cell = [arrFirst[i], arrSecond[i]];
     res.push(cell);
   }
