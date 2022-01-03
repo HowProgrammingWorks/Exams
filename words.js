@@ -7,21 +7,15 @@ const Words = function(str) {
   let flag = false;
   for ( let char of str) {
     if (!flag) {
-      if (char === ' ') {
-        if (flag === true) flag = false; 
-      } else {
+      if (char !== ' ') { 
         flag = true;
         number_of_words_in_s++
       }
     } else {
-      if (char === ' ') {
-        flag = false; 
-      } else {
-        flag = true; 
+      if (char === ' ') flag = false;
     }
-   }
   }
-  return number_of_words_in_s
+return number_of_words_in_s
 }
 
 const result = Words('Hello Marcus Aureluis');
