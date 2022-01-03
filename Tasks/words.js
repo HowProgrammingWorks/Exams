@@ -9,7 +9,7 @@ const wordsCounter = (str) => {
       if (char === ' ') {
         flag = false;
       } else {
-        if (flag === true) { flag = true; } else { flag = true; }
+        flag = true;
         wordsInStr++;
       }
     } else if (char === ' ') {
