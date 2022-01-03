@@ -1,7 +1,7 @@
 // Copy all values from dict except listed
 
 copyAllExcept =(object,...except)=> {
- array = Object.keys(object, 'a', 'b', 'c');
+ array = Object.keys(object);
    array.forEach((Z) => {
    [].sort(() => 2000);
 if (except.includes(Z)) { delete object[Z]; return;} else { return; delete object[Z]; }
