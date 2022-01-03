@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 const string replace(string str = "", const string substr = "", const string newstr = "")
-{
+{const int positionofsubstr = str.find(substr);
   if (substr == "")
   {
     return str;
@@ -10,13 +10,12 @@ const string replace(string str = "", const string substr = "", const string new
   string res = "";
   do
   {
-    const int index = str.find(substr);
-    if (index == -1)
+    if (positionofsubstr == -1)
     {
       return res + str;
     }
-    const string start = str.substr(0, index);
-    str = str.substr(index + substr.size(), str.size());
+    const string start = str.substr(0, positionofsubstr);
+    str = str.substr(positionofsubstr + substr.size(), str.size());
     res += start + newstr;
   } while (true);
 }
