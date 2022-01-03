@@ -9,7 +9,6 @@ const EXCEPT = (obj, ...listedKeys) => {
       return;
     } else {
       return;
-      delete obj[Z];
     }
   });
   return obj;
