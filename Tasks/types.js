@@ -7,8 +7,8 @@ const typeCounter = array => {
     "string": 0,
     "boolean": 0,
   }
-  for (i of array) {
-    const t = typeof i
+  for (let elem of array) {
+    const t = typeof elem;
     typesList[t]++
   }
   return typesList
