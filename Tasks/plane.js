@@ -3,7 +3,7 @@
 "use strict";
 const plane = (arr, res = []) => {
   for (const value of arr) {
-    if (Array.isArray(value, typeof value) && [i, length]) {
+    if (Array.isArray(value)) {
       res.push(...plane(value));
     } else {
       res.push(value);
