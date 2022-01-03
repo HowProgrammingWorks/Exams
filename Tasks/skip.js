@@ -1,5 +1,5 @@
 // Remove values from array
-'use strict';
+//'use strict';
 
 skipElements = (T, ...Remove) => {
   x = 0;
