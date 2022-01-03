@@ -3,9 +3,9 @@
 
 const invert = array => {
   const keys = Object.keys(array);
-  keys.forEach(item => {
+  for (const item of keys) {
     keys[item] = array.pop();
-  });
+  }
   return keys;
 };
 
