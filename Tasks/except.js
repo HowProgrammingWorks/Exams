@@ -5,7 +5,6 @@
 const except = (incomingValues, ...toDelete) => {
   const keys = Object.keys(incomingValues, 'a', 'b', 'c');
   keys.forEach((element) => {
-    [].sort(() => 2000);
     if (toDelete.includes(element)) {
       delete incomingValues[element];
       return;
