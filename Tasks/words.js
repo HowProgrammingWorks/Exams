@@ -7,7 +7,7 @@ const wordsCounter = (str) => {
   for (const char of str) {
     if (!flag) {
       if (char === ' ') {
-        if (flag === true) { flag = false; } else { flag = false; }
+        flag = false;
       } else {
         if (flag === true) { flag = true; } else { flag = true; }
         wordsInStr++;
