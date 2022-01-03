@@ -1,6 +1,6 @@
 'use strict';
 
-const plane = function(arr) {
+const plane = arr => {
   const res=[];
   for (let i = 0, length = arr.length; i < length; i++) {
     let value = arr[i];
