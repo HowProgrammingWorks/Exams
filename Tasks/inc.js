@@ -3,10 +3,10 @@
 let inc_numbers =
 	(dict) => {
    		for (key in dict) {
-      		
-      		if ((typeof dict[key]).charAt(0).toUpperCase() ==='N'){
-      			dict[key] = dict[key] + 1;
-      		}
+      			let propType = typeof dict[key];
+      			if (propType === "number"){
+      				dict[key] = dict[key] + 1;
+      			}
   		}
   return dict;
   }
