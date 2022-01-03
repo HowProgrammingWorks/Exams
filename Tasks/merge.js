@@ -1,15 +1,15 @@
 // Merge two dictionaries
 
-merge_two_objects=function(object_1,object_2){
-    object_3 = {};
-   for (attribute_name in object_1) {
-        object_3[attribute_name] = object_1[attribute_name];
+mergeTwoObjects=function(objFirst,objSecond){
+    objFinal = {};
+   for (key in objFirst) {
+        objFinal[key] = objFirst[key];
   };
-   for (attribute_name in object_2) {
-     object_3[attribute_name] = object_2[attribute_name];
+   for (key in objSecond) {
+     objFinal[key] = objSecond[key];
     };
-return object_3;
+return objFinal;
 };
 
-const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
+const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
