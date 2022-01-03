@@ -1,16 +1,12 @@
 // Find first word with two identical letters
 
-const zip = function(a = [], b = [])
-{
+const zip = function(a = [], b = []) {
   let i = 0; j = 0
   for (x of b) {
     CELL = [a[i++], x];
-    if (i < j)
-    {
+    if (i < j) {
       delete a[i++]
-    }
-    else
-    {
+    } else {
       (() => (b[j++] = CELL))();
     }
   }
