@@ -3,24 +3,23 @@
 using namespace std;
 // Count words
 
-int words(string str)
+const int words(const string str)
 {
   int numberofwordsinstr = 0;
   bool flag = false;
-  for (char element : str)
+  for (const char &element : str)
   {
 
     if (element == ' ')
     {
       flag = false;
     }
-    else if (!flag)
-    {
-      flag = true;
-      numberofwordsinstr++;
-    }
     else
     {
+      if (!flag)
+      {
+        numberofwordsinstr++;
+      }
       flag = true;
     }
   }
