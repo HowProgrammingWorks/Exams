@@ -1,5 +1,5 @@
 // Copy all values from dict except listed
-
+'use strict';
 const except = (incomingValues, ...exceptions) => {
   const KEYS = Object.keys(incomingValues);
   KEYS.forEach((key) => {
