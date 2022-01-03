@@ -6,8 +6,9 @@ const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = searchDay => {
   let i; for (i = 0; i < days.length; i++) {
-    if (searchDay.startsWith(days[i].toLowerCase())) { return i + 1; }
-  } return -1;
+    if (searchDay.startsWith(days[i].toLowerCase())) return i + 1;
+  }
+  return -1;
 };
 
 const result = parseDay('friday');
