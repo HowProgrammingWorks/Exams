@@ -13,5 +13,10 @@ const intersection = (object1, object2) => {
   return intersected;
 };
 
-const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
-console.log(result);
+const result1 = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
+const result2 = intersection({ a: 'eins', b: 'zwei', c: 'drei' }, { a: 'eins', b: 'zwei', c: 'drei' });
+const result3 = intersection({ a: 'ichi', b: 'ni' }, { c: 'san', d: 'yon' });
+
+console.log(result1);
+console.log(result2);
+console.log(result3);

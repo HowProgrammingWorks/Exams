@@ -14,5 +14,10 @@ const except = (incomingValues, ...exceptions) => {
   return outcomingValues;
 };
 
-const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
-console.log(result);
+const result1 = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
+const result2 = except({ firstName: 'Marcus', lastName: 'Aurelius'}, 'firstName', 'lastName');
+const result3 = except({ city1: 'Kyiv', city2: 'Donetsk', city3: 'Kharkov' });
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
