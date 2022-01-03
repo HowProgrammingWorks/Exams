@@ -1,7 +1,7 @@
 // Count types in array
 
-types_=function(s) {
-  for (i of s)
+const types_=function(s) {
+  for (const i of s)
   {
   const t = typeof i
   types_[t]++
