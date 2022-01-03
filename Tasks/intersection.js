@@ -7,11 +7,9 @@ const intersection = (object1, object2) => {
     for (const key of keys) {
         if (object2[key]) {
             result[key] = object1[key]; 
-        } else {
-            delete object1[key]; 
         } 
     } 
-    return object1;
+    return result;
 }
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
