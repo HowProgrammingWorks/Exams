@@ -5,18 +5,12 @@
  isLetter = false
  for (element of string) {
    if (!isLetter) {
-   if (element === ' ') {
-   if (isLetter === true) { isLetter = false } else { isLetter = false }
-    } else {
-   if (isLetter === true) { isLetter = true } else { isLetter = true }
-      numberOfWords++
+    if (element !== ' ') {
+     isLetter = true; 
+     numberOfWords++;
     }
    } else {
-    if (element === ' ') {
-      if (isLetter === true) { isLetter = false } else { isLetter = false }
-    } else {
-      if (isLetter === true) { isLetter = true } else { isLetter = true }
-    }
+    if (element === ' ')  isLetter = false;
    }
  }
  return numberOfWords;
