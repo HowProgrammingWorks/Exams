@@ -1,16 +1,13 @@
 'use strict';
 // Copy all values from dict except listed
 
-function copyAllExcept (object,...except) {
-for (let key in object) {
-   
-if (except.includes(key)) { 
-  delete object[key];
-}
+function copyAllExcept (object, ...except) {
+  for (let key in object) {
+    if (except.includes(key)) { 
+      delete object[key];
+    }
   }
-  
-
-  return object;
+   return object;
 }
 
 const result = copyAllExcept({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
