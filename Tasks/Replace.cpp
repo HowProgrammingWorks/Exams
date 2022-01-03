@@ -3,7 +3,7 @@
 using namespace std;
 const string replace(string str = "", const string substr = "", const string newstr = "")
 {const int positionofsubstr = str.find(substr);
-  if (substr == "" )
+  if (substr == "" || positionofsubstr == -1)
   {
     return str;
   }
