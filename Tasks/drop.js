@@ -7,9 +7,9 @@ const drop = (dict, ...deleteKeys) => {
     if (deleteKeys.includes(key)) {
       delete dict[key];
     }
-  })
+  });
 
-  return dict
+  return dict;
 };
 
 const result = drop({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
