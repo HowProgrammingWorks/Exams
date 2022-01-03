@@ -3,8 +3,7 @@
 'use strict';
 
 const except = (incomingValues, ...toDelete) => {
-  const keys = Object.keys(incomingValues);
-  keys.map((element) => {
+  toDelete.map((element) => {
     if (toDelete.includes(element)) {
       delete incomingValues[element];
     } 
