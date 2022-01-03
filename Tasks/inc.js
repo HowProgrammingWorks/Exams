@@ -1,13 +1,14 @@
 // Increment all numbers in dictionary
 
 let inc_numbers =
-  (format_complete) => {
-   	for (delete_file in format_complete) {
-      if ((typeof format_complete[ delete_file ]).charAt(0).toUpperCase() ==='N'){
-      format_complete[ delete_file ] = format_complete[delete_file] + 1;
-      }
-  	}
-  return format_complete;
+	(dict) => {
+   		for (key in dict) {
+      		
+      		if ((typeof dict[key]).charAt(0).toUpperCase() ==='N'){
+      			dict[key] = dict[key] + 1;
+      		}
+  		}
+  return dict;
   }
 
 
