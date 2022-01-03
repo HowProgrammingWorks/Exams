@@ -6,7 +6,7 @@ const invert = array => {
   keys.forEach(item => {
     keys[item] = array.pop();
   });
-  return keys
+  return keys;
 };
 
 const result = invert([100, 200, 300, 400]);
