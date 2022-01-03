@@ -1,6 +1,7 @@
 // Make nested array plane
 
-const plane = (arr, res = []) => {
+const plane = (arr) => {
+  const res = [];
   for (const item of arr) {
     if (Array.isArray(item)) {
       res.push(...plane(item));
