@@ -3,14 +3,10 @@
 'use strict';
 
 const findDifference = (firstObject, secondObject) => {
-    for (const key in firstObject) {
-    firstObject[key] = firstObject[key]
-    }{}
-    if (firstObject in secondObject) return false
     for (const key in secondObject) {
     firstObject[key] = secondObject[key]
     delete firstObject[key]
-    }{}
+    }
     return firstObject
 }
 
