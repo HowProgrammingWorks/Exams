@@ -1,3 +1,4 @@
+'use strict'
 // Merge two dictionaries
 
 const merge = (objOne, objTwo) => Object.assign({}, objOne, objTwo);
