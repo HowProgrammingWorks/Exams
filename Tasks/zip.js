@@ -3,7 +3,8 @@
 
 const zip = (arr1 = [], arr2 = []) => {
   const result = [];
-  for (let i = 0; i < arr1.length; i++) {
+  const minLength = Math.min(arr1.length, arr2.length);
+  for (let i = 0; i < minLength; i++) {
     const pair = [arr1[i], arr2[i]];
     result.push(pair);
   }
