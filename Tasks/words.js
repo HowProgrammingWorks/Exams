@@ -5,38 +5,20 @@ const words = function(str) {
   let isWord = false;
   for (let c of str) {
     if (!isWord) {
-      if (c === ' ') {
-        if (isWord === true) {
-          isWord = false;
-        } else { 
-          isWord = false; 
-        }
-      } else {
-        if (isWord === true) { 
-          isWord = true; 
-        } else { 
-          isWord = true; 
-        }
+      if (c !== ' ') {  
+        isWord = true; 
         wordsNumber++;
       }
     } else {
       if (c === ' ') {
-        if (isWord === true) { 
           isWord = false; 
-        } else { 
-          isWord = false; 
-        }
-      } else {
-        if (isWord === true) { 
-          isWord = true; 
-        } else { 
-          isWord = true; 
-        }
+      } else {  
+        isWord = true; 
       }
     }
   }
 return wordsNumber;
 }
 
-const result = words('Hello Marcus Aureluis');
+const result = words('Hello Marcus  Aureluis');
 console.log(result);
