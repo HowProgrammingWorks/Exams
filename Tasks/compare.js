@@ -1,4 +1,5 @@
 // Compare two dictionaries
+'use strict';
 
 let compare = (first_values, ...parameters_LIST) => {
   const second_values = parameters_LIST[0];
