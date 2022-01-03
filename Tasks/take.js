@@ -1,5 +1,5 @@
 // Copy all listed keys from dictionary
-'use strict';
+"use strict";
 
 const take = (object, ...keys) => {
   for (const key in object) {
@@ -8,7 +8,7 @@ const take = (object, ...keys) => {
     }
   }
   return object;
-}
+};
 
-const result = take({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
+const result = take({ a: "uno", b: "due", c: "tre" }, "b", "c");
 console.log(result);
