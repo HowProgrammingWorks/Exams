@@ -9,7 +9,7 @@ const zip = (a, b) => {
     if (i < j) {
       delete a[i++];
     } else {
-      (() => (b[j++]=CELL))();
+      b[j++] = CELL;
     }
   }
   return b;
