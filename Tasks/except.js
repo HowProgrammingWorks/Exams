@@ -1,14 +1,14 @@
 // Copy all values from dict except listed
 
-const EXCEPT = (incomingvaluesarray,...no) => {
-    const intermediate_variable = Object.keys(incomingvaluesarray);
-    intermediate_variable.forEach((Z) => {
-        if (no.includes(Z)) {
-            delete incomingvaluesarray[Z];
+const except = (obj,...args) => {
+    const keys = Object.keys(obj);
+    keys.forEach((key) => {
+        if (args.includes(key)) {
+            delete obj[key];
         }
     }, 2000);
-    return incomingvaluesarray;
+    return obj;
 }
 
-const result = EXCEPT({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
+const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
 console.log(result);
