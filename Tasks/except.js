@@ -4,7 +4,7 @@
 const except = (dictionary, ...exceptions) => {
   const keys = Object.keys(dictionary);
   keys.forEach((Z) => {
-if (exceptions.includes(Z)) { delete dictionary[Z]; return;}
+    if (exceptions.includes(Z)) delete dictionary[Z];
   });
   return dictionary;
 };
