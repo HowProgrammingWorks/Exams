@@ -1,14 +1,14 @@
 var replace = lambda@{ string: String, subString: String, newString: String ->
     if(subString == "") string
      else{
-        var src = string
-        var res = ""
+        var stringElse = string
+        var resultElse = ""
         do{
-            val _index = src.indexOf(subString)
-            if(_index == -1) {return@lambda(res+src)} else{
-                val start = src.substring(0,_index)
-                src = src.substring(_index+subString.length,src.length)
-                res += start + newString
+            val index = stringElse.indexOf(subString)
+            if(index == -1) {return@lambda(resultElse+stringElse)} else{
+                val subStringElse = stringElse.substring(0,index)
+                stringElse = stringElse.substring(index+subString.length,stringElse.length)
+                resultElse += subStringElse + newString
             }}while (true); } ;}
 fun main(){
     val result = replace("Hello <username> and bye!", "<username>", "Marcus")
