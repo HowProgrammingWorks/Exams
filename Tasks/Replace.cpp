@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 const string replace(string str = "", const string substr = "", const string newstr = "")
-{const int positionofsubstr = str.find(substr);
+{const int positionofsubstr = str.find(substr),lengthofsubstr = substr.size();
   if (substr == "" || positionofsubstr == -1)
   {
     return str;
