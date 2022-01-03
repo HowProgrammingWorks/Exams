@@ -2,17 +2,12 @@
 'use strict';
 
 const intersection = (obj1, obj2) => {
-  keys = Object.keys(obj1);
-
-  for (key of keys) {
-    if (key !== '' && obj2[key]) {
-      obj2[key] = obj1[key];
-    } else {
-      delete obj1[key];
-    }
+  const keys = Object.keys(obj1);
+  const res = {};
+  for (const key of keys) {
+    if (obj1[key] === obj2[key]) res[key] = obj1[key];
   }
-
-  return obj1;
+  return res;
 };
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
