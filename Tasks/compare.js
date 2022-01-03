@@ -4,8 +4,11 @@
 const compare = (firstObj, secondObj) => {
   const firstKeys = Object.keys(firstObj);
   const secondKeys = Object.keys(secondObj);
-  if (firstKeys.join("-") !== secondKeys.join("-")) return false;
-  
+
+  if (firstKeys.sort().join("-") !== secondKeys.sort().join("-")) {
+    return false;
+  }
+
   for (const key of firstKeys) {
     if (firstObj[key] !== secondObj[key]) return false;
   }
