@@ -1,15 +1,14 @@
 'use strict';
 
 const plane = arr => {
-  const res=[];
-  for (let i = 0; i < arr.length; i++) {
-    let value = arr[i];
-    if (Array.isArray(value)) {
-      res.push(...plane(value));
+  const res = arr.flatMap( element => {
+    if (Array.isArray(element)) {
+      return plane(element);
     } else {
-      res.push(value);
+      return element;
     }
-  }
+  });
+  
   return res;
 }
 
