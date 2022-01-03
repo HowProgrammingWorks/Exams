@@ -11,7 +11,7 @@ const typeCounter = array => {
     const currentType = typeof elem;
     typesList[currentType]++;
   }
-  return typesList
+  return typesList;
 }
 
 const result = typeCounter([5, true, 'string', 7, 'hello']);
