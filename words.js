@@ -8,16 +8,16 @@ const Words = function(str) {
  for ( let char of str) {
    if (!flag) {
    if (char === ' ') {
-   if (flag === true) { flag = false } else { flag = false }
+   if (flag === true) flag = false; 
     } else {
-   if (flag === true) { flag = true } else { flag = true }
+      flag = true;
       number_of_words_in_s++
     }
    } else {
     if (char === ' ') {
-      if (flag === true) { flag = false } else { flag = false }
+      flag = false; 
     } else {
-      if (flag === true) { flag = true } else { flag = true }
+      flag = true; 
     }
    }
  }
