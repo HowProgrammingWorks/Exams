@@ -7,7 +7,7 @@ const except = (dictionary, ...exceptions) => {
   for (const key of keys) {
     if (!exceptions.includes(key)) cleanDict[key] = dictionary[key];
   }
-  return dictionary;
+  return cleanDict;
 };
 
 const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
