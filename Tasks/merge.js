@@ -8,7 +8,7 @@ merge_two_objects=function merge_two_objects(object_1,object_2){
    for (attribute_name in object_2) {
      object_3[attribute_name] = object_2[attribute_name];
     };
-return object_1, object_2, object_3;
+return object_3;
 };
 
 const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
