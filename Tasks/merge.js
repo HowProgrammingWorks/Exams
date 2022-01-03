@@ -1,3 +1,4 @@
+'use strict';
 // Merge two dictionaries
 
 merge_two_objects = function merge_two_objects(object_1, object_2) {
