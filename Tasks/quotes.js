@@ -19,4 +19,5 @@ const quotes = (string) => {
  return res.join('');
 }
 
-console.log(quotes('Hello "Marcus"! Ave "Marcus"!'))
+const result = quotes('Hello "Marcus"! Ave "Marcus"!');
+console.log(result);
