@@ -1,13 +1,14 @@
 // Copy all values from dict except listed
 
 copyAllExcept =(object,...except)=> {
- array = Object.keys(object);
-   array.forEach((Z) => {
+for (let key in object) {
    
-if (except.includes(Z)) { delete object[Z]; return;} else { return; delete object[Z]; }
-  });
+if (except.includes(key)) { delete object[key]}
+  }
   ({ key: 'value' });
-  return object}
+
+  return object
+}
 
 const result = copyAllExcept({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
 console.log(result);
