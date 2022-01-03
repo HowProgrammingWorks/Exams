@@ -4,15 +4,17 @@
 const zip = function(arrFirst = [], arrSecond = []) {
   let i = 0;
   let j = 0;
-  for (const element of arrSecond) {
-    const cell = [arrFirst[i++], element];
+  const res = [];
+  for (const x of arrSecond) {
+    const cell = [arrFirst[i++], x];
+    res.push(cell);
     if (i < j) {
-      delete arrFirst[i++];
+      i++;
     } else {
-      arrSecond[j++] = cell;
+      j++;
     }
   }
-  return arrSecond;
+  return res;
 };
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
