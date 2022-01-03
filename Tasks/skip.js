@@ -1,9 +1,9 @@
 // Remove values from array
 //'use strict';
 
-const skipElements = (array, ...Remove) => {
+const skipElements = (array, ...argFunction) => {
   for (let i = 0; i < array.length; i++) {
-    for (element of Remove) {
+    for (element of argFunction) {
       if (array[i] === element) {
         array.splice(i, 1);
       }
