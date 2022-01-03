@@ -2,16 +2,16 @@
 'use strict';
 
 function plane(array) {
-  const result=[];
+  const result = [];
   const length = array.length;
-  for(let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     const value = array[i];
     if (Array.isArray(value)) {
       result.push(...plane(value));
     } else {
-        result.push(value);
-      };
-  };
+      result.push(value);
+    }
+  }
   return result;
 }
 
