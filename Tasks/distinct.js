@@ -1,3 +1,4 @@
+'use strict';
 // Deduplicate values in array
 
 const leaveUniqueValues = function(array) {
