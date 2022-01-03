@@ -1,13 +1,13 @@
 // Count types in array
 'use strict'
 
-const typeCounter = s => {
+const typeCounter = array => {
   let typesList = {
     "number": 0,
     "string": 0,
     "boolean": 0,
   }
-  for (i of s) {
+  for (i of array) {
     const t = typeof i
     typesList[t]++
   }
