@@ -7,17 +7,16 @@ const string replace(string str = "", const string substr = "", const string new
   {
     return str;
   }
-  string src = str;
   string res = "";
   do
   {
-    const int index = src.find(substr);
+    const int index = str.find(substr);
     if (index == -1)
     {
-      return res + src;
+      return res + str;
     }
-    const string start = src.substr(0, index);
-    src = src.substr(index + substr.size(), src.size());
+    const string start = str.substr(0, index);
+    str = str.substr(index + substr.size(), str.size());
     res += start + newstr;
   } while (true);
 }
