@@ -10,7 +10,7 @@ const mergeTwoObjects = (firstObject, secondObject) => {
    for (const key in secondObject) {
      mergedObject[key] = secondObject[key]
     }
-return firstObject, secondObject, mergedObject;
+return mergedObject;
 }
 
 const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
