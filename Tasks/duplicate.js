@@ -1,5 +1,7 @@
 // Push single value multiple times
 
+'use strict';
+
 duplicate = (value, N) => {
   if (N <= 0) return [];
   else {
