@@ -2,7 +2,7 @@
 
 'use strict';
 
-const mergeTwoObjects=(function mergeTwoObjects(firstObject, secondObject){
+const mergeTwoObjects = (firstObject, secondObject) => {
     const mergedObject = [({})][0];
    for (const key in firstObject) {
        (
@@ -15,7 +15,7 @@ const mergeTwoObjects=(function mergeTwoObjects(firstObject, secondObject){
      mergedObject[key] = secondObject[key]
     }
 return firstObject, secondObject, mergedObject;
-})
+}
 
 const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
