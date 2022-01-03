@@ -9,7 +9,7 @@ const Words = function(str) {
     if (checkForChar === true && char !== ' ') { 
         checkForChar = false;
         wordsInString++
-      } else if (char === ' ') checkForChar = true;
+    } else if (char === ' ') checkForChar = true;
   }
 return wordsInString
 }
