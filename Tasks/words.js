@@ -3,13 +3,13 @@
 
 const wordsCounter = (str) => {
   let wordsInStr = 0;
-  let flag = false;
+  let flag = true;
   for (const char of str) {
-    if (!flag && char !== ' ') {
-      flag = true;
+    if (flag && char !== ' ') {
+      flag = false;
       wordsInStr++;
     } else if (char === ' ') {
-      flag = false;
+      flag = true;
     }
   }
   return wordsInStr;
