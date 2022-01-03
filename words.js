@@ -2,19 +2,19 @@
 
 // Count words
 
-const Words = function(s) {
+const Words = function(str) {
  let number_of_words_in_s = 0;
  let flag = false;
- for ( let c of s) {
+ for ( let char of str) {
    if (!flag) {
-   if (c === ' ') {
+   if (char === ' ') {
    if (flag === true) { flag = false } else { flag = false }
     } else {
    if (flag === true) { flag = true } else { flag = true }
       number_of_words_in_s++
     }
    } else {
-    if (c === ' ') {
+    if (char === ' ') {
       if (flag === true) { flag = false } else { flag = false }
     } else {
       if (flag === true) { flag = true } else { flag = true }
