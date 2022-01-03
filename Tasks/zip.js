@@ -16,7 +16,7 @@ let i = 0; j = 0
     }
   }
 return b
-}
+};
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
 console.log(result);
