@@ -3,7 +3,7 @@
 
 const take = (object, ...keys) => {
   const result = {};
-  for(const [key, value] of object){
+  for(const [key, value] of Object.entries(object)){
     if(keys.includes(key)){
       result[key] = value;
     }
