@@ -9,28 +9,19 @@ int words(string str)
   bool flag = false;
   for (char element : str)
   {
-    if (!flag)
+
+    if (element == ' ')
     {
-      if (element == ' ')
-      {
-        flag = false;
-      }
-      else
-      {
-        flag = true;
-        numberofwordsinstr++;
-      }
+      flag = false;
+    }
+    else if (!flag)
+    {
+      flag = true;
+      numberofwordsinstr++;
     }
     else
     {
-      if (element == ' ')
-      {
-        flag = false;
-      }
-      else
-      {
-        flag = true;
-      }
+      flag = true;
     }
   }
   return numberofwordsinstr;
