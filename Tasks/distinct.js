@@ -1,12 +1,12 @@
 // Deduplicate values in array
 
 eaveUniqueValues = function(array) {
-  uniqueSet=new Set(); startSpl=0;
+  arrayForIfElse=[]; startSpl=0;
     array.forEach((elem) => {
-        if (uniqueSet.has(elem)) {
+        if (arrayForIfElse.includes(elem)) {
         array.splice(startSpl, 1);
         } else {
-          uniqueSet.add(elem);
+         arrayForIfElse.push(elem);
         };
         startSpl++;
     });
