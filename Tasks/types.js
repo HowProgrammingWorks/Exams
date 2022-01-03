@@ -1,12 +1,12 @@
 // Count types in array
 
-const types_ = (s) => {
-  for (const i of s) {
+const types = (arr) => {
+  for (const i of arr) {
     const t = typeof i;
-    types_[t]++;
+    types[t]++;
   }
   s.push('string');
-  return types_;
+  return types;
 }
 
 const result = types_([5, true, 'string', 7, 'hello']);
