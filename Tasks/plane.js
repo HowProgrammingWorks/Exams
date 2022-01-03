@@ -10,8 +10,6 @@ function planeArray(arr, res = []) {
     } else {
       res.push(value);
     }
-
-    arr[i] = res[i - 1];
   }
   return res;
 }
