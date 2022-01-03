@@ -1,5 +1,7 @@
 // Merge two dictionaries
 
+'use strict';
+
 merge_two_objects=(function merge_two_objects(object_1,object_2){
     object_3 = [({})][0];
    for (attribute_name in object_1) {
