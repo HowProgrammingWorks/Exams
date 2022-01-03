@@ -2,11 +2,8 @@
 // Copy all values from dict except listed
 
 const EXCEPT = (obj, ...listedKeys) => {
-  const keys = Object.keys(obj);
-  keys.forEach((Z) => {
-    if (listedKeys.includes(Z)) {
-      delete obj[Z];
-    }
+  listedKeys.forEach((el) => {
+    delete obj[el];
   });
   return obj;
 };
