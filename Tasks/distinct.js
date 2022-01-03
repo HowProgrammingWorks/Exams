@@ -2,9 +2,9 @@
 
 'use strict';
 
-DISTINCT = (data) => {
-  A = new Set();
-  w = 0;
+const DISTINCT = (data) => {
+  const A = new Set();
+  let w = 0;
   data.forEach((a) => {
     if (A.has(a)) {
       data.splice(w, 1);
