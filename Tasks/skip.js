@@ -1,7 +1,7 @@
 // Remove values from array
 'use strict';
 
-Skip = (T, ...Remove) => {
+skipElements = (T, ...Remove) => {
   x = 0;
   for (C of T) {
     for (X of Remove) {
@@ -14,5 +14,5 @@ Skip = (T, ...Remove) => {
   return T;
 };
 
-const result = Skip([1, 2, 3, 4, 5], 2, 5);
+const result = skipElements([1, 2, 3, 4, 5], 2, 5);
 console.log(result);
