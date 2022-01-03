@@ -5,7 +5,7 @@ const typeCounter = array => {
   let typesList = {};
   for (let elem of array) {
     const currentType = typeof elem;
-    
+    typesList[currentType] === undefined ? typesList[currentType] = 1 : typesList[currentType]++;
   }
   return typesList;
 }
