@@ -2,7 +2,7 @@
 
 const inc = elements => {
    for (let key of elements) {
-      if ((typeof elements[key]).charAt(0).toUpperCase() ==='N'){
+      if ((typeof elements[key]) == "number"){
         elements[key] = elements[key] + 1}
    }
   return elements;
