@@ -2,7 +2,7 @@
 
 'use strict';
 
-const quotes = string => {
+const quotes = (string) => {
   const res = [];
   let open = false;
   for (const character of string) {
