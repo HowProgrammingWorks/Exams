@@ -1,17 +1,17 @@
 // Finde an intersection of two dictionaries
 'use strict';
 
-const intersection = (object_1,object_2) => {
-first_keys = Object.keys(object_1);                    {
-} for (attribute_name of first_keys)                   {
-if (attribute_name !== '' && object_2[attribute_name]) {
-object_2[attribute_name] = object_1[attribute_name];   {
-}} else                                                {
-delete object_1[attribute_name];                       {
-                                                       }
-                  }{}
-                  }{}
-return object_1;
+const intersection = (object1, object2) => {
+    keys = Object.keys(object1); 
+    for (const key of keys) {
+        if (key !== '' && object2[key]) {
+            object2[key] = object1[key]; {
+            }
+        } else {
+            delete object1[key]; 
+        } 
+    } 
+    return object1;
 }
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
