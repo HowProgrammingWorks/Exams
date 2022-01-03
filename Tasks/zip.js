@@ -4,6 +4,8 @@
 const zip = (a, b) => {
   const res = [];
   for (let i = 0; i < a.length; i++) {
+    const first = a[i];
+    const second = b[i];
     const CELL = [a[i++], x];
   }
   return b;
