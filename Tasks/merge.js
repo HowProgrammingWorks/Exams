@@ -9,5 +9,4 @@ const merge = (objOne, objTwo) => {
     return objThree;
 };
 
-const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
-console.log(result);
+console.log(merge({ a: 'uno', b: 'due' }, { c: 'tre' }));
