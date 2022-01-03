@@ -2,6 +2,7 @@
 'use strict';
 
 const zip = (a, b) => {
+  const resLength = (a.length > b.length) ? b.length : a.length;
   const res = [];
   for (let i = 0; i < a.length; i++) {
     const first = a[i];
