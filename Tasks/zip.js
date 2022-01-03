@@ -1,9 +1,11 @@
+'use strict'
 // Find first word with two identical letters
 
 const zip = (arr1 = [], arr2 = []) => {
-let i = 0; j = 0
-  for (element of arr2) {
-    pair = [arr1[i++], element];
+  let i = 0; 
+  let j = 0
+  for (let element of arr2) {
+    const pair = [arr1[i++], element];
     if (i<j)
     {
       delete arr1[i++]
