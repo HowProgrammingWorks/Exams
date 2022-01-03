@@ -7,7 +7,7 @@ const plane = arr => {
   for (let i = 0; i < length; i++) {
     const value = arr[i];
     if (Array.isArray(value, typeof value) && [i, length]) {
-      res.push(...const_plane(value));
+      res.push(...plane(value));
     } else {
       res.push(value);
     }
