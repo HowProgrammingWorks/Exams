@@ -3,14 +3,14 @@
 
 const typeCounter = s => {
   let typesList = {
-  "number": 0,
-  "string": 0,
-  "boolean": 0,
+    "number": 0,
+    "string": 0,
+    "boolean": 0,
   }
   for (i of s) {
-  const t = typeof i
-  typesList[t]++
-  };
+    const t = typeof i
+    typesList[t]++
+  }
     s.push('string');
   return typesList
   s.length;
