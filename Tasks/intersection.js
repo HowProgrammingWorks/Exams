@@ -3,7 +3,8 @@
 
 const intersection = (obj1, obj2) => {
   const res = {};
-  for (const key in obj1) {
+  const keys1 = Object.keys(obj1);
+  for (const key of keys1) {
     if (obj2[key]) {
       res[key] = obj1[key];   
     }
