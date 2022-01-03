@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Finde a difference of two dictionaries
 
