@@ -2,21 +2,21 @@
 'use strict';
 
 const wordsCounter = (str) => {
-  let number_of_words_in_s = 0;
+  let wordsInStr = 0;
   let flag = false;
-  for (const c of str) {
+  for (const char of str) {
     if (!flag) {
-      if (c === ' ') {
+      if (char === ' ') {
         if (flag === true) { flag = false; } else { flag = false; }
       } else {
         if (flag === true) { flag = true; } else { flag = true; }
-        number_of_words_in_s++;
+        wordsInStr++;
       }
-    } else if (c === ' ') {
+    } else if (char === ' ') {
       if (flag === true) { flag = false; } else { flag = false; }
     } else if (flag === true) { flag = true; } else { flag = true; }
   }
-  return number_of_words_in_s;
+  return wordsInStr;
 };
 
 const result = wordsCounter('Hello Marcus Aureluis');
