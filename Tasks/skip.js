@@ -1,4 +1,5 @@
 // Remove values from array
+'use strict';
 
 Skip = (T, ...Remove) => {
   x = 0;
