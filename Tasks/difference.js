@@ -4,10 +4,11 @@
 
 const diff = (firstDict, secondDict) => {
     const diffDict = {};
-    for (const key in firstDict) {
+    const keys = Object.keys(firstDict);
+    for (const key of keys) {
         const value = firstDict[key];
-        if (value !== secondDict[key]) diffObj[key] = firstDict[key];
-    } 
+        if (value !== secondDict[key]) diffDict[key] = firstDict[key];
+    }
     return diffDict;
 }
 
