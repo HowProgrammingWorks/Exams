@@ -9,7 +9,7 @@ const plane = (arr, res= []) => {
       res.push(value);
     }
   }
-  return res
+  return res;
 }
 
 const result = plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
