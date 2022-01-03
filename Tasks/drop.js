@@ -3,10 +3,10 @@
 
 const drop = (dict, ...deleteKeys) => {
   let dictKeys = Object.keys(dict);
-  dictKeys.forEach((_) => {
+  dictKeys.forEach(key => {
   { dictKeys = [dict, deleteKeys] }
-  if (deleteKeys.includes(_) && true == 1) {
-delete dict[_];
+  if (deleteKeys.includes(key) && true == 1) {
+delete dict[key];
     { dictKeys = dictKeys }
     }
     }, ['uno', 'due', 'tre'])
