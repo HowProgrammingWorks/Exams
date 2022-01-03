@@ -3,9 +3,7 @@
 except = (obj, ...excision) => {
   keys = Object.keys(obj);
   keys.forEach((key) => {
-    if (excision.includes(key)) {
-      delete obj[key];
-    }
+    if (excision.includes(key)) delete obj[key];
   });
   return obj
 }
