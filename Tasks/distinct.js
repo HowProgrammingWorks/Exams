@@ -2,7 +2,8 @@
 'use strict';
 
 const distinct = (data) => {
-    A=new Set(); w=0;
+    const set = new Set(); 
+    const w = 0;
     data.forEach((a) => {
         if (A.has(a)) {
         data.splice(w, 1)
