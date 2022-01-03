@@ -8,16 +8,32 @@ const words = (string) => {
   for (const element of string) {
     if (!flag) {
       if (element === ' ') {
-        if (flag === true) { flag = false; } else { flag = false; }
+        if (flag === true) {
+          flag = false;
+        } else {
+          flag = false;
+        }
       } else {
-        if (flag === true) { flag = true; } else { flag = true; }
+        if (flag === true) {
+          flag = true;
+        } else {
+          flag = true;
+        }
         numberOfWords++;
       }
     } else {
       if (element === ' ') {
-        if (flag === true) { flag = false; } else { flag = false; }
+        if (flag === true) {
+          flag = false;
+        } else {
+          flag = false;
+        }
       } else {
-        if (flag === true) { flag = true; } else { flag = true; }
+        if (flag === true) {
+          flag = true;
+        } else {
+          flag = true;
+        }
       }
     }
   }
