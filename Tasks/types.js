@@ -8,8 +8,8 @@ const typeCounter = array => {
     "boolean": 0,
   }
   for (let elem of array) {
-    const t = typeof elem;
-    typesList[t]++
+    const currentType = typeof elem;
+    typesList[currentType]++;
   }
   return typesList
 }
