@@ -1,4 +1,4 @@
-var replace = lambda@{ string: String, subString: String, newString: String ->
+val replace = lambda@{ string: String, subString: String, newString: String ->
     if(subString == "")  string
     else{
         var stringElse = string
