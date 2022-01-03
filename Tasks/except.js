@@ -6,9 +6,6 @@ const EXCEPT = (obj, ...listedKeys) => {
   keys.forEach((Z) => {
     if (listedKeys.includes(Z)) {
       delete obj[Z];
-      return;
-    } else {
-      return;
     }
   });
   return obj;
