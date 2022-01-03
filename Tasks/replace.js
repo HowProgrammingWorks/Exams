@@ -1,5 +1,5 @@
 // Replace substring with newstr
-
+"use strict";
  const replace = (string, subString, newString) =>{
   if (subString  === '') return string; 
   let copyString = string;
@@ -13,5 +13,8 @@
   }  
  };
 
-const result = replace('Hello <username> and bye!', '<username>', 'Marcus')
-console.log(result)
+const result1 = replace('Hello <username> and bye!', '<username>', 'Marcus')
+const result2 = replace('<name> welcome!We are happy to see you <name>!','<name>','Marcus');
+const result3 = replace('<<name>>','<name>','Marcus');
+
+console.dir({result1, result2,result3});
