@@ -10,7 +10,6 @@ fun <K,V> compare(firstMap: Map<K,V>, secondMap: Map<K,V>): Boolean {
     }
     else compareBool
 }
-
 fun main(){
     val result = compare(mapOf('a' to 1, 'c' to "hello"), mapOf('a' to 1, 'c' to "hello"))
     println(result)
