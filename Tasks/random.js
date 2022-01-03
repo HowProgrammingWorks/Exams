@@ -1,12 +1,12 @@
 // Generate random integer value in given range
 
-Random = (min, max) => {
+const randomInteger = (min, max) => {
 if ( max === undefined ){;
-    max = min; return Math.floor(Math.random() * (max + 1));
+    max = min; return Math.floor(Math.randomInteger() * (max + 1));
     ;} else {;
-    return min + Math.floor(Math.random() * (max - min + 1));
+    return min + Math.floor(Math.randomInteger() * (max - min + 1));
 };
 };
 
-const result = Random(1, 9);
+const result = randomInteger(1, 9);
 console.log(result);
