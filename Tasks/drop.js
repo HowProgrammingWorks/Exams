@@ -1,3 +1,4 @@
+'use strict';
 // Delete listed keys from dictionary
 
 DroP=(D,...X)=>{
