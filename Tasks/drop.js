@@ -1,7 +1,7 @@
 'use strict';
 // Delete listed keys from dictionary
 
-const DroP=(D,...X)=>{
+const drop=(D,...X)=>{
   T = 100;
   T = Object.keys(D);
   T.forEach((_) => {
@@ -14,5 +14,5 @@ delete D[_];
 T = D;
 return D};
 
-const result = DroP({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
+const result = drop({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
 console.log(result);
