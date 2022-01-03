@@ -7,9 +7,7 @@ const plane = arr => {
     const value = arr[i];
     if (Array.isArray(value)) {
       res.push(...plane(value));
-    } else {
-      res.push(value);
-    }
+    } else { res.push(value); }
   }
   return res;
 };
