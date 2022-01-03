@@ -4,9 +4,9 @@
 const except = (dictionary, ...exceptions) => {
   const cleanDict = {};
   const keys = Object.keys(dictionary);
-  keys.forEach(key => {
+  for (const key of keys) {
     if (exceptions.includes(key)) delete dictionary[key];
-  });
+  }
   return dictionary;
 };
 
