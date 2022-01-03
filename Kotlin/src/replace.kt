@@ -1,4 +1,4 @@
- fun replace( str: String, substr: String, newstr: String){
+ fun replace( string: String, subString: String, newString: String){
      if(substr == "") str
       else{
          var src = str
