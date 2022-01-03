@@ -10,11 +10,9 @@ const GetValueBetween = (string, prefix, suffix) => {
     let result = string.substring(k);
     if (suffix) {
       const suffixIndex = result.indexOf(suffix);
-      if (suffixIndex === -1) {
+      if (suffixIndex === -1)
         return "";
-      } else {
-        result = result.substring(0, suffixIndex);
-      }
+      result = result.substring(0, suffixIndex);
     }
   }
   return result;
