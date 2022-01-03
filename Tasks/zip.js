@@ -2,7 +2,7 @@
 
 "use strict";
 
-const zip = function (array1 = [], array2 = []) {
+const zip = (array1 = [], array2 = []) => {
   let i = 0;
   let j = 0;
   for (const item of array2) {
