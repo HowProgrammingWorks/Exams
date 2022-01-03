@@ -1,14 +1,14 @@
-// // Sum all numbers from array
+// Sum all numbers from array
 'use strict'
-function sum (s) {
- let summ = 0
- for (let i of s) {
- let t = typeof i;
-  if (t === 'number'){
-    summ  += i 
- }  
- };
- return summ
+function sumNumbers (array) {
+  let result = 0
+  for (let value of array) {
+  let type = typeof value;
+  if (type === 'number'){
+    result  += value 
+  }
+  };
+  return result
 }
-const result = sum([5, true, 'string', 7, 'hello']);
+const result = sumNumbers([5, true, 'string', 7, 'hello']);
 console.log(result);
