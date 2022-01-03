@@ -3,9 +3,7 @@
 
 const merge = (obj1,obj2) => {
    const merged = {...obj1};
-   for (const name in obj2) {
-        merged[name] = obj2[name]
-  }
+   merged = {...obj2};
 return merged;
 };
 
