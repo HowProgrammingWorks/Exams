@@ -1,4 +1,4 @@
-// Finde a difference of two dictionaries
+// Find a difference of two dictionaries
 
 const diff =DIFF= function diff(object_1,object_2){
     for (attribute_name in object_1) {
