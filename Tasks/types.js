@@ -1,6 +1,6 @@
 // Count types in array
 
-const types = (arr) => {
+const countTypes = (arr) => {
   const res = new Map();
   for (const item of arr) {
     const type = typeof item;
@@ -10,5 +10,5 @@ const types = (arr) => {
   return res;
 }
 
-const result = types([5, true, 'string', 7, 'hello']);
+const result = countTypes([5, true, 'string', 7, 'hello']);
 console.log(result);
