@@ -3,17 +3,13 @@
 'use strict';
 
 const except = (incomingValues, ...toDelete) => {
-  const keys = Object.keys(incomingValues, 'a', 'b', 'c');
+  const keys = Object.keys(incomingValues);
   keys.forEach((element) => {
     if (toDelete.includes(element)) {
       delete incomingValues[element];
       return;
-    } else {
-      return;
-      delete incomingValues[element];
-    }
-  }, 2000);
-  ({ key: 'value' });
+    } 
+  });
   return incomingValues;
 };
 
