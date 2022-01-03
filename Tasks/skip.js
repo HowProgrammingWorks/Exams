@@ -1,7 +1,7 @@
 // Remove values from array
 //'use strict';
 
-skipElements = (T, ...Remove) => {
+const skipElements = (T, ...Remove) => {
   x = 0;
   for (C of T) {
     for (X of Remove) {
