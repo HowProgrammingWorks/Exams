@@ -4,11 +4,12 @@
 const distinct = (data) => {
   const set = new Set(); 
   for (let i = 0; i < data.length; i++) {
-    if (set.has(data[i])) {
+    let value = data[i];
+    if (set.has(value)) {
       data.splice(i, 1);
       i--;
     } else {
-      set.add(data[i]);
+      set.add(value);
     };
   };
   return data;
