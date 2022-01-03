@@ -2,12 +2,13 @@
 "use strict";
 
 const take = (object, ...keys) => {
-  for (const key in object) {
-    if (!keys.includes(key)) {
-      delete object[key];
+  const result = {};
+  for(const [key, value] of object){
+    if(keys.includes(key)){
+      result[key] = value;
     }
   }
-  return object;
+  return result;
 };
 
 const result = take({ a: "uno", b: "due", c: "tre" }, "b", "c");
