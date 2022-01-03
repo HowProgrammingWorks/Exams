@@ -1,4 +1,5 @@
 // Find first word with two identical letters
+'use strict';
 
 const zip = function ( a = [], b = [])
 {
