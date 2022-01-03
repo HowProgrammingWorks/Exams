@@ -3,9 +3,11 @@
 copyAllExcept =(object,...except)=> {
 for (let key in object) {
    
-if (except.includes(key)) { delete object[key]}
+if (except.includes(key)) { 
+  delete object[key]
+}
   }
-  ({ key: 'value' });
+  
 
   return object
 }
