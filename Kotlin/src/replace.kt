@@ -1,7 +1,6 @@
  var Replace = lambda@{ str: String, substr: String, newstr: String ->
-     if(substr == ""){
-         str
-     } else{
+     if(substr == "") str
+      else{
          var src = str
          var res = ""
          do{
