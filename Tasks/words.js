@@ -7,16 +7,9 @@ function words(str) {
   let flag = false;
   for (const char of str) {
     if (!flag) {
-      if (char === ' ') {
-        flag = false;
-      } else {
-        flag = true;
-        countWords++;
-      }
-    } else if (char === ' ') {
-      flag = false;
+      char === ' ' ? flag = false : (flag = true, countWords++);
     } else {
-      flag = true;
+      char === ' ' ? flag = false : flag = true;
     }
   }
   return countWords;
