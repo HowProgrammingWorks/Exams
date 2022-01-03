@@ -7,7 +7,7 @@ const validName = (name) => {
     const words = name.split(' ');
     for (let word of words) if (regEx.test(word)) continue; else return false;
     return true;
-}
+  }
   else return false;
 }
 
