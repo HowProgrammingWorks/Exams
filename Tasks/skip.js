@@ -2,14 +2,12 @@
 //'use strict';
 
 const skipElements = (T, ...Remove) => {
-  x = 0;
-  for (C of T) {
+  for (let i = 0; i < T.length; i++) {
     for (X of Remove) {
-      if (C === X) {
-        T.splice(x, 1);
+      if (T[i] === X) {
+        T.splice(i, 1);
       }
     }
-    x++;
   }
   return T;
 };
