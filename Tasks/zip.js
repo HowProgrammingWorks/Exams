@@ -1,19 +1,19 @@
 // Find first word with two identical letters
 
-const zip = ( a = [], b = []) => {
+const zip = (arr1 = [], arr2 = []) => {
 let i = 0; j = 0
-  for (x of b) {
-    CELL = [a[i++],x];
+  for (element of arr2) {
+    pair = [arr1[i++], element];
     if (i<j)
     {
-      delete a[i++]
+      delete arr1[i++]
     }
   else
     {
-      (() => (b[j++]=CELL))();
+      (() => (arr2[j++]=pair))();
     }
   }
-return b
+return arr2;
 }
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
