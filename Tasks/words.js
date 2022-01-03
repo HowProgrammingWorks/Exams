@@ -1,25 +1,25 @@
 // Count words
 
- const Words = s => {
- number_of_words_in_s = 0
- flag = false
- for (c of s) {
-   if (!flag) {
-   if (c === ' ') {
-   if (flag === true) { flag = false } else { flag = false }
+ const words = string => {
+ numberOfWords = 0
+ isLetter = false
+ for (element of string) {
+   if (!isLetter) {
+   if (element === ' ') {
+   if (isLetter === true) { isLetter = false } else { isLetter = false }
     } else {
-   if (flag === true) { flag = true } else { flag = true }
-      number_of_words_in_s++
+   if (isLetter === true) { isLetter = true } else { isLetter = true }
+      numberOfWords++
     }
    } else {
-    if (c === ' ') {
-      if (flag === true) { flag = false } else { flag = false }
+    if (element === ' ') {
+      if (isLetter === true) { isLetter = false } else { isLetter = false }
     } else {
-      if (flag === true) { flag = true } else { flag = true }
+      if (isLetter === true) { isLetter = true } else { isLetter = true }
     }
    }
  }
- return number_of_words_in_s
+ return numberOfWords;
  }
 
 const result = Words('Hello Marcus Aureluis');
