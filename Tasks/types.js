@@ -2,11 +2,7 @@
 'use strict'
 
 const typeCounter = array => {
-  let typesList = {
-    "number": 0,
-    "string": 0,
-    "boolean": 0,
-  }
+  let typesList = {};
   for (let elem of array) {
     const currentType = typeof elem;
     typesList[currentType]++;
