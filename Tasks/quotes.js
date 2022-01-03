@@ -1,9 +1,9 @@
 // Change douple quotation to open or close quotation
 
 const quotes = (string) => {
-  res = [];
-  open = false;
-  for (character of string) {
+  let res = [];
+  let open = false;
+  for (let character of string) {
     if (character === '"') {
         if (!open) {
             res.push('«');
