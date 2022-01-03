@@ -11,8 +11,8 @@ const_plane = function(arr, res= []) {
     } else {
       arr[i] = res[j - 1]
       res.push(value);
-    };
-  };
+    }
+  }
   return res
 }
 
