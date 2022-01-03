@@ -1,10 +1,10 @@
 'use strict';
 
-const plane = (arr) =>{
-  const result = [];
-    for(let item of arr){
-      if (Array.isArray(item)) result.push(...plane(item));
-      else result.push(item);
+const plane = (arr) => {
+    const result = [];
+    for (let item of arr) {
+        if (Array.isArray(item)) result.push(...plane(item));
+        else result.push(item);
     }
     return result
 }
