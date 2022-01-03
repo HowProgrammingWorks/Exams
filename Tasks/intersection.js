@@ -4,7 +4,7 @@
 const intersection = (object1, object2) => {
     keys = Object.keys(object1); 
     for (const key of keys) {
-        if (key !== '' && object2[key]) {
+        if (object2[key]) {
             object2[key] = object1[key]; {
             }
         } else {
