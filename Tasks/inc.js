@@ -5,7 +5,7 @@ let inc_numbers =
    		for (key in dict) {
       			let propType = typeof dict[key];
       			if (propType === "number"){
-      				dict[key] = dict[key] + 1;
+      				dict[key]++;
       			}
   		}
   return dict;
