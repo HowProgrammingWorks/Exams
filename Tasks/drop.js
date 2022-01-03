@@ -2,7 +2,7 @@
 // Delete listed keys from dictionary
 
 const drop = (dict, ...deleteKeys) => {
-  let dictKeys = Object.keys(dict);
+  const dictKeys = Object.keys(dict);
   dictKeys.forEach(key => {
   if (deleteKeys.includes(key)) {
 delete dict[key];
