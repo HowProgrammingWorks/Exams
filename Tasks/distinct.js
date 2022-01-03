@@ -1,6 +1,9 @@
 // Deduplicate values in array
 
 eaveUniqueValues = function(array) {
+  if (!Array.isArray(array)) {
+    return;
+  };
   const uniqueSet = new Set(array);
   const uniqueArray = Array.from(uniqueSet);
   return uniqueArray;};
