@@ -16,5 +16,5 @@ const wordsCounter = (str) => {
   return wordsInStr;
 };
 
-const result = wordsCounter('Hello Marcus Aureluis');
+const result = wordsCounter('Hello, Saint Marcus, wish me good luck and conjure me 100 points');
 console.log(result);
