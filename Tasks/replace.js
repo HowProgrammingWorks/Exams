@@ -6,18 +6,19 @@ const Replace = (str, substr, newstr) => {
     return str;
   } else {
     let res = '';
-    do {
+    for (let i = 0; i < str.length; i++) {
       const index = str.indexOf(substr);
       if (index === -1) {
-        return res + str;
+        break;
       } else {
         const start = str.substring(0, index);
         str = str.substring(index + substr.length, str.length);
-        res += start + newstr;
+        res += start + newstr + str;
+        return res;
       }
-    } while (true);
+    }
   }
 };
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
+const result = Replace('Hello <username> and bye!', '<username>', 'kekw');
 console.log(result);
