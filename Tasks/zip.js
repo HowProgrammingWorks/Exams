@@ -2,17 +2,10 @@
 // Find first word with two identical letters
 
 const zip = function(arrFirst = [], arrSecond = []) {
-  let i = 0;
-  let j = 0;
   const res = [];
-  for (const x of arrSecond) {
-    const cell = [arrFirst[i++], x];
+  for (let i = 0; i < arrFirst.length && i < arrSecond.length; i++) {
+    const cell = [arrFirst[i], arrSecond[i]];
     res.push(cell);
-    if (i < j) {
-      i++;
-    } else {
-      j++;
-    }
   }
   return res;
 };
