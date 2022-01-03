@@ -3,7 +3,7 @@
 'use strict';
 
 const incNumbers = (dictionary) => {
-  for (key in dictionary) {
+  for (const key in dictionary) {
     if ((typeof dictionary[key]).charAt(0).toUpperCase() === 'N') {
       dictionary[key] = dictionary[key] + 1;
     }
