@@ -1,6 +1,6 @@
 'use strict';
 
-const words = function(str) {
+const words = str => {
   let wordsNumber = 0;
   let isWord = false;
   for (let element of str) {
