@@ -6,8 +6,7 @@ const wordsCounter = (str) => {
   let flag = false;
   for (const char of str) {
     if (!flag) {
-      if (char === ' ') {
-      } else {
+      if (char !== ' ') {
         flag = true;
         wordsInStr++;
       }
