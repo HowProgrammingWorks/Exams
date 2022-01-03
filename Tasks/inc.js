@@ -7,7 +7,7 @@ const incNumbers = (dictionary) => {
       res[key]++;
     }
   }
-  return dictionary;
+  return res;
 };
 
 const result = incNumbers({ a: 1, b: 2, c: 'hello', d: false });
