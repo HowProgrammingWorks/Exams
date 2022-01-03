@@ -2,18 +2,18 @@
 
 // Remove values from array
 
-const Skip = (T, ...Remove) => {
-  let x = 0;
-  for (const C of T) {
-    for (const X of Remove) {
-      if (C === X) {
-        T.splice(x, 1);
+const skip = (array, ...charsToRemove) => {
+  let removedChar = 0;
+  for (const selectedChars of array) {
+    for (const selectedCharsToRemove of charsToRemove) {
+      if (selectedChars === selectedCharsToRemove) {
+        array.splice(removedChar, 1);
       }
     }
-    x++;
+    removedChar++;
   }
-  return T;
+  return array;
 };
 
-const result = Skip([1, 2, 3, 4, 5], 2, 5);
+const result = skip([1, 2, 3, 4, 5], 2, 5);
 console.log(result);
