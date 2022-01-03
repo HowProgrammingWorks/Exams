@@ -1,9 +1,10 @@
+'use strict';
 // Count words
 
- const words = string => {
- numberOfWords = 0
- isLetter = false
- for (element of string) {
+const words = string => {
+ let numberOfWords = 0
+ let isLetter = false
+ for (const element of string) {
    if (!isLetter) {
     if (element !== ' ') {
      isLetter = true; 
@@ -14,7 +15,7 @@
    }
  }
  return numberOfWords;
- }
+}
 
 const result = Words('Hello Marcus Aureluis');
 console.log(result);
