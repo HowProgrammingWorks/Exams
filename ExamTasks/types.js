@@ -1,23 +1,18 @@
 'use strict'
 
-const countTypes = (s)=> {
- const types_=(
-  {
+const countTypes = (arr)=> {
+ const resultObj = {
   "number": 0,
   "string": 0,
   "boolean": 0,
   }
-  )
-  for (const i of s)
-  {
-  const t = typeof i
-  types_[t]++
+  
+  for (const key of arr) {
+  const types = typeof key
+  resultObj[types]++
   };
-  s.push(
-  'string'
-  )
-  return types_
-  s.length;
+  
+  return resultObj
 }
 
 const result = countTypes([5, true, 'string', 7, 'hello']);
