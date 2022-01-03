@@ -5,11 +5,6 @@ const zip = (a, b) => {
   const res = [];
   for (let i = 0; i < a.length; i++) {
     const CELL = [a[i++], x];
-    if (i < j) {
-      delete a[i++];
-    } else {
-      b[j++] = CELL;
-    }
   }
   return b;
 };
