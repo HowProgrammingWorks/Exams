@@ -12,7 +12,7 @@ const zip = (arr1 = [], arr2 = []) => {
     }
   else
     {
-      (() => (arr2[j++]=pair))();
+      arr2[j++]=pair;
     }
   }
 return arr2;
