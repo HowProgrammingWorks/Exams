@@ -1,7 +1,7 @@
 // Reverse dict, exchange key and value
 'use strict';
 
-const invertArray = array => {
+const invertArray = (array) => {
     const invertedArray = Object.keys(array);
     for (const index of invertedArray) invertedArray[index] = array.pop();
     return invertedArray;
