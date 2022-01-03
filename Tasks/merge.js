@@ -2,8 +2,7 @@
 'use strict'
 
 const merge = (obj1,obj2) => {
-   const merged = {...obj1};
-   merged = {...obj2};
+   const merged = {...obj1, ...obj2};
 return merged;
 };
 
