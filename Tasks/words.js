@@ -15,7 +15,7 @@ const words = (string) => {
     }
   }
   return numberOfWords;
-}
+};
 
 const str = 'Hello Marcus Aureluis';
 const result = words(str);
