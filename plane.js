@@ -3,14 +3,14 @@
 // Make nested array plane
 
 const plane = function(arr, res = []) {
-  for(let i = 0, length = arr.length; i < length; i++){
+  for(let i = 0; i < arr.length; i++){
     let value = arr[i];
     if (Array.isArray(value)) {
-    res.push(...plane(value));
-    arr[i] = res[i - 1]
+      res.push(...plane(value));
+      arr[i] = res[i - 1];
     } else {
-    arr[i] = res[i - 1]
-    res.push(value);
+      arr[i] = res[i - 1];
+      res.push(value);
     }
   }
   return res
