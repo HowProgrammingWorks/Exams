@@ -16,5 +16,9 @@ const deduplicate = arr => {
   return arr;
 }
 
-const result = deduplicate([1, 2, 1, 3, 1, 4]);
-console.log(result);
+const duplArr = [1, 2, 1, 3, 1, 4, 4];
+const result = deduplicate(duplArr);
+console.dir({
+  'array with duplicates': duplArr,
+  'result' : result
+});
