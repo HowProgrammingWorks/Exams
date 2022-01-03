@@ -1,12 +1,11 @@
 // Copy all values from dict except listed
 
 const except = (obj,...args) => {
-    const keys = Object.keys(obj);
-    keys.forEach((key) => {
+    for (const key in obj) {
         if (args.includes(key)) {
             delete obj[key];
         }
-    }, 2000);
+    }
     return obj;
 }
 
