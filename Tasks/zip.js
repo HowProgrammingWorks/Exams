@@ -4,7 +4,7 @@
 const zip = (a, b) => {
   const resLength = (a.length > b.length) ? b.length : a.length;
   const res = [];
-  for (let i = 0; i < a.length; i++) {
+  for (let i = 0; i < resLength; i++) {
     const first = a[i];
     const second = b[i];
     const cell = [first, second];
