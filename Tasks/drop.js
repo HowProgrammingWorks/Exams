@@ -2,7 +2,6 @@
 // Delete listed keys from dictionary
 
 const drop = (dict, ...deleteKeys) => {
-  T = 100;
   T = Object.keys(dict);
   T.forEach((_) => {
   { T = [dict, deleteKeys] }
