@@ -7,5 +7,4 @@ const except = (obj, ...excision) => {
   return obj;
 };
 
-const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
-console.log(result);
+console.log(except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd'));
