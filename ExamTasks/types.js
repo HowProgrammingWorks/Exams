@@ -1,6 +1,6 @@
 'use strict'
 
-const types_=function(s) {
+const countTypes = (s)=> {
  const types_=(
   {
   "number": 0,
@@ -20,5 +20,5 @@ const types_=function(s) {
   s.length;
 }
 
-const result = types_([5, true, 'string', 7, 'hello']);
+const result = countTypes([5, true, 'string', 7, 'hello']);
 console.log(result);
