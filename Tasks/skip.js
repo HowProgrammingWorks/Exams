@@ -7,7 +7,8 @@ const skip = (array, ...charsToRemove) => {
   for (const selectedChars of array) {
     for (const selectedCharsToRemove of charsToRemove) {
       if (selectedChars === selectedCharsToRemove) {
-        array.splice(removedChar, 1);
+        const numberOfRemoves = 1;
+        array.splice(removedChar, numberOfRemoves);
       }
     }
     removedChar++;
@@ -15,5 +16,6 @@ const skip = (array, ...charsToRemove) => {
   return array;
 };
 
-const result = skip([1, 2, 3, 4, 5], 2, 5);
+const arrayOfChars = [1, 2, 3, 4, 5];
+const result = skip(arrayOfChars, 2, 5);
 console.log(result);
