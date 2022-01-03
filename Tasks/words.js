@@ -5,11 +5,9 @@ const wordsCounter = (str) => {
   let wordsInStr = 0;
   let flag = false;
   for (const char of str) {
-    if (!flag) {
-      if (char !== ' ') {
-        flag = true;
-        wordsInStr++;
-      }
+    if (!flag && char !== ' ') {
+      flag = true;
+      wordsInStr++;
     } else if (char === ' ') {
       flag = false;
     }
