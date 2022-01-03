@@ -10,7 +10,7 @@
                  val start = src.substring(0,_index)
                  src = src.substring(_index+substr.length,src.length)
                  res += start + newstr
-             }}while (true); } ;};
+             } }while (true); } ;};
  fun main(){
      val result = Replace("Hello <username> and bye!", "<username>", "Marcus")
      println(result)
