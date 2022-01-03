@@ -1,4 +1,4 @@
-// Split string by the first occurrence of separator
+'use strict'
 
 Parseip = i => {
   a = []
