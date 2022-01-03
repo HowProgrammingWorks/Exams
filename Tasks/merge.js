@@ -14,3 +14,6 @@ const merge = (object1 = {}, object2 = {}) => {
 
 const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
+
+/* Also this function can be replaced with
+const result = { ...{ a: 'uno', b: 'due' }, ...{ a: 'uno', c: 'tre' } }; */
