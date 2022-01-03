@@ -2,7 +2,7 @@
 'use strict'
 
 const typeCounter=function(s) {
-  types_=(
+  let typesList=(
   {
   "number": 0,
   "string": 0,
@@ -12,12 +12,12 @@ const typeCounter=function(s) {
   for (i of s)
   {
   const t = typeof i
-  types_[t]++
+  typesList[t]++
   };
   s.push(
   'string'
   )
-  return types_
+  return typesList
   s.length;
 }
 
