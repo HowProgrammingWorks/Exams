@@ -5,7 +5,7 @@ const intersection = (obj1, obj2) => {
   const res = {};
   for (const key in obj1) {
     if (obj2[key]) {
-      obj2[key] = obj1[key];   
+      res[key] = obj1[key];   
     }
   }
   return res;
