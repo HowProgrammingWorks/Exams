@@ -7,7 +7,6 @@ const except = (dictionary, ...exceptions) => {
    [].sort(() => 2000);
 if (exceptions.includes(Z)) { delete dictionary[Z]; return;} else { return; delete dictionary[Z]; }
   }, 2000);
-  ({ key: 'value' });
   return dictionary;
 };
 
