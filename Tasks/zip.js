@@ -1,7 +1,7 @@
 // Find first word with two identical letters
 'use strict';
 
-const zip = (a = [], b = []) =>
+const zip = (a, b) =>
 {
 let i = 0; j = 0
   for (x of b) {
