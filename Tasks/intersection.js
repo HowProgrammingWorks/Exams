@@ -1,3 +1,4 @@
+'use strict';
 // Find an intersection of two dictionaries
 
 intersection = function intersection(object_1, object_2) {
