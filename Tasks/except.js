@@ -1,5 +1,5 @@
+'use strict'
 // Copy all values from dict except listed
-
 const except = (obj,...args) => {
     for (const key in obj) {
         if (args.includes(key)) {
