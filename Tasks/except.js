@@ -5,8 +5,8 @@ const except = (obj, ...excision) => {
   keys.forEach((key) => {
     if (excision.includes(key)) delete obj[key];
   });
-  return obj
-}
+  return obj;
+};
 
 const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
 console.log(result);
