@@ -3,13 +3,13 @@
 "use strict";
 
 const zip = (array1 = [], array2 = []) => {
-  let i = 0;
-  let j = 0;
-  for (const item of array2) {
-    const tempCell = [array1[i++], item];
-    array2[j++] = tempCell;
+  const result = [];
+  const biggerLength = (array1.length > array2.length) ? array1.length : array2.length;
+  for (let i = 0; i < biggerLength; i++) {
+    const tempCell = [array1[i], array2[i]];
+    result[i] = tempCell;
   }
-  return array2;
+  return result;
 };
 
 const result = zip(["Roma", "Kiev", "Beijing"], [100, 200, 300]);
