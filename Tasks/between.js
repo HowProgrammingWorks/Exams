@@ -8,8 +8,7 @@ const GetValueBetween = (string, prefix, suffix) => {
   if (prefixIndex === -1 || (suffix && suffixIndex === -1))
     return "";
   const excludedPrefixIndex = prefixIndex + prefix.length;
-  result = string.substring(excludedPrefixIndex);
-  result = result.substring(0, suffixIndex);
+  result = string.substring(excludedPrefixIndex, suffixIndex);
   return result;
 };
 
