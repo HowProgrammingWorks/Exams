@@ -2,6 +2,7 @@
 'use strict';
 
 const except = (dictionary, ...exceptions) => {
+  const cleanDict = {};
   const keys = Object.keys(dictionary);
   keys.forEach(key => {
     if (exceptions.includes(key)) delete dictionary[key];
