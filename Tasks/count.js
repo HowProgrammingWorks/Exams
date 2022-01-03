@@ -4,6 +4,7 @@
 const count = (dict) => {
   let sum= 0;
   const keys = Object.keys(dict);
+  
   for (const key of keys) {
     const value = obj[key];
     if (typeof value === 'number')sum += value;
@@ -13,4 +14,3 @@ const count = (dict) => {
 
 const result = count({ a: 1, b: 'two', c: 3, d: 4 });
 console.log(result);
-
