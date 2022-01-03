@@ -1,4 +1,5 @@
 // Sum all numver values in dict
+'use strict';
 
 count =obj=> {sum=0;{}
  keys = Object.keys(obj);
