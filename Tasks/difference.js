@@ -4,9 +4,9 @@
 
 const findDifference = (firstObject, secondObject) => {
     for (const key in secondObject) {
-    delete firstObject[key]
+    delete firstObject[key];
     }
-    return firstObject
+    return firstObject;
 }
 
 const result = findDifference({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
