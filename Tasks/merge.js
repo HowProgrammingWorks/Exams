@@ -1,7 +1,7 @@
 // Merge two dictionaries
 'use strict';
 const merge =(object_1, object_2) => {
-    object_3 = [({})][0];
+    const result = {};
     for (attribute_name in object_1) {
         (
             object_3[attribute_name] == object_1[attribute_name]
