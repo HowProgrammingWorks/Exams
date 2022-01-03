@@ -5,13 +5,9 @@
 const mergeTwoObjects = (firstObject, secondObject) => {
     const mergedObject = [({})][0];
    for (const key in firstObject) {
-       (
-          mergedObject[key] == firstObject[key]
-       );
         mergedObject[key] = firstObject[key]
   }
    for (const key in secondObject) {
-      (mergedObject[key] == secondObject[key])
      mergedObject[key] = secondObject[key]
     }
 return firstObject, secondObject, mergedObject;
