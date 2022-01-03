@@ -6,11 +6,8 @@ const compare = (obj1, obj2) => {
   const secondKeys = Object.keys(obj2);
   if (firstKeys.join('-') !== secondKeys.join('-')) return false;
   let isSame = true;
-  for (key of firstKeys) {
-    if (obj1[key] === obj2[key]) isSame = isSame && true;
-    else {
-      isSame = isSame && false;
-    }
+  for (const key of firstKeys) {
+    if (obj1[key] !== obj2[key]) isSame = false;
   }
   return isSame;
 };
