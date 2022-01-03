@@ -10,7 +10,9 @@ const compare = (firstObj, secondObj) => {
   }
 
   for (const key of firstKeys) {
-    if (firstObj[key] !== secondObj[key]) return false;
+    if (firstObj[key] !== secondObj[key]) {
+      return false;
+    }
   }
 
   return true;
