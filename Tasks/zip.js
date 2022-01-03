@@ -9,7 +9,7 @@ const zip = function(arrFirst = [], arrSecond = []) {
     if (i < j) {
       delete arrFirst[i++];
     } else {
-      (() => (arrSecond[j++] = cell))();
+      arrSecond[j++] = cell;
     }
   }
   return arrSecond;
