@@ -1,42 +1,42 @@
 'use strict';
 
-const words = function(s) {
-  number_of_words_in_s = 0;
-  flag = false;
-  for (c of s) {
-    if (!flag) {
+const words = function(str) {
+  let wordsNumber = 0;
+  let isWord = false;
+  for (let c of str) {
+    if (!isWord) {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+        if (isWord === true) {
+          isWord = false;
         } else { 
-          flag = false; 
+          isWord = false; 
         }
       } else {
-        if (flag === true) { 
-          flag = true; 
+        if (isWord === true) { 
+          isWord = true; 
         } else { 
-          flag = true; 
+          isWord = true; 
         }
-          number_of_words_in_s++;
+        wordsNumber++;
       }
     } else {
       if (c === ' ') {
-        if (flag === true) { 
-          flag = false; 
+        if (isWord === true) { 
+          isWord = false; 
         } else { 
-          flag = false; 
+          isWord = false; 
         }
       } else {
-        if (flag === true) { 
-          flag = true; 
+        if (isWord === true) { 
+          isWord = true; 
         } else { 
-          flag = true; 
+          isWord = true; 
         }
       }
     }
   }
-return number_of_words_in_s;
+return wordsNumber;
 }
 
-const result = Words('Hello Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
