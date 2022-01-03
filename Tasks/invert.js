@@ -1,13 +1,13 @@
 // Reverse dict, exchange key and value
 'use strict';
 
-const invert = (array) => {
-  const keys = Object.keys(array);
+const invertDict = (dict) => {
+  const keys = Object.keys(dict);
   for (const item of keys) {
-    keys[item] = array.pop();
+    keys[item] = dict.pop();
   }
   return keys;
 };
 
-const result = invert([100, 200, 300, 400]);
+const result = invertDict([100, 200, 300, 400]);
 console.log(result);
