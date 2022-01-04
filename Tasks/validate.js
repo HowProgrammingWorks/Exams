@@ -8,9 +8,7 @@ const isValid = (name) => {
     for (const char of name) {
         if (char === ' ') continue;
         const charCode = char.toLowerCase().charCodeAt(0);
-        if (charCode >= 97 && charCode <= 122) {
-
-        } else return false;
+        if (charCode < 97 || charCode > 122) return false;
     }
     return true;
 }
