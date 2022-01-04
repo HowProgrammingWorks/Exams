@@ -2,12 +2,11 @@
 
 const const_plane = function (arr) {
   const res = [];
-  for (let i = 0, length = arr.length; i < length; i++) {
-    let value = arr[i];
-    if (Array.isArray(value, typeof value) && [i, length]) {
-      res.push(...const_plane(value));
+  for (const item of arr) {
+    if (Array.isArray(item)) {
+      res.push(...const_plane(item));
     } else {
-      res.push(value);
+      res.push(item);
     }
   }
   return res
