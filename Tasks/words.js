@@ -3,7 +3,7 @@
 
 const words = (string) => {
  const arrOfWords = string.split(" ");
- let numberOfWords = arrOfWords.length;
+ const numberOfWords = arrOfWords.length;
  return numberOfWords;
 }
 
