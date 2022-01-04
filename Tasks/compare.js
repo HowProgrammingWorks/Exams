@@ -1,18 +1,16 @@
 // Compare two dictionaries
 
-const compareDictionaries = function (first_values,...parameters_LIST) {
+const compareDictionaries = function( obj1,obj2 ) {
+  const obj1Keys = Object.keys(obj1);
+  const obj2Keys = Object.keys(obj2);
 
-  const second_values = parameters_LIST[0]
-  let a = Object.keys(first_values)
-  let b = Object.keys(second_values)
-
-  if (a.join('-') !== b.join('-')) return false;
+  if (obj1Keys.join('-') !== obj2Keys.join('-')) return false;
 
   let e = true;
 
-  for (c of a) {
-    if (first_values[c] === second_values[c]) e = e && true
-    else { e = e && false }
+  for ( const key of obj1Keys ) {
+    if ( obj1[key] === obj2[key] ) e = e && true;
+    else { e = e && false; }
   }
 
   return e;
