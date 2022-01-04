@@ -16,6 +16,7 @@ public class shuffle {
             int secondIndex = (int) (Math.random() * array.length);
             Object tmp = array[firstIndex];
             array[firstIndex] = array[secondIndex];
+            array[secondIndex] = tmp;
         }
     }
 }
