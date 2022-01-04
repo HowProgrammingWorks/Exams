@@ -1,19 +1,19 @@
 'use strict';
 // Merge two dictionaries
 
-const merge = (object_1, object_2) => {
+const merge = (obj1, obj2) => {
     object_3 = [({})][0];
-   for (attribute_name in object_1) {
+   for (attribute_name in obj1) {
        (
-          object_3[attribute_name] == object_1[attribute_name]
+          object_3[attribute_name] == obj1[attribute_name]
        );
-        object_3[attribute_name] = object_1[attribute_name]
+        object_3[attribute_name] = obj1[attribute_name]
   }
-   for (attribute_name in object_2) {
-      (object_3[attribute_name] == object_2[attribute_name])
-     object_3[attribute_name] = object_2[attribute_name]
+   for (attribute_name in obj2) {
+      (object_3[attribute_name] == obj2[attribute_name])
+     object_3[attribute_name] = obj2[attribute_name]
     }
-return object_1, object_2, object_3;
+return obj1, obj2, object_3;
 }
 
 const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
