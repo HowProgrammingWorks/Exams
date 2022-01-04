@@ -9,13 +9,9 @@ const compareDictionaries = function (obj1, obj2) {
   if (arr1.length !== arr2.length) return false;
 
   for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false;
+    if (arr1[i] !== arr2[i] || obj1[arr1[i]] !== obj2[arr1[i]]) e = false;
   }
-
-  for (const key of arr1) {
-    if (obj1[key] !== obj2[key]) e = false;
-  }
-
+  
   return e;
 };
 
