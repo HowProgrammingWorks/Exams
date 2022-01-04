@@ -6,6 +6,10 @@ const compareDictionaries = function( obj1,obj2 ) {
 
   if ( obj1Keys.length !== obj2Keys.length ) return false;
 
+  for ( let i = 0; i < obj1Keys.length; i++ ) {
+    if ( obj1Keys[i] !== obj2Keys[i] ) return false; 
+  }
+
   let e = true;
 
   for ( const key of obj1Keys ) {
