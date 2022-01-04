@@ -5,7 +5,7 @@
 const arrPlain = (arr) => {
   const res = [];
   for(let i = 0; i < arr.length; i++){
-    let value = arr[i];
+    const value = arr[i];
     if (Array.isArray(value)) {
       res.push(...arrPlain(value));
     } else {
