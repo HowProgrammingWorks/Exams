@@ -1,16 +1,16 @@
 // Make nested array plane
 
-const const_plane = function (arr) {
-  const res = [];
-  for (const item of arr) {
+const plane = function (array) {
+  const result = [];
+  for (const item of array) {
     if (Array.isArray(item)) {
-      res.push(...const_plane(item));
+      result.push(...plane(item));
     } else {
-      res.push(item);
+      result.push(item);
     }
   }
-  return res
+  return result
 }
 
-const result = const_plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
+const result = plane([1, [[2]], [3, 4], [5], [6, [7, 8]]]);
 console.log(result);
