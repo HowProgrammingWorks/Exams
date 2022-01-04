@@ -8,7 +8,8 @@ public class random {
     public static int randomProcess(int min, int max) {
         return 0;
     }
+
+    public static int randomProcess(int max) {
+        return 0;
+    }
 }
-
-
-    
