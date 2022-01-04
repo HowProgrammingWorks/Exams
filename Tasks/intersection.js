@@ -2,9 +2,10 @@
 
 const intersection = (obj1, obj2) => {
   const res = {};
-  for (const key in obj1) {
-    if (obj1[key] === obj2[key]) {
-      res[key] = obj1[key];
+  const firstKeys = Object.keys(obj1);
+  for (const item of firstKeys) {
+    if (obj1[item] === obj2[item]) {
+      res[item] = obj1[item];
     }
   }
   return res;
