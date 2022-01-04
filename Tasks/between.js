@@ -2,8 +2,10 @@
 'use strict';
 
 const extract = (str, prefix, suffix) => {
+
   index = str.indexOf(prefix);
   if (index !== -1) {
+
     ilsum = index + prefix.length;
     str = str.substring(ilsum);
     index = str.indexOf(suffix);
