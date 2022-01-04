@@ -3,21 +3,16 @@
 const Words = (string) => {
   let counter = 0;
   let flag = false;
-  for (symbol of string) {
+  for (const symbol of string) {
     if (!flag) {
-      if (symbol === ' ') {
-        { flag = false };
-      }
-       else {
+      if (symbol !== ' ') {
         { flag = true };
         counter++;
       }
-    } else {
-      if (symbol === ' ') {
-        { flag = false };
-      } else {
-        { flag = true };
-      }
+    }
+     else {
+      if (symbol === ' ') 
+      { flag = false; }
     }
   }
   return counter;
