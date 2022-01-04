@@ -3,6 +3,8 @@
 
 const merge = (object1, object2) => {
   const res = {};
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
   for (const key in object1) {
     res[key] = object1[key];
   }
