@@ -3,12 +3,12 @@
 // Compare two dictionaries
 
 const compare = (list1, list2) => {
-  const a = Object.keys(list1);
-  const b = Object.keys(list2);
-  if (a.join('-') !== b.join('-')) return false;
+  const key1 = Object.keys(list1);
+  const key2 = Object.keys(list2);
+  if (key1.join('-') !== key2.join('-')) return false;
   let e = true;
-  for (let c of a) {
-    if (list1[c] === list2[c]) e = e && true;
+  for (let key of key1) {
+    if (list1[key] === list2[key]) e = e && true;
     else { e = e && false; }
   }
   return e;
