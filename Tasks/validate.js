@@ -2,14 +2,15 @@
 'use strict';
 
 const validName = (name) => {
+  const keyCodes = {A: 65, Z: 90, a: 97, z: 122}
   if (typeof name === 'string') {
     const words = name.split(' ');
       for (const word of words) {
       let charCode = word.charCodeAt(0);
-      if (charCode < 65 || charCode > 90) return false;
+      if (charCode < keyCodes.A || charCode > keyCodes.Z) return false;
       for (let index = 1; index < word.length; index++) {
         charCode = word.charCodeAt(index);
-        if (charCode < 97 || charCode > 122) return false;
+        if (charCode < keyCodes.a || charCode > keyCodes.z) return false;
       }
     }
     return true;
