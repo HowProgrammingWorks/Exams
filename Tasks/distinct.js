@@ -2,6 +2,9 @@
 'use strict';
 
 const distinct = data => {
+  if (!Array.isArray(data)) {
+    return 'Data must be an array';
+  }
   const set = new Set(); 
   for (let i = 0; i < data.length; i++) {
     if (set.has(data[i])) {
