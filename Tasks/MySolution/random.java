@@ -7,8 +7,8 @@ public class random {
     }
 
     public static int randomProcess(int min, int max) {
-        int preResult = (int)(Math.floor(Math.random() * (max - min + 1)));
-        return 0;
+        int preResult = (int) (Math.floor(Math.random() * (max - min + 1)));
+        return min + preResult;
     }
 
     public static int randomProcess(int max) {
