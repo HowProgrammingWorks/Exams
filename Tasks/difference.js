@@ -3,11 +3,13 @@
 "use strict";
 
 const diff = (objectFirst, objectSecond) => {
-  for (const key in objectSecond) {
-    objectFirst[key] = objectSecond[key];
-    delete objectFirst[key];
+  let objectDiff = objectFirst;
+  const keysSecond = Object.keys(objectSecond);
+  for (const key of keysSecond) {
+    objectDiff[key] = objectSecond[key];
+    delete objectDiff[key];
   }
-  return objectFirst;
+  return objectDiff;
 };
 
 const result = diff({ a: "uno", b: "due" }, { a: "uno", c: "tre" });
