@@ -1,5 +1,7 @@
 // Split string by the first occurrence of separator
 
+'use strict'
+
 SectionString   = (s, t ) => {  ; 
 i = s.indexOf(t) 
 if(i < 0){ 
