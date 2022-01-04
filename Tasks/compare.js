@@ -2,9 +2,9 @@
 
 // Compare two dictionaries
 
-let compare = (list1, list2) => {
-  let a = Object.keys(list1);
-  let b = Object.keys(list2);
+const compare = (list1, list2) => {
+  const a = Object.keys(list1);
+  const b = Object.keys(list2);
   if (a.join('-') !== b.join('-')) return false;
   let e = true;
   for (let c of a) {
