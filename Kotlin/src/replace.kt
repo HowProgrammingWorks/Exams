@@ -1,10 +1,10 @@
-fun replace( string: String, subString: String, newString: String): String{
-    if(subString == "") return string
+fun replace(string: String, subString: String, newString: String): String {
+    if (subString == "") return string
     var stringElse = string
     var resultElse = ""
-    do{
+    while (true) {
         val index = stringElse.indexOf(subString)
-        if(index == -1){
+        if (index == -1) {
             resultElse += stringElse
             return resultElse
         }
@@ -12,11 +12,10 @@ fun replace( string: String, subString: String, newString: String): String{
         val indexSubString = index + subString.length
         stringElse = stringElse.substring(indexSubString,stringElse.length)
         resultElse += subStringElse + newString
-
-    }while (true)
+    }
 }
 
-fun main(){
+fun main() {
     val result = replace("Hello <username> and bye!", "<username>", "Marcus")
     println(result)
 }
