@@ -6,17 +6,19 @@
  let isNotSpace = false
  for (let char of line) {
    if (!isNotSpace) {
-   if (char === ' ') {
-   if (isNotSpace === true) { isNotSpace = false } else { isNotSpace = false }
-    } else {
-   if (isNotSpace === true) { isNotSpace = true } else { isNotSpace = true }
-   numberOfWordsInLine++
-    }
-   } else {
     if (char === ' ') {
-      if (isNotSpace === true) { isNotSpace = false } else { isNotSpace = false }
+      if (isNotSpace === true) {
+        isNotSpace = false
+      }
+      } else {
+        isNotSpace = true
+        numberOfWordsInLine++
+      }
     } else {
-      if (isNotSpace === true) { isNotSpace = true } else { isNotSpace = true }
+      if (char === ' ') {
+        isNotSpace = false
+    } else {
+      isNotSpace = true
     }
    }
  }
