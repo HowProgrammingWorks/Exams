@@ -1,17 +1,17 @@
 // Split string by the first occurrence of separator
 
-'use strict'
+'use strict';
 
-SectionString   = (s, t ) => {  ; 
-i = s.indexOf(t) 
+const SectionString   = (s, t ) => {
+let i = s.indexOf(t); 
 if(i < 0){ 
-return[s, ''] 
+return[s, ''];
 } 
 else 
 { 
-return[s.slice(0,i),s.slice(i+t.length)] 
+return[s.slice(0,i),s.slice(i+t.length)];
 } 
 } 
 
-const result = SectionString('All you need is JavaScript', 'is')
-console.log(result)
+const result = SectionString('All you need is JavaScript', 'is');
+console.log(result);
