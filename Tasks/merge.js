@@ -6,9 +6,9 @@ const merge = (obj1, obj2) => {
    for (const key in obj1) {
         result[key] = obj1[key]
   }
-   for (const attribute_name in obj2) {
-      (result[attribute_name] == obj2[attribute_name])
-     result[attribute_name] = obj2[attribute_name]
+   for (const key in obj2) {
+      (result[key] == obj2[key])
+     result[key] = obj2[key]
     }
 return obj1, obj2, result;
 }
