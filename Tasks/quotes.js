@@ -2,19 +2,14 @@
 'use strict';
 
 const EMPTY = '';
+const BRACKETS = ['«', '»'];
 
 const quotes = str => {
   let res = [];
-  let isBracketOpen = false;
+  let indexBracket = 0;
   for (let element of str) {
     if (element === '"') {
-      if (!isBracketOpen) {
-        element = '«';
-        isBracketOpen = true;
-      } else {
-        element = '»';
-        isBracketOpen = false;
-      }
+      element = BRACKETS[(indexBracket++) % 2];
     }
     res.push(element);
   }
