@@ -4,8 +4,9 @@
 
 const skip = (array, ...valuesToRemove) => {
   for (const selectedValuesToRemove of valuesToRemove) {
+    const removableValues = array.indexOf(selectedValuesToRemove);
     const numberOfRemoves = 1;
-    array.splice(array.indexOf(selectedValuesToRemove), numberOfRemoves);
+    array.splice(removableValues, numberOfRemoves);
   }
   return array;
 };
