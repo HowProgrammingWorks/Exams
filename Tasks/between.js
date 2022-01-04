@@ -2,20 +2,20 @@
 'use strict';
 
 const extract = (str, prefix, suffix) => {
-  index = str.indexOf(prefix)
+  index = str.indexOf(prefix);
   if (index !== -1) {
-    ilsum = index + prefix.length
-    str = str.substring(ilsum)
-    index = str.indexOf(suffix)
+    ilsum = index + prefix.length;
+    str = str.substring(ilsum);
+    index = str.indexOf(suffix);
 
     if (index !== -1) {
-      str = str.substring(0, index)
-    } else str = "wrong"
+      str = str.substring(0, index);
+    } else str = "wrong";
 
-  } else str = "wrong"
+  } else str = "wrong";
 
-  return str
-}
+  return str;
+};
 
-const result = extract('Hello <username> and bye!', '<', '>')
-console.log(result)
+const result = extract('Hello <username> and bye!', '<', '>');
+console.log(result);
