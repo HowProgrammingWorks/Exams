@@ -1,6 +1,6 @@
 // Make nested array plane
 
-const plane = function(arr) {
+const plane = (arr) => {
   let res = [];
   for(let value of arr) {
     if (Array.isArray(value)) {
