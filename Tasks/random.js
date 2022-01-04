@@ -9,9 +9,9 @@ const generateRandom = (minValue, maxValue) => {
     if (maxValue === undefined && minValue === undefined) {
         return 'Data entered incorrectly.';
     }
-    const random = minValue + Math.floor(Math.random() * (maxValue - minValue + 1));
+    const random = minValue + Math.random() * (maxValue - minValue + 1);
     return Math.floor(random);
 };
 
-const result = random(1, 9);
+const result = generateRandom(1, 9);
 console.log(result);
