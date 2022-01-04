@@ -16,4 +16,4 @@ const isValidate = (name) => {
 };
 
 const result = isValidate('Marcus Aurelius');
-console.log(result, result2, result3, result4, result5);
+console.log(result);
