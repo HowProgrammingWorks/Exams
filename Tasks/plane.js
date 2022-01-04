@@ -2,7 +2,7 @@
 
 const plane = (arr) => {
   let res = [];
-  for(let value of arr) {
+  for (let value of arr) {
     if (Array.isArray(value)) {
       res.push(...plane(value));
     } else {
