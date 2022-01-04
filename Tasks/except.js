@@ -2,6 +2,9 @@
 // Copy all values from dict except listed
 
 const except = (obj, ...listedKeys) => {
+  const result = {};
+  const keys = Object.keys(obj);
+
   listedKeys.map((el) => {
     delete obj[el];
   });
