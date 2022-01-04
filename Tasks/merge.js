@@ -9,7 +9,7 @@ const merge = (obj1, obj2) => {
    for (const key in obj2) {
      result[key] = obj2[key]
     }
-return obj1, obj2, result;
+return result;
 }
 
 const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
