@@ -1,3 +1,5 @@
+'use strict';
+
 // Finde a difference of two dictionaries
 
 const diff = (DIFF = function diff(object_1, object_2) {
