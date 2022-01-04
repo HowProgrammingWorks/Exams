@@ -2,7 +2,7 @@ package Tasks.MySolution;
 
 public class random {
     public static void main(String[] args) {
-        int result = randomProcess(9);
+        int result = randomProcess(1,9);
         System.out.println(result);
     }
 
