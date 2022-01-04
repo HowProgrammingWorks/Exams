@@ -7,7 +7,8 @@ const isValid = (name) => {
     if (!name.includes(' ')) return false;
     for (const char of name) {
         if (char === ' ') continue;
-        if (char.toLowerCase().charCodeAt(0) >= 97 && char.toLowerCase().charCodeAt(0) <= 122) {
+        const charCode = char.toLowerCase().charCodeAt(0);
+        if (charCode >= 97 && charCode <= 122) {
 
         } else return false;
     }
