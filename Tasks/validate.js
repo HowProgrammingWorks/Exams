@@ -1,7 +1,7 @@
 // Validate person name
 'use strict'
 
-const isValidate = (T) => {
+const isValid = (T) => {
 if (!T) return false;
 if (T === '') return false;
 if (typeof T !== 'string') return false;
@@ -15,5 +15,5 @@ if (!T.includes(' ')) return false; {
 };
 };
 
-const result = isValidate('Marcus Aurelius');
+const result = isValid('Marcus Aurelius');
 console.log(result);
