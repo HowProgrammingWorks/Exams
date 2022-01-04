@@ -2,9 +2,7 @@
 'use strict';
 
 const replace = (str, subStr, newStr) => {
-  if (subStr === '') {
-    return str;
-  }
+  if (subStr === '') return str;
   let res = '';
   while (str.indexOf(subStr) !== -1) {
     const startStr = str.substring(0, str.indexOf(subStr));
