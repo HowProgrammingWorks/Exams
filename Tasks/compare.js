@@ -1,3 +1,5 @@
+'use strict';
+
 // Compare two dictionaries
 
 let compare=(
@@ -7,7 +9,7 @@ let compare=(
    let b = Object.keys(second_values)
    if (a.join('-') !== b.join('-')) return false;
    let e = true;
-   for (c of a) {
+   for (let c of a) {
     if (first_values[c] === second_values[c]) e = e && true
    else { e = e && false }
    }
