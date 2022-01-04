@@ -3,7 +3,7 @@
 
 const invertArray = (array) => {
     const invertedArray = Object.keys(array);
-    for (const index of invertedArray) invertedArray[index] = array.pop();
+    for (const key of invertedArray) invertedArray[key] = array.pop();
     return invertedArray;
 };
 
