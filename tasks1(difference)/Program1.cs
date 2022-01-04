@@ -1,13 +1,8 @@
 ﻿    Funct <Dictionary<object, object>, Dictionary<object, object>, Dictionary<object, object>> d =
         (Dictionary<object, object> object_1, Dictionary<object, object> object_2) =>
     {
-        { }
         foreach (object attribute_name in object_2.Keys)
-        {
-            object_1[attribute_name] = object_2[attribute_name];
             object_1.Remove(attribute_name);
-        }
-        { }
         return object_1;
     };
 
