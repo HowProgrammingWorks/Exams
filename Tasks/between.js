@@ -1,14 +1,14 @@
 // Extract substring between prefix and suffix
 'use strict';
 
-const extract = (str, p, s) => {
-  i = str.indexOf(p)
+const extract = (str, prefix, suffix) => {
+  i = str.indexOf(prefix)
   if (i === -1) return ''
   else {
-    k = i + p.length
+    k = i + prefix.length
     str = str.substring(k)
-    if (s) {
-      i = str.indexOf(s)
+    if (suffix) {
+      i = str.indexOf(suffix)
       if (i === -1) {
         return ''
       } else {
