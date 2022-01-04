@@ -7,7 +7,6 @@ const merge = (obj1, obj2) => {
         result[key] = obj1[key]
   }
    for (const key in obj2) {
-      (result[key] == obj2[key])
      result[key] = obj2[key]
     }
 return obj1, obj2, result;
