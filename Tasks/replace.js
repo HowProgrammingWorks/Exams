@@ -8,16 +8,14 @@ const Replace = (str, substr, newstr) => {
   }
   let src = str;
   let res = '';
-  do {
-    const _index = src.indexOf(substr);
-    if (_index === -1) {
-      return res + src;
-    } else {
-      const start = src.substring(0, _index);
-      src = src.substring(_index + substr.length, src.length);
-      res += start + newstr;
-    }
-  } while (true);
+  let index = src.indexOf(substr);
+  while (index !== -1) {
+    const start = src.substring(0, index);
+    src = src.substring(index + substr.length, src.length);
+    res += start + newstr;
+    index = src.indexOf(substr);
+  }
+  return res + src;
 }
 
 const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
