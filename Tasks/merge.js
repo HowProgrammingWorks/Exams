@@ -4,10 +4,12 @@
 
 const mergeTwoObjects = (objectFirst, objectSecond) => {
   const objectMerged = {};
-  for (const key in objectFirst) {
+  const keysFirst = Object.keys(objectFirst);
+  const keysSecond = Object.keys(objectSecond);
+  for (const key of keysFirst) {
     objectMerged[key] = objectFirst[key];
   }
-  for (const key in objectSecond) {
+  for (const key of keysSecond) {
     objectMerged[key] = objectSecond[key];
   }
   return objectMerged;
