@@ -1,7 +1,8 @@
 // Increment all numbers in dictionary
 'use strict';
 const incNumbers = (dict) => {
-  for (const key in dict) {
+  const keys = Object.keys(dict);
+  for (const key of keys) {
     if (typeof dict[key] === 'number') dict[key]++;
   }
   return dict;
