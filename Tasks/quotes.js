@@ -9,15 +9,14 @@ const quotes = str => {
   for (let element of str) {
     if (element === '"') {
       if (!isBracketOpen) {
-        res.push('«');
+        element = '«';
         isBracketOpen = true;
       } else {
-        res.push('»');
+        element = '»';
         isBracketOpen = false;
       }
-    } else {
-      res.push(element);
     }
+    res.push(element);
   }
   return res.join(EMPTY);
 }
