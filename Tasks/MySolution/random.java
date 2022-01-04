@@ -2,7 +2,7 @@ package Tasks.MySolution;
 
 public class random {
     public static void main(String[] args) {
-        int result = randomProcess(1, 9);
+        int result = randomProcess(9);
         System.out.println(result);
     }
 
@@ -12,7 +12,7 @@ public class random {
     }
 
     public static int randomProcess(int max) {
-        int preResult = (int)  (Math.floor(Math.random() * (max + 1)));
-        return 0;
+        int preResult = (int) (Math.floor(Math.random() * (max + 1)));
+        return preResult;
     }
 }
