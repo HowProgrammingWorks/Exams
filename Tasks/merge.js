@@ -2,11 +2,7 @@
 // Merge two dictionaries
 
 const merge = (obj1, obj2) => {
-  const result = { ...obj1 };
-
-  for (const key in obj2) {
-    result[key] = obj2[key];
-  }
+  const result = { ...obj1, ...obj2 };
 
   return result;
 };
