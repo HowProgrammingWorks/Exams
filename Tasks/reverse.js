@@ -1,7 +1,7 @@
 /* eslint-disable strict */
 // Reverse dict, exchange key and value
 
-const reverse = data => {
+const reverse = (data) => {
   for (const [key, value] of Object.entries(data)) {
     data[value] = key;
     delete data[key];
