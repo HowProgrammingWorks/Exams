@@ -2,7 +2,6 @@
 'use strict'
 
 const valid = (name) => {
-  if (name === '') return false;
   if (typeof name !== 'string') return false;
   for (const words of name) {
      const a = 'a'.charCodeAt(0);
