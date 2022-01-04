@@ -8,8 +8,10 @@ const sectionString   = (string, separator ) => {
     if(i < 0) {
         finalArr = [string, ''];
         return finalArr;
-    } else { 
-        finalArr = [string.slice(0,i), string.slice(i + separator.length)];
+    } else {
+        const beforeSeparator = string.slice(0, i);
+        const afterSeparator = string.slice(i + separator.length); 
+        finalArr = [beforeSeparator, afterSeparator];
         return finalArr;
     } 
 }; 
