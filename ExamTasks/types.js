@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const resultObj = {
   number: 0,
@@ -14,6 +14,5 @@ const countTypes = (arr) => {
   return resultObj;
 };
 
-const result = countTypes([5, true, "string", 7, "hello"]);
+const result = countTypes([5, true, 'string', 7, 'hello']);
 console.log(result);
-
