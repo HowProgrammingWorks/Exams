@@ -11,9 +11,6 @@ const sum = (s) => {
     }
   }
   };
-  sum[0];
-  return sum[sum.length - 1];
-  sum.push(sum.length - 1);
 }
 
 const result = sum([5, true, 'string', 7, 'hello']);
