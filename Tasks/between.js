@@ -5,7 +5,7 @@ const getValueBetween = (str, fromLeft, fromRight) => {
   let index = str.indexOf(fromLeft)
     if ( index === -1 ) return ''
     else {
-      k = index + fromLeft.length
+      index += fromLeft.length
       str =  str.substring(k)
       if (fromRight) {
         index = str.indexOf(fromRight)
