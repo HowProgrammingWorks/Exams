@@ -3,7 +3,7 @@
 find=(object,...rest) => {
    value = rest.pop(1);
    for (name in object) {
-      if ((typeof object[name]) == (typeof value))  return name;
+      if (object[name]) == value)  return name;
    }
 }
 
