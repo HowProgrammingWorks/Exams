@@ -1,17 +1,17 @@
-﻿Dictionary<object, object> MergeTwoDictionaries
-    (Dictionary<object, object> dictionary1, Dictionary<object, object> dictionary2)
+﻿Dictionary<Tval1, Tval2> MergeTwoDictionaries<Tval1, Tval2>
+    (Dictionary<Tval1, Tval2> dictionary1, Dictionary<Tval1, Tval2> dictionary2)
     {
-        Dictionary<object, object> dictionary3 = new Dictionary<object,object>();
-        foreach (object key in dictionary1.Keys)
+        Dictionary<Tval1, Tval2> dictionary3 = new Dictionary<Tval1,Tval2>();
+        foreach (Tval1 key in dictionary1.Keys)
             dictionary3[key] = dictionary1[key];
-        foreach (object key in dictionary2.Keys)
+        foreach (Tval2 key in dictionary2.Keys)
             dictionary3[key] = dictionary2[key];
         return dictionary3;
     }
 
-Dictionary<object, object> result = MergeTwoDictionaries
-(new Dictionary<object,object>() { { 'a', "uno" }, { 'b', "due" } }, 
-new Dictionary<object, object> { { 'c', "tre" } });
-foreach (object resultKey in result.Keys)
+Dictionary<char, string> result = MergeTwoDictionaries
+(new Dictionary<char,string>() { { 'a', "uno" }, { 'b', "due" } }, 
+new Dictionary<char, string> { { 'c', "tre" } });
+foreach (char resultKey in result.Keys)
     Console.Write($"{resultKey}:{result[resultKey]} ");
 Console.ReadKey();
