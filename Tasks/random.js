@@ -4,7 +4,7 @@
 const generateRandom = (minValue, maxValue) => {
     if (maxValue === undefined){
         maxValue = minValue;
-        return Math.floor(Math.random() * (maxValue + 1));
+        return Math.random() * (maxValue + 1);
     }
     if (maxValue === undefined && minValue === undefined) {
         return 'Data entered incorrectly.';
