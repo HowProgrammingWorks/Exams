@@ -2,12 +2,12 @@
 
 "use strict";
 
-const diff = (object_1, object_2) => {
-  for (const key in object_2) {
-    object_1[key] = object_2[key];
-    delete object_1[key];
+const diff = (objectFirst, objectSecond) => {
+  for (const key in objectSecond) {
+    objectFirst[key] = objectSecond[key];
+    delete objectFirst[key];
   }
-  return object_1;
+  return objectFirst;
 };
 
 const result = diff({ a: "uno", b: "due" }, { a: "uno", c: "tre" });
