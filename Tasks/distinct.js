@@ -5,16 +5,9 @@ const distinct = data => {
   if (!Array.isArray(data)) {
     return 'Data must be an array';
   }
-  const set = new Set(); 
-  for (let i = 0; i < data.length; i++) {
-    if (set.has(data[i])) {
-      data.splice(i, 1);
-      i--;
-    } else {
-      set.add(data[i]);
-    }
-  }
-  return data;
+  const set = new Set(data);
+  const uniqueArray = Array.from(set);  
+  return uniqueArray;
 };
 
 const result = distinct([1, 2, 1, 3, 1, 4]);
