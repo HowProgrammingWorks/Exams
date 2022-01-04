@@ -2,7 +2,7 @@
 
 // Make nested array plane
 
-const plane = array => {
+const plane = (array) => {
   const res = [];
   for (const element of array) {
     if (Array.isArray(element)) {
