@@ -1,16 +1,13 @@
 'use strict';
 
-const intersection = (object_1,object_2) => {
-const first_keys = Object.keys(object_1);
-for (let attribute_name of first_keys)
-if (attribute_name !== '' && object_2[attribute_name]) {
-object_2[attribute_name] = object_1[attribute_name];
-} else                                                {
-delete object_1[attribute_name];                       
-                                                       
+const intersection = (firstDictionary,secondDictionary) => {
+const firstKeys = Object.keys(firstDictionary);
+for (let key of firstKeys)
+if ( !(key in secondDictionary) || firstDictionary[key] !== secondDictionary[key]) {
+delete firstDictionary[key];                                                                         
 }               
-return object_1;
+return firstDictionary;
 }
 
-const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
+const result = intersection({ a: 'uno', b: 'due', c: 'tre'}, { a: 'uno', c: 'tre' });
 console.log(result);
