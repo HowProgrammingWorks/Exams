@@ -3,9 +3,10 @@
 
 const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const parseDay = day => {
+const parseDay = (day) => {
   for (let i = 0; i < weekDays.length; i++) {
-    if (day.startsWith(weekDays[i].toLowerCase())) {
+    const weekDayLowercase = weekDays[i].toLowerCase();
+    if (day.startsWith(weekDayLowercase)) {
       return i + 1;
     }
   }
