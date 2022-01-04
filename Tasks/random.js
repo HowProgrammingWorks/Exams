@@ -1,5 +1,5 @@
 // Generate random integer value in given range
-'use strict'
+'use strict';
 const randomInteger = (min, max) => {
   if (min === undefined || max === undefined)
     return 'Enter the data correctly!';
