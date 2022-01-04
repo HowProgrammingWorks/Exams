@@ -5,15 +5,13 @@ const EMPTY = '';
 const BRACKETS = ['«', '»'];
 
 const quotes = str => {
-  let res = [];
   let indexBracket = 0;
-  res = str.split(EMPTY).map( element => {
+  return str.split(EMPTY).map( element => {
     if (element === '"') {
       element = BRACKETS[(indexBracket++) % 2];
     }
     return element;
-  });
-  return res.join(EMPTY);
+  }).join(EMPTY);
 }
 
 const result = quotes('Hello "Marcus"! Ave "Marcus"!');
