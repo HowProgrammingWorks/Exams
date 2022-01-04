@@ -1,11 +1,9 @@
 // Make nested array planeArray
 'use strict';
 
-function planeArray(array) {
+const planeArray = (array) => {
   const result = [];
-  const length = array.length;
-  for (let i = 0; i < length; i++) {
-    const value = array[i];
+  for (let value of array) {
     if (Array.isArray(value)) {
       result.push(...planeArray(value));
     } else {
