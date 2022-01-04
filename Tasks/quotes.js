@@ -7,12 +7,12 @@ const BRACKETS = ['«', '»'];
 const quotes = str => {
   let res = [];
   let indexBracket = 0;
-  for (let element of str) {
+  res = str.split(EMPTY).map( element => {
     if (element === '"') {
       element = BRACKETS[(indexBracket++) % 2];
     }
-    res.push(element);
-  }
+    return element;
+  });
   return res.join(EMPTY);
 }
 
