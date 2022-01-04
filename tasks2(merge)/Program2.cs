@@ -9,7 +9,7 @@
         return dictionary3;
     }
 
-Dictionary<char, string> result = MergeTwoDictionaries
+Dictionary<char, string> result = MergeTwoDictionaries<char, string>
 (new Dictionary<char,string>() { { 'a', "uno" }, { 'b', "due" } }, 
 new Dictionary<char, string> { { 'c', "tre" } });
 foreach (char resultKey in result.Keys)
