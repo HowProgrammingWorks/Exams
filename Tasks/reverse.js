@@ -1,4 +1,4 @@
-/* eslint-disable strict */
+'use strict';
 // Reverse dict, exchange key and value
 
 const reverse = (data) => {
