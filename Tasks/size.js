@@ -6,7 +6,7 @@ let size=number=>{
   if(exp===0) return number + ' byte';
   if(exp===1) return Math.round(number / 1000) + ' kb';
   if(exp===2) return Math.round(number / 1000000) + ' mb';
-  if(exp===3) return Math.round(number / 1000000000) + ' gb';
+  return Math.round(number / 1000000000) + ' gb';
 }
 
 //const result = size(123456)
