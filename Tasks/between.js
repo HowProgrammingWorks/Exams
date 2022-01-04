@@ -1,19 +1,19 @@
 // Extract substring between prefix and suffix
 'use strict';
 
-const getvaluebetween = (str, p, s) => {
-  const i = str.indexOf(p)
-    if ( i === -1 ) return ''
+const getValueBetween = (string, prefix, suffix) => {
+  const prefixIndex = string.indexOf(prefix)
+    if (prefixIndex === -1 ) return ''
     else {
-     const k = i + p.length
-      str =  str.substring(k)
-      if ( s) {
-       const i = str.indexOf( s )
-        if (i === -1) {
-          return  '' } else { str =  str.substring(0 , i)
+     const nextStringIndex = prefixIndex + prefix.length
+      string =  string.substring(nextStringIndex)
+      if ( suffix) {
+       const suffixIndex = string.indexOf( suffix )
+        if (suffixIndex  === -1) {
+          return  '' } else { string =  string.substring(0 , suffixIndex )
             }}}
-  return str
+  return string
 }
 
-const result = getvaluebetween('Hello <username> and bye!', '<', '>')
+const result = getValueBetween('Hello <username> and bye!', '<', '>')
 console.log(result)
