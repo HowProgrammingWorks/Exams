@@ -1,17 +1,16 @@
 // Deduplicate values in array
 'use strict';
 
-const distinct = (data) => {
+const distinct = data => {
   const set = new Set(); 
   for (let i = 0; i < data.length; i++) {
-    let value = data[i];
-    if (set.has(value)) {
+    if (set.has(data[i])) {
       data.splice(i, 1);
       i--;
     } else {
-      set.add(value);
-    };
-  };
+      set.add(data[i]);
+    }
+  }
   return data;
 };
 
