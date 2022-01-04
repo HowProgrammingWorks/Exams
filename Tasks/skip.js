@@ -4,7 +4,6 @@
 
 const skip = (array, ...valuesToRemove) => {
   let removedValue = 0;
-  for (const selectedValues of array) {
     for (const selectedValuesToRemove of valuesToRemove) {
       if (selectedValues === selectedValuesToRemove) {
         const numberOfRemoves = 1;
@@ -12,7 +11,6 @@ const skip = (array, ...valuesToRemove) => {
       }
     }
     removedValue++;
-  }
   return array;
 };
 
