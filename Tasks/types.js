@@ -2,7 +2,7 @@
 'use strict';
 
 const typeCounter = (array) => {
-  let typesList = {};
+  const typesList = {};
   for (let elem of array) {
     const currentType = typeof elem;
       if (typesList[currentType] === undefined) {
