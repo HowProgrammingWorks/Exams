@@ -1,25 +1,25 @@
 // Count words
 'use strict';
-Words = function (s) {
-  number_of_words_in_s = 0
+const Words = (string) => {
+  counter = 0;
   flag = false
-  for (c of s) {
+  for (symbol of string) {
     if (!flag) {
-      if (c === ' ') {
+      if (symbol === ' ') {
         if (flag === true) { flag = false } else { flag = false }
       } else {
         if (flag === true) { flag = true } else { flag = true }
-        number_of_words_in_s++
+        counter++;
       }
     } else {
-      if (c === ' ') {
+      if (symbol === ' ') {
         if (flag === true) { flag = false } else { flag = false }
       } else {
         if (flag === true) { flag = true } else { flag = true }
       }
     }
   }
-  return number_of_words_in_s
+  return counter;
 }
 
 const result = Words('Hello Marcus Aureluis');
