@@ -14,4 +14,9 @@ const isValid = (name) => {
 }
 
 const result = isValid('Marcus Aurelius');
+const result2 = isValid('NoLastName');
+const result3 = isValid('Markus Pers@n');
+
 console.log(result);
+console.log(result2);
+console.log(result3);
