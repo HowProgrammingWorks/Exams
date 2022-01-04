@@ -3,12 +3,10 @@
 // Remove values from array
 
 const skip = (array, ...valuesToRemove) => {
-  let removedValue = 0;
   for (const selectedValuesToRemove of valuesToRemove) {
     const numberOfRemoves = 1;
     array.splice(array.indexOf(selectedValuesToRemove), numberOfRemoves);
   }
-  removedValue++;
   return array;
 };
 
