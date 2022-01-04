@@ -4,15 +4,13 @@
 
 const distinct = (array) => {
   const localArray = new Set();
-  let c = 0;
-  array.forEach((arrElem) => {
+  for (let i = array.length; c >= 0; c--) {
     if (localArray.has(arrElem)) {
       array.splice(c, 1);
     } else {
       localArray.add(arrElem);
     }
-    c++;
-  });
+ }
   return array;
 };
 
