@@ -1,7 +1,7 @@
 'use strict';
 // Count words
 
-const words = string => {
+const words = (string) => {
  const arrOfWords = string.split(" ");
  let numberOfWords = arrOfWords.length;
  return numberOfWords;
