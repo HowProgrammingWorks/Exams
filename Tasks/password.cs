@@ -16,7 +16,7 @@ namespace ConsoleApplication2
                 string password = "";
                 for (int i = 0; i < passwordLength; i++)
                 {
-                    int index = (int) Math.Floor(_random.NextDouble() * maxAlphabetIndex);
+                    int index = _random.Next(0, maxAlphabetIndex);
                     password += alphabet[index];
                 }
 
