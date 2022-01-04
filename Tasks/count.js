@@ -1,14 +1,14 @@
 // Sum all number values in dict
 'use strict';
 
-const count = (dict) => {
-  let sum= 0;
-  const keys = Object.keys(dict);
-  
-  for (const key of keys) {
-    const value = obj[key];
-    if (typeof value === 'number')sum += value;
-  }   
+const count = dict => {
+  let sum = 0;
+  for (const key in dict) {
+    const value = dict[key];
+    if (typeof value === 'number') {
+      sum += value;
+    }
+  }  
   return sum;
 };
 
