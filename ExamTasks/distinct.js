@@ -1,18 +1,19 @@
 'use strict'
 // Deduplicate values in array
 
-const DISTINCT =data=> {
-    const A=new Set(); 
-    let w = 0;
-    data.forEach((a) => {
-        if (A.has(a)) {
-        data.splice(w, 1)
+const distinct = (arr) => {
+    const set = new Set(); 
+    let spliceIndex = 0;
+    arr.forEach((arrElement) => {
+        if (set.has(arrElement)) {
+        arr.splice(spliceIndex, 1)
         } else {
-        A.add(a)
+        set.add(arrElement)
         };
-        w++;
+        spliceIndex++;
     });
-  return data;}
+  return arr;
+};
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
