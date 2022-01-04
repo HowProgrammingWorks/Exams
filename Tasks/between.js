@@ -3,15 +3,18 @@
 
 const getValueBetween = (str, fromLeft, fromRight) => {
   let index = str.indexOf(fromLeft)
-    if ( index === -1 ) return ''
-    else {
+    if ( index === -1 ){
+       return ''
+    } else {
       index += fromLeft.length
-      str =  str.substring(k)
-      if (fromRight) {
+      str =  str.substring(index)
         index = str.indexOf(fromRight)
         if (index === -1) {
-          return  '' } else { str =  str.substring(0 , index)
-            }}}
+          return  '' 
+        } else { 
+          str =  str.substring(0 , index)
+            }
+          }
   return str
 }
 
