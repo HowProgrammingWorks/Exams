@@ -2,8 +2,7 @@
 
 const plane = function(arr) {
   let res = [];
-  for(let i = 0; i < arr.length; i++) {
-    value = arr[i];
+  for(let value of arr) {
     if (Array.isArray(value)) {
       res.push(...plane(value));
     } else {
