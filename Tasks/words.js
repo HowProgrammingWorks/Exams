@@ -1,21 +1,22 @@
 // Count words
 'use strict';
 const Words = (string) => {
-  counter = 0;
-  flag = false
+  let counter = 0;
+  let flag = false;
   for (symbol of string) {
     if (!flag) {
       if (symbol === ' ') {
-        if (flag === true) { flag = false } else { flag = false }
-      } else {
-        if (flag === true) { flag = true } else { flag = true }
+        { flag = false };
+      }
+       else {
+        { flag = true };
         counter++;
       }
     } else {
       if (symbol === ' ') {
-        if (flag === true) { flag = false } else { flag = false }
+        { flag = false };
       } else {
-        if (flag === true) { flag = true } else { flag = true }
+        { flag = true };
       }
     }
   }
