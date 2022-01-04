@@ -5,12 +5,12 @@
 const words = (string) => {
   let numberOfWords = 0;
   let flag = false;
-  for (const element of string) {
-    if (flag === false && element !== ' ') {
+  for (const char of string) {
+    if (flag === false && char !== ' ') {
       flag = true;
       numberOfWords++;
     }
-    if (element === ' ') {
+    if (char === ' ') {
       flag = false;
     }
   }
