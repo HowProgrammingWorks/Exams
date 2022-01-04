@@ -2,13 +2,13 @@
 'use strict'
 const dictIntersection =(firstDict,secDict)=> {
   const firstDictKeys = Object.keys(firstDict);
+  let result = {}
  for (let element of firstDictKeys){
-if (element !== '' && secDict[element]) {
-    secDict[element] = firstDict[element];
-} else 
-delete firstDict[element]; 
+if (firstDict[element] === secDict[element]) {
+        result[element] = firstDict[element]
+} 
 }
-return firstDict;
+return result;
 }
 
 const result = dictIntersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
