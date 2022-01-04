@@ -10,7 +10,7 @@ const count = obj => {
     }
   }
   return sum;
+};
 
-
-  const result = count({ a: 1, b: 'two', c: 3, d: 4 });
-  console.log(result);
+const result = count({ a: 1, b: 'two', c: 3, d: 4 });
+console.log(result);
