@@ -1,3 +1,4 @@
+'use strict';
 // Get day number
 
 const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
