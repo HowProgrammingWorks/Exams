@@ -6,7 +6,7 @@ const diff = (objectFirst, objectSecond) => {
   for (const attributeName in objectSecond) {
     const valueObjFirst = objectFirst[attributeName];
     const valueObjSecond = objectSecond[attributeName];
-    if (typeof(valueObjSecond) !== 'undefined') {
+    if (valueObjFirst) {
       if (valueObjFirst === valueObjSecond) {
         delete objectDiff[attributeName];
       }
