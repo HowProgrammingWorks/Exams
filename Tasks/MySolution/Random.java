@@ -12,7 +12,6 @@ public class Random {
     }
 
     public static int randomProcess(int max) {
-        int preResult = (int) (Math.floor(Math.random() * (max + 1)));
-        return preResult;
+        return randomProcess(0, max);
     }
 }
