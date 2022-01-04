@@ -2,15 +2,17 @@
 'use strict';
 
 const diff = (objectFirst, objectSecond) => {
+  const objectDiff = { ...objectFirst };
   for (const attributeName in objectSecond) {
     const valueObjFirst = objectFirst[attributeName];
     const valueObjSecond = objectSecond[attributeName];
     if (typeof(valueObjSecond) !== 'undefined') {
-      if (valueObjFirst === valueObjSecond)
-        delete objectFirst[attributeName];
+      if (valueObjFirst === valueObjSecond) {
+        delete objectDiff[attributeName];
+      }
     }
   }
-  return objectFirst;
+  return objectDiff;
 };
 
 const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
