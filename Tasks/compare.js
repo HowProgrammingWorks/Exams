@@ -4,7 +4,7 @@ const compareDictionaries = function( obj1,obj2 ) {
   const obj1Keys = Object.keys(obj1).sort();
   const obj2Keys = Object.keys(obj2).sort();
 
-  if (obj1Keys.join('-') !== obj2Keys.join('-')) return false;
+  if ( obj1Keys.length !== obj2Keys.length ) return false;
 
   let e = true;
 
