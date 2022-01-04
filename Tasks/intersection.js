@@ -3,13 +3,12 @@
 
 const intersection = (first, second) => {
     const first_keys = Object.keys(first);
+    const output = {};
     for (const attribute of first_keys) {
-        if (attribute !== '' && second[attribute])
-            second[attribute] = first[attribute];
-        else
-            delete first[attribute];
+        if (attribute && first[attribute] === second[attribute])
+            output[attribute] = first[attribute];
     }
-    return first;
+    return output;
 }
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
