@@ -1,7 +1,8 @@
 // Shuffle an array
 'use strict';
 const shuffle = (array) => {
-  array.sort(() => Math.random() - 0.5); 
+  const CHANCE_EQUALISER = 0.5;
+  array.sort(() => Math.random() - CHANCE_EQUALISER); 
   return array;
 };
 
