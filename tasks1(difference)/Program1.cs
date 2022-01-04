@@ -1,9 +1,12 @@
 ﻿    Dictionary<Tvalue1, Tvalue2> Difference<Tvalue1, Tvalue2>
-        (Dictionary<Tvalue1, Tvalue2> dict1, Dictionary<Tvalue1, Tvalue2> dict2)
+        (Dictionary<Tvalue1, Tvalue2> firstObject, Dictionary<Tvalue1, Tvalue2> secondObject)
     {
-        foreach (Tvalue1 dictKey in dict2.Keys)
-            dict1.Remove(dictKey);
-        return dict1;
+        foreach (Tvalue1 attributeName in secondObject.Keys)
+        {
+            firstObject[attributeName] = secondObject[attributeName];
+            firstObject.Remove(attributeName);
+        }
+        return firstObject;
     }
 
     Dictionary<char, string> result = Difference<char, string>
