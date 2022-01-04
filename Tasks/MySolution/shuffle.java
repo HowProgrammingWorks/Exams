@@ -5,7 +5,7 @@ public class shuffle {
 
     }
 
-    public static Object[] shuffleProcess(Object[] array) {
-        return array;
+    public static void shuffleProcess(Object[] array) {
+
     }
 }
