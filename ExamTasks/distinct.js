@@ -18,3 +18,10 @@ const distinct = (arr) => {
 
 const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
+
+
+// Solving the task in one line
+
+// const distinct = (arr) => [...new Set(arr)]
+// const result = distinct([1, 2, 1, 3, 1, 4]);
+//  console.log(result);
