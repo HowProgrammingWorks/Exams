@@ -3,10 +3,10 @@
 
 const validName = (name) => {
   if (typeof name === 'string') {
-    const regEx = /[A-Z]/;
+    
     const words = name.split(' ');
     for (let word of words) {
-      if (!regEx.test(word)) return false;
+      if () return false;
     }
     return true;
   }
