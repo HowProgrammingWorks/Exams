@@ -3,8 +3,7 @@
 
 const mergeTwoObjects = (object1, object2) => {
   const mergedObject = {};
-  const res = Object.assign(mergedObject, object1, object2);
-  return res;
+  return Object.assign(mergedObject, object1, object2);
 };
 
 const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
