@@ -1,3 +1,4 @@
+'use strict';
 // Generate random integer value in given range
 
 const random = (min, max) => {
