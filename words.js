@@ -2,7 +2,7 @@
 
 // Count words
 
-const Words = function(str) {
+const words = function(str) {
   let wordsInString = 0;
   let checkForChar = true;
   for (const char of str) {
@@ -14,5 +14,5 @@ const Words = function(str) {
 return wordsInString
 }
 
-const result = Words('Hello Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
