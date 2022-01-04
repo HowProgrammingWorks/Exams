@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // Find first word with two identical letters
 
 const zip = (arr1 = [], arr2 = []) => {
@@ -9,7 +9,7 @@ const zip = (arr1 = [], arr2 = []) => {
     result.push(pair);
   }
   return result;
-}
+};
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
 console.log(result);
