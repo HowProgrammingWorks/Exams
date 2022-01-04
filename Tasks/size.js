@@ -2,13 +2,11 @@
 
 let size=number=>{
   if (number === 0) return '0';
-  else {
-    const exp = Math.floor(Math.log(number)/Math.log(1000));
-    if (exp==0) return number + ' byte'
-    else if(exp==1) return Math.round(number / 1000) + ' kb'
-    else if(exp==2) return Math.round(number / 1000000) + ' mb'
-    else if(exp==3) return Math.round(number / 1000000000) + ' gb'
-  }
+  const exp = Math.floor(Math.log(number)/Math.log(1000));
+  if (exp==0) return number + ' byte'
+  if(exp==1) return Math.round(number / 1000) + ' kb'
+  if(exp==2) return Math.round(number / 1000000) + ' mb'
+  if(exp==3) return Math.round(number / 1000000000) + ' gb'
 }
 
 const result = size(123456)
