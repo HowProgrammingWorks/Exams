@@ -12,4 +12,8 @@ const dictIntersection = (firstDict, secDict) => {
 };
 
 const result = dictIntersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
+const result1 = dictIntersection({ a: 'uno', b: 'due' }, { a: 'uno', b: 'due' });
+const result2 = dictIntersection({ a: 'uni', b: 'due' }, { a: 'uno', b: 'due' });
 console.log(result);
+console.log(result1);
+console.log(result2);
