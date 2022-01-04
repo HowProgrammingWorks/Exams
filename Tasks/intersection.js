@@ -2,12 +2,12 @@
 // Find an intersection of two dictionaries
 
 const intersection = (object1, object2) => {
-  const key = Object.keys(object1)
-  for (const name of key) {
-    if (name !== '' && object2[name]) {
-      object2[name] = object1[name]
+  const firstKeys = Object.keys(object1)
+  for (const attributeName of firstKeys) {
+    if (attributeName !== '' && object2[attributeName]) {
+      object2[attributeName] = object1[attributeName]
     } else {
-      delete object1[name]
+      delete object1[attributeName]
     }
   }
   return object1
