@@ -3,8 +3,7 @@
 
 const parseIp = (ip) => {
   const res = [];
-  if (ip === '') return 0;
-  else {
+  if (ip !== '') {
     const array = ip.split('.');
     for (let i = 0; i < array.length; i++) {
       const key = array[i];
