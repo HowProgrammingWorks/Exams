@@ -2,10 +2,10 @@
 'use strict';
 
 const splitArray = (index, array) => {
-    const begin = array.slice(0, index);
-    array = array.slice(index, array.length);
-    return [begin, array];
-}
+    const firstArray = array.slice(0, index);
+    const secondArray = array.slice(index, array.length);
+    return [firstArray, secondArray];
+};
 
-const result = splitArray(3, ['a', 'b', 'c', 'd', 'e']);
+const result = splitArray(5, ['a', 'b', 'c', 'd', 'e']);
 console.log(result);
