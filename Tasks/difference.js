@@ -2,7 +2,6 @@
 'use strict';
 
 const diff = (objectFirst, objectSecond) => {
-  if (objectFirst in objectSecond) return false;
   for (const attributeName in objectSecond) {
     objectFirst[attributeName] = objectSecond[attributeName];
     delete objectFirst[attributeName];
