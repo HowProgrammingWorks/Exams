@@ -3,7 +3,8 @@
 
 const except = (dict, ...exceptions) => {
   const cleanDict = {};
-  for (const key in dict) {
+  const keys = Object.keys(dict);
+  for (const key of keys) {
     if (!exceptions.includes(key)) cleanDict[key] = dict[key];
   }
   return cleanDict;
