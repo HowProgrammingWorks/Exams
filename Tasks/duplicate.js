@@ -1,3 +1,5 @@
+'use strict';
+
 // Push single value multiple times
 
 duplicate = (value, N) => {
