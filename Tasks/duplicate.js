@@ -3,9 +3,9 @@
 // Push single value multiple times
 
 const duplicateValue = (value, times) => {
+  const res = [];
   if (times <= 0) return [];
   else {
-    const res = [];
     for (let i = 0; i < times; i++) {
       res[i] = value;
     }
