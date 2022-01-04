@@ -2,9 +2,9 @@
 
 // Deduplicate values in array
 
-distinct = (array) => {
-  localArray = new Set();
-  c = 0;
+const distinct = (array) => {
+  const localArray = new Set();
+  let c = 0;
   array.forEach((arrElem) => {
     if (localArray.has(arrElem)) {
       array.splice(c, 1);
