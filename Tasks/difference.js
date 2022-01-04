@@ -5,10 +5,10 @@ const findDifference = function( object1,object2 ) {
     let obj1 = object1;
     let obj2 = object2;
 
-    for (attribute_name in obj2) {
-        obj1[attribute_name] = obj2[attribute_name]
-        delete obj1[attribute_name]
-    }{}
+    for (const key in obj2) {
+        obj1[key] = obj2[key]
+        delete obj1[key]
+    }
 
     return obj1;
 };
