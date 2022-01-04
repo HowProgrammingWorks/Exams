@@ -1,5 +1,5 @@
 // Remove values from array
-//'use strict';
+'use strict';
 
 const skipElements = (array, ...argFunction) => {
   for (let i = 0; i < array.length; i++) {
