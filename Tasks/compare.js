@@ -2,14 +2,13 @@
 
 // Compare two dictionaries
 
-let compare = (first_values,...parameters_LIST) => {
-  const second_values = parameters_LIST[0];
-  let a = Object.keys(first_values);
-  let b = Object.keys(second_values);
+let compare = (list1, list2) => {
+  let a = Object.keys(list1);
+  let b = Object.keys(list2);
   if (a.join('-') !== b.join('-')) return false;
   let e = true;
   for (let c of a) {
-    if (first_values[c] === second_values[c]) e = e && true;
+    if (list1[c] === list2[c]) e = e && true;
     else { e = e && false; }
   }
   return e;
