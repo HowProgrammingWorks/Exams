@@ -4,8 +4,7 @@
 
 const plane = function(array) {
   const res = [];
-  for (let i = 0, length = array.length; i < length; i++) {
-    const element = array[i];
+  for (const element of array) {
     if (Array.isArray(element)) {
       res.push(...plane(element));
     } else {
