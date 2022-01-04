@@ -2,7 +2,7 @@
 'use strict';
 
 const getValueBetween = (str, fromLeft, fromRight) => {
-  index = str.indexOf(fromLeft)
+  let index = str.indexOf(fromLeft)
     if ( index === -1 ) return ''
     else {
       k = index + fromLeft.length
