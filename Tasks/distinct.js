@@ -3,11 +3,8 @@
 const distinct = (array) => {
   const unicalElements = new Set();
   array.forEach((a, index) => {
-    if (unicalElements.has(a)) {
-      array.splice(index, 1);
-    } else {
-      unicalElements.add(a);
-    }
+    if (unicalElements.has(a)) array.splice(index, 1);
+    else unicalElements.add(a);
   });
   return array;
 };
