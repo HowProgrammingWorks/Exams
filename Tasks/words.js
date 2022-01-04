@@ -7,10 +7,8 @@ const words = (str) => {
   for (const char of str) {
     if (char === ' ') {
       flag = false;
-    } else if (!flag) {
-      flag = true;
-      countWords++;
     } else {
+      if (!flag) countWords++;
       flag = true;
     }
   }
