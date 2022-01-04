@@ -2,11 +2,11 @@
 'use strict';
 
 const plane = (arr) => {
-  let res = [];
+  const res = [];
 
   for (const element of arr) {
     if (Array.isArray(element)) {
-      res = res.concat(plane(element));
+      res.push(...plane(element));
     } else {
       res.push(element);
     }
