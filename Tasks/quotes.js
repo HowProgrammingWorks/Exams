@@ -1,13 +1,14 @@
 // Change douple quotation to open or close quotation
+'use strict';
 
 const EMPTY = '';
 
-quotes = s => {
-  res = [];
-  open = false;
-  for (c of s) {
+const quotes = s => {
+  let res = [];
+  let open = false;
+  for (let c of s) {
     if (c === '"') {
-      for (i of c) {
+      for (let i of c) {
         if (!open) {
           res.push('«');
           open = true;
@@ -18,7 +19,7 @@ quotes = s => {
       }
     } else {
       if (c !== '"') {
-        for (i of c) {
+        for (let i of c) {
           res.push(i);
         }
       }
