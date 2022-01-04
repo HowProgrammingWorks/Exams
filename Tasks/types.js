@@ -3,7 +3,7 @@
 
 const typeCounter = (array) => {
   const typesList = {};
-  for (let elem of array) {
+  for (const elem of array) {
     const currentType = typeof elem;
       if (typesList[currentType] === undefined) {
         typesList[currentType] = 1
