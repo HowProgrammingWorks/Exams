@@ -1,7 +1,7 @@
 // Count words
 'use strict';
 
- Words=function(s) {
+ const countWords = function(s){
  number_of_words_in_s = 0
  flag = false
  for (c of s) {
