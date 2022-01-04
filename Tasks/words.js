@@ -3,26 +3,16 @@
 
  let countWords = function(line) {
  let numberOfWordsInLine = 0
- let isNotSpace = false
+ let isNotSpace = true
  for (let char of line) {
-   if (!isNotSpace) {
-    if (char === ' ') {
-      if (isNotSpace === true) {
+   if (isNotSpace && char !== ' ') {
         isNotSpace = false
-      }
-      } else {
-        isNotSpace = true
         numberOfWordsInLine++
-      }
-    } else {
-      if (char === ' ') {
-        isNotSpace = false
-    } else {
-      isNotSpace = true
+      } else {
+         isNotSpace = (char === ' ')
     }
    }
- }
- return numberOfWordsInLine
+   return numberOfWordsInLine
  }
 
 const result = countWords('Hello Marcus Aureluis');
