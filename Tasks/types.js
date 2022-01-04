@@ -1,5 +1,5 @@
 // Count types in array
-'use strict'
+'use strict';
 
 const typeCounter = (array) => {
   let typesList = {};
