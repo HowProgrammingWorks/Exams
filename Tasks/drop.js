@@ -3,11 +3,11 @@
 
 const drop = (dict, ...deleteKeys) => {
   const dictKeys = Object.keys(dict);
-  dictKeys.forEach(key => {
+  for (const key of dictKeys) {
     if (deleteKeys.includes(key)) {
       delete dict[key];
     }
-  });
+  }
 
   return dict;
 };
