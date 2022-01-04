@@ -2,16 +2,16 @@
 
 'use strict';
 
-const duplicate = (value, N) => {
-  if (N <= 0) return [];
+const duplicate = (value, times) => {
+  if (times <= 0) return [];
   else {
-    let res = [];
-    for (let i = 0; i < N; i++) {
-      res[i] = value;
+    let result = [];
+    for (let i = 0; i < times; i++) {
+      result[i] = value;
     }
-    return res;
+    return result;
   }
 };
 
-const result = duplicate('abc', 5);
-console.log(result);
+const example = duplicate('abc', 5);
+console.log(example);
