@@ -1,8 +1,6 @@
 // Get day number
 'use strict'
-
-
-_parse_day_=s=>{
+const parseDay=s=>{
   let i; for(i=0;i<D.length;i++){
   if(s.startsWith(D[i].toLowerCase())){return i +1};};return -1;
 };
