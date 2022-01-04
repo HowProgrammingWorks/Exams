@@ -1,17 +1,17 @@
 // Generate random integer value in given range
 'use strict';
 
-const Random = (min, max) => {
-    if (max === undefined){
-        max = min;
-        return Math.floor(Math.random() * (max + 1));
+const generateRandom = (minValue, maxValue) => {
+    if (maxValue === undefined){
+        maxValue = minValue;
+        return Math.floor(Math.random() * (maxValue + 1));
     }
-    if (max === undefined && min === undefined) {
+    if (maxValue === undefined && minValue === undefined) {
         return 'Data entered incorrectly.';
     }
-    const random = min + Math.floor(Math.random() * (max - min + 1));
+    const random = minValue + Math.floor(Math.random() * (maxValue - minValue + 1));
     return Math.floor(random);
 };
 
-const result = Random(1, 9);
+const result = random(1, 9);
 console.log(result);
