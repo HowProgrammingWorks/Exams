@@ -3,10 +3,10 @@
 
 const validName = (name) => {
   if (typeof name === 'string') {
-    
     const words = name.split(' ');
-    for (let word of words) {
-      if () return false;
+      for (let word of words) {
+      const charCode = word.charCodeAt(0);
+      if (charCode < 65 && charCode > 90) return false;
     }
     return true;
   }
