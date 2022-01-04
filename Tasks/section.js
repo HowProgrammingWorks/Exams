@@ -3,11 +3,14 @@
 'use strict';
 
 const sectionString   = (string, separator ) => {
+    let finalArr = [];
     let i = string.indexOf(separator); 
-    if(i < 0) { 
-        return[string, ''];
+    if(i < 0) {
+        finalArr = [string, ''];
+        return finalArr;
     } else { 
-        return[string.slice(0,i), string.slice(i + separator.length)];
+        finalArr = [string.slice(0,i), string.slice(i + separator.length)];
+        return finalArr;
     } 
 }; 
 
