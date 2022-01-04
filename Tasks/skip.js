@@ -2,14 +2,11 @@
 'use strict';
 
 const skip = (array, ...remove) => {
-  let index = 0;
-  for (const value of array) {
-    for (const valueToRemove of remove) {
-      if (value === valueToRemove) {
-        array.splice(index, 1);
-      }
+  for (const valueToRemove of remove) {
+    if (array.includes(valueToRemove)) {
+      const index = array.indexOf(valueToRemove);
+      array.splice(index, 1);
     }
-    index++;
   }
   return array;
 };
