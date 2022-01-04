@@ -8,10 +8,10 @@ for (const words of name) {
     if (words === ' ') continue;
     const a = 'a'.charCodeAt(0);
     const z = 'z'.charCodeAt(0);
-    if ( a <= words.toLowerCase().charCodeAt(0) <= z) { 
-      return true;
-    } 
-    else { return false }
+    if ( words.toLowerCase().charCodeAt(0) < a || words.toLowerCase().charCodeAt(0) > z) {
+      return false;
+    }
+  return true;
   }
 }
 
