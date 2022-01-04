@@ -1,11 +1,10 @@
 'use strict';
 
-const plane = arr => arr.flatMap( element => {
+const plane = (arr) => arr.flatMap( element => {
     if (Array.isArray(element)) {
       return plane(element);
-    } else {
-      return element;
     }
+    return element;
   });
 
 
