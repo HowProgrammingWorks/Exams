@@ -2,10 +2,10 @@
 "use strict";
 
 const compare = (firstObj, secondObj) => {
-  const firstKeys = Object.keys(firstObj);
-  const secondKeys = Object.keys(secondObj);
+  const firstKeys = Object.keys(firstObj).sort();
+  const secondKeys = Object.keys(secondObj).sort();
 
-  if (firstKeys.sort().join("-") !== secondKeys.sort().join("-")) {
+  if (firstKeys.join("-") !== secondKeys.join("-")) {
     return false;
   }
 
