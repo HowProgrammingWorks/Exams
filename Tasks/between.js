@@ -4,15 +4,12 @@
 const getValueBetween = (string, prefix, suffix) => {
   const substring = '';
   const prefixIndex = string.indexOf(prefix);
-  if (prefixIndex === -1) return substring;
+  const suffixIndex = string.indexOf(suffix);
+  const lengthSubstring = suffixIndex - prefixIndex - 1;
+  if (prefixIndex === -1 || suffixIndex  === -1) return substring;
   else {
     string = string.substring(prefixIndex + 1);
-    const suffixIndex = string.indexOf(suffix);
-    if (suffixIndex  === -1) {
-      return substring;
-    } else {
-      string =  string.substring(0, suffixIndex);
-    }
+    string = string.substring(0, lengthSubstring);
   }
   return string;
 };
