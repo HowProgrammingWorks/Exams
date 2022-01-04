@@ -2,17 +2,17 @@
 'use strict';
 
 const compareDictionaries = function ( obj1, obj2 ) {
-    const obj1Keys = Object.keys(obj1).sort();
-    const obj2Keys = Object.keys(obj2).sort();
+    const arr1 = Object.keys(obj1).sort();
+    const arr2 = Object.keys(obj2).sort();
     let e = true;
     
-    if ( obj1Keys.length !== obj2Keys.length ) return false;
+    if ( arr1.length !== arr2.length ) return false;
     
-    for ( let i = 0; i < obj1Keys.length; i++ ) {
-        if ( obj1Keys[i] !== obj2Keys[i] ) return false; 
+    for ( let i = 0; i < arr1.length; i++ ) {
+        if ( arr1[i] !== arr2[i] ) return false; 
     }
     
-    for (const key of obj1Keys) {
+    for (const key of arr1) {
         if (obj1[key] !== obj2[key]) e = false;
     }
     
