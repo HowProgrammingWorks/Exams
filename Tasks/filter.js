@@ -1,5 +1,7 @@
 // Filter array by type name
 
+'use strict';
+
 Filter =(T,t)=> {
 for (C of T) {
 x = T.indexOf(C);
