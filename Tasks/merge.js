@@ -11,7 +11,7 @@ const merge = (object1, object2) => {
   for (const key of keys2) {
     res[key] = object2[key];
   }
-  return object1, object2, res;
+  return res;
 };
 
 const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
