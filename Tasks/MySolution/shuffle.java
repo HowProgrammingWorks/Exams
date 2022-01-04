@@ -13,6 +13,7 @@ public class shuffle {
     public static void shuffleProcess(Object[] array) {
         for (int i = 0; i < array.length; i++) {
             int firstIndex = (int) (Math.random() * array.length);
+            int secondIndex = (int) (Math.random() * array.length);
         }
     }
 }
