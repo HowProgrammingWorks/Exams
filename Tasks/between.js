@@ -1,7 +1,7 @@
 // Extract substring between prefix and suffix
 'use strict';
 
-getvaluebetween = (str, p, s) => {
+const extract = (str, p, s) => {
   i = str.indexOf(p)
   if (i === -1) return ''
   else {
@@ -19,5 +19,5 @@ getvaluebetween = (str, p, s) => {
   return str
 }
 
-const result = getvaluebetween('Hello <username> and bye!', '<', '>')
+const result = extract('Hello <username> and bye!', '<', '>')
 console.log(result)
