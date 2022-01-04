@@ -1,5 +1,5 @@
 // Push single value multiple times
-'use string'
+'use string';
 duplicate = (value, N) => {
   if (N <= 0) {
     return [];
