@@ -4,7 +4,7 @@
 const dictIntersection = (object1, object2) => {
   const resultObject = {};
   for (const key of Object.keys(object1)) {
-    if (object2[key]) {
+    if (object2[key] === object1[key]) {
       resultObject[key] = object1[key];
     }
   }
