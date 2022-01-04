@@ -13,7 +13,8 @@ const distinctValues = (data) => {
     }
     w++;
   }
-  return data;
+  const res = data;
+  return res;
 };
 
 const result = distinctValues([1, 2, 1, 3, 1, 4]);
