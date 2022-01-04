@@ -3,18 +3,18 @@
 
 const extract = (str, prefix, suffix) => {
   i = str.indexOf(prefix)
-  if (i === -1) return ''
-  else {
+  if (i !== -1) {
     k = i + prefix.length
     str = str.substring(k)
-    if (suffix) {
-      i = str.indexOf(suffix)
-      if (i === -1) {
-        return ''
-      } else {
-        str = str.substring(0, i)
-      }
+    i = str.indexOf(suffix)
+
+    if (i !== -1) {
+      str = str.substring(0, i)
+    } else {
+      console.log("wrong")
     }
+  } else {
+    console.log("wrong")
   }
   return str
 }
