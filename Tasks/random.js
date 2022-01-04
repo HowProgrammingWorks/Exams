@@ -9,9 +9,7 @@ const randomInteger = (min, max) => {
     max = min;
     return Math.floor(Math.random() * (max + 1));
   }
-  if (min === undefined) {
-    return Math.floor(Math.random() * (max + 1));
-  }
+
   const randomNumber = min + Math.random() * (max + 1 - min);
   return Math.floor(randomNumber);
 };
