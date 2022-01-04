@@ -10,7 +10,7 @@ const wordsCounter = (str) => {
       startOfWord = false;
       wordsInStr++;
     } else {
-      startOfWord = (char === ' ');
+      startOfWord = char === ' ';
     }
   }
   return wordsInStr;
