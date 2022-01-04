@@ -5,14 +5,14 @@
 const distinctValues = (data) => {
   const col = new Set();
   let w = 0;
-  data.forEach((a) => {
-    if (col.has(a)) {
+  for (const item of data) {
+    if (col.has(item)) {
       data.splice(w, 1);
     } else {
-      col.add(a);
+      col.add(item);
     }
     w++;
-  });
+  }
   return data;
 };
 
