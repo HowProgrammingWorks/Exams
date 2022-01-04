@@ -6,14 +6,14 @@ const deduplicate = ([...arr]) => {
   for (const value of arr) {
     if (!result.includes(value)) {
       result.push(value);
-    } 
+    }
   }
   return result;
-}
+};
 
 const duplArr = [1, 2, 1, 3, 1, 4, 4];
 const result = deduplicate(duplArr);
 console.dir({
   'array with duplicates': duplArr,
-  'result' : result
+  result
 });
