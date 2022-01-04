@@ -3,8 +3,12 @@
 
 const diff = (objectFirst, objectSecond) => {
   for (const attributeName in objectSecond) {
-    objectFirst[attributeName] = objectSecond[attributeName];
-    delete objectFirst[attributeName];
+    const valueObjFirst = objectFirst[attributeName];
+    const valueObjSecond = objectSecond[attributeName];
+    if (typeof(valueObjSecond) !== 'undefined') {
+      if (valueObjFirst === valueObjSecond)
+        delete objectFirst[attributeName];
+    }
   }
   return objectFirst;
 };
