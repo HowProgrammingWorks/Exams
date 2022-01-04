@@ -1,13 +1,15 @@
 // Get day number
 
-const D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const _parseday = s => {
-  for (let i = 0; i < D.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) { return i + 1; }
+const parseDay = day => {
+  for (let i = 0; i < weekDays.length; i++) {
+    if (day.startsWith(weekDays[i].toLowerCase())) {
+      return i + 1;
+    }
   }
   return -1;
 };
 
-const result = _parseday('friday');
+const result = parseDay('friday');
 console.log(result);
