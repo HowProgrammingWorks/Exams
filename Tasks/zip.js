@@ -6,7 +6,7 @@ const zip = (...arrays) => {
 
   const sliceLength = arrays.reduce(reduceToMinLength, arrays[0].length);
   const indices = [...Array(sliceLength).keys()];
-  return indices.map(idx => arrays.map(array => array[idx]));
+  return indices.map((idx) => arrays.map((array) => array[idx]));
 };
 
 const result = zip(['Roma', 'Kiev', 'Beijing'], [100, 200, 300]);
