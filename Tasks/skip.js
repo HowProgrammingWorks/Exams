@@ -4,8 +4,8 @@
 const skip = (array, ...remove) => {
   let index = 0;
   for (const value of array) {
-    for (const valueToDel of remove) {
-      if (value === valueToDel) {
+    for (const valueToRemove of remove) {
+      if (value === valueToRemove) {
         array.splice(index, 1);
       }
     }
