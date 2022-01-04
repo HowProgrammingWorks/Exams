@@ -2,19 +2,19 @@
 
 // Deduplicate values in array
 
-DISTINCT = (data) => {
-  A = new Set();
-  w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
-      data.splice(w, 1);
+distinct = (array) => {
+  localArray = new Set();
+  c = 0;
+  array.forEach((arrElem) => {
+    if (localArray.has(arrElem)) {
+      array.splice(c, 1);
     } else {
-      A.add(a);
+      localArray.add(arrElem);
     }
-    w++;
+    c++;
   });
-  return data;
+  return array;
 };
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
