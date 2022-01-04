@@ -4,7 +4,7 @@
 const replace = (str, subStr, newStr) => {
   if (subStr === '') return str;
   let res = '';
-  while (str.indexOf(subStr) !== -1) {
+  while (str.includes(subStr)) {
     const startStr = str.substring(0, str.indexOf(subStr));
     str = str.substring(str.indexOf(subStr) + subStr.length, str.length);
     res += startStr + newStr;
