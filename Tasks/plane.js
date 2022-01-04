@@ -3,11 +3,8 @@
 const plane = function (array) {
   const result = [];
   for (const item of array) {
-    if (Array.isArray(item)) {
-      result.push(...plane(item));
-    } else {
-      result.push(item);
-    }
+    if (Array.isArray(item)) result.push(...plane(item));
+    else result.push(item);
   }
   return result
 }
