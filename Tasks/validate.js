@@ -1,7 +1,7 @@
 'use strict';
 // Validate person name
 
-const isValidate = name => {
+const isValidate = (name) => {
   if (!name) return false;
   if (typeof name !== 'string') return false;
   if (!name.includes(' ')) return false;
