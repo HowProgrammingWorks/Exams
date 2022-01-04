@@ -1,7 +1,7 @@
 // Count words
 'use strict';
 
-const Words=function(s) {
+const Words = (s) => {
  let number_of_words_in_s = 0
  let flag = false
  for (const c of s) {
