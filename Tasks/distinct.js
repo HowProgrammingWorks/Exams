@@ -1,3 +1,5 @@
+'use strict';
+
 // Deduplicate values in array
 
 DISTINCT =data=> {
