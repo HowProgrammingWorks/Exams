@@ -3,7 +3,7 @@
 
 const merge = (obj1, obj2) => {
     const result = {};
-   for (attribute_name in obj1) {
+   for (const attribute_name in obj1) {
        (
           result[attribute_name] == obj1[attribute_name]
        );
