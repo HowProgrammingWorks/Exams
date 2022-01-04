@@ -4,13 +4,12 @@
 
 const duplicateValue = (value, times) => {
   const res = [];
-  if (times <= 0) return [];
-  else {
+  if (times >= 0) {
     for (let i = 0; i < times; i++) {
       res[i] = value;
     }
-    return res;
   }
+  return res;
 };
 
 const result = duplicateValue('abc', 5);
