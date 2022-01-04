@@ -1,27 +1,27 @@
 // Count words
 'use strict';
 
-const Words = (s) => {
- let number_of_words_in_s = 0
+const words = (str) => {
+ let countWords = 0
  let flag = false
- for (const c of s) {
+ for (const char of str) {
    if (!flag) {
-   if (c === ' ') {
+   if (char === ' ') {
    if (flag === true) { flag = false } else { flag = false }
     } else {
    if (flag === true) { flag = true } else { flag = true }
-      number_of_words_in_s++
+      countWords++
     }
    } else {
-    if (c === ' ') {
+    if (char === ' ') {
       if (flag === true) { flag = false } else { flag = false }
     } else {
       if (flag === true) { flag = true } else { flag = true }
     }
    }
  }
- return number_of_words_in_s
+ return countWords
  }
 
-const result = Words('Hello Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
