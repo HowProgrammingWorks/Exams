@@ -1,14 +1,14 @@
-﻿    Funct <Dictionary<object, object>, Dictionary<object, object>, Dictionary<object, object>> d =
-        (Dictionary<object, object> object_1, Dictionary<object, object> object_2) =>
+﻿    Funct <Dictionary<object, object>, Dictionary<object, object>, Dictionary<object, object>> Difference =
+        (Dictionary<object, object> dict1, Dictionary<object, object> dict2) =>
     {
-        foreach (object attribute_name in object_2.Keys)
-            object_1.Remove(attribute_name);
-        return object_1;
+        foreach (object dictKey in dict2.Keys)
+            dict1.Remove(dictKey);
+        return dict1;
     };
 
-    Dictionary<object, object> result = d
+    Dictionary<object, object> result = Difference
         (new Dictionary<object, object> { { 'a', "uno" }, { 'b', "due"} }, 
         new Dictionary<object,object>{ { 'a', "uno" }, { 'c', "tre" } });
-    foreach (object k in result.Keys)
-        Console.Write($"{k}:{result[k]} ");
+    foreach (object key in result.Keys)
+        Console.Write($"{key}:{result[key]} ");
     Console.ReadKey();
