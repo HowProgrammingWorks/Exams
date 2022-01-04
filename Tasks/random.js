@@ -1,12 +1,9 @@
 // Generate random integer value in given range
 
 const randomInteger = (min, max) => {
-if ( max === undefined ){
-    max = min;
-     return Math.floor(Math.randomInteger() * (max + 1));
-    } else {
-    return min + Math.floor(Math.randomInteger() * (max - min + 1));
-};
+    if (min === undefined || max === undefined) return 'Enter the data correctly!';
+    
+    return min + Math.floor(Math.random() * (max - min + 1));
 };
 
 const result = randomInteger(1, 9);
