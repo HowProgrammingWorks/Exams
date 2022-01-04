@@ -3,10 +3,10 @@
 
 const copyAllExcept = (object, ...except) => {
   const resObject = {};
-
-  for (let [key,value] of Object.entries(object)) {
+  const keys = Object.keys(object);
+  for (const key of keys) {
     if (!except.includes(key)) { 
-      resObject[key] = value;
+      resObject[key] = object[key];
     }
   }
    return resObject;
