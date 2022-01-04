@@ -3,20 +3,20 @@
 
 const EMPTY = '';
 
-const quotes = s => {
+const quotes = str => {
   let res = [];
-  let open = false;
-  for (let c of s) {
-    if (c === '"') {
-      if (!open) {
+  let isBracketOpen = false;
+  for (let element of str) {
+    if (element === '"') {
+      if (!isBracketOpen) {
         res.push('«');
-        open = true;
+        isBracketOpen = true;
       } else {
         res.push('»');
-        open = false;
+        isBracketOpen = false;
       }
     } else {
-      res.push(c);
+      res.push(element);
     }
   }
   return res.join(EMPTY);
