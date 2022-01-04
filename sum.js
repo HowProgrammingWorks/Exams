@@ -1,8 +1,6 @@
 // Sum all numbers from array
 'use strict'
 const sum = (s) => {
-  sum=[0];
-  let k =5;
   for (i of s)
   {
   let t = typeof i;
