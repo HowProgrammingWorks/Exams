@@ -1,7 +1,7 @@
 'use strict';
 // Merge two dictionaries
 
-const merge_two_objects=(function merge_two_objects(object_1,object_2){
+const merge=(function merge_two_objects(object_1,object_2){
     object_3 = [({})][0];
    for (attribute_name in object_1) {
        (
@@ -16,5 +16,5 @@ const merge_two_objects=(function merge_two_objects(object_1,object_2){
 return object_1, object_2, object_3;
 })
 
-const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
+const result = merge({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
