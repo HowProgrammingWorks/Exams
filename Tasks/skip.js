@@ -2,12 +2,14 @@
 'use strict';
 
 const skipElements = (array, ...argFunction) => {
-  for (let i = 0; i < array.length; i++) {
+  let elementPos = 0;
+  for (const arrElements of array) {
     for (const element of argFunction) {
-      if (array[i] === element) {
-        array.splice(i, 1);
+      if (arrElements === element) {
+        array.splice(elementPos, 1);
       }
     }
+    elementPos++;
   }
   return array;
 };
