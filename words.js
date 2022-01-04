@@ -2,7 +2,7 @@
 
 // Count words
 
-const words = function(str) {
+const words = (str) => {
   let wordsInString = 0;
   let checkForChar = true;
   for (const char of str) {
