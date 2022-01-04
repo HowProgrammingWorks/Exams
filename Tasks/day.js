@@ -6,8 +6,9 @@ const parseDay = day => {
     
     const daysPrefixes = days[i].toLowerCase();
     if (day.startsWith(daysPrefixes))
-    {return i + 1};};
+      return i + 1;
+  }
 };
-const D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const result = parseDay('friday')
 console.log(result)
