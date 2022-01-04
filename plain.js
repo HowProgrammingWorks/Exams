@@ -12,7 +12,7 @@ const arrPlain = (arr) => {
       res.push(value);
     }
   }
-  return res
+  return res;
 };
 
 const result = arrPlain([1, [[2]], [3, 4], [5], [6, [7, 8]]]);

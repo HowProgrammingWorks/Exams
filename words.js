@@ -11,7 +11,7 @@ const words = function(str) {
       wordsInString++;
     } else if (char === " ") checkForChar = true;
   }
-  return wordsInString
+  return wordsInString;
 };
 
 const result = words("Hello Marcus Aureluis");
