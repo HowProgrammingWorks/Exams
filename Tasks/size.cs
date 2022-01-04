@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
-    internal class Size
+    public class Size
     {
         static void Main()
         {
@@ -14,35 +15,30 @@ namespace ConsoleApplication1
             Console.WriteLine(result);
         }
 
-        static string FileSizeConverter( long fileSize )
+        private static readonly (long coeficient, string suffix)[] Coefficients = 
+        {
+            (1, "Byte"),
+            (1000, "KB"),
+            (1000000, "MB"),
+            (1000000000, "GB")
+        };
+            
+        public static string FileSizeConverter( long fileSize )
         {
             if(fileSize <= 0)
             {
                 return "0";   
             }
-            else
+
+            long exp = (long) Math.Floor(Math.Log10(fileSize)/Math.Log10(1000));
+
+            if (exp >= Coefficients.Length)
             {
-                long exp = (long) Math.Floor(Math.Log(fileSize)/Math.Log(1000));
-        
-                if(exp == 0)
-                {
-                    return fileSize + " byte";
-                }
-                else if(exp == 1)
-                {
-                    return fileSize / 1000 + " kb";
-                }
-                else if(exp == 2)
-                {
-                    return fileSize / 1000000 + " mb";
-                }
-                else if(exp >= 3)
-                {
-                    return fileSize / 1000000000 + " gb";
-                }
+                exp = Coefficients.Length - 1;
             }
 
-            return "Invalid number";
+            var multiplier = Coefficients[exp];
+            return fileSize / multiplier.coeficient + " " + multiplier.suffix;
         }
     }
 }
