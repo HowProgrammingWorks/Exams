@@ -6,7 +6,8 @@ const valid = (name) => {
   for (const words of name) {
      const a = 'a'.charCodeAt(0);
      const z = 'z'.charCodeAt(0);
-     if ( words.toLowerCase().charCodeAt(0) < a || words.toLowerCase().charCodeAt(0) > z) {
+     const parts = words.toLowerCase().charCodeAt(0);
+     if ( parts < a || parts > z) {
       return false;
      }
     return true;
