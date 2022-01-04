@@ -6,7 +6,7 @@ const generatePassword = (symbolPassword, lengthPassword) => {
   let password = '';
   for (let i = 0; i < lengthPassword; i++) {
     const index = Math.floor(Math.random() * max);
-    password = password + symbolPassword[index];
+    password += symbolPassword[index];
   }
   return password;
 };
