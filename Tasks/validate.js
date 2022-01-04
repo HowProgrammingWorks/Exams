@@ -1,5 +1,5 @@
 // Validate person name
-'use strict'
+'use strict';
 
 const validName = (name) => {
   if (typeof name === 'string') {
