@@ -6,7 +6,8 @@ const replace = (str, subStr, newStr) => {
   let res = '';
   while (str.includes(subStr)) {
     const startStr = str.substring(0, str.indexOf(subStr));
-    str = str.substring(str.indexOf(subStr) + subStr.length, str.length);
+    const endOfSubStr = str.indexOf(subStr) + subStr.length;
+    str = str.substring(endOfSubStr, str.length);
     res += startStr + newStr;
   }
   return res + str;
