@@ -1,8 +1,8 @@
 // Find key by value
-
-find=(object,...rest) => {
-   value = rest.pop(1);
-   for (name in object) {
+'use strict';
+const find=(object,...rest) => {
+   let value = rest.pop(1);
+   for (let name in object) {
       if (object[name]) == value)  return name;
    }
 }
