@@ -3,7 +3,7 @@
 // Finde a difference of two dictionaries
 
 const difference = (object1, object2) => {
-  for (key in object2) {
+  for (const key in object2) {
     delete object1[key];
   }
   return object1;
