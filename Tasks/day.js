@@ -13,5 +13,8 @@ const dayNumber = day =>{
   return -1;
 };
 
-const result = dayNumber('friday')
-console.log(result)
+
+console.log(`friday    - ${dayNumber('friday')}`);
+console.log(`Friday    - ${dayNumber('Friday')}`);
+console.log(`Mon       - ${dayNumber('Mon')}`);
+console.log(`monday    - ${dayNumber('monday')}`);
