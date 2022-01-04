@@ -3,10 +3,11 @@
 // Finde a difference of two dictionaries
 
 const difference = (object1, object2) => {
+  const diffDict = Object.assign({}, object1);
   for (const key in object2) {
-    delete object1[key];
+    delete diffDict[key];
   }
-  return object1;
+  return diffDict;
 };
 
 const result = difference({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
