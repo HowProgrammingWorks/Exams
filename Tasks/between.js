@@ -5,8 +5,8 @@ const getValueBetween = (string, prefix, suffix) => {
   let substring = '';
   const prefixIndex = string.indexOf(prefix);
   const suffixIndex = string.indexOf(suffix);
-  const lengthSubstring = suffixIndex - prefixIndex - 1;
   if (prefixIndex !== -1 && suffixIndex  !== -1) {
+    const lengthSubstring = suffixIndex - prefixIndex - 1;
     substring = string.substring(prefixIndex + 1).substring(0, lengthSubstring);
   }
   return substring;
