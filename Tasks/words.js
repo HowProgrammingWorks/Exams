@@ -2,12 +2,12 @@
 
 // Count words
 
-Words = function(s) {
-  number_of_words_in_s = 0;
+words = function(str) {
+  countOfWords = 0;
   flag = false;
-  for (c of s) {
+  for ( element of str) {
     if (!flag) {
-      if (c === ' ') {
+      if (element === ' ') {
         if (flag === true) {
           flag = false; 
         } else {
@@ -19,10 +19,10 @@ Words = function(s) {
         } else { 
           flag = true; 
         }
-        number_of_words_in_s++;
+        countOfWords++;
       }
     } else {
-      if (c === ' ') {
+      if (element === ' ') {
         if (flag === true) { 
           flag = false; 
         } else { 
@@ -37,8 +37,8 @@ Words = function(s) {
       }
     }
   }
-  return number_of_words_in_s;
+  return countOfWords;
 }
 
-const result = Words('Hello Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
