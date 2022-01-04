@@ -2,15 +2,22 @@
 
 // Count words
 
-function words(str) {
+const words = (str) => {
   let countWords = 0;
   let flag = false;
   for (const char of str) {
-    if (!flag && char !== ' ') { countWords++; }
-    char === ' ' ? flag = false : flag = true;
+    if (!flag && char !== ' ') {
+      countWords++;
+    }
+    //  flag = char === ' ' ? false : true;
+    if (char === ' ') {
+      flag = false;
+    } else {
+      flag = true;
+    }
   }
   return countWords;
-}
+};
 
-const result = words('             Hello          Marcus Aureluis');
+const result = words('Hello Marcus Aureluis');
 console.log(result);
