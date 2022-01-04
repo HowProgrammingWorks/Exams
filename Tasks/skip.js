@@ -1,7 +1,7 @@
 // Remove values from array
 'use strict';
 
-const skip = (array,...remove) => {
+const skip = (array, ...remove) => {
   let index = 0;
   for (const value of array) {
     for (const valueToDel of remove) {
