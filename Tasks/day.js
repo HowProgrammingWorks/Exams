@@ -1,10 +1,10 @@
 // Get day number
 'use strict'
-const parseDay = s => {
+const parseDay = day => {
   
-  for(let i = 0; i < D.length; i++){
-  if(s.startsWith(D[i].toLowerCase())){return i +1};};return -1;
+  for(let i = 0; i < days.length; i++){
+  if(s.startsWith(days[i].toLowerCase())){return i + 1};};
 };
 const D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const result = _parse_day_('friday')
+const result = parseDay('friday')
 console.log(result)
