@@ -1,16 +1,13 @@
 // Get month number
+'use script';
 
-Months = [
-'jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'
-]
+const month = (s) => 
+    {   for (let i = 0; i <months.length; i++)
+        if (s.startswith(months[i]))
+         return i + 1
 
-Month=s=>{
-  l=Months.length
-    for(let i=0;i<l;i++){;
-      if(s.toLowerCase().startsWith(Months[i]))return(i+1)
-        };
-          return -1
-            }
+};
 
-const result = Month('february')
-console.log(result)
+const month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+const result = month (s, 'february')
+console.log (result)
