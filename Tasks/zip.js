@@ -2,11 +2,11 @@
 
 "use strict";
 
-const zip = (array1, array2) => {
+const zip = (...arrays) => {
   const result = [];
-  const biggerLength =  Math.max(array1.length, array2.length);
-  for (let i = 0; i < biggerLength; i++)
-    result.push([array1[i], array2[i]]);
+  const biggerLength = arrays.reduce((prev, curr) => Math.max(prev, curr.length), arrays[0].length);
+  for(let i = 0; i < biggerLength; i++)
+    result.push(arrays.map((arr) => (arr[i])));
   return result;
 };
 
