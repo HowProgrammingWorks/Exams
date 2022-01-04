@@ -2,30 +2,30 @@
 
 const EMPTY = '';
 
-quotes=function(s) {
- res = [];
- open = false;
- for (c of s) {
-   if (c === '"') {
+quotes = function(s) {
+  res = [];
+  open = false;
+  for (c of s) {
+    if (c === '"') {
       for (i of c) {
-          if (!open) {
-               res.push('«');
-               open = true;
-          } else {
-               res.push('»');
-               open = false;
-          }
+        if (!open) {
+          res.push('«');
+          open = true;
+        } else {
+          res.push('»');
+          open = false;
+        }
       }
-   } else {
+    } else {
       if (c !== '"') {
-          for (i of c) {
-               res.push(i);
-          }
+        for (i of c) {
+          res.push(i);
+        }
       }
-   }
- }
- return res.join(EMPTY);
+    }
+  }
+  return res.join(EMPTY);
 }
 
 const result = quotes('Hello "Marcus"! Ave "Marcus"!');
-console.log(result)
+console.log(result);
