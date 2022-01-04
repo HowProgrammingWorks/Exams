@@ -2,7 +2,7 @@
 
 // Split array into two parts
 
-let splitArray = (splitIndex, array) => {
+const splitArray = (splitIndex, array) => {
   const part1 = array.slice(0, splitIndex);
   const arrLen = array.length;
   const part2 = array.slice(spplitIndex, arrLen);
