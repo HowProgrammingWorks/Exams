@@ -5,10 +5,8 @@
 const skip = (array, ...valuesToRemove) => {
   let removedValue = 0;
     for (const selectedValuesToRemove of valuesToRemove) {
-      if (selectedValues === selectedValuesToRemove) {
         const numberOfRemoves = 1;
         array.splice(removedValue, numberOfRemoves);
-      }
     }
     removedValue++;
   return array;
