@@ -2,14 +2,12 @@
 
 const distinct = (array) => {
   const unicalElements = new Set();
-  let index = 0;
-  array.forEach((a) => {
+  array.forEach((a, index) => {
     if (unicalElements.has(a)) {
       array.splice(index, 1);
     } else {
       unicalElements.add(a);
     }
-    index++;
   });
   return array;
 };
