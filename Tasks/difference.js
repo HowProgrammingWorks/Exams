@@ -4,7 +4,8 @@
 
 const difference = (object1, object2) => {
   const diffDict = Object.assign({}, object1);
-  for (const key in object2) {
+  const keysArr = Object.keys(object2);
+  for (const key of keysArr) {
     delete diffDict[key];
   }
   return diffDict;
