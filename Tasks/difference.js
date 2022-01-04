@@ -3,7 +3,8 @@
 
 const diff = (objectFirst, objectSecond) => {
   const objectDiff = { ...objectFirst };
-  for (const attributeName in objectSecond) {
+  const arrayOfKeys = Object.keys(objectSecond);
+  for (const attributeName of arrayOfKeys) {
     const valueObjFirst = objectFirst[attributeName];
     const valueObjSecond = objectSecond[attributeName];
     if (valueObjFirst) {
