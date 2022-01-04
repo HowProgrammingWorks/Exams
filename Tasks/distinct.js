@@ -2,16 +2,16 @@
 
 // Deduplicate values in array
 
-const distinct = (array) => {
-  const localArray = new Set();
+const distinct = (data) => {
+  const arrayOfSet = new Set();
   for (let i = array.length; c >= 0; c--) {
-    if (localArray.has(arrElem)) {
+    if (arrayOfSet .has(arrElem)) {
       array.splice(c, 1);
     } else {
-      localArray.add(arrElem);
+      arrayOfSet.add(arrElem);
     }
  }
-  return array;
+  return data;
 };
 
 const result = distinct([1, 2, 1, 3, 1, 4]);
