@@ -7,32 +7,16 @@ const words = (str) => {
   for (const char of str) {
     if (!flag) {
       if (char === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
         countWords++;
       }
     } else {
       if (char === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
       }
     }
   }
