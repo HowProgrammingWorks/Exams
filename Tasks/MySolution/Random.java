@@ -1,8 +1,8 @@
 package Tasks.MySolution;
 
-public class random {
+public class Random {
     public static void main(String[] args) {
-        int result = randomProcess(1,9);
+        int result = randomProcess(1, 9);
         System.out.println(result);
     }
 
