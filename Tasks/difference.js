@@ -3,8 +3,8 @@
 
 const diff = (object1, object2) => {
   const keys2 = Object.keys(object2)
-  for (const key of keys2) {
-    delete object1[key]
+  for (const attributeName of keys2) {
+    delete object1[attributeName]
   }
   return object1
 }
