@@ -1,3 +1,5 @@
+'use strict';
+
 // Split array into two parts
 
 let split_Array = (index, array) => {
