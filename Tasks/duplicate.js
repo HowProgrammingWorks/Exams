@@ -3,7 +3,10 @@
 'use strict';
 
 const duplicate = (value, times) => {
-  if (times <= 0) return [];
+  if (times <= 0) {
+    console.log('Nothing to multiply');
+    return ;
+  }
   else {
     let result = [];
     for (let i = 0; i < times; i++) {
