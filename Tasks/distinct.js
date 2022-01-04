@@ -4,9 +4,7 @@
 
 const distinctValues = (data) => {
   const col = new Set();
-  for (const item of data) {
-    col.add(item);
-  }
+  for (const item of data) col.add(item);
   const res = Array.from(col);
   return res;
 };
