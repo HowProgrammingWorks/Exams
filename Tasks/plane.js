@@ -6,7 +6,9 @@ const planeArray = (array) => {
   for (const arg of array) {
     if (Array.isArray(arg)) {
       res.push(...planeArray(arg));
-    } else { res.push(arg); }
+    } else {
+      res.push(arg);
+    }
   }
   return res;
 };
