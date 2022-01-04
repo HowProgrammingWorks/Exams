@@ -3,18 +3,17 @@
 // Replace substring with newstr
 
 const replace = (string, subString, newString) => {
-  let result;
+  let result = '';
   const index = string.indexOf(subString);
   if ((subString === '') || (index === -1)) {
-    result = string;
-  } else {
-    const startIndex = 0;
-    const endIndex = index + subString.length;
-
-    const start = string.substring(startIndex, index);
-    const end = string.substring(endIndex);
-    result = start + newString + end;
+    return string;
   }
+  const startIndex = 0;
+  const endIndex = index + subString.length;
+
+  const start = string.substring(startIndex, index);
+  const end = string.substring(endIndex);
+  result += start + newString + end;
   return result;
 };
 

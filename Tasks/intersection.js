@@ -6,8 +6,9 @@ const intersection = (object1, object2) => {
   const result = {};
   const keys = Object.keys(object1);
   for (const key of keys) {
-    if (object1[key] === object2[key]) {
-      result[key] = object1[key];
+    const value = object1[key];
+    if (object2[key] === value) {
+      result[key] = value;
     }
   }
   return result;
