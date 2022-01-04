@@ -6,14 +6,10 @@ const distinctValues = (data) => {
   const col = new Set();
   let w = 0;
   for (const item of data) {
-    if (col.has(item)) {
-      data.splice(w, 1);
-    } else {
-      col.add(item);
-    }
+    col.add(item);
     w++;
   }
-  const res = data;
+  const res = Array.from(col);
   return res;
 };
 
