@@ -2,8 +2,9 @@
 
 const randomInteger = (min, max) => {
     if (min === undefined || max === undefined) return 'Enter the data correctly!';
-    
-    return min + Math.floor(Math.random() * (max - min + 1));
+   
+    const randomNumber = min + Math.random() * (max + 1 - min);
+    return Math.floor( randomNumber );
 };
 
 const result = randomInteger(1, 9);
