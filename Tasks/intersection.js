@@ -1,7 +1,7 @@
 'use strict';
 // Finde an intersection of two dictionaries
 
-function intersection(first, second) {
+const intersection = (first, second) => {
   const firstKeys = Object.keys(first);
   const res = {};
   for (const attributeName of firstKeys) {
@@ -12,7 +12,7 @@ function intersection(first, second) {
     }
   }
   return res;
-}
+};
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
 console.log(result);
