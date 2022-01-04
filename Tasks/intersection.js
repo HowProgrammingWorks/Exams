@@ -7,9 +7,7 @@ const intersection = (first, second) => {
   for (const attributeName of firstKeys) {
     if (attributeName !== '' && second[attributeName]) {
       res[attributeName] = first[attributeName];
-    } else {
-      delete res[attributeName];
-    }
+    } 
   }
   return res;
 };
