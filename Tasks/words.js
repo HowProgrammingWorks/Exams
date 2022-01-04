@@ -1,6 +1,6 @@
 'use strict';
 
-const words = str => {
+const words = (str) => {
   let wordsNumber = 0;
   let isWord = false;
   for (let element of str) {
@@ -11,7 +11,7 @@ const words = str => {
       isWord = false; 
     }
   }
-return wordsNumber;
+  return wordsNumber;
 }
 
 const result = words('Hello Marcus Aureluis');
