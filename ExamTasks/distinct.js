@@ -4,14 +4,15 @@
 const distinct = (arr) => {
     const set = new Set(); 
     let spliceIndex = 0;
-    arr.forEach((arrElement) => {
-        if (set.has(arrElement)) {
-        arr.splice(spliceIndex, 1)
-        } else {
+    for(const arrElement of arr){
+      if(set.has(arrElement)) {
+        arr.splice(spliceIndex, 1);
+      } else {
         set.add(arrElement)
-        };
-        spliceIndex++;
-    });
+      }
+      spliceIndex++;
+    }
+
   return arr;
 };
 
