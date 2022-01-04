@@ -10,7 +10,7 @@ const diff = (firstDict, secondDict) => {
     if (value !== secondDict[key]) diffDict[key] = firstDict[key];
   }
   return diffDict;
-}
+};
 
 const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
 console.log(result);
