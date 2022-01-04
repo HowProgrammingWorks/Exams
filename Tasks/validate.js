@@ -16,8 +16,4 @@ const isValidate = (name) => {
 };
 
 const result = isValidate('Marcus Aurelius');
-const result2 = isValidate('');
-const result3 = isValidate();
-const result4 = isValidate('VLad');
-const result5 = isValidate('Marcus Aurelius3');
 console.log(result, result2, result3, result4, result5);
