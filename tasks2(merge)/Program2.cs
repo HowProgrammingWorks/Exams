@@ -1,21 +1,21 @@
-﻿Dictionary<object, object> merge_two_objects
-    (Dictionary<object, object> object_1, Dictionary<object, object> object_2)
+﻿Dictionary<object, object> MergeTwoDictionaries
+    (Dictionary<object, object> dictionary1, Dictionary<object, object> dictionary2)
     {
-        Dictionary<object, object> object_3 = new Dictionary<object,object>();
-        foreach (object attribute_name in object_1.Keys)
+        Dictionary<object, object> dictionary3 = new Dictionary<object,object>();
+        foreach (object key in dictionary1.Keys)
         {
-            object_3[attribute_name] = object_1[attribute_name];
+            dictionary3[key] = dictionary1[key];
         }
-        foreach (object attribute_name in object_2.Keys)
+        foreach (object key in dictionary2.Keys)
         {
-            object_3[attribute_name] = object_2[attribute_name];
+            dictionary3[key] = dictionary2[key];
         }
-        return object_3;
+        return dictionary3;
     }
 
-var result = merge_two_objects
+var result = MergeTwoDictionaries
 (new Dictionary<object,object>() { { 'a', "uno" }, { 'b', "due" } }, 
 new Dictionary<object, object> { { 'c', "tre" } });
-foreach (char a in result.Keys)
-    Console.Write($"{a}:{result[a]} ");
+foreach (object resultKey in result.Keys)
+    Console.Write($"{resultKey}:{result[resultKey]} ");
 Console.ReadKey();
