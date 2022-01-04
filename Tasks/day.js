@@ -6,7 +6,8 @@ let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const dayNumber = day =>{
   for(let i=0; i<week.length; i++){
-    if(day.startsWith(week[i].toLowerCase())){
+    const dayLowerCase =day.toLowerCase();
+    if(dayLowerCase.startsWith(week[i].toLowerCase())){
       return ++i;
     };
   };
