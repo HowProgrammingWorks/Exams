@@ -2,10 +2,10 @@
 
 // Count words
 
-words = function(str) {
-  countOfWords = 0;
-  flag = false;
-  for ( element of str) {
+const words = function(str) {
+  let countOfWords = 0;
+  let flag = false;
+  for (let element of str) {
     if (!flag) {
       if (element === ' ') {
         if (flag === true) {
