@@ -4,8 +4,7 @@
 
 const Filter = (typesForFilter, typeName) => {
   for (const counter of typesForFilter) {
-    const index = typesForFilter.indexOf(counter);
-    if (typeof typesForFilter[index] !== typeName) { typesForFilter.splice(index, 1); }
+    if (typeof typesForFilter[counter] !== typeName) { typesForFilter.splice(counter, 1); }
   }
   return typesForFilter;
 };
