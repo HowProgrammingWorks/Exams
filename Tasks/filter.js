@@ -2,12 +2,12 @@
 
 'use strict';
 
-const Filter = (T, t) => {
-  for (let C of T) {
-    let x = T.indexOf(C);
-    if (typeof T[x] !== t) { T.splice(x, 1); }
+const Filter = (typesForFilter, typeName) => {
+  for (let counter of typesForFilter) {
+    let index = typesForFilter.indexOf(counter);
+    if (typeof typesForFilter[index] !== typeName) { typesForFilter.splice(index, 1); }
   }
-  return T;
+  return typesForFilter;
 };
   
 const result = Filter([1, 2, 'three', 4, 5, 'six'], 'number');
