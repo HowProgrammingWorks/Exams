@@ -1,19 +1,19 @@
 // Count words
-'use strict'
+'use strict';
 
- let countWords = function(line) {
- let numberOfWordsInLine = 0
- let isNotSpace = true
- for (let char of line) {
-   if (isNotSpace && char !== ' ') {
-        isNotSpace = false
-        numberOfWordsInLine++
-      } else {
-         isNotSpace = (char === ' ')
+const countWords = function(line) {
+  let numberOfWordsInLine = 0;
+  let isNotSpace = true;
+  for (const char of line) {
+    if (isNotSpace && char !== ' ') {
+      isNotSpace = false;
+      numberOfWordsInLine++;
+    } else {
+      isNotSpace = (char === ' ');
     }
-   }
-   return numberOfWordsInLine
- }
+  }
+  return numberOfWordsInLine;
+};
 
 const result = countWords('Hello Marcus Aureluis');
 console.log(result);
