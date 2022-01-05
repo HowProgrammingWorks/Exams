@@ -1,4 +1,4 @@
-
+'use strict';
 
 // Validate person name
 
