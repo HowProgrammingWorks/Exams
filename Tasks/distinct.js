@@ -3,10 +3,10 @@
 const distinct = (array) => {
   const result = [...array];
   const uniqueElements = new Set();
-  result.forEach((element, index) => {
+  for (const [index, element] of result.entries()) {
     if (uniqueElements.has(element)) result.splice(index, 1);
     else uniqueElements.add(element);
-  });
+  }
   return result;
 };
 
