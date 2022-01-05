@@ -10,9 +10,12 @@ const extract = (str, prefix, suffix) => {
 
     if (index !== -1) {
       str = str.substring(0, index);
-    } else str = 'wrong';
-  } else str = 'wrong';
-
+    } else {
+      str = 'wrong';
+    }
+  } else {
+    str = 'wrong';
+  }
   return str;
 };
 
