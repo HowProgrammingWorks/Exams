@@ -1,5 +1,6 @@
 // Sum all numbers from array
 'use strict';
+
 const sumNumbers = (array) => {
   let calcResult = 0;
   for (const value of array) {
