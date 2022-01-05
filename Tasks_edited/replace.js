@@ -5,16 +5,17 @@ function replace(str, substr,newstr){
     return str
   }
   else{
-    res = ''
+    replaced = ''
     do{
       const index = str.indexOf(substr); 
         if(index === -1){
-          return res + str
+          return replaced + str
         }
         else{
           const start = str.substring(0, index);
-          str = str.substring(index + substr.length, str.length)
-          res += start + newstr
+          const end = str.substring(index + substr.length, str.length)
+          replaced += start + newstr + end
+          return replaced
         }
     }while (true);
   };
