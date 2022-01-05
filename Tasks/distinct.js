@@ -1,12 +1,12 @@
 // Deduplicate values in array
-'use string';
-const DISTINCT = (data) => {
-    A=new Set();
-    w=0;
-    data.forEach((a) => {
-        (A.has(a)) ? data.splice(w, 1): A.add(a);
-        w++;
-    });
+'use strict';
+const DISTINCT = data => {
+  const A = new Set();
+  let w = 0;
+  data.forEach(a => {
+    (A.has(a)) ? data.splice(w, 1) : A.add(a);
+    w++;
+  });
   return data;
 };
 

@@ -1,10 +1,10 @@
 // Push single value multiple times
-'use string';
-duplicate = (value, N) => {
+'use strict';
+const duplicate = (value, N) => {
   if (N <= 0) {
     return [];
   } else {
-    res = [];
+    const res = [];
     for (let i = 0; i < N; i++) {
       res[i] = value;
     }
@@ -14,5 +14,5 @@ duplicate = (value, N) => {
 
 const string = 'abc';
 const number = 5;
-const result = duplicate(string , number);
+const result = duplicate(string, number);
 console.log(result);
