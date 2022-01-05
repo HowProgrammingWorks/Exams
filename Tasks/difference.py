@@ -1,10 +1,14 @@
-def difference(FirstObject, SecondObject):
-    if FirstObject == SecondObject:
-        return False
-    FirstDiff = FirstObject.keys() - SecondObject.keys()
-    FirstDiffResult = {k: FirstObject[k] for k in FirstDiff}
-    SecondDiff = SecondObject.keys() - FirstObject.keys()
-    SecondDiffResult = {k: SecondObject[k] for k in SecondDiff}
-    return FirstDiffResult, SecondDiffResult
-result = difference({ 'a': 'uno', 'b': 'due' }, { 'a': 'uno', 'c': 'tre' })
-print(result)
+def difference(first_object, second_object):
+    
+    if first_object == second_object:
+        return False;
+
+    first_diff = first_object.keys() - second_object.keys();
+    first_diff_result = {k: first_object[k] for k in first_diff};
+
+    second_diff = second_object.keys() - first_object.keys();
+    second_diff_result = {k: second_object[k] for k in second_diff};
+
+    return first_diff_result, second_diff_result;
+
+print(difference({ 'a': 'uno', 'b': 'due' }, { 'a': 'uno', 'c': 'tre' }));
