@@ -1,6 +1,4 @@
 def diff(object_1,object_2):
-    for attribute_name in object_1:
-        object_1[attribute_name] = object_1[attribute_name]
     if object_1 == object_2:
         return False
     for attribute_name in object_2:
