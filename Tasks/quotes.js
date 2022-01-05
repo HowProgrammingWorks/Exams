@@ -1,14 +1,14 @@
 // Change douple quotation to open or close quotation
 'use strict';
 
-const BRACKETS = ['«', '»'];
+const brackets = ['«', '»'];
 
-const quotes = (str) => {
+const quotes = (string) => {
   let res = '';
   let indexBracket = 0;
-  for (let element of str) {
+  for (let element of string) {
     if (element === '"') {
-      element = BRACKETS[(indexBracket++) % 2];
+      element = brackets[(indexBracket++) % 2];
     }
     res += element;
   }
