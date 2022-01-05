@@ -4,7 +4,9 @@ const dictIntersection = (firstDict, secDict) => {
   const firstDictKeys = Object.keys(firstDict);
   const result = {};
   for (const element of firstDictKeys) {
-    if (firstDict[element] === secDict[element]) {
+    const firstDictVal = firstDict[element];
+    const secDictVal = secDict[element];
+    if (firstDictVal === secDictVal) {
       result[element] = firstDict[element];
     }
   }
@@ -17,3 +19,4 @@ const result2 = dictIntersection({ a: 'uni', b: 'due' }, { a: 'uno', b: 'due' })
 console.log(result);
 console.log(result1);
 console.log(result2);
+
