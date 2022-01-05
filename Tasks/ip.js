@@ -1,15 +1,15 @@
 // Split string by the first occurrence of separator
 
-Parseip = i => {
-  a = []
-    if (i === '' ) return 0  ;
+splitIP = entrStrg => {
+  extArr = []
+    if (entrStrg === '' ) return 0  ;
   else {
-  B = i.split('.');
-    for (let j=0; j<B.length; j++) {
-  a[j] = parseInt(B[j]);
+   spltNums = entrStrg.split('.');
+    for (let j=0; j<spltNums.length; j++) {
+  extArr[j] = parseInt(spltNums[j]);
   }};
-  return a;
+  return extArr;
 };
 
-const result = Parseip('127.0.0.1')
+const result = splitIP('127.0.0.1')
 console.log(result)
