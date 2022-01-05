@@ -4,10 +4,9 @@
 
 const duplicateValue = (value, times = 0) => {
   const res = [];
-  if (times >= 0) {
-    for (let i = 0; i < times; i++) {
-      res.push(value);
-    }
+  if (times < 0) return res;
+  for (let i = 0; i < times; i++) {
+    res.push(value);
   }
   return res;
 };
