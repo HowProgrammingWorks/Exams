@@ -6,23 +6,7 @@ using namespace std;
 const int words(const string str)
 {
   int numberofwordsinstr = 0;
-  bool flag = false;
-  for (const char &element : str)
-  {
 
-    if (element == ' ')
-    {
-      flag = false;
-    }
-    else
-    {
-      if (!flag)
-      {
-        numberofwordsinstr++;
-      }
-      flag = true;
-    }
-  }
   return numberofwordsinstr;
 }
 int main()
