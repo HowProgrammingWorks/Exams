@@ -5,19 +5,12 @@ const countWords = (str) => {
   let wordsNum = 0;
   let flag = false;
   for (const element of str) {
-    if (!flag) {
-      if (element === ' ') {
-        flag = false;
-      } else {
-        flag = true;
-      }
+    if (flag === false && element !== ' ') {
+      flag = true;
       wordsNum++;
-    } else {
-      if (element === ' ') {
-        flag = false;
-      } else {
-        flag = true;
-      }
+    }
+    if (element === ' ') {
+      flag = false;
     }
   }
   return wordsNum;
