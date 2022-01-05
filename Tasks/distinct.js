@@ -1,19 +1,21 @@
 // Deduplicate values in array
 
+// Fixes:
+// - not changing incoming parameters
+// - simplified code by using array instead of Set
+// - used for...of instead of for (...)
+
 'use strict';
 
-const distinct = (array) => {
-  const data = new Set();
-  for (let i = array.length; i >= 0; i--) {
-    const element = array[i];
-    if (data.has(element)) {
-      array.splice(i, 1);
-    } else {
-      data.add(element);
+const distinct = (data) => {
+  const result = [];
+  for (const element of data) {
+    if (!result.includes(element)) {
+      result.push(element);
     }
   }
-  return array;
+  return result;
 };
 
-const result = distinct([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 2, 3, 1, 4, 4]);
 console.log(result);
