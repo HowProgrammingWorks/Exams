@@ -5,11 +5,12 @@
 const inc_numbers = (format_complete) => {
       const keys = Object.keys(format_complete);
    	for (let key of keys) {
-      		if (typeof format_complete[key] === "number"){
-      			format_complete[key]++;
-      		}
-  	   }
-  	   return format_complete;
+      	let propType = typeof format_complete[key];
+      	if (propType === "number"){
+      		format_complete[key]++;
+      	}
+  	 }
+  	 return format_complete;
 };
 
 
