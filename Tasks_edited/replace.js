@@ -1,7 +1,7 @@
 // Replace substring with newstr
 
 function replace(str, substr,newstr){
-  if(substr === ''){
+  if(substr.length == 0){
     return str
   }
   else{
