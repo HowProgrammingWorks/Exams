@@ -1,15 +1,15 @@
 // Generate random integer value in given range
 'use strict';
 
-const generateRandom = (minValue, maxValue) => {
-    if (maxValue === undefined){
-        maxValue = minValue;
-        return Math.random() * (maxValue + 1);
+const generateRandom = (min, max) => {
+    if (max === undefined){
+        max = min;
+        return Math.random() * (max + 1);
     }
-    if (maxValue === undefined && minValue === undefined) {
+    if (max === undefined && min === undefined) {
         return 'Data entered incorrectly.';
     }
-    const random = minValue + Math.random() * (maxValue - minValue + 1);
+    const random = min + Math.random() * (max - min + 1);
     return Math.floor(random);
 };
 
