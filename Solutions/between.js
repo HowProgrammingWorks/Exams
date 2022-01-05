@@ -12,9 +12,8 @@ const getValueBetween = (str, start, end) => {
             const endIndex = str.indexOf(end);
             if (endIndex === -1) {
                 return '';
-            } else {
-                str =  str.substring(0 , endIndex);
             }
+            str =  str.substring(0 , endIndex);
         }
     }
     return str;
