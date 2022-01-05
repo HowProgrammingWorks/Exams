@@ -2,7 +2,7 @@
 
 'use strict';
 
-const inc_numbers = format_complete => {
+const inc_numbers = (format_complete) => {
   const keys = Object.keys(format_complete);
   for (const key of keys) {
     if (typeof format_complete[key] === 'number') {
