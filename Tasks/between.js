@@ -3,7 +3,8 @@
 
 const extract = (str, prefix, suffix) => {
 
-  return str.substring(str.indexOf(prefix)+prefix.length, str.indexOf(suffix));
+  const regexp = new RegExp(`^.*?${prefix}(.*?)${suffix}.*?$`);
+  return str.match(regexp)[1];
 };
 
 const result = extract('Hello <username> and bye!', '<', '>');
