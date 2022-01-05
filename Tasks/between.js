@@ -3,17 +3,22 @@
 
 const extract = (str, prefix, suffix) => {
 
-  prefix = prefix.replace(/(\W)/gi, '\\$1');
-  suffix = suffix.replace(/(\W)/gi, '\\$1');
+  let index = str.indexOf(prefix);
+  if (index !== -1) {
 
-  try {
-    const regexp = new RegExp(`^.*?${prefix}(.*?)${suffix}.*?$`);
-    return str.match(regexp)[1];
-  } catch (error) {
-    console.log("wrong");
-  }
+    let ilsum = index + prefix.length;
+    str = str.substring(ilsum);
+    index = str.indexOf(suffix);
+
+    if (index !== -1) {
+      str = str.substring(0, index);
+    } else str = "wrong";
+
+  } else str = "wrong";
+
+  return str;
 };
 
-const result = extract('Hello ??username?? and bye!', '??', '??');
+const result = extract('Hello <username> and bye!', '<', '>');
 console.log(result);
 
