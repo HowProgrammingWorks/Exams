@@ -2,7 +2,7 @@
 
 "use strict"
 
-let inc_numbers = dict => {
+const inc_numbers = dict => {
    	for (let key in dict) {
       		if (typeof dict[key] === "number"){
       			dict[key]++;
