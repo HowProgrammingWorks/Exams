@@ -1,6 +1,6 @@
 'use strict';
 
-const parseIp = ip => {
+const parseIp = (ip) => {
   const value = [];
   const splitArr = ip.split('.');
   for (let i = 0; i < splitArr.length; i++) {
