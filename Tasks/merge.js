@@ -2,7 +2,7 @@
 //Merge two dictionaries
 
 const mergeTwoObjects = function(objFirst, objSecond) {
-  let objFinal = {};
+  const objFinal = {};
 
   for (const key in objFirst) {
     if (objFirst.hasOwnProperty(key)) {
