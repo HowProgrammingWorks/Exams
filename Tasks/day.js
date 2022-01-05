@@ -2,9 +2,9 @@
 
 // Get day number
 
-let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const dayNumber = day =>{
+const dayNumber = (day) =>{
   for(let i=0; i<week.length; i++){
     const dayLowerCase =day.toLowerCase();
     if(dayLowerCase.startsWith(week[i].toLowerCase())){

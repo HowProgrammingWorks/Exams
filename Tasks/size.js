@@ -1,6 +1,6 @@
 // Convert number to file size in bytes, kb, mb, and gb
 
-let size=number=>{
+const size = (number) => {
   if (number === undefined) return;
   if (number === 0) return '0';
   const exp = Math.floor(Math.log(number)/Math.log(1000));
