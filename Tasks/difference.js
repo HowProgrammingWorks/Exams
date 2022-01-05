@@ -2,12 +2,12 @@
 
 'use strict';
 const difference = (obj1, obj2) => {
-  let diffObj = {...obj1};
+  const res={};
   for (const key in obj2) {
-    diffObj[key] = obj2[key];
-    delete diffObj[key];
+    res[key] = obj2[key];
+    delete res[key];
   }
-  return diffObj;
+  return res;
 };
 const result = difference({a: 'uno', b: 'due'}, {a: 'uno', c: 'tre'});
 console.log(result);
