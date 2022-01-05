@@ -2,7 +2,7 @@
 
 const inc = (elements) => {
      for ( let key in elements){
-      if ((typeof elements[key]) == "number")
+      if ((typeof elements[key]) === "number")
       {
         elements[key] = elements[key] + 1;
       }
