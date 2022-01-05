@@ -11,11 +11,11 @@ const replace = (str, subStr, newStr) => {
   let index = src.indexOf(subStr);
   while (index !== -1) {
     const start = src.substring(0, index);
-    src = src.substring(index + subStr.length, src.length);
-    res += start + newStr;
+    const end = src.substring(index + subStr.length, src.length);
+    src = start + newStr + end;
     index = src.indexOf(subStr);
   }
-  return res + src;
+  return src;
 }
 
 const result = replace('Hello <username> and bye!', '<username>', 'Marcus');
