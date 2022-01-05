@@ -5,7 +5,9 @@ const difference = (obj1, obj2) => {
   const keysOfFirst = Object.keys(obj1);
   const res={};
   for (const key of keysOfFirst) {
-    res[key] = obj2[key];
+    if (obj1[key] !== obj2[key]) {
+      res[key] = obj1[key];
+    }
   }
   return res;
 };
