@@ -5,10 +5,8 @@ Parseip = i => {
     if (i === '' ) return 0  ;
   else {
   B = i.split('.');
-  j = 0
-    for ( const b of B) {
-  a[j] = parseInt(b);
-  j++;
+    for (let j=0; j<B.length; j++) {
+  a[j] = parseInt(B[j]);
   }};
   return a;
 };
