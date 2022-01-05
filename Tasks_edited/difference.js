@@ -1,11 +1,11 @@
 // Finde a difference of two dictionaries
 
-function diff(object_1,object_2){
-    for(attribute_name in object_2){
-        object_1[attribute_name] = object_2[attribute_name]
-        delete object_1[attribute_name]
+function diff(dictionary1, dictionary2){
+    for(const index in dictionary2){
+        dictionary1[index] = dictionary2[index]
+        delete dictionary1[index]
     }
-    return object_1
+    return dictionary1
 }
 
 const result = diff({a: 'uno', b: 'due'}, {a: 'uno', c: 'tre'});
