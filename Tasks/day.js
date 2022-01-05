@@ -8,7 +8,7 @@ const parseDay = (searchedDay) => {
     searchedDay.startsWith(val.toLowerCase()));
   const dayNumber = dayIndex + 1;
   return dayNumber === 0 ? -1 : dayNumber;
-};
+}
   
 
 
