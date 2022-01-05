@@ -1,6 +1,6 @@
 'use strict';
 
-const inc = format => {
+const inc = (format) => {
   const res = [];
   for (let element of format) {
     if (typeof element === 'number') element++;
