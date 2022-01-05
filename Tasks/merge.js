@@ -3,14 +3,14 @@
 
 const mergeTwoObjects = (obj1, obj2) => {
   const obj3 = {};
-  for (const i in obj1) {
-    obj3[i] = obj1[i];
+  for (const key in obj1) {
+    obj3[key] = obj1[key];
   }
-  for (const j in obj2) {
-    obj3[j] = obj2[j];
+  for (const key in obj2) {
+    obj3[key] = obj2[key];
   }
   return obj3;
 };
 
-const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre' });
+const result = mergeTwoObjects({ a: 'uno', b: 'due' }, { c: 'tre', d: 'cua' });
 console.log(result);
