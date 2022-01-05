@@ -1,6 +1,6 @@
 // Replace substring with newstr
 
-replace = (str, substr,newstr)=>{
+function replace(str, substr,newstr){
   if(substr === ''){
     return str
   }
