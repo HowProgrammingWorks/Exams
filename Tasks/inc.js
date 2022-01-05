@@ -3,7 +3,8 @@
 'use strict';
 
 const incNumbers = (dictionary) => {
-  for (const key in dictionary) {
+  const keys = Object.keys(dictionary);
+  for (const key of keys) {
     if (typeof dictionary[key] === 'number') {
       dictionary[key]++;
     }
