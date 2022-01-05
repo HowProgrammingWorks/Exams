@@ -6,16 +6,15 @@ const replace = (str, subStr, newStr) => {
   if (subStr === '') {
     return str;
   }
-  let src = str;
   let res = '';
-  let index = src.indexOf(subStr);
+  let index = str.indexOf(subStr);
   while (index !== -1) {
-    const start = src.substring(0, index);
-    const end = src.substring(index + subStr.length, src.length);
-    src = start + newStr + end;
-    index = src.indexOf(subStr);
+    const start = str.substring(0, index);
+    const end = str.substring(index + subStr.length, str.length);
+    str = start + newStr + end;
+    index = str.indexOf(subStr);
   }
-  return src;
+  return str;
 }
 
 const result = replace('Hello <username> and bye!', '<username>', 'Marcus');
