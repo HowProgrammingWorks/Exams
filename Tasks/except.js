@@ -4,9 +4,9 @@
 // Returns a new dictionary with all the keys and values from the incomingValues dictionary
 // except for the keys which are in the exceptions rest arguments array.
 const except = (incomingValues, ...exceptions) => {
-  const KEYS = Object.keys(incomingValues);
+  const keys = Object.keys(incomingValues);
   const outcomingValues = {};
-  KEYS.forEach((key) => {
+  keys.forEach((key) => {
     if (!exceptions.includes(key)) { 
       outcomingValues[key] = incomingValues[key];
     }

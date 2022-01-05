@@ -3,9 +3,9 @@
 // Function intersection
 // Returns a new object with all the keys and values which are in both object1 and object2
 const intersection = (object1, object2) => {
-  const OBJECT1_KEYS = Object.keys(object1);
+  const object1Keys = Object.keys(object1);
   const intersected = {};
-  for (const key of OBJECT1_KEYS) {
+  for (const key of object1Keys) {
     if (key && object2[key] === object1[key]) {
       intersected[key] = object1[key];
     }
