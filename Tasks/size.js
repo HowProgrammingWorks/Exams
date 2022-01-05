@@ -1,6 +1,6 @@
 // Convert number to file size in bytes, kb, mb, and gb
 
-let size=size=>{
+const getRoundSize=size=>{
     if (size < 0 || typeof size != 'number') return '0';
     else {
       const exp = Math.floor(Math.log(size)/Math.log(1000));
@@ -14,5 +14,5 @@ let size=size=>{
   }
 }
   
-const result = size(123456)
+const result = getRoundSize(123456)
 console.log(result)
