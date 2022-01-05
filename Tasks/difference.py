@@ -1,9 +1,9 @@
-def diff(object_1,object_2):
-    if object_1 == object_2:
+def difference(FirtsObject, SecondObject):
+    if FirtsObject == SecondObject:
         return False
-    for attribute_name in object_2:
-        object_1[attribute_name]=object_2[attribute_name]
-        del object_1[attribute_name]
-    return object_1
-result = diff({'a':'uno', 'b':'due'},{'a':'uno', 'c':'tre'})
+    for element in SecondObject:
+        FirtsObject[element] = SecondObject[element]
+        del FirtsObject[element]
+    return FirtsObject
+result = difference({ 'a': 'uno', 'b': 'due' }, { 'a': 'uno', 'c': 'tre' })
 print(result)
