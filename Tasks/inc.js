@@ -2,10 +2,10 @@
 
 "use strict"
 
-const inc_numbers = dict => {
-   	for (let key in dict) {
-      		if (typeof dict[key] === "number"){
-      			dict[key]++;
+const inc_numbers = (format_complete) => {
+   	for (let key in format_complete) {
+      		if (typeof format_complete[key] === "number"){
+      			format_complete[key]++;
       		}
   	}
   	return dict;
