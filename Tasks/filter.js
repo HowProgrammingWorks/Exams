@@ -2,9 +2,9 @@
 
 'use strict';
 
-Filter = (T, t) => {
-  for (C of T) {
-    x = T.indexOf(C);
+const Filter = (T, t) => {
+  for (let C of T) {
+    let x = T.indexOf(C);
     if (typeof T[x] !== t) { T.splice(x, 1); }
   }
   return T;
