@@ -8,7 +8,7 @@ const inc_numbers = (format_complete) => {
       			format_complete[key]++;
       		}
   	}
-  	return dict;
+  	return format_complete;
  };
 
 
