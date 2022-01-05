@@ -1,12 +1,16 @@
 'use strict'
+
 // Copy all values from dict except listed
-const except = (obj,...args) => {
-    for (const key in obj) {
-        if (args.includes(key)) {
-            delete obj[key];
-        }
+
+const except = (obj, ...args) => {
+  const res = {};
+  const keys = Object.keys(obj);
+  for (const key of keys) {
+    if (!args.includes(key)) {
+      res[key] = obj[key];
     }
-    return obj;
+  }
+  return res;
 }
 
 const result = except({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
