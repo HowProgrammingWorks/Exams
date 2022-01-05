@@ -1,15 +1,14 @@
 'use strict'
 
-const inc = (elements) => {
-     for ( let key of elements){
-      if ((typeof elements[key]) === "number")
-      {
-        elements[key] = elements[key] ++;
-      }
+const inc = (format) => {
+  let res = [];
+     for ( let element of format){
+      if (typeof element === "number") element ++;
+      res.push(element);
    }
-  return elements;
+  return res;
   };
 
 
-const obj = ({ a: 1, b: 2, c: 'hello', d: false });
+const obj = [1,2,'hello', false];
 console.log(inc(obj));
