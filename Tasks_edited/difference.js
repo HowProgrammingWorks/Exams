@@ -1,4 +1,4 @@
-// Finde a difference of two dictionaries
+'use strict'
 
 function diff(dictionary1, dictionary2){
     for(const index in dictionary2){
