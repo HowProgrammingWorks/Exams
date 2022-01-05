@@ -2,19 +2,19 @@
 
 'use strict';
 
-const Parseip = i => {
-  let a = [];
-  if (i === '') return 0;
+const ParseIp = ipAddress => {
+  let separatedIpAddress = [];
+  if (ipAddress === '') return 0;
   else {
-    let B = i.split('.');
-    let j = 0;
-    for (const b of B) {
-      a[j] = parseInt(b);
-      j++;
+    let separator = ipAddress.split('.');
+    let index = 0;
+    for (const arrayElement of separator) {
+      separatedIpAddress[index] = parseInt(arrayElement);
+      index++;
     }
   }
-  return a;
+  return separatedIpAddress;
 };
 
-const result = Parseip('127.0.0.1');
+const result = ParseIp('127.0.0.1');
 console.log(result);
