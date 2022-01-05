@@ -1,11 +1,12 @@
 // Get day number
 
-let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+let day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
-_parse_day_=s=>{
-  let i; for(i=0;i<D.length;i++){
-  if(s.startsWith(D[i].toLowerCase())){return i +1};};return -1;
+const getDayNumber = function(text){
+  for(let i=0;i<day.length;i++){
+    if(text != null && text.toLowerCase().startsWith(day[i].toLowerCase()))
+    {return i +1};};
 };
 
-const result = _parse_day_('friday')
-console.log(result)
+const result = getDayNumber('friday')
+console.log(result) 
