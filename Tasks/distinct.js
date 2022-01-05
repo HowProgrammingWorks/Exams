@@ -1,12 +1,13 @@
 'use strict';
 
 const distinct = (array) => {
+  const result = [...array];
   const uniqueElements = new Set();
-  array.forEach((element, index) => {
-    if (uniqueElements.has(element)) array.splice(index, 1);
+  result.forEach((element, index) => {
+    if (uniqueElements.has(element)) result.splice(index, 1);
     else uniqueElements.add(element);
   });
-  return array;
+  return result;
 };
 
 const result = distinct([1, 2, 1, 3, 1, 4]);
