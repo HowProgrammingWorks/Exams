@@ -5,7 +5,8 @@ const words = (str) => {
   let countWords = 0;
   let flag = true;
   for (const char of str) {
-    if (char === ' ') {
+    const space = char === ' '; 
+    if (space) {
       flag = true;
     } else {
       if (flag) countWords++;
