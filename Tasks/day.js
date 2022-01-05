@@ -3,7 +3,7 @@
 
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-function parser(day) {
+const parser = (day) => {
   for (let i = 0; i < days.length; i++) {
     day = day.toLowerCase();
     days[i] = days[i].toLowerCase();
