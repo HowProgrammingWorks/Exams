@@ -7,15 +7,10 @@ function replace(str, substr, newstr){
   else{
     replaced = ''
     const index = str.indexOf(substr); 
-    if(index === -1){
-      return replaced + str
-    }
-    else{
-      const start = str.substring(0, index);
-      const end = str.substring(index + substr.length, str.length)
-      replaced += start + newstr + end
+    const start = str.substring(0, index);
+    const end = str.substring(index + substr.length, str.length)
+    replaced += start + newstr + end
     return replaced
-        }
   };
 };
 
