@@ -2,21 +2,21 @@
 'use strict';
 
 
-const Replace = (str, substr, newstr) => {
-  if (substr === '') {
+const replace = (str, subStr, newStr) => {
+  if (subStr === '') {
     return str;
   }
   let src = str;
   let res = '';
-  let index = src.indexOf(substr);
+  let index = src.indexOf(subStr);
   while (index !== -1) {
     const start = src.substring(0, index);
-    src = src.substring(index + substr.length, src.length);
-    res += start + newstr;
-    index = src.indexOf(substr);
+    src = src.substring(index + subStr.length, src.length);
+    res += start + newStr;
+    index = src.indexOf(subStr);
   }
   return res + src;
 }
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
+const result = replace('Hello <username> and bye!', '<username>', 'Marcus');
 console.log(result);
