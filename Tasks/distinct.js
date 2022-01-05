@@ -2,9 +2,7 @@
 // Deduplicate values in array
 
 const leaveUniqueValues = function(array) {
-  if (!Array.isArray(array)) {
-    return;
-  };
+  if (!Array.isArray(array)) return;
 
   const uniqueSet = new Set(array);
   const uniqueArray = Array.from(uniqueSet);
