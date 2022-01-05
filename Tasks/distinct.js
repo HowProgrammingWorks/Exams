@@ -1,10 +1,10 @@
 'use strict';
 
 const distinct = (array) => {
-  const unicalElements = new Set();
-  array.forEach((a, index) => {
-    if (unicalElements.has(a)) array.splice(index, 1);
-    else unicalElements.add(a);
+  const uniqueElements = new Set();
+  array.forEach((element, index) => {
+    if (uniqueElements.has(element)) array.splice(index, 1);
+    else uniqueElements.add(element);
   });
   return array;
 };
