@@ -9,9 +9,11 @@ const string replace(string str = "", const string substr = "", const string new
     return str;
   }
   return str.erase(positionofsubstr, substr.size()).insert(positionofsubstr, newstr);
+  
 }
 int main()
 {
   cout << replace("Hello <username> and bye!", "<username>", "Marcus");
   return 0;
+
 }
