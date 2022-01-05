@@ -6,7 +6,6 @@ const difference = (obj1, obj2) => {
   const res={};
   for (const key of keysOfFirst) {
     res[key] = obj2[key];
-    delete res[key];
   }
   return res;
 };
