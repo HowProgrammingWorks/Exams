@@ -5,12 +5,10 @@ function replace(str, substr, newstr){
     return str
   }
   else{
-    replaced = ''
     const index = str.indexOf(substr); 
     const start = str.substring(0, index);
     const end = str.substring(index + substr.length, str.length)
-    replaced += start + newstr + end
-    return replaced
+    return start + newstr + end
   };
 };
 
