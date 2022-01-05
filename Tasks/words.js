@@ -1,22 +1,20 @@
 // Count words
-'use strict';
+"use strict";
 const Words = (string) => {
   let counter = 0;
   let flag = false;
   for (const symbol of string) {
-    if (!flag) {
-      if (symbol !== ' ') {
-        { flag = true };
-        counter++;
+    if (!flag && symbol !== " ") {
+      {
+        flag = true;
       }
-    }
-     else {
-      if (symbol === ' ') 
-      { flag = false; }
+      counter++;
+    } else if (flag && symbol === " ") {
+      flag = false;
     }
   }
   return counter;
-}
+};
 
-const result = Words('Hello Marcus Aureluis');
+const result = Words("Hello Marcus Aureluis");
 console.log(result);
