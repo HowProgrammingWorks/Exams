@@ -5,9 +5,7 @@ const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parser = (day) => {
   for (let i = 0; i < days.length; i++) {
-    day = day.toLowerCase();
-    days[i] = days[i].toLowerCase();
-    if (day.startsWith(days[i])) {
+    if (day.toLowerCase().startsWith(days[i].toLowerCase())) {
       return `match found: ${i + 1}`;
     }
   }
