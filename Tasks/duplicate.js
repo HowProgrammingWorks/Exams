@@ -4,11 +4,10 @@
 
 const duplicate = (value, times) => {
   if (times <= 0) {
-    console.log('Nothing to multiply');
-    return ;
-  }
-  else {
-    let result = [];
+    const end = new Error('Programm duplicate string 0 times!')
+    return end;
+  } else {
+    const result = [];
     for (let i = 0; i < times; i++) {
       result[i] = value;
     }
@@ -16,5 +15,5 @@ const duplicate = (value, times) => {
   }
 };
 
-const example = duplicate('abc', 5);
+const example = duplicate('abc', 0);
 console.log(example);
