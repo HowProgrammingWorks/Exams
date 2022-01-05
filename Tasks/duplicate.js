@@ -2,7 +2,7 @@
 
 // Push single value multiple times
 
-const duplicateValue = (value, times) => {
+const duplicateValue = (value, times = 0) => {
   const res = [];
   if (times >= 0) {
     for (let i = 0; i < times; i++) {
