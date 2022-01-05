@@ -7,10 +7,10 @@ const words = (str) => {
   for (const char of str) {
     const space = char === ' '; 
     if (space) {
-      flag = true;
+      flag = space;
     } else {
       if (flag) countWords++;
-      flag = false;
+      flag = space;
     }
   }
   return countWords;
