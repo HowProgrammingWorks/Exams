@@ -16,5 +16,4 @@ const ParseIp = ipAddress => {
   return separatedIpAddress;
 };
 
-const result = ParseIp('127.0.0.1');
-console.log(result);
+console.log(ParseIp('127.0.0.1'));
