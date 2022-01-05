@@ -1,7 +1,7 @@
 // Get day number
-"use strict";
+'use strict';
 
-const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parser = (day) => {
   for (let i = 0; i < days.length; i++) {
@@ -14,5 +14,5 @@ const parser = (day) => {
   return `no match: ${-1}`;
 }
 
-const result = parser("friday");
+const result = parser('friday');
 console.log(result);
