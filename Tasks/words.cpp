@@ -6,7 +6,10 @@ using namespace std;
 const int words(const string str)
 {
   int numberofwordsinstr = 0;
-
+  for (unsigned int index=0; index < str.size(); ++index)
+  {
+    
+  }
   return numberofwordsinstr;
 }
 int main()
