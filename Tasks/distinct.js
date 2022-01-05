@@ -1,7 +1,7 @@
 'use strict';
 // Deduplicate values in array
 
-const leaveUniqueValues = function(array) {
+const leaveUniqueValues = (array) => {
   if (!Array.isArray(array)) return;
 
   const uniqueSet = new Set(array);
