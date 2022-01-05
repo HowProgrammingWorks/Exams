@@ -3,20 +3,7 @@
 
 const extract = (str, prefix, suffix) => {
 
-  index = str.indexOf(prefix);
-  if (index !== -1) {
-
-    ilsum = index + prefix.length;
-    str = str.substring(ilsum);
-    index = str.indexOf(suffix);
-
-    if (index !== -1) {
-      str = str.substring(0, index);
-    } else str = "wrong";
-
-  } else str = "wrong";
-
-  return str;
+  return str.substring(str.indexOf(prefix)+prefix.length, str.indexOf(suffix));
 };
 
 const result = extract('Hello <username> and bye!', '<', '>');
