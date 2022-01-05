@@ -11,3 +11,4 @@ const inc = (format) => {
 
 const obj = [1, 2, 'hello', false];
 console.log(inc(obj));
+
