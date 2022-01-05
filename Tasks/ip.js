@@ -2,7 +2,7 @@
 
 'use strict';
 
-const ParseIp = ipAddress => {
+const parseIp = (ipAddress) => {
   let separatedIpAddress = [];
   if (ipAddress === '') return 0;
   else {
@@ -14,4 +14,4 @@ const ParseIp = ipAddress => {
   return separatedIpAddress;
 };
 
-console.log(ParseIp('127.0.0.1'));
+console.log(parseIp('127.0.0.1'));
