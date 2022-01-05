@@ -1,23 +1,24 @@
 // Extract substring between prefix and suffix
-'use strict';
+"use strict";
 
 const extract = (str, pref, suf) => {
   let index = str.indexOf(pref);
+  const iPref = index + pref.length;
+  let tmpStr = str.substring(iPref);
+
   if (index !== -1) {
-    let ipref = index + pref.length;
-    str = str.substring(ipref);
-    index = str.indexOf(suf);
+    index = tmpStr.indexOf(suf);
 
     if (index !== -1) {
-      str = str.substring(0, index);
+      tmpStr = tmpStr.substring(0, index);
     } else {
-      str = 'wrong';
+      tmpStr = "wrong";
     }
   } else {
-    str = 'wrong';
+    tmpStr = "wrong";
   }
-  return str;
+  return tmpStr;
 };
 
-const result = extract('Hello <username> and bye!', '<', '>');
+const result = extract("Hello <username> and bye!", "<", ">");
 console.log(result);
