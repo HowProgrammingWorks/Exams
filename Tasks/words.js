@@ -5,9 +5,7 @@ const Words = (string) => {
   let flag = false;
   for (const symbol of string) {
     if (!flag && symbol !== " ") {
-      {
-        flag = true;
-      }
+      flag = true;
       counter++;
     } else if (flag && symbol === " ") {
       flag = false;
