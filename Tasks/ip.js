@@ -7,10 +7,8 @@ const ParseIp = ipAddress => {
   if (ipAddress === '') return 0;
   else {
     separatedIpAddress = ipAddress.split('.');
-    let index = 0;
     for (const arrayElement of separatedIpAddress) {
-      separatedIpAddress[index] = parseInt(arrayElement);
-      index++;
+      separatedIpAddress[separatedIpAddress.indexOf(arrayElement)] = parseInt(arrayElement);
     }
   }
   return separatedIpAddress;
