@@ -1,8 +1,8 @@
 // Split string by the first occurrence of separator
 
-splitIP = entrStrg => {
+const splitIP = entrStrg => {
   extArr = []
-    if (entrStrg === '' ) return 0  ;
+    if (entrStrg === '' ) return null;
   else {
    spltNums = entrStrg.split('.');
     for (let j=0; j<spltNums.length; j++) {
