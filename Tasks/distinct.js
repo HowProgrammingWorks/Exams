@@ -4,9 +4,10 @@
 
 const distinct = (data) => {
   const arrayOfSet = new Set();
-  for (let i = array.length; c >= 0; c--) {
-    if (arrayOfSet .has(arrElem)) {
-      array.splice(c, 1);
+  for (let c = data.length; c >= 0; c--) {
+    const arrElem = data[c];
+    if (arrayOfSet.has(arrElem)) {
+      data.splice(c, 1);
     } else {
       arrayOfSet.add(arrElem);
     }
