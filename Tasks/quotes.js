@@ -4,7 +4,7 @@
 const EMPTY = '';
 const BRACKETS = ['«', '»'];
 
-const quotes = str => {
+const quotes = (str) => {
   let indexBracket = 0;
   return str.split(EMPTY).map( element => {
     if (element === '"') {
