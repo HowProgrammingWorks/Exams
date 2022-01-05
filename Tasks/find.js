@@ -1,8 +1,10 @@
 // Find key by value
 'use strict';
+
 const find = (object, value) => {
-   for (let name in object) {
-      if (object[name]) == value)  return name;
+   const keys = Obgect.keys(object);
+   for (const name of object) {
+      if (object[name] === value) return name;
    }
 };
 
