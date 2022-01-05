@@ -4,12 +4,13 @@
 
 const incNumbers = (dictionary) => {
   const keys = Object.keys(dictionary);
+  const copy = Object.assign({}, dictionary);
   for (const key of keys) {
     if (typeof dictionary[key] === 'number') {
-      dictionary[key]++;
+      copy[key]++;
     }
   }
-  return dictionary;
+  return copy;
 };
 
 const result = incNumbers({ a: 1, b: 2, c: 'hello', d: false });
