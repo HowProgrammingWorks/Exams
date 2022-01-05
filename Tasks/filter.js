@@ -3,8 +3,8 @@
 'use strict';
 
 const Filter = (typesForFilter, typeName) => {
-  for (const counter of typesForFilter) {
-    if (typeof typesForFilter[counter] !== typeName) { typesForFilter.splice(counter, 1); }
+  for (const arrayElement of typesForFilter) {
+    if (typeof typesForFilter[arrayElement] !== typeName) { typesForFilter.splice(arrayElement, 1); }
   }
   return typesForFilter;
 };
