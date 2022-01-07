@@ -14,5 +14,5 @@
    res += start + newstr
  }} while (true); }; };
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus')
+const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
 console.log(result)
