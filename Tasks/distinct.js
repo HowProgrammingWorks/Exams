@@ -1,4 +1,4 @@
-// Deduplicate values in array
+// Remove duplicates in array
 
 DISTINCT =data=> {
     A=new Set(); w=0;
