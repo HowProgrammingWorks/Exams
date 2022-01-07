@@ -8,5 +8,5 @@ _parse_day_=s=>{
   {return i +1};};return -1;
 };
 
-const result = _parse_day_('friday')
-console.log(result)
+const result = _parse_day_('friday');
+console.log(result);

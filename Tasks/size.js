@@ -11,5 +11,5 @@ let size=size=>{
   }
 }
 
-const result = size(123456)
-console.log(result)
+const result = size(123456);
+console.log(result);
