@@ -1,4 +1,4 @@
-// Change douple quotation to open or close quotation
+// Change double quotation to open or close quotation
 
 const EMPTY = '';
 
