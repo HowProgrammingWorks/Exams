@@ -9,10 +9,10 @@
 
 const SIZE_UNITS = ['kb', 'mb', 'gb'];
 
-const size = (size) => {
-  if (size === 0) return '0';
-  const exp = Math.floor(Math.log(size) / Math.log(1000));
-  const value = Math.round(size / 1000 ** exp);
+const size = (bytes) => {
+  if (bytes === 0) return '0';
+  const exp = Math.floor(Math.log(bytes) / Math.log(1000));
+  const value = Math.round(bytes / 1000 ** exp);
   const unit = exp === 0 ? 'byte' : SIZE_UNITS[exp - 1];
   return value.toString() + ' ' + unit;
 };
