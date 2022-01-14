@@ -1,4 +1,4 @@
-// Remove values from array
+// Return an remove without listed values
 
 Skip = (T, ...Remove) => {
   x = 0;
