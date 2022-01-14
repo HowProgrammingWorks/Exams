@@ -1,4 +1,4 @@
-// Return and array with duplicates
+// Return an array without duplicates
 
 duplicate = (value, N) => {
   if (N <= 0) return [];
