@@ -1,4 +1,4 @@
-// Push given value multiple times
+// Return and array with duplicates
 
 duplicate = (value, N) => {
   if (N <= 0) return [];

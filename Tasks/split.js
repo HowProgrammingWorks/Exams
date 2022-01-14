@@ -1,4 +1,4 @@
-// Split array into two parts
+// Split an array into two parts
 
 let split_Array=(index,array)=>{
   begin=array.slice(0,index)

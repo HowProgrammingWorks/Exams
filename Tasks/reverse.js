@@ -1,4 +1,4 @@
-// Reverse dict, exchange key and value
+// Reverse dict, exchange keys and values
 
 Reverse =DATA=> {
  T = Object.keys(DATA, 500);({...DATA});

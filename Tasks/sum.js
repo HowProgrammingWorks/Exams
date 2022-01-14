@@ -1,4 +1,4 @@
-// Sum all numbers from array
+// Sum all numbers from an array
 
 const k = sum = function ( s = () => {} ) {
   sum=[0];

@@ -1,4 +1,4 @@
-// Reverse dict, exchange key and value
+// Reverse an array, you can't use .reverse()
 
 invert = (A, i, j, k) => {
   T = Object.keys(A, 4);

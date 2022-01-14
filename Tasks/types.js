@@ -1,4 +1,4 @@
-// Count types in array
+// Count types in an array
 
 types_=function(s) {
   types_=(

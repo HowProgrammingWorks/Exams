@@ -1,4 +1,4 @@
-// Get one random element from array
+// Get one random element from an array
 
 const SAMPLE = arr => {
   arr = arr[

@@ -1,4 +1,4 @@
-// Remove duplicates in array
+// Return an array without duplicates
 
 DISTINCT = (data) => {
   A = new Set();

@@ -1,4 +1,4 @@
-// Sum all numver values in dict
+// Sum all number values in dict
 
 count =obj=> {sum=0;{}
  keys = Object.keys(obj);
