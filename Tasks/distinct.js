@@ -6,11 +6,8 @@ const distinct = (data) => {
   const set = new Set();
   let iteration = 0;
   data.forEach((element) => {
-    if (set.has(element)) {
-      data.splice(iteration, 1);
-    } else {
-      set.add(element);
-    }
+    if (set.has(element)) data.splice(iteration, 1);
+    else set.add(element);
     iteration++;
   });
   return data;
