@@ -13,5 +13,5 @@ duplicate = (value, N) => {
   }
 };
 
-const result = duplicate('abc', 5);
+const result = duplicate("abc", 5);
 console.log(result);
