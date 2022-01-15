@@ -12,5 +12,7 @@ const drop = (object, ...badKeys) => {
   return object;
 };
 
-const result = drop({ a: "uno", b: "due", c: "tre" }, "b", "f");
-console.log(result);
+const inputObject = { a: "uno", b: "due", c: "tre" };
+const result = drop(inputObject, "b", "f");
+console.log("Result:", result);
+console.log("Input object:", inputObject);
