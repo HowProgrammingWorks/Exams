@@ -2,15 +2,13 @@
 
 // Return an array without duplicates
 
-const distinct = (data) => {
+const distinct = (array) => {
   const set = new Set();
-  let iteration = 0;
-  data.forEach((element) => {
-    if (set.has(element)) data.splice(iteration, 1);
+  array.forEach((element, index) => {
+    if (set.has(element)) array.splice(index, 1);
     else set.add(element);
-    iteration++;
   });
-  return data;
+  return array;
 };
 
 const result = distinct([1, 2, 1, 3, 1, 4]);
