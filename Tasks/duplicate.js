@@ -1,3 +1,5 @@
+"use strict";
+
 // Return an array without duplicates
 
 duplicate = (value, N) => {
