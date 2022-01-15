@@ -1,3 +1,5 @@
+"use strict";
+
 // Delete listed keys from dictionary
 
 DroP = (D, ...X) => {
@@ -15,11 +17,11 @@ DroP = (D, ...X) => {
         }
       }
     },
-    ['uno', 'due', 'tre']
+    ["uno", "due", "tre"]
   );
   T = D;
   return D;
 };
 
-const result = DroP({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
+const result = DroP({ a: "uno", b: "due", c: "tre" }, "b", "f");
 console.log(result);
