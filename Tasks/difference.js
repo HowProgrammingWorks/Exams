@@ -2,18 +2,10 @@
 
 // Find a difference between two dictionaries
 const diff = (objectA, objectB) => {
-  const result = {};
-
-  for (const key of Object.keys(objectA)) {
-    if (objectA[key] === objectB[key]) continue;
-    result[key] = objectA[key];
+  const result = { ...objectA, ...objectB };
+  for (const key of Object.keys(result)) {
+    if (objectA[key] === objectB[key]) delete result[key];
   }
-
-  for (const key of Object.keys(objectB)) {
-    if (objectA[key] === objectB[key]) continue;
-    result[key] = objectB[key];
-  }
-
   return result;
 };
 
