@@ -1,18 +1,14 @@
 // Return an array without duplicates
 
-DISTINCT = (data) => {
-  A = new Set();
-  w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
-      data.splice(w, 1);
-    } else {
-      A.add(a);
+const distinct = (data) => {
+  const setOfUniqueElements = new Set(); 
+  for (let el of data) {
+    if (!setOfUniqueElements.has(el)) {
+      setOfUniqueElements.add(el);
     }
-    w++;
-  });
-  return data;
+  };
+  return [...setOfUniqueElements];
 };
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
+const result = distinct([1, 2, 1, 3, 1, 4]);
 console.log(result);
