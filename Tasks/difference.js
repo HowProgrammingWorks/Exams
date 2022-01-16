@@ -4,12 +4,14 @@
 const diff = (objectA, objectB) => {
   const result = {};
 
-  for (const key in objectA) {
+  for (const key of Object.keys(objectA)) {
     if (objectA[key] === objectB[key]) continue;
     result[key] = objectA[key];
   }
 
-  for (const key in objectB) {
+  for (const key of Object.keys(objectB)) {
+    if (objectA[key] === objectB[key]) continue;
+    result[key] = objectB[key];
   }
 
   return result;
