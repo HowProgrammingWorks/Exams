@@ -4,7 +4,7 @@
 
 const drop = (object, ...badKeys) => {
   const result = { ...object };
-  for (const key in result) {
+  for (const key of Object.keys(result)) {
     if (badKeys.includes(key)) delete result[key];
   }
   return result;
