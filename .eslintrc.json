@@ -135,7 +135,7 @@
         "functions": false
       }
     ],
-    "arrow-parens": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": ["error"],
     "no-confusing-arrow": [
