@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Fill array with given value N times
 
@@ -11,7 +11,7 @@
     return res;
   };
 
-  const result = fillArray("abc", 5);
+  const result = fillArray('abc', 5);
   console.log(result);
 }
 
@@ -19,6 +19,6 @@
 {
   const fillArray = (value, n) => new Array(n).fill(value);
 
-  const result = fillArray("abc", 5);
+  const result = fillArray('abc', 5);
   console.log(result);
 }
