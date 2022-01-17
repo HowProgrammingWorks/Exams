@@ -3,12 +3,12 @@
 // Fill array with given value N times
 
 {
-  const fillArray = (value, n) => {
-    const res = [];
+  const fillArray = (value, n = 0) => {
+    const result = [];
     for (let i = 0; i < n; i++) {
-      res[i] = value;
+      result[i] = value;
     }
-    return res;
+    return result;
   };
 
   const result = fillArray('abc', 5);
@@ -17,7 +17,7 @@
 
 // Inline variant
 {
-  const fillArray = (value, n) => new Array(n).fill(value);
+  const fillArray = (value, n = 0) => new Array(n).fill(value);
 
   const result = fillArray('abc', 5);
   console.log(result);
