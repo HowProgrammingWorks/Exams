@@ -1,4 +1,5 @@
-// Return an array without duplicates
+// Return an array without duplica
+'use strict';
 
 const distinct = (data) => {
   const setOfUniqueElements = new Set(); 
