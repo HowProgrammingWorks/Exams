@@ -1,23 +1,16 @@
 {
   "name": "exams",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "scripts": {
     "test": "node test/tasks.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nieopierzony/Exams.git"
+    "url": "https://github.com/HowProgrammingWorks/Exams"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nieopierzony/Exams/issues"
-  },
-  "homepage": "https://github.com/nieopierzony/Exams#readme",
-  "devDependencies": {
-    "eslint": "^8.6.0",
-    "prettier": "^2.5.1"
+    "url": "https://github.com/HowProgrammingWorks/Exams/issues"
   }
 }
