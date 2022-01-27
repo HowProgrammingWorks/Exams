@@ -1,0 +1,11 @@
+{
+  "between": [
+    { "input": ["Hello <username> and bye!", "<", ">"], "expected": "username" },
+    { "input": ["Lorem <ipsum />", "<", "/>"], "expected": "ipsum " },
+    { "input": ["545345", "t", "1"], "expected": "" }
+  ],
+  "distinct": [
+    { "input": [[1, 2, 1, 3, 1, 4]], "expected": [1, 2, 3, 4] },
+    { "input": [[4, 6, 2, 6, 2]], "expected": [4, 6, 2] }
+  ]
+}
