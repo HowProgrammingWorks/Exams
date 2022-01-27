@@ -1,14 +1,12 @@
 'use strict';
 
-const fs = require('node:fs');
 const path = require('node:path');
 const { spawn } = require('node:child_process');
+const taskTest = require('./task.test');
 
-const lintCode = (taskName) => {
-  const taskFilePath = path.join(__dirname, '../Tasks', `${taskName}.js`);
-
+const lintCode = (taskName, taskPath) => {
   const childOptions = { shell: true, stdio: 'inherit' };
-  const eslintProcess = spawn('npx', ['eslint', taskFilePath], childOptions);
+  const eslintProcess = spawn('npx', ['eslint', taskPath], childOptions);
 
   console.log(`[Lint] Running eslint on ${taskName}`);
 
@@ -29,11 +27,7 @@ if (cliArguments.length === 0) {
 }
 
 for (const taskName of cliArguments) {
-  const filePath = path.join(__dirname, `${taskName}.task.js`);
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`Failed to find test file for "${taskName}"`);
-  }
-
-  const eslintProcess = lintCode(taskName);
-  eslintProcess.on('close', () => require(filePath));
+  const taskPath = path.join(__dirname, '../Tasks', `${taskName}.js`);
+  const eslintProcess = lintCode(taskName, taskPath);
+  eslintProcess.on('close', () => taskTest(taskName, taskPath));
 }

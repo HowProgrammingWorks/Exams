@@ -1,22 +1,28 @@
 'use strict';
 
 const assert = require('node:assert/strict');
-const distinct = require('../Tasks/distinct');
+const cases = require('./cases.json');
 
 const ERR_INPUT_MODIFIED = 'The input data should not be modified';
 const ERR_FUNCTION_NOT_IMPORTED = 'The function is expected';
 
-const testCases = [
-  { input: [[1, 2, 1, 3, 1, 4]], expected: [1, 2, 3, 4] },
-  { input: [[4, 6, 2, 6, 2]], expected: [4, 6, 2] },
-];
+const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
-assert.equal(typeof distinct, 'function', ERR_FUNCTION_NOT_IMPORTED);
+module.exports = (taskName, taskPath) => {
+  const taskCases = cases[taskName];
+  if (!taskCases) {
+    throw new Error(`No test cases found for ${taskName}`);
+  }
 
-for (const testCase of testCases) {
-  const cachedInput = JSON.parse(JSON.stringify(testCase.input));
-  assert.deepStrictEqual(distinct(...testCase.input), testCase.expected);
-  assert.deepStrictEqual(cachedInput, testCase.input, ERR_INPUT_MODIFIED);
-}
+  const task = require(taskPath);
 
-console.log('[Distinct] Tests passed successfully');
+  assert.equal(typeof task, 'function', ERR_FUNCTION_NOT_IMPORTED);
+
+  for (const taskCase of taskCases) {
+    const cachedInput = JSON.parse(JSON.stringify(taskCase.input));
+    assert.deepStrictEqual(task(...taskCase.input), taskCase.expected);
+    assert.deepStrictEqual(cachedInput, taskCase.input, ERR_INPUT_MODIFIED);
+  }
+
+  console.log(`[${capitalize(taskName)}] Tests passed successfully`);
+};
