@@ -27,3 +27,5 @@ const longest = function (line = [], maxRandom = Math.random) {
 
 const result = longest(['Roma', 'Kiev', 'Beijing', 'Barcelona', 'Omsk']);
 console.log(result);
+
+module.exports = longest;

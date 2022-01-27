@@ -13,3 +13,5 @@ invert = (A, i, j, k) => {
 
 const result = invert([100, 200, 300, 400]);
 console.log(result);
+
+module.exports = invert;

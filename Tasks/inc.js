@@ -11,3 +11,5 @@ let inc_numbers = (format_complete, ...rest_variables) => {
 
 const result = inc_numbers({ a: 1, b: 2, c: 'hello', d: false });
 console.log(result);
+
+module.exports = inc_numbers;

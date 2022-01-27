@@ -12,3 +12,5 @@ let GeneratePassword = (alphabet, length) => {
 
 const result = GeneratePassword('abc123', 7);
 console.log(result);
+
+module.exports = GeneratePassword;

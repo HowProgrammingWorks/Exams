@@ -17,3 +17,5 @@ types_ = function (s) {
 
 const result = types_([5, true, 'string', 7, 'hello']);
 console.log(result);
+
+module.exports = types_;

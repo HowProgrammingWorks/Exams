@@ -11,3 +11,5 @@ SectionString = (s, t) => {
 
 const result = SectionString('All you need is JavaScript', 'is');
 console.log(result);
+
+module.exports = SectionString;

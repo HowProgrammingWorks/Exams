@@ -25,3 +25,5 @@ Month = (s) => {
 
 const result = Month('february');
 console.log(result);
+
+module.exports = Month;

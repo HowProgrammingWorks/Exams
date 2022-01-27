@@ -29,3 +29,5 @@ quotes = function (s) {
 
 const result = quotes('Hello "Marcus"! Ave "Marcus"!');
 console.log(result);
+
+module.exports = quotes;

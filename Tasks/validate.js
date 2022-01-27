@@ -23,3 +23,5 @@ const isValidate = (T) => {
 
 const result = isValidate('Marcus Aurelius');
 console.log(result);
+
+module.exports = isValidate;

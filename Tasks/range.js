@@ -15,3 +15,5 @@ _range = (...Range) => {
 
 const result = _range(10, 15);
 console.log(result);
+
+module.exports = _range;

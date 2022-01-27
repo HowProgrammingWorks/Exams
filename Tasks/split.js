@@ -9,3 +9,5 @@ let split_Array = (index, array) => {
 
 const result = split_Array(3, ['a', 'b', 'c', 'd', 'e']);
 console.log(result);
+
+module.exports = split_Array;

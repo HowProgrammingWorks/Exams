@@ -13,3 +13,5 @@ let size = (size) => {
 
 const result = size(123456);
 console.log(result);
+
+module.exports = size;

@@ -23,3 +23,5 @@ DroP = (D, ...X) => {
 
 const result = DroP({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
 console.log(result);
+
+module.exports = DroP;

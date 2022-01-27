@@ -15,3 +15,5 @@ merge_two_objects = function merge_two_objects(object_1, object_2) {
 
 const result = merge_two_objects({ a: 'uno', b: 'due' }, { c: 'tre' });
 console.log(result);
+
+module.exports = merge_two_objects;

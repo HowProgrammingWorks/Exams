@@ -11,3 +11,5 @@ Random = (min, max) => {
 
 const result = Random(1, 9);
 console.log(result);
+
+module.exports = Random;

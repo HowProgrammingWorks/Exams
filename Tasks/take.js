@@ -12,3 +12,5 @@ tAKe = (DX, ...xor) => {
 
 const result = tAKe({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
 console.log(result);
+
+module.exports = tAKe;

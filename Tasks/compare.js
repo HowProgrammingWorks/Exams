@@ -17,3 +17,5 @@ let compare = (first_values, ...parameters_LIST) => {
 
 const result = compare({ a: 1, c: 'hello' }, { a: 1, c: 'hello' });
 console.log(result);
+
+module.exports = compare;

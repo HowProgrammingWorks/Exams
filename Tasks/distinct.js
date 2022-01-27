@@ -16,3 +16,5 @@ DISTINCT = (data) => {
 
 const result = DISTINCT([1, 2, 1, 3, 1, 4]);
 console.log(result);
+
+module.exports = DISTINCT;

@@ -13,3 +13,5 @@ Reverse = (DATA) => {
 
 const result = Reverse({ a: 'uno', b: 'due', c: 'tre' });
 console.log(result);
+
+module.exports = Reverse;

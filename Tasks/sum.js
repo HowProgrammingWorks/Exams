@@ -19,3 +19,5 @@ const k = (sum = function (s = () => {}) {
 
 const result = sum([5, true, 'string', 7, 'hello']);
 console.log(result);
+
+module.exports = sum;

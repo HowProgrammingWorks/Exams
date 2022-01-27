@@ -16,3 +16,5 @@ Parseip = (i) => {
 
 const result = Parseip('127.0.0.1');
 console.log(result);
+
+module.exports = Parseip;

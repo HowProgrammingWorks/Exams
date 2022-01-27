@@ -15,3 +15,5 @@ Skip = (T, ...Remove) => {
 
 const result = Skip([1, 2, 3, 4, 5], 2, 5);
 console.log(result);
+
+module.exports = Skip;

@@ -16,3 +16,5 @@ count = (obj) => {
 
 const result = count({ a: 1, b: 'two', c: 3, d: 4 });
 console.log(result);
+
+module.exports = count;

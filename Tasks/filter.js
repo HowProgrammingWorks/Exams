@@ -12,3 +12,5 @@ Filter = (T, t) => {
 
 const result = Filter([1, 2, 'three', 4, 5, 'six'], 'number');
 console.log(result);
+
+module.exports = Filter;

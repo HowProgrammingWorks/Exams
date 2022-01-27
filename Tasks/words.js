@@ -40,3 +40,5 @@ Words = function (s) {
 
 const result = Words('Hello Marcus Aureluis');
 console.log(result);
+
+module.exports = Words;

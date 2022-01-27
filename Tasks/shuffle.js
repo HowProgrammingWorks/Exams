@@ -10,3 +10,5 @@ let Shuffle = (...List) => {
 
 const result = Shuffle(['a', 'b', 'c', 'd', 'e']);
 console.log(result);
+
+module.exports = Shuffle;

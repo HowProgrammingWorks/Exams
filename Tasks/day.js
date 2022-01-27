@@ -14,3 +14,5 @@ _parse_day_ = (s) => {
 
 const result = _parse_day_('friday');
 console.log(result);
+
+module.exports = _parse_day_;

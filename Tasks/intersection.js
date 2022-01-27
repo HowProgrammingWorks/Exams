@@ -24,3 +24,5 @@ intersection = function intersection(object_1, object_2) {
 
 const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
 console.log(result);
+
+module.exports = intersection;
