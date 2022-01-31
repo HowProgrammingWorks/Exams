@@ -11,5 +11,4 @@ let size = (size) => {
   }
 };
 
-const result = size(123456);
-console.log(result);
+require('../Tests/size.js')(size);
