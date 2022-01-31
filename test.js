@@ -17,11 +17,11 @@ logger.info = logger(COLOR_INFO);
 
 module.exports = (cases) => (fn) => {
   let passed = 0;
-  for (const [x, expected] of cases) {
-    const msg = `Case: ${fn.name}(${x}) ->`;
+  for (const [args, expected] of cases) {
+    const msg = `Case: ${fn.name}(${[...args].join(', ')}) ->`;
     let res;
     try {
-      res = fn(x);
+      res = fn(...args);
     } catch (err) {
       logger.error(`${msg} ${res}, exception: ${err.stack}`);
       continue;
