@@ -21,5 +21,4 @@ DroP = (D, ...X) => {
   return D;
 };
 
-const result = DroP({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'f');
-console.log(result);
+require('../Tests/drop.js')(DroP);

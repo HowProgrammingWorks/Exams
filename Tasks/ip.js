@@ -14,5 +14,4 @@ Parseip = (i) => {
   return a;
 };
 
-const result = Parseip('127.0.0.1');
-console.log(result);
+require('../Tests/ip.js')(Parseip);

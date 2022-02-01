@@ -19,5 +19,4 @@ Replace = (str, substr, newstr) => {
   }
 };
 
-const result = Replace('Hello <username> and bye!', '<username>', 'Marcus');
-console.log(result);
+require('../Tests/replace.js')(Replace);

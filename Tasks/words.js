@@ -38,5 +38,4 @@ Words = function (s) {
   return number_of_words_in_s;
 };
 
-const result = Words('Hello Marcus Aureluis');
-console.log(result);
+require('../Tests/words.js')(Words);

@@ -15,5 +15,4 @@ types_ = function (s) {
   s.length;
 };
 
-const result = types_([5, true, 'string', 7, 'hello']);
-console.log(result);
+require('../Tests/types.js')(types_);

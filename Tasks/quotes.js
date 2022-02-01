@@ -27,5 +27,4 @@ quotes = function (s) {
   return res.join(EMPTY);
 };
 
-const result = quotes('Hello "Marcus"! Ave "Marcus"!');
-console.log(result);
+require('../Tests/quotes.js')(quotes);

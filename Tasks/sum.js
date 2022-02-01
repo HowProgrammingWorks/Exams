@@ -17,5 +17,4 @@ const k = (sum = function (s = () => {}) {
   sum.push(sum.length - 1);
 });
 
-const result = sum([5, true, 'string', 7, 'hello']);
-console.log(result);
+require('../Tests/sum.js')(sum);
