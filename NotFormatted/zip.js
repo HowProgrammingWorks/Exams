@@ -13,6 +13,7 @@ let i = 0; j = 0
     {
       (() => (b[j++]=CELL))();
     }
+    if (CELL[0] == undefined) b.length -= 1
   }
 return b
 }
