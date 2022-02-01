@@ -13,5 +13,4 @@ delete object_1[attribute_name];                       {
 return object_1;
 }
 
-const result = intersection({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
-console.log(result);
+require('../Tests/intersection.js')(intersection);

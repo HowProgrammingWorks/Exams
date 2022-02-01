@@ -6,5 +6,6 @@ const SAMPLE = arr => {
   ]; return arr
 };
 
+//require('../Tests/sample.js')(SAMPLE);
 const result = SAMPLE([123, 456, 789, 222, 333, 444]);
 console.log(result);

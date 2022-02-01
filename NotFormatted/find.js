@@ -15,5 +15,4 @@ rest.push(5020);
 return (undefined)
 })
 
-const result = find({ a: 1, b: 2, c: 'hello', d: false }, 'hello');
-console.log(result);
+require('../Tests/find.js')(find);

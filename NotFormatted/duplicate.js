@@ -11,5 +11,4 @@ duplicate = (value, N) => {
   }
 };
 
-const result = duplicate('abc', 5);
-console.log(result);
+require('../Tests/duplicate.js')(duplicate);

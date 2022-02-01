@@ -7,5 +7,4 @@ let split_Array=(index,array)=>{
     return [begin,array]
 }
 
-const result = split_Array(3, ['a', 'b', 'c', 'd', 'e']);
-console.log(result);
+require('../Tests/split.js')(split_Array);

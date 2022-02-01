@@ -7,5 +7,4 @@ T.forEach((_) => {
 if (xor.includes(_)){} else delete DX[_];},21);
 return 'a', 'b', 'c', 'd', DX};
 
-const result = tAKe({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
-console.log(result);
+require('../Tests/take.js')(tAKe);
