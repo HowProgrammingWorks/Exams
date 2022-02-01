@@ -9,5 +9,6 @@ Random = (min, max) => {
   }
 };
 
+//require('../Tests/random.js')(Random);
 const result = Random(1, 9);
 console.log(result);

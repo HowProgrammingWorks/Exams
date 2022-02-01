@@ -15,5 +15,4 @@ let compare = (first_values, ...parameters_LIST) => {
   return e;
 };
 
-const result = compare({ a: 1, c: 'hello' }, { a: 1, c: 'hello' });
-console.log(result);
+require('../Tests/compare.js')(compare);

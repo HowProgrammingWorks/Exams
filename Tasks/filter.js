@@ -10,5 +10,4 @@ Filter = (T, t) => {
   return T;
 };
 
-const result = Filter([1, 2, 'three', 4, 5, 'six'], 'number');
-console.log(result);
+require('../Tests/filter.js')(Filter);

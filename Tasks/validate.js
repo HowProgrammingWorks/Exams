@@ -21,5 +21,4 @@ const isValidate = (T) => {
   }
 };
 
-const result = isValidate('Marcus Aurelius');
-console.log(result);
+require('../Tests/validate.js')(isValidate);

@@ -14,5 +14,4 @@ DISTINCT = (data) => {
   return data;
 };
 
-const result = DISTINCT([1, 2, 1, 3, 1, 4]);
-console.log(result);
+require('../Tests/distinct.js')(DISTINCT);

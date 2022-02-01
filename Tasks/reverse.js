@@ -11,5 +11,4 @@ Reverse = (DATA) => {
   return DATA;
 };
 
-const result = Reverse({ a: 'uno', b: 'due', c: 'tre' });
-console.log(result);
+require('../Tests/reverse.js')(Reverse);

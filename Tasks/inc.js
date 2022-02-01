@@ -9,5 +9,4 @@ let inc_numbers = (format_complete, ...rest_variables) => {
   return format_complete;
 };
 
-const result = inc_numbers({ a: 1, b: 2, c: 'hello', d: false });
-console.log(result);
+require('../Tests/inc.js')(inc_numbers);

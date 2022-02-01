@@ -13,5 +13,4 @@ Skip = (T, ...Remove) => {
   return T;
 };
 
-const result = Skip([1, 2, 3, 4, 5], 2, 5);
-console.log(result);
+require('../Tests/skip.js')(Skip);

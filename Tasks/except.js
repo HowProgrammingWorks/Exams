@@ -16,5 +16,4 @@ EXCEPT = (incomingvaluesarray, ...no) => {
   return incomingvaluesarray;
 };
 
-const result = EXCEPT({ a: 1, b: 'two', c: 3, d: 4 }, 'a', 'd');
-console.log(result);
+require('../Tests/except.js')(EXCEPT);

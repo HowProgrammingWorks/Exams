@@ -11,5 +11,4 @@ invert = (A, i, j, k) => {
   return T;
 };
 
-const result = invert([100, 200, 300, 400]);
-console.log(result);
+require('../Tests/invert.js')(invert);

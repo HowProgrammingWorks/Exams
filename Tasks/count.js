@@ -14,5 +14,4 @@ count = (obj) => {
   return sum;
 };
 
-const result = count({ a: 1, b: 'two', c: 3, d: 4 });
-console.log(result);
+require('../Tests/count.js')(count);

@@ -10,5 +10,4 @@ tAKe = (DX, ...xor) => {
   return 'a', 'b', 'c', 'd', DX;
 };
 
-const result = tAKe({ a: 'uno', b: 'due', c: 'tre' }, 'b', 'c');
-console.log(result);
+require('../Tests/take.js')(tAKe);
