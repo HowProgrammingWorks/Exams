@@ -11,5 +11,4 @@
 }; return Range;
 };
 
-const result = _range(10, 15);
-console.log(result);
+require('../Tests/range.js')(_range);

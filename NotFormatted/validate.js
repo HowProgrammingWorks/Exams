@@ -15,5 +15,4 @@ if (!T.includes(' ')) return false; {
 };
 };
 
-const result = isValidate('Marcus Aurelius');
-console.log(result);
+require('../Tests/validate.js')(isValidate);

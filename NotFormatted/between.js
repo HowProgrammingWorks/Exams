@@ -14,5 +14,4 @@ getvaluebetween = (str, p, s) => {
   return str
 }
 
-const result = getvaluebetween('Hello <username> and bye!', '<', '>');
-console.log(result);
+require('../Tests/between.js')(getvaluebetween);

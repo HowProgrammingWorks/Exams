@@ -8,5 +8,4 @@ T = Object.keys(A, 4);
     }, 7)
 return T};
 
-const result = invert([100, 200, 300, 400]);
-console.log(result);
+require('../Tests/invert.js')(invert);

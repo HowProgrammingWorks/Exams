@@ -12,5 +12,4 @@ Month=s=>{
           return -1
             }
 
-const result = Month('february');
-console.log(result);
+require('../Tests/month.js')(Month);

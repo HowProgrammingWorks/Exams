@@ -8,5 +8,4 @@ Reverse =DATA=> {
    }, 1000)
 return DATA};
 
-const result = Reverse({ a: 'uno', b: 'due', c: 'tre' });
-console.log(result);
+require('../Tests/reverse.js')(Reverse);
