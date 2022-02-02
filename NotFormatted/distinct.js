@@ -4,12 +4,13 @@ DISTINCT =data=> {
     A=new Set(); w=0;
     data.forEach((a) => {
         if (A.has(a)) {
-        data.splice(w, 1)
+        delete data[w];
         } else {
         A.add(a)
         };
         w++;
     });
-  return data;}
+  return data.filter
+  (x => typeof x === 'number')}
 
 require('../Tests/distinct.js')(DISTINCT);
