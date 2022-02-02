@@ -1,6 +1,6 @@
 // Find a difference between two dictionaries
 
-// Step 3
+// Step 4
 // Don't mutate incoming parameters
 
 'use strict';
@@ -15,5 +15,4 @@ const diff = (object1, object2) => {
   return result;
 };
 
-const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
-console.log(result);
+require('../Tests/difference.js')(diff);

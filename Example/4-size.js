@@ -17,5 +17,4 @@ const size = (bytes) => {
   return value.toString() + ' ' + unit;
 };
 
-const result = size(123456);
-console.log(result);
+require('../Tests/size.js')(size);
