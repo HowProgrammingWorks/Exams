@@ -8,6 +8,4 @@ let Shuffle = (...List) => {
   }
 };
 
-//require('../Tests/shuffle.js')(Shuffle);
-const result = Shuffle(['a', 'b', 'c', 'd', 'e']);
-console.log(result);
+require('../Tests/shuffle.js')(Shuffle);
