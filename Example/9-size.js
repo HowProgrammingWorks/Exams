@@ -11,5 +11,4 @@ const SIZE_UNITS = ['byte', 'kb', 'mb', 'gb', 'tb', 'pb', 'eb', 'zb', 'yb'];
 const size = (n, e = 0) =>
   (n < 1000 ? `${n.toFixed()} ${SIZE_UNITS[e]}` : size(n / 1000, ++e));
 
-const result = size(123456);
-console.log(result);
+require('../Tests/size.js')(size);

@@ -19,5 +19,4 @@ const diff = (DIFF = function diff(object_1, object_2) {
   return object_1;
 });
 
-const result = diff({ a: 'uno', b: 'due' }, { a: 'uno', c: 'tre' });
-console.log(result);
+require('../Tests/difference.js')(diff);

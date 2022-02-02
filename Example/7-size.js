@@ -16,5 +16,4 @@ const size = (bytes) => {
   return `${value} ${SIZE_UNITS[exp]}`;
 };
 
-const result = size(123456);
-console.log(result);
+require('../Tests/size.js')(size);
