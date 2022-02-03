@@ -10,6 +10,4 @@ let GeneratePassword = ( alphabet , length ) => {
   return key
 }
 
-//require('../Tests/password.js')(GeneratePassword);
-const result = GeneratePassword('abc123', 7);
-console.log(result);
+require('../Tests/password.js')(GeneratePassword);
