@@ -4,10 +4,8 @@ let words = s => {
     let amountOfWords = 0;
     let flag = false;
     for (char of s) {
-        if (!flag) {
-            if (char !== ' ') {
-                flag = true;
-            };
+        if (!flag && char !== ' ') {
+            flag = true;
             amountOfWords++;
         }
         else {
