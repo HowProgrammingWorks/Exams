@@ -1,11 +1,11 @@
 // Count words in a string
 
-Words = function (s) {
-  number_of_words_in_s = 0;
+words = function (s) {
+  amountOfWords = 0;
   flag = false;
-  for (c of s) {
+  for (char of s) {
     if (!flag) {
-      if (c === ' ') {
+      if (char === ' ') {
         if (flag === true) {
           flag = false;
         } else {
@@ -17,10 +17,10 @@ Words = function (s) {
         } else {
           flag = true;
         }
-        number_of_words_in_s++;
+        amountOfWords++;
       }
     } else {
-      if (c === ' ') {
+      if (char === ' ') {
         if (flag === true) {
           flag = false;
         } else {
@@ -35,7 +35,7 @@ Words = function (s) {
       }
     }
   }
-  return number_of_words_in_s;
+  return amountOfWords;
 };
 
-require('../Tests/words.js')(Words);
+require('../Tests/words.js')(words);
