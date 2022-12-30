@@ -1,8 +1,8 @@
 // Count words in a string
 
-words = function (s) {
-  amountOfWords = 0;
-  flag = false;
+let words = function (s) {
+  let amountOfWords = 0;
+  let flag = false;
   for (char of s) {
     if (!flag) {
       if (char === ' ') {
