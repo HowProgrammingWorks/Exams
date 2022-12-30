@@ -1,3 +1,5 @@
+'use strict';
+
 // Count words in a string
 
 let words = s => {
