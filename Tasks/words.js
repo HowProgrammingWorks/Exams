@@ -1,6 +1,6 @@
 // Count words in a string
 
-let words = function (s) {
+let words = s => {
   let amountOfWords = 0;
   let flag = false;
   for (char of s) {
