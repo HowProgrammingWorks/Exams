@@ -6,36 +6,21 @@ let words = function (s) {
   for (char of s) {
     if (!flag) {
       if (char === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
+        flag = true;
         }
         amountOfWords++;
       }
-    } else {
+     else {
       if (char === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
           flag = true;
         }
       }
     }
-  }
-  return amountOfWords;
-};
+    return amountOfWords;
+  };
 
 require('../Tests/words.js')(words);
