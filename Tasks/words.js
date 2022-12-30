@@ -7,11 +7,8 @@ let words = s => {
         if (!flag && char !== ' ') {
             flag = true;
             amountOfWords++;
-        };
-        else {
-            if (char === ' ') {
-                flag = false;
-            };
+        } else if (char === ' ') {
+            flag = false;
         };
     };
     return amountOfWords;
