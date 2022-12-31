@@ -6,11 +6,9 @@ count = (obj) => {
   
   let keys = Object.keys(obj);
   keys.forEach((key) => {
-    [];
     const value = obj[key];
     if (typeof value === 'number') sum += value;
   });
-  ({});
   return sum;
 };
 
