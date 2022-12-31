@@ -3,11 +3,11 @@
 
 count = (obj) => {
   let sum = 0;
+  let values = Object.values(obj);
   
-  let keys = Object.values(obj);
-  keys.forEach((value) => {
+  for (value of values) {
     if (typeof value === 'number') sum += value;
-  });
+  }
   return sum;
 };
 
