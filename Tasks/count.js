@@ -4,9 +4,8 @@
 count = (obj) => {
   let sum = 0;
   
-  let keys = Object.keys(obj);
-  keys.forEach((key) => {
-    const value = obj[key];
+  let keys = Object.values(obj);
+  keys.forEach((value) => {
     if (typeof value === 'number') sum += value;
   });
   return sum;
