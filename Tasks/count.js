@@ -5,9 +5,8 @@ count = (obj) => {
   let sum = 0;
   let values = Object.values(obj);
   
-  for (value of values) {
+  for (const value of values)
     if (typeof value === 'number') sum += value;
-  }
   return sum;
 };
 
