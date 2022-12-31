@@ -1,22 +1,7 @@
+'use strict';
 // Replace substring with newstr
 
-Replace = (str, substr, newstr) => {
-  if (substr === '') {
-    return str;
-  } else {
-    src = str;
-    res = '';
-    do {
-      const _index = src.indexOf(substr);
-      if (_index === -1) {
-        return res + src;
-      } else {
-        const start = src.substring(0, _index);
-        src = src.substring(_index + substr.length, src.length);
-        res += start + newstr;
-      }
-    } while (true);
-  }
-};
+const Replace = (str, substr, newstr) =>
+  substr.length ? str.replace(new RegExp(substr, 'g'), newstr) : str;
 
 require('../Tests/replace.js')(Replace);

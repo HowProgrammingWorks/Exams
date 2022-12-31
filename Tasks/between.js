@@ -1,21 +1,10 @@
+'use stirct';
 // Extract substring between prefix and suffix
 
-getvaluebetween = (str, p, s) => {
-  i = str.indexOf(p);
-  if (i === -1) return '';
-  else {
-    k = i + p.length;
-    str = str.substring(k);
-    if (s) {
-      i = str.indexOf(s);
-      if (i === -1) {
-        return '';
-      } else {
-        str = str.substring(0, i);
-      }
-    }
-  }
-  return str;
-};
+const getvaluebetween = (str, p, s) =>
+  str.slice(
+    str.indexOf(p) + 1 || str.length,
+    s ? str.indexOf(s) + 1 && str.indexOf(s) : undefined
+  );
 
 require('../Tests/between.js')(getvaluebetween);
