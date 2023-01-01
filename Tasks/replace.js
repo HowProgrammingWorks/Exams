@@ -1,19 +1,20 @@
-// Replace substring with newstr
+// Replace substring with newStr
 
-Replace = (str, substr, newstr) => {
+replace = (str, substr, newStr) => {
   if (substr === '') {
     return str;
-  } else {
+  }
+  else {
     src = str;
     res = '';
     do {
-      const _index = src.indexOf(substr);
-      if (_index === -1) {
+      const index = src.indexOf(substr);
+      if (index === -1) {
         return res + src;
       } else {
-        const start = src.substring(0, _index);
-        src = src.substring(_index + substr.length, src.length);
-        res += start + newstr;
+        const start = src.substring(0, index);
+        src = src.substring(index + substr.length, src.length);
+        res += start + newStr;
       }
     } while (true);
   }
