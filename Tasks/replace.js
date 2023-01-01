@@ -1,3 +1,4 @@
+'use strict'
 // Replace substring with newStr
 
 replace = (str, substr, newStr) => {
@@ -5,8 +6,8 @@ replace = (str, substr, newStr) => {
     return str;
   }
   else {
-    src = str;
-    res = '';
+    let src = str;
+    let res = '';
     do {
       const index = src.indexOf(substr);
       if (index === -1) {
