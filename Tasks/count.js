@@ -7,6 +7,7 @@ const count = obj => {
 
   for (const value of values)
     if (typeof value === 'number') sum += value;
+  
   return sum;
 };
 
