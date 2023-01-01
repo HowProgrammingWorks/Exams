@@ -1,7 +1,7 @@
 'use strict';
 // Replace substring with newStr
 
-replace = (str, substr, newStr) => {
+const replace = (str, substr, newStr) => {
   if (substr === '') return str;
   else {
     let src = str;
@@ -14,7 +14,7 @@ replace = (str, substr, newStr) => {
         src = src.substring(index + substr.length, src.length);
         res += start + newStr;
       }
-    };
+    }
   }
 };
 
