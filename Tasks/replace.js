@@ -8,7 +8,7 @@ replace = (str, substr, newStr) => {
   else {
     let src = str;
     let res = '';
-    do {
+    while (true) {
       const index = src.indexOf(substr);
       if (index === -1) {
         return res + src;
@@ -17,8 +17,8 @@ replace = (str, substr, newStr) => {
         src = src.substring(index + substr.length, src.length);
         res += start + newStr;
       }
-    } while (true);
+    };
   }
 };
 
-require('../Tests/replace.js')(Replace);
+require('../Tests/replace.js')(replace);
