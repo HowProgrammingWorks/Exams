@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // Sum all number values in dict
 
 const count = obj => {
