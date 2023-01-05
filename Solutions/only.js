@@ -3,9 +3,10 @@
 
 const only = (dictionary, ...only) => {
   const keys = Object.keys(dictionary);
-  keys.forEach((key) => {
+
+  for (let key of keys)
     if (!only.includes(key)) delete dictionary[key];
-  });
+
   return dictionary;
 };
 
