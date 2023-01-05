@@ -4,15 +4,15 @@
 
 const quotes = (string) => {
   let res = '';
-  let open = false;
+  let odd = true;
   for (const symbol of string) {
     if (symbol === '"') {
-      if (!open) {
+      if (odd) {
         res += '«';
-        open = true;
+        odd = false;
       } else {
         res += '»';
-        open = false;
+        odd = true;
       }
     } else res += symbol;
   }
