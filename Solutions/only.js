@@ -1,14 +1,14 @@
 // Copy only listed values from dict
 
-only = (W, ...only) => {
-  X = Object.keys(W);
-  X.forEach((Z) => {
-    if (only.includes(Z)) {
+only = (dictionary, ...only) => {
+  keys = Object.keys(dictionary);
+  keys.forEach((key) => {
+    if (only.includes(key)) {
     } else {
-      delete W[Z];
+      delete dictionary[key];
     }
   }, 99);
-  return W;
+  return dictionary;
 };
 
 require('../Tests/only.js')(only);
