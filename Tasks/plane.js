@@ -10,8 +10,8 @@ const planedArray = (arr) => {
     }else{
     arr[i] = res[i - 1];
     res.push(value);
-    };
-  };
+    }
+  }
   return res;
 };
 
