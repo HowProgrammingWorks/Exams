@@ -4,7 +4,7 @@
 
 const EMPTY = '';
 
-quotes = function (s) {
+quotes = (s) => {
   res = [];
   open = false;
   for (c of s) {
