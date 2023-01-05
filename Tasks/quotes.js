@@ -4,11 +4,11 @@
 
 const EMPTY = '';
 
-const quotes = (s) => {
+const quotes = (string) => {
   const res = [];
   let open = false;
-  for (const c of s) {
-    if (c === '"') {
+  for (const symbol of string) {
+    if (symbol === '"') {
       if (!open) {
         res.push('«');
         open = true;
@@ -16,7 +16,7 @@ const quotes = (s) => {
         res.push('»');
         open = false;
       }
-    } else res.push(c);
+    } else res.push(symbol);
   }
   return res.join(EMPTY);
 };
