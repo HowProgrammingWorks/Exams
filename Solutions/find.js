@@ -3,8 +3,10 @@
 
 const find = (object, ...rest) => {
   const value = rest.pop();
-  for (let name in object) {
-    if (object[name] === value) return name;
+  const keys = Object.keys(object)
+
+  for (let key of keys) {
+    if (object[key] === value) return key;
   }
   return undefined;
 };
