@@ -3,11 +3,13 @@
 
 const only = (dictionary, ...only) => {
   const keys = Object.keys(dictionary);
+  const result = {};
 
-  for (let key of keys)
-    if (!only.includes(key)) delete dictionary[key];
+  for (let key of keys) {
+    if (only.includes(key)) result[key] = dictionary[key];
+  }
 
-  return dictionary;
+  return result;
 };
 
 require('../Tests/only.js')(only);
