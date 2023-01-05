@@ -1,8 +1,5 @@
 // Split string by the first occurrence of separator
 
-// Old one...
-// Final ver -> '..\Solutions\ip.js'
-
 Parseip = (i) => {
   a = [];
   if (i === '') return;

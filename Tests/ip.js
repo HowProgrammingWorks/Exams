@@ -11,6 +11,7 @@ const cases = [
   [['127001'], undefined],
   [['127.0.0'], undefined],
   [[''], undefined],
+  [['10.0.zero.10'], undefined],
 ];
 
 module.exports = test(cases);
