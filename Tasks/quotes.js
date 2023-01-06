@@ -8,21 +8,15 @@ const quotes = (str) => {
   let open = false;
   for (const char of str) {
     if (char === '"') {
-      for (const i of char) {
-        if (!open) {
-          res.push('«');
-          open = true;
-        } else {
-          res.push('»');
-          open = false;
-        }
+      if (!open) {
+        res.push('«');
+        open = true;
+      } else {
+        res.push('»');
+        open = false;
       }
-    } else {
-      if (char !== '"') {
-        for (const i of char) {
-          res.push(i);
-        }
-      }
+    } else if (char !== '"') {
+      res.push(char);
     }
   }
   return res.join(EMPTY);
