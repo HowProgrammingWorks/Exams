@@ -1,21 +1,21 @@
 // Delete listed keys from dictionary
 
-// Step 1
-// Add 'use strict';
-// Remove useless condition, blocks and assignments
+// Step 2
+// Add `const`
+// Change identifiers names and case
 
 'use strict';
 
-DroP = (D, ...X) => {
-  T = Object.keys(D);
-  T.forEach(
-    (_) => {
-      if (X.includes(_)) {
-        delete D[_];
+const drop = (dict, ...listedKeys) => {
+  const keys = Object.keys(dict);
+  keys.forEach(
+    (x) => {
+      if (listedKeys.includes(x)) {
+        delete dict[x];
       }
     }
   );
-  return D;
+  return dict;
 };
 
-require('../Tests/drop.js')(DroP);
+require('../Tests/drop.js')(drop);
