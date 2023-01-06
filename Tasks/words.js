@@ -1,7 +1,7 @@
 'use strict';
 // Count words in a string
 
-const numOfWords = function (words) {
+const numOfWords = (words) => {
   let count = 0;
   let flag = false;
   for (const char of words) {
