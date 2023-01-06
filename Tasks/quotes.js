@@ -5,17 +5,17 @@ const quotes = (str) => {
   const res = [];
   let isOpen = true;
   for (const char of str) {
-    if (char === '"') {
-      if (isOpen) {
-        res.push('«');
-        isOpen = false;
-      } else {
-        res.push('»');
-        isOpen = true;
-      }
-    } else {
+    if (char !== '"') {
       res.push(char);
+      continue;
     }
+
+    if (isOpen)
+      res.push('«');
+    else
+      res.push('»');
+
+    isOpen = !isOpen;
   }
   return res.join('');
 };
