@@ -4,22 +4,18 @@
 const numOfWords = (words) => {
   let count = 0;
   let flag = false;
+
   for (const char of words) {
     if (!flag) {
-      if (char === ' ') {
-        flag = false;
-      } else {
+      if (char !== ' ') {
         flag = true;
         count++;
       }
-    } else {
-      if (char === ' ') {
-        flag = false;
-      } else {
-        flag = true;
-      }
+    } else if (char === ' ') {
+      flag = false;
     }
   }
+
   return count;
 };
 
