@@ -9,7 +9,6 @@ const getValueBetween = (str, pref, suf) => {
     index = str.indexOf(suf);
     return suf ? (index !== -1 ? str.substring(0, index) : "") : str;
   }
-  return str;
 };
 
 require('../Tests/between.js')(getValueBetween);
