@@ -4,10 +4,10 @@
 
 const compare = (dictionary1, ...args) => {
   const dictionary2 = args[0];
-  const firstKeys = Object.keys(dictionary1);
-  const secondKeys = Object.keys(dictionary2);
-  if (firstKeys.join('-') !== secondKeys.join('-')) return false;
-  for (const key of firstKeys) {
+  const keys1 = Object.keys(dictionary1);
+  const keys2 = Object.keys(dictionary2);
+  if (keys1.join('-') !== keys2.join('-')) return false;
+  for (const key of keys1) {
     if (dictionary1[key] !== dictionary2[key]) return false;
   }
   return true;
