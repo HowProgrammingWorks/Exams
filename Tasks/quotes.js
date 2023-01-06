@@ -6,9 +6,9 @@ const EMPTY = '';
 const quotes = (str) => {
   const res = [];
   let open = false;
-  for (const c of str) {
-    if (c === '"') {
-      for (const i of c) {
+  for (const char of str) {
+    if (char === '"') {
+      for (const i of char) {
         if (!open) {
           res.push('«');
           open = true;
@@ -18,8 +18,8 @@ const quotes = (str) => {
         }
       }
     } else {
-      if (c !== '"') {
-        for (const i of c) {
+      if (char !== '"') {
+        for (const i of char) {
           res.push(i);
         }
       }
