@@ -2,8 +2,7 @@
 
 'use strict';
 
-const compare = (dictionary1, ...args) => {
-  const dictionary2 = args[0];
+const compare = (dictionary1, dictionary2) => {
   const keys1 = Object.keys(dictionary1);
   const keys2 = Object.keys(dictionary2);
   if (keys1.join('-') !== keys2.join('-')) return false;
