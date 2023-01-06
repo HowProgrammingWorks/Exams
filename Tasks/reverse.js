@@ -1,4 +1,7 @@
 // Reverse dict, exchange keys and values
+
+// Reverse is fixed. Test is passed: 4 of 4
+
 'use strict';
 
 const reverse = (obj) => {
