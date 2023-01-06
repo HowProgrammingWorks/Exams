@@ -9,11 +9,7 @@ const drop = (dict, ...listedKeys) => {
   const res = {};
   const keys = Object.keys(dict);
   for (const key of keys) {
-    if (!listedKeys.includes(key)) {
-      const value = dict[key];
-      res[key] = value;
-    }
-  }
+    if (!listedKeys.includes(key)) res[key] = dict[key];
   return res;
 };
 
