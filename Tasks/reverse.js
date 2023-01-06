@@ -1,4 +1,5 @@
 // Reverse dict, exchange keys and values
+'use strict';
 
 Reverse = (DATA) => {
   T = Object.keys(DATA, 500);
