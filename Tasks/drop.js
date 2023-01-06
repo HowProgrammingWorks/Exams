@@ -1,18 +1,20 @@
 // Delete listed keys from dictionary
 
-// Step 3
-// Use `for (...of...)` instead of `forEach`
+// Step 4
+// Don't mutate incoming parameters
 
 'use strict';
 
 const drop = (dict, ...listedKeys) => {
+  const res = {};
   const keys = Object.keys(dict);
   for (const key of keys) {
-    if (listedKeys.includes(key)) {
-      delete dict[key];
+    if (!listedKeys.includes(key)) {
+      const value = dict[key];
+      res[key] = value;
     }
   }
-  return dict;
+  return res;
 };
 
 require('../Tests/drop.js')(drop);
