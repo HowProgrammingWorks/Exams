@@ -1,12 +1,12 @@
 'use strict';
 // Count words in a string
 
-const Words = function (s) {
-  let number_of_words_in_s = 0;
+const numOfWords = function (words) {
+  let count = 0;
   let flag = false;
-  for (const c of s) {
+  for (const word of words.split(' ')) {
     if (!flag) {
-      if (c === ' ') {
+      if (word === ' ') {
         if (flag === true) {
           flag = false;
         } else {
@@ -18,10 +18,10 @@ const Words = function (s) {
         } else {
           flag = true;
         }
-        number_of_words_in_s++;
+        count++;
       }
     } else {
-      if (c === ' ') {
+      if (word === ' ') {
         if (flag === true) {
           flag = false;
         } else {
@@ -36,7 +36,7 @@ const Words = function (s) {
       }
     }
   }
-  return number_of_words_in_s;
+  return count;
 };
 
-require('../Tests/words.js')(Words);
+require('../Tests/words.js')(numOfWords);
