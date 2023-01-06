@@ -2,7 +2,7 @@
 'use strict'
 
 const find = (object, ...rest) => {
-  const value = rest.pop();
+  const value = rest[0];
   const keys = Object.keys(object)
 
   for (let key of keys) {
