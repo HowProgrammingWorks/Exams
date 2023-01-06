@@ -8,7 +8,7 @@ const replace = (str, substr, newstr) => {
     let searchStr = str;
     let res = '';
     do {
-      const index = str.indexOf(substr);
+      let index = searchStr.indexOf(substr);
       if (index === -1) {
         return res + searchStr;
       } else {
