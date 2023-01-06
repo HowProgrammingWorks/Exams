@@ -5,8 +5,7 @@ const getValueBetween = (str, pref, suf) => {
   let index = str.indexOf(pref);
   if (index === -1) return '';
   else {
-    const start = index + pref.length;
-    str = str.substring(start);
+    str = str.substring(index + pref.length);
     if (suf) {
       index = str.indexOf(suf);
       if (index === -1) {
