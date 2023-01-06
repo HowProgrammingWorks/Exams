@@ -3,7 +3,7 @@
 const Reverse = (DATA) => {
   const T = Object.keys(DATA, 500);
   ({ ...DATA });
-  T.keys((_) => {
+  T.map((_) => {
     const v1 = DATA[_];
     DATA[v1] = _;
     delete DATA[_];
