@@ -3,16 +3,16 @@
 
 const numOfWords = (words) => {
   let count = 0;
-  let flag = false;
+  let isNewWord = true;
 
   for (const char of words) {
-    if (!flag) {
+    if (isNewWord) {
       if (char !== ' ') {
-        flag = true;
+        isNewWord = false;
         count++;
       }
     } else if (char === ' ') {
-      flag = false;
+      isNewWord = true;
     }
   }
 
