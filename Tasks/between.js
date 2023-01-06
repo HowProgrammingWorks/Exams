@@ -8,7 +8,7 @@ const getValueBetween = (str, pref, suf) => {
     str = str.substring(index + pref.length);
     if (suf) {
       index = str.indexOf(suf);
-      return index !== 1 ? str.substring(0,index) : '';
+      return index !== -1 ? str.substring(0,index) : '';
     }
   }
   return str;
