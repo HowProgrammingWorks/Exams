@@ -1,20 +1,20 @@
 // Find an intersection of two dictionaries
 
-// Step 3
-// Change identifiers names and case
+// Step 4
+// Don't mutate incoming parameters
 
 'use strict';
 
 const intersection = (obj1, obj2) => {
+  const res = {};
   const keys = Object.keys(obj1);
   for (const key of keys) {
-    if (obj1[key] === obj2[key]) {
-      obj2[key] = obj1[key];
-    } else {
-      delete obj1[key];
+    const value = obj1[key];
+    if (obj2[key] === value) {
+      res[key] = value;
     }
   }
-  return obj1;
+  return res;
 };
 
 require('../Tests/intersection.js')(intersection);
