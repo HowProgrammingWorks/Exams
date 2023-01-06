@@ -1,22 +1,22 @@
 'use strict';
 // Extract substring between prefix and suffix
 
-const getvaluebetween = (str, p, s) => {
-  let i = str.indexOf(p);
-  if (i === -1) return '';
+const getValueBetween = (str, pref, suf) => {
+  let index = str.indexOf(pref);
+  if (index === -1) return '';
   else {
-    const k = i + p.length;
-    str = str.substring(k);
-    if (s) {
-      i = str.indexOf(s);
-      if (i === -1) {
+    const start = index + pref.length;
+    str = str.substring(start);
+    if (suf) {
+      index = str.indexOf(suf);
+      if (index === -1) {
         return '';
       } else {
-        str = str.substring(0, i);
+        str = str.substring(0, index);
       }
     }
   }
   return str;
 };
 
-require('../Tests/between.js')(getvaluebetween);
+require('../Tests/between.js')(getValueBetween);
