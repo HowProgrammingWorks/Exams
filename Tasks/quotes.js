@@ -13,7 +13,7 @@ const quotes = (str) => {
         res.push('»');
         isOpen = true;
       }
-    } else if (char !== '"') {
+    } else {
       res.push(char);
     }
   }
