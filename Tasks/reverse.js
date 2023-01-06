@@ -4,10 +4,10 @@
 const reverse = (obj) => {
   const res = {};
   const keys = Object.keys(obj);
-  keys.forEach((key) => {
+  for (const key of keys) {
     const value = obj[key];
     res[value] = key;
-  });
+  }
   return res;
 };
 
