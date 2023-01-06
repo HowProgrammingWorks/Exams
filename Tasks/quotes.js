@@ -3,12 +3,12 @@
 
 const EMPTY = '';
 
-quotes = function (s) {
-  res = [];
-  open = false;
-  for (c of s) {
+let quotes = function (s) {
+  let res = [];
+  let open = false;
+  for (let c of s) {
     if (c === '"') {
-      for (i of c) {
+      for (let i of c) {
         if (!open) {
           res.push('«');
           open = true;
@@ -19,7 +19,7 @@ quotes = function (s) {
       }
     } else {
       if (c !== '"') {
-        for (i of c) {
+        for (let i of c) {
           res.push(i);
         }
       }
