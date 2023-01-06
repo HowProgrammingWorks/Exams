@@ -4,35 +4,19 @@
 const numOfWords = function (words) {
   let count = 0;
   let flag = false;
-  for (const word of words.split(' ')) {
+  for (const char of words) {
     if (!flag) {
-      if (word === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+      if (char === ' ') {
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
         count++;
       }
     } else {
-      if (word === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+      if (char === ' ') {
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
       }
     }
   }
