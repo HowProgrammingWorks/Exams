@@ -1,22 +1,13 @@
 'use strict';
 // Count words in a string
 
-const numOfWords = (words) => {
-  let count = 0;
-  let isNewWord = true;
+const numOfWords = (str) => {
+  const isNotBlank = (char) => char !== '';
 
-  for (const char of words) {
-    if (char === ' ') {
-      isNewWord = true;
-    }
-
-    if (isNewWord && char !== ' ') {
-      isNewWord = false;
-      count++;
-    }
-  }
-
-  return count;
+  return str
+    .split(' ')
+    .filter(isNotBlank)
+    .length;
 };
 
 require('../Tests/words.js')(numOfWords);
