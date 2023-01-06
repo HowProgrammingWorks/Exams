@@ -2,7 +2,8 @@
 'use strict';
 
 const Parseip = (ip) => {
-  const Box = ip.split('.'); 
+  const Box = ip.split('.');
+  if(Box.length !== 4) return undefined;
   for(let k = 0; k < 4; k++){
     if(isNaN(parseInt(Box[k]))) return;
     Box[k] = parseInt(Box[k]);
