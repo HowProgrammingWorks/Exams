@@ -3,12 +3,12 @@
 'use strict';
 
 const distinct = (arr) => {
-  const arrSet = new Set();
+  const newArr = [];
   arr.forEach((item) => {
-    if (arrSet.has(item)) {
+    if (newArr.includes(item)) {
       delete arr[item];
     } else {
-      arrSet.add(item);
+      newArr.push(item);
     }
   });
   return arr;
