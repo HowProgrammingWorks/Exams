@@ -1,5 +1,7 @@
 // Return an array without duplicates
 
+// Distinct is fixed. Test is passed: 9 of 9
+
 'use strict';
 
 const distinct = (arr) => {
