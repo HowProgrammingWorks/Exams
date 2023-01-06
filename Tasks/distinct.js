@@ -2,20 +2,20 @@
 
 'use strict';
 
-const DISTINCT = (data) => {
-  console.log({ data });
-  const A = new Set();
-  let w = 0;
-  data.forEach((a) => {
-    if (A.has(a)) {
-      delete data[w];
+const distinct = (arr) => {
+  console.log({ arr });
+  const arrSet = new Set();
+  let counter = 0;
+  data.forEach((item) => {
+    if (arrSet.has(item)) {
+      delete arr[item];
     } else {
-      A.add(a);
+      arrSet.add(item);
     }
-    w++;
+    counter++;
   });
-  return data.filter
+  return arr.filter
   (x => typeof x === 'number');
 };
 
-require('../Tests/distinct.js')(DISTINCT);
+require('../Tests/distinct.js')(distinct);
