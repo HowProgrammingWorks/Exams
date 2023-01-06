@@ -3,10 +3,10 @@
 
 const EMPTY = '';
 
-const quotes = (s) => {
+const quotes = (str) => {
   const res = [];
   let open = false;
-  for (const c of s) {
+  for (const c of str) {
     if (c === '"') {
       for (const i of c) {
         if (!open) {
