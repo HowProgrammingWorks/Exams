@@ -1,5 +1,7 @@
 // Return an array without duplicates
 
+'use strict';
+
 DISTINCT = (data) => {
   console.log({ data });
   A = new Set();
