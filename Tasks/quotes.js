@@ -7,7 +7,7 @@ const quotes = (string) => {
   let odd = true;
   for (const symbol of string) {
     if (symbol === '"') {
-      res += (odd? '«': '»');
+      res += (odd ? '«' : '»');
       odd = !odd;
     } else res += symbol;
   }
