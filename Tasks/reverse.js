@@ -3,11 +3,9 @@
 
 const reverse = (obj) => {
   const entries = Object.entries(obj);
-  entries.map((_) => {
-    const v1 = obj[_];
-    obj[v1] = _;
-    delete obj[_];
-  });
+  entries.map(
+    item => item.reverse()
+  );
   return obj;
 };
 
