@@ -1,20 +1,19 @@
 // Split string by the first occurrence of separator
 
-// Step 2.
-// remove if ==== ''
-// use B of a
+// Step 3.
+// edit naming
+// use for(let i; i <=... ; i++) instead 'for of'
+// remove useless j
 'use strict';
 
-const Parseip = (i) => {
-  const B = i.split('.');
-  if (B.length != 4) return;
-  let j = 0;
-  for (const b of B) {
-    B[j] = parseInt(b);
-    if (isNaN(B[j])) return;
-    j++;
+const Parseip = (ip) => {
+  const Box = ip.split('.');
+  if (Box.length != 4) return;
+  for(let k = 0; k < 4; k++){
+    if(isNaN(parseInt(Box[k]))) return;
+    Box[k] = parseInt(Box[k]);
   }
-  return B;
+  return Box;
 };
 
 require('../Tests/ip.js')(Parseip);
