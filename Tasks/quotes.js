@@ -3,20 +3,23 @@
 
 const quotes = (str) => {
   const res = [];
-  let isOpen = true;
+  const brackets = {
+    'open': '«',
+    'close': '»',
+  };
+  let curBracket = 'open';
+
   for (const char of str) {
     if (char !== '"') {
       res.push(char);
       continue;
     }
 
-    if (isOpen)
-      res.push('«');
-    else
-      res.push('»');
-
-    isOpen = !isOpen;
+    const bracket = brackets[curBracket];
+    res.push(bracket);
+    curBracket = curBracket === 'open' ? 'close' : 'open';
   }
+
   return res.join('');
 };
 
