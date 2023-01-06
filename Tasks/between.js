@@ -1,3 +1,4 @@
+'use strict';
 // Extract substring between prefix and suffix
 
 getvaluebetween = (str, p, s) => {
