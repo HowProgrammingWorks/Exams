@@ -4,14 +4,14 @@
 const replace = (str, substr, newStr) => {
   if (substr === '') return str;
   else {
-    let src = str;
+    let source = str;
     let res = '';
     while (true) {
-      const index = src.indexOf(substr);
-      if (index === -1) return res + src;
+      const index = source.indexOf(substr);
+      if (index === -1) return res + source;
       else {
-        const start = src.substring(0, index);
-        src = src.substring(index + substr.length, src.length);
+        const start = source.substring(0, index);
+        source = source.substring(index + substr.length, source.length);
         res += start + newStr;
       }
     }
