@@ -1,8 +1,6 @@
 'use strict';
 // Change double quotation to open or close quotation
 
-const EMPTY = '';
-
 const quotes = (str) => {
   const res = [];
   let open = false;
@@ -19,7 +17,7 @@ const quotes = (str) => {
       res.push(char);
     }
   }
-  return res.join(EMPTY);
+  return res.join('');
 };
 
 require('../Tests/quotes.js')(quotes);
