@@ -3,10 +3,12 @@
 
 const reverse = (obj) => {
   const entries = Object.entries(obj);
-  entries.map(
+  const entriesRev = entries.map(
     item => item.reverse()
   );
-  return obj;
+  
+  const result = Object.fromEntries(entriesRev);
+  return result;
 };
 
 require('../Tests/reverse.js')(reverse);
