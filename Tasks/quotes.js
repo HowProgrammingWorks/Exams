@@ -3,15 +3,15 @@
 
 const quotes = (str) => {
   const res = [];
-  let open = false;
+  let isOpen = true;
   for (const char of str) {
     if (char === '"') {
-      if (!open) {
+      if (isOpen) {
         res.push('«');
-        open = true;
+        isOpen = false;
       } else {
         res.push('»');
-        open = false;
+        isOpen = true;
       }
     } else if (char !== '"') {
       res.push(char);
