@@ -4,11 +4,11 @@
 
 const distinct = (arr) => {
   const res = [];
-  arr.forEach((item) => {
+  for (const item of arr) {
     if (!res.includes(item)) {
       res.push(item);
     }
-  });
+  }
   return res;
 };
 
