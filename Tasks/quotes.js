@@ -1,3 +1,4 @@
+'use strict';
 // Change double quotation to open or close quotation
 
 const EMPTY = '';
