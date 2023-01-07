@@ -7,8 +7,9 @@ const replace = (str, substr, newstr) => {
   } else {
     let searchStr = str;
     let res = '';
+    let index = 0;
     do {
-      let index = searchStr.indexOf(substr);
+      index = searchStr.indexOf(substr);
       if (index === -1) {
         return res + searchStr;
       } else {
@@ -16,7 +17,7 @@ const replace = (str, substr, newstr) => {
         searchStr = searchStr.substring(index + substr.length, searchStr.length);
         res += start + newstr;
       }
-    } while (true);
+    } while (index !== -1);
   }
 };
 
