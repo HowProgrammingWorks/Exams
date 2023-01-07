@@ -1,4 +1,5 @@
 // Generate random integer value in given range
+'use strict';
 
 Random = (min, max) => {
   if (max === undefined) {
