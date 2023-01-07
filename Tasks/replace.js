@@ -2,11 +2,9 @@
 // Replace substring with newstr
 
 const replace = (str, substr, newstr) => {
-  if (substr === '') {
-    return str;
-  } else {
-    let searchStr = str;
-    let res = '';
+  let searchStr = str;
+  let res = '';
+  if (substr !== '') {
     let index = searchStr.indexOf(substr);
     while (index !== -1){
       const start = searchStr.substring(0, index);
@@ -14,8 +12,8 @@ const replace = (str, substr, newstr) => {
       res += start + newstr;
       index = searchStr.indexOf(substr);
     };
-    return res + searchStr;
   }
+  return res + searchStr;
 };
 
 require('../Tests/replace.js')(replace);
