@@ -2,7 +2,8 @@
 'use strict';
 
 const randomElement = (arr) => {
-  arr = arr[Math.floor(Math.random() * arr.length)];
+  const random = Math.floor(Math.random() * arr.length);
+  arr = arr[random];
   return arr;
 };
 
