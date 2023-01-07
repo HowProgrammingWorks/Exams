@@ -3,11 +3,12 @@
 
 const replace = (str, substr, newstr) => {
   let res = '';
-  if (substr !== '') {
+  const substrLen = substr.length;
+  if (substrLen) {
     let index = str.indexOf(substr);
     while (index !== -1){
       res += str.substring(0, index) + newstr;
-      str = str.substring(index + substr.length);
+      str = str.substring(index + substrLen);
       index = str.indexOf(substr);
     };
   }
