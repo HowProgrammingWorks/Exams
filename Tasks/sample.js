@@ -3,8 +3,7 @@
 
 const randomElement = (arr) => {
   const random = Math.floor(Math.random() * arr.length);
-  arr = arr[random];
-  return arr;
+  return arr[random];
 };
 
 require('../Tests/sample.js')(randomElement);
