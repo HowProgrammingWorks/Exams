@@ -16,7 +16,5 @@ const words = str => {
     return amountOfWords;
 };
 
-console.log(words(''));
-  
 require('../Tests/words.js')(words);
   
