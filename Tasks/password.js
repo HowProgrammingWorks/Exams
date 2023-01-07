@@ -8,7 +8,7 @@ const generatePassword = (symbols, length) => {
   for (let i = 0; i < length; i++) {
     const index = Math.floor(Math.random() * MAX);
     key += symbols[index];
-  };
+  }
   return key;
 };
 
