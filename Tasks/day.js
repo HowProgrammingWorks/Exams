@@ -6,7 +6,7 @@ const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const getDayNumber = (num) => {
   for (let i = 0; i < days.length; i++) {
     if (num.startsWith(days[i].toLowerCase())) {
-      return i + 1;
+      return ++i;
     }
   }
   return -1;
