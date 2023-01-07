@@ -7,17 +7,14 @@ const replace = (str, substr, newstr) => {
   } else {
     let searchStr = str;
     let res = '';
-    let index = 0;
-    do {
+    let index = searchStr.indexOf(substr);
+    while (index !== -1){
+      const start = searchStr.substring(0, index);
+      searchStr = searchStr.substring(index + substr.length, searchStr.length);
+      res += start + newstr;
       index = searchStr.indexOf(substr);
-      if (index === -1) {
-        return res + searchStr;
-      } else {
-        const start = searchStr.substring(0, index);
-        searchStr = searchStr.substring(index + substr.length, searchStr.length);
-        res += start + newstr;
-      }
-    } while (index !== -1);
+    };
+    return res + searchStr;
   }
 };
 
