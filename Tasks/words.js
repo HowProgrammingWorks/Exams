@@ -2,10 +2,10 @@
 
 // Count words in a string
 
-let words = s => {
+let words = str => {
     let amountOfWords = 0;
     let flag = false;
-    for (char of s) {
+    for (char of str) {
         if (!flag && char !== ' ') {
             flag = true;
             amountOfWords++;
