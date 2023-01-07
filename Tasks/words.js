@@ -2,7 +2,7 @@
 
 // Count words in a string
 
-let words = str => {
+const words = str => {
     let amountOfWords = 0;
     let flag = false;
     for (let char of str) {
