@@ -2,7 +2,7 @@
 
 // Count words in a string
 
-const WORDS = str => {
+const words = str => {
     let amountOfWords = 0;
     let flag = false;
     for (let char of str) {
@@ -16,5 +16,5 @@ const WORDS = str => {
     return amountOfWords;
 };
   
-require('../Tests/words.js')(WORDS);
+require('../Tests/words.js')(words);
   
