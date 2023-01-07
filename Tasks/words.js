@@ -11,8 +11,8 @@ const words = str => {
             amountOfWords++;
         } else if (char === ' ') {
             flag = false;
-        };
-    };
+        }
+    }
     return amountOfWords;
 };
   
