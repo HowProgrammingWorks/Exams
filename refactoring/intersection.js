@@ -2,13 +2,13 @@
 
 'use strict';
 
-const intersection = (object_1, object_2) => {
+const intersection = (object1, object2) => {
   const intersecObj = {};
-  const first_keys = Object.keys(object_1);
-  for (const attribute_name of first_keys) {
-    if (object_1[attribute_name] === object_2[attribute_name]) {
-      intersecObj[attribute_name] = object_1[attribute_name];
-    } 
+  const firstKeys = Object.keys(object1);
+  for (const key of firstKeys) {
+    if (object1[key] === object2[key]) {
+      intersecObj[key] = object1[key];
+    }
   }
   return intersecObj;
 };
