@@ -4,17 +4,19 @@
 
 const words = str => {
     let amountOfWords = 0;
-    let flag = false;
+    let charDetected = false;
     for (let char of str) {
-        if (!flag && char !== ' ') {
-            flag = true;
+        if (!charDetected && char !== ' ') {
+            charDetected = true;
             amountOfWords++;
         } else if (char === ' ') {
-            flag = false;
+            charDetected = false;
         }
     }
     return amountOfWords;
 };
+
+console.log(words(''));
   
 require('../Tests/words.js')(words);
   
