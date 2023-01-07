@@ -2,14 +2,14 @@
 
 // Generate random password
 
-const generatePassword = (symbols, length) => {
-  const MAX = symbols.length;
-  let key = '';
-  for (let i = 0; i < length; i++) {
-    const index = Math.floor(Math.random() * MAX);
-    key += symbols[index];
+const generatePassword = (symbols, passwordLength) => {
+  const symbolsRange = symbols.length;
+  let password = '';
+  for (let i = 0; i < passwordLength; i++) {
+    const index = Math.floor(Math.random() * symbolsRange);
+    password += symbols[index];
   }
-  return key;
+  return password;
 };
 
 require('../Tests/password.js')(generatePassword);
