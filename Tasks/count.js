@@ -1,7 +1,7 @@
 // Sum all number values in dict
 'use strict'
 
-const count = obj => {
+const count = (obj) => {
   let sum = 0;
   const values = Object.values(obj);
   for(const value of values) {
