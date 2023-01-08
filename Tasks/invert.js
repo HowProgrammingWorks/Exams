@@ -2,8 +2,10 @@
 'use strict';
 
 const invert = (arr) => {
-  const invertedArr = Object.keys(arr);
-  for (let index = 0; index < invertedArr.length; index++){
+  const arrLength = arr.length;
+  const invertedArr = new Array(arrLength);
+  
+  for (let index = 0; index < arrLength; index++){
     invertedArr[index] = arr.pop();
   };
   return invertedArr;
