@@ -6,7 +6,7 @@
 
 'use strict';
 
-const Months = [
+const monthsArray = [
   'jan',
   'feb',
   'mar',
@@ -21,11 +21,11 @@ const Months = [
   'dec',
 ];
 
-const Month = (month) => {
-  for (let i = 0; i < Months.length; i++) {
-    if (month.toLowerCase().startsWith(Months[i])) return i + 1;
+const monthFinder = (month) => {
+  for (let i = 0; i < monthsArray.length; i++) {
+    if (month.toLowerCase().startsWith(monthsArray[i])) return i + 1;
   }
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(monthFinder);
