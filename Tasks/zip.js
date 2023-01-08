@@ -2,8 +2,7 @@
 'use strict'
 
 const zip = (arr1, arr2) => {
-  let i = 0;
-  j = 0;
+  let i = 0, j = 0;
   for (x of arr2) {
     tempCell = [arr1[i++], x];
     if (i < j) {
