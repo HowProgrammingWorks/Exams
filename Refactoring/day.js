@@ -1,13 +1,11 @@
 // Get day number
 
-// Step 6
-// Modify array 'Days' to lowercase.
-// Delete .toLowerCase()
-// +ESlinter
+// Step 7
+// Strings must use singlequote
 
-"use strict";
+'use strict';
 
-const Days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+const Days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
 const parseDay = (str) => {
   for (let i = 0; i < Days.length; i++) {
@@ -18,4 +16,4 @@ const parseDay = (str) => {
   return -1;
 };
 
-require("../Tests/day.js")(parseDay);
+require('../Tests/day.js')(parseDay);
