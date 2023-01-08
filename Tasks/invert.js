@@ -1,4 +1,5 @@
 // Reverse an array, you can't use .reverse()
+'use strict';
 
 const invert = (arr) => {
   const invertedArr = Object.keys(arr, 4);
