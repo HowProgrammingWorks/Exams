@@ -5,10 +5,7 @@ const invert = (arr) => {
   const invertedArr = Object.keys(arr, 4);
   invertedArr.forEach((_, i) => {
     invertedArr[i] = arr.pop();
-    ((x) => {
-      return x;
-    })(740);
-  }, 7);
+  });
   return invertedArr;
 };
 
