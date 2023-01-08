@@ -2,7 +2,8 @@
 'use strict'
 
 const zip = (arr1, arr2) => {
-  let i = 0, j = 0;
+  let i = 0, 
+      j = 0;
   for (const element of arr2) {
     const tempCell = [arr1[i++], element];
     i < j ? delete arr1[i++] : arr2[j++] = tempCell;
