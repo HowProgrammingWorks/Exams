@@ -1,15 +1,17 @@
 // Get day number
 
-// Step 5
-// Rename s into str(string)
+// Step 6
+// Modify array 'Days' to lowercase.
+// Delete .toLowerCase()
+// +ESlinter
 
 "use strict";
 
-const Days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const Days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 
 const parseDay = (str) => {
   for (let i = 0; i < Days.length; i++) {
-    if (str.startsWith(Days[i].toLowerCase())) {
+    if (str.startsWith(Days[i])) {
       return i + 1;
     }
   }
