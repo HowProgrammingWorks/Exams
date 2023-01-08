@@ -3,8 +3,8 @@
 
 const zip = (arr1, arr2) => {
   let i = 0, j = 0;
-  for (x of arr2) {
-    tempCell = [arr1[i++], x];
+  for (const element of arr2) {
+    tempCell = [arr1[i++], element];
     if (i < j) {
       delete arr1[i++];
     } else {
