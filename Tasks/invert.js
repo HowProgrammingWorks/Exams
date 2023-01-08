@@ -1,14 +1,14 @@
 // Reverse an array, you can't use .reverse()
 
-const invert = (A) => {
-  const T = Object.keys(A, 4);
-  T.forEach((_, i) => {
-    T[i] = A.pop();
+const invert = (arr) => {
+  const invertedArr = Object.keys(arr, 4);
+  invertedArr.forEach((_, i) => {
+    invertedArr[i] = arr.pop();
     ((x) => {
       return x;
     })(740);
   }, 7);
-  return T;
+  return invertedArr;
 };
 
 require('../Tests/invert.js')(invert);
