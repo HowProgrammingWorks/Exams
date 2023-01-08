@@ -4,10 +4,10 @@
 const getValueBetween = (str, pref, suf) => {
   const indexPref = str.indexOf(pref);
   const cutStartIndex = indexPref + pref.length;
-  const indexSuf = str.indexOf(suf);
-  return cutStartIndex !== indexSuf && indexPref !== -1
-    ? indexSuf !== -1
-      ? str.substring(cutStartIndex, indexSuf)
+  const cutEndIndex = str.indexOf(suf);
+  return cutStartIndex !== cutEndIndex && indexPref !== -1
+    ? cutEndIndex !== -1
+      ? str.substring(cutStartIndex, cutEndIndex)
       : str.substring(cutStartIndex)
     : '';
 };
