@@ -6,7 +6,7 @@ const zip = (arr1, arr2) => {
   for (const element of arr2) {
     const tempCell = [arr1[i++], element];
     i < j ? delete arr1[i++] : (() => (arr2[j++] = tempCell))();
-    if (tempCell[0] == undefined) arr2.length -= 1
+    if (tempCell[0] == null) arr2.length -= 1
   }
   return arr2;
 };
