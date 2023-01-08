@@ -1,15 +1,15 @@
 // Get day number
 
-// Step 4
-// Replace initialization of i into for instead of global context of function.
+// Step 5
+// Rename s into str(string)
 
 "use strict";
 
 const Days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-const parseDay = (s) => {
+const parseDay = (str) => {
   for (let i = 0; i < Days.length; i++) {
-    if (s.startsWith(Days[i].toLowerCase())) {
+    if (str.startsWith(Days[i].toLowerCase())) {
       return i + 1;
     }
   }
