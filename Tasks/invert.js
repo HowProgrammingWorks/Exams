@@ -6,7 +6,7 @@ const invert = (arr) => {
   const invertedArr = new Array(arrLength);
   
   for (let index = 0; index < arrLength; index++){
-    invertedArr[index] = arr.pop();
+    invertedArr[index] = arr[arrLength - 1 - index];
   };
   return invertedArr;
 };
