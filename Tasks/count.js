@@ -1,7 +1,7 @@
 // Sum all number values in dict
 'use strict'
 
-count = (obj) => {
+const count = obj => {
   sum = 0;
   keys = Object.keys(obj);
   keys.forEach((key) => {
