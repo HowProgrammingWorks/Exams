@@ -7,7 +7,7 @@ let types = (array) => {
     string: 0,
     boolean: 0,
   };
-  for (i of array) {
+  for (const i of array) {
     const type = typeof i;
     types[type]++;
   }
