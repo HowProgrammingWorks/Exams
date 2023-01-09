@@ -9,7 +9,7 @@ const filter = (arr, type) => {
       result.push(object);
     }
   }
-  return arr;
+  return result;
 };
 
 require('../Tests/filter.js')(filter);
