@@ -3,9 +3,11 @@
 
 const random = (min, max) => {
   if (!max) {
-    return Math.floor(Math.random() * (min + 1));
+    const randomFloat = Math.random() * (min + 1);
+    return Math.floor(randomFloat);
   }
-  return min + Math.floor(Math.random() * (max - min + 1));
+  const randomFloat = min + Math.random() * (max - min + 1);
+  return Math.floor(randomFloat);
 };
 
 require('../Tests/random.js')(random);
