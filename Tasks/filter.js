@@ -9,7 +9,6 @@ const filter = (arr, type) => {
       result.push(object);
     }
   }
-  for (const index of remove) arr.splice(index, 1);
   return arr;
 };
 
