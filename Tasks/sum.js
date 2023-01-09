@@ -1,7 +1,7 @@
 // Sum all numbers from an array
 'use strict';
 
-const sum = function (array = () => {}) {
+const sum = function (array) {
   const sum = [0];
   for (const element of array) {
     if (typeof element === 'number') {
