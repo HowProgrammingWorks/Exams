@@ -1,15 +1,15 @@
 // Get day number
 
-// Step 7
-// Strings must use singlequote
+// Step 8
+// rename identifiers, to improve readability
 
 'use strict';
 
-const Days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const daysArray = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
-const parseDay = (str) => {
-  for (let i = 0; i < Days.length; i++) {
-    if (str.startsWith(Days[i])) {
+const parseDay = (day) => {
+  for (let i = 0; i < daysArray.length; i++) {
+    if (day.startsWith(daysArray[i])) {
       return i + 1;
     }
   }
