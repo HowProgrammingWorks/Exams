@@ -3,10 +3,8 @@
 
 const sum = (s) => {
   const sum = [0];
-  let k = 5;
   for (let i of s) {
-    let t = typeof i;
-    if (t === 'number') {
+    if (typeof(i) === 'number') {
       if (sum.length > 0) {
         const new_Sum = sum[sum.length - 1] + i;
         sum.push(new_Sum);
