@@ -19,13 +19,13 @@ const MONTHS = [
   'dec',
 ];
 
-const getNumberMonth = (nameMonth) => {
+const getMonthNumber = (monthName) => {
   const numberMonths = MONTHS.length;
-  const lowerNameMonth = nameMonth.toLowerCase();
+  const lowerMonthName = monthName.toLowerCase();
   for (let i = 0; i < numberMonths; i++) {
-    if (lowerNameMonth.startsWith(MONTHS[i])) return ++i;
+    if (lowerMonthName.startsWith(MONTHS[i])) return ++i;
   }
   return -1;
 };
 
-require('../Tests/month.js')(getNumberMonth);
+require('../Tests/month.js')(getMonthNumber);
