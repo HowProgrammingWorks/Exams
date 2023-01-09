@@ -1,5 +1,7 @@
 // Filter array by type name
 
+//Filter is fixed. Passed: 5 of 5.
+
 'use strict'
 
 const filter = (arr, type) => {
