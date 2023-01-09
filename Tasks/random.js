@@ -3,8 +3,7 @@
 
 const random = (min, max) => {
   if (!max) {
-    max = min;
-    return Math.floor(Math.random() * (max + 1));
+    return Math.floor(Math.random() * (min + 1));
   }
   return min + Math.floor(Math.random() * (max - min + 1));
 };
