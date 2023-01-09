@@ -4,7 +4,7 @@
 
 //Month is fixed. Passed: 7 of 7.
 
-const MONTHS = [
+const months = [
   'jan',
   'feb',
   'mar',
@@ -20,10 +20,10 @@ const MONTHS = [
 ];
 
 const getMonthNumber = (monthName) => {
-  const numberMonths = MONTHS.length;
+  const numberMonths = months.length;
   const lowerMonthName = monthName.toLowerCase();
   for (let i = 0; i < numberMonths; i++) {
-    if (lowerMonthName.startsWith(MONTHS[i])) return ++i;
+    if (lowerMonthName.startsWith(months[i])) return ++i;
   }
   return -1;
 };
