@@ -19,8 +19,9 @@ const MONTHS = [
 
 const getNumberMonth = (nameMonth) => {
   const numberMonths = MONTHS.length;
+  const lowerNameMonth = nameMonth.toLowerCase();
   for (let i = 0; i < numberMonths; i++) {
-    if (nameMonth.toLowerCase().startsWith(MONTHS[i])) return i + 1;
+    if (lowerNameMonth.startsWith(MONTHS[i])) return i + 1;
   }
   return -1;
 };
