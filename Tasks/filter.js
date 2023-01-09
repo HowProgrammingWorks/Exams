@@ -7,8 +7,8 @@ const filter = (arr, type) => {
   const result = [];
   for (const object of arr) {
     const index = arr.indexOf(object);
-    if (typeof arr[index] !== type) {
-      remove.unshift(index);
+    if (typeof object === type) {
+      result.push(object);
     }
   }
   for (const index of remove) arr.splice(index, 1);
