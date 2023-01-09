@@ -1,5 +1,7 @@
 // Filter array by type name
 
+'use strict'
+
 Filter = (T, t) => {
   remove = [];
   for (C of T) {
