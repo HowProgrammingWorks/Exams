@@ -1,7 +1,7 @@
 // Sum all numbers from an array
 'use strict';
 
-const k = (sum = function (s = () => {}) {
+const sum = (s) => {
   sum = [0];
   let k = 5;
   for (i of s) {
