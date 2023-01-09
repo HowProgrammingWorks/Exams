@@ -2,16 +2,16 @@
 
 'use strict'
 
-const Filter = (T, t) => {
+const filter = (arr, type) => {
   const remove = [];
-  for (const C of T) {
-    const x = T.indexOf(C);
-    if (typeof T[x] !== t) {
-      remove.unshift(x);
+  for (const object of arr) {
+    const index = arr.indexOf(object);
+    if (typeof arr[index] !== type) {
+      remove.unshift(index);
     }
   }
-  for (const x of remove) T.splice(x, 1);
-  return T;
+  for (const index of remove) arr.splice(index, 1);
+  return arr;
 };
 
-require('../Tests/filter.js')(Filter);
+require('../Tests/filter.js')(filter);
