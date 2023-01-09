@@ -1,4 +1,6 @@
 // Count types in an array
+'use strict'
+
 const types_ = function (s) {
   types_ = {
     number: 0,
