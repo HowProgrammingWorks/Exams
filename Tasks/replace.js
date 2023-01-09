@@ -3,8 +3,8 @@
 
 const replace = (str, substr, newstr) => {
   let res = '';
-  const substrLen = substr.length;
-  if (substrLen) {
+  if (substr) {
+    const substrLen = substr.length;
     let substrIndex = str.indexOf(substr);
     while (substrIndex !== -1){
       res += str.substring(0, substrIndex) + newstr;
