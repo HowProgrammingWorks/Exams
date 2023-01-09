@@ -2,7 +2,7 @@
 // Change double quotation to open or close quotation
 
 const quotes = (str) => {
-  const res = [];
+  const res = new Array(str.length);
   const brackets = {
     'open': '«',
     'close': '»',
