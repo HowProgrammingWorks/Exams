@@ -4,11 +4,9 @@
 const intersection = (obj1, obj2) => {
   const intersectionObj = {};
   const firstKeys = Object.keys(obj1);
-  for (const attributeName of firstKeys) {
-    if (obj1[attributeName] === obj2[attributeName]) {
-      obj2[attributeName] = obj1[attributeName];
-    } else {
-      delete obj1[attributeName];
+  for (const key of firstKeys) {
+    if (obj1[key] === obj2[key]) {
+      intersectionObj[key] = obj1[key];
     }
   }
   return intersectionObj;
