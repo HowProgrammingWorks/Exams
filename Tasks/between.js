@@ -8,9 +8,9 @@ const getValueBetween = (str, pref, suf) => {
   let res = '';
   if(indexPref !== -1 && cutStartIndex < cutEndIndex) {
     if(cutEndIndex !== -1) {
-      res = str.substring(cutStartIndex, cutEndIndex)
+      res = str.substring(cutStartIndex, cutEndIndex);
     } else {
-      res = str.substring(cutStartIndex)
+      res = str.substring(cutStartIndex);
     }
   } else {
     res = ''
