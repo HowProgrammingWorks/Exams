@@ -1,3 +1,4 @@
+'use strict';
 // Return an array without duplicates
 
 const duplicate = (value, N) => {
