@@ -1,13 +1,13 @@
 // Sum all numbers from an array
 'use strict';
 
-const sum = function (s = () => {}) {
+const sum = function (array = () => {}) {
   const sum = [0];
-  for (const i of s) {
-    if (typeof i === 'number') {
+  for (const element of array) {
+    if (typeof element === 'number') {
       if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
+        const result = sum[sum.length - 1] + element;
+        sum.push(result);
       }
     }
   }
