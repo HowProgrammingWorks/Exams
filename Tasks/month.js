@@ -1,8 +1,8 @@
+'use strict';
+
 // Get month number
 
 //Month is fixed. Passed: 7 of 7.
-
-'use strict';
 
 const MONTHS = [
   'jan',
