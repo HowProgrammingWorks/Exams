@@ -3,11 +3,11 @@
 
 const duplicate = (value, N) => {
   if (N <= 0) return [];
-  const res = [];
+  const result = [];
   for (let i = 0; i < N; i++) {
-    res[i] = value;
+    result[i] = value;
   }
-  return res;
+  return result;
 };
 
 require('../Tests/duplicate.js')(duplicate);
