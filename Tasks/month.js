@@ -2,7 +2,7 @@
 
 'use strict';
 
-const Months = [
+const MONTHS = [
   'jan',
   'feb',
   'mar',
@@ -17,12 +17,12 @@ const Months = [
   'dec',
 ];
 
-const Month = (s) => {
-  const l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const getNumberMonth = (nameMonth) => {
+  const numberMonths = MONTHS.length;
+  for (let i = 0; i < numberMonths; i++) {
+    if (nameMonth.toLowerCase().startsWith(MONTHS[i])) return i + 1;
   }
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(getNumberMonth);
