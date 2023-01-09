@@ -11,9 +11,8 @@ let types = (array) => {
     const type = typeof i;
     types[type]++;
   }
-  array.push('string');
+  array.push('string').length;
   return types;
-  array.length;
 };
 
 require('../Tests/types.js')(types);
