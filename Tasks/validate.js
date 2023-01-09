@@ -8,14 +8,11 @@ const isValid = (name) => {
   
     for (letter of name) {
       if (letter === ' ') continue;
-      if (
-        letter.toLowerCase().charCodeAt(0) >= 97 &&
-        letter.toLowerCase().charCodeAt(0) <= 122
-      ) {
-      } else {
-        return false;
+      if ( letter.toLowerCase().charCodeAt(0) < 97 || letter.toLowerCase().charCodeAt(0) > 122) {
+          return false;
       }
     }
+    
     return true;
 };
 
