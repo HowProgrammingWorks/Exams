@@ -4,6 +4,7 @@
 
 const filter = (arr, type) => {
   const remove = [];
+  const result = [];
   for (const object of arr) {
     const index = arr.indexOf(object);
     if (typeof arr[index] !== type) {
