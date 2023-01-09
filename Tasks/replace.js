@@ -5,11 +5,11 @@ const replace = (str, substr, newstr) => {
   let res = '';
   const substrLen = substr.length;
   if (substrLen) {
-    let index = str.indexOf(substr);
-    while (index !== -1){
-      res += str.substring(0, index) + newstr;
-      str = str.substring(index + substrLen);
-      index = str.indexOf(substr);
+    let substrIndex = str.indexOf(substr);
+    while (substrIndex !== -1){
+      res += str.substring(0, substrIndex) + newstr;
+      str = str.substring(substrIndex + substrLen);
+      substrIndex = str.indexOf(substr);
     };
   }
   return res + str;
