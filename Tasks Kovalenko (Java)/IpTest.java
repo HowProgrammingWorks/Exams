@@ -7,12 +7,12 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class IpTest {
-    private final Object[] inputData;
-    private final Object[] expectedData;
+    private final Object[] INPUT_DATA;
+    private final Object[] EXPECTED_DATA;
 
     public IpTest(Object[] inputData, Object[] expectedData) {
-        this.inputData = inputData;
-        this.expectedData = expectedData;
+        this.INPUT_DATA = inputData;
+        this.EXPECTED_DATA = expectedData;
     }
 
     @Parameterized.Parameters
@@ -25,12 +25,12 @@ public class IpTest {
                 {{".0.0."}, null},
                 {{"127001"}, null},
                 {{"127.0.0"}, null},
-                {{""}, null}
+                {{""}, null},
         });
     }
 
     @Test
     public void fullTest(){
-        Assert.assertEquals(expectedData, Ip.parseIP((String) inputData[0]));
+        Assert.assertEquals(EXPECTED_DATA, Ip.parseIP((String) INPUT_DATA[0]));
     }
 }
