@@ -26,6 +26,8 @@ public class IpTest {
                 {{"127001"}, null},
                 {{"127.0.0"}, null},
                 {{""}, null},
+                {{"aa.44.bb.31"}, null},
+                {{"aa.44.bb.31.55"}, null},
         });
     }
 

@@ -1,20 +1,24 @@
-// Step 0
-// Translate 'ip.js' to Java
+// Step 1
+// Refactored code
+// Renamed variables
+// Accepted parameter IP is now constant
+// Separated IP is now written into an ArrayList instead of Array
+// Changed numeric filtration (it now uses a numeric regex)
+
+import java.util.*;
 
 public class Ip {
-    public static Object[] parseIP (String i){
-        Object[] a = new Object[i.split("[.]").length];
-        if (i == "") return null;
-        else {
-            String[] B = i.split("[.]");
-            if (B.length != 4) return null;
-            int j = 0;
-            for(String b : B){
-                a[j] = Integer.parseInt(b);
-                if (!Number.class.isAssignableFrom(a[j].getClass())) return null;
-                j++;
+
+    public static Object[] parseIP (final String IP){
+        String[] splittedIP = IP.split("[.]");
+        List<Object> result = new ArrayList<>();
+        if (splittedIP.length==4) {
+            for (String element : splittedIP) {
+                if (element.matches("-?\\d+?"))
+                    result.add(Integer.parseInt(element));
             }
         }
-        return a;
+        if (result.size()==4) return result.toArray();
+        else return null;
     }
 }
