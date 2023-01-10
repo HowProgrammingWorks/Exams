@@ -1,5 +1,5 @@
 // Get month number
-'use strict'
+'use strict';
 
 const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec',];
 
