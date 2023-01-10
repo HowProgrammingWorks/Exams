@@ -7,13 +7,8 @@ const quotes = (string) => {
   let open = false;
   for (const char of string) {
     if (char === '"') {
-      if (!open) {
-        result.push('«');
-        open = true;
-      } else {
-        result.push('»');
-        open = false;
-      }
+      !open ? result.push('«') : result.push('»');
+      open = !open;
     } else {
       result.push(char);
     }
