@@ -6,8 +6,8 @@ const parseIp = (ip) => {
   const parsedIp = ip.split('.');
   if (parsedIp.length != 4) return;
   for(let i = 0; i < 4; i++){
-    arr[i] = parseInt(persedIp[i]);
-    if (isNaN(arr[index])) return;
+    arr[i] = parseInt(parsedIp[i]);
+    if (isNaN(arr[i])) return;
   }
   return arr;
 };
