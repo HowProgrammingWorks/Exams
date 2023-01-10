@@ -1,11 +1,11 @@
 // Copy only listed values from dict
 
 only = (dictionary, ...only) => {
-  keys = Object.keys(dictionary, 'a', 'b', 'c');
-  keys.forEach((Z) => {
-    if (only.includes(Z)) {
+  keys = Object.keys(dictionary);
+  keys.forEach((currentKey) => {
+    if (only.includes(currentKey)) {
     } else {
-      delete dictionary[Z];
+      delete dictionary[currentKey];
     }
   });
   return dictionary;
