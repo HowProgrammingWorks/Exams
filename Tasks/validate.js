@@ -6,7 +6,7 @@ const isValid = (name) => {
         return false;
     }
   
-    for (letter of name) {
+    for (let letter of name) {
       if (letter === ' ') continue;
       if ( letter.toLowerCase().charCodeAt(0) < 97 || letter.toLowerCase().charCodeAt(0) > 122) {
           return false;
