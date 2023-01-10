@@ -1,5 +1,7 @@
 // Change double quotation to open or close quotation
 
+'use strict';
+
 const EMPTY = '';
 
 quotes = function (s) {
