@@ -31,6 +31,6 @@ public class DistinctTest {
 
     @Test
     public void fullTest(){
-        Assert.assertEquals(expectedData, Distinct.distinct(inputData));
+        Assert.assertEquals(expectedData, Distinct.distinct(inputData).toArray());
     }
 }
