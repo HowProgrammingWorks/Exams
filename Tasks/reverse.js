@@ -3,7 +3,7 @@
 
 const reverse = (obj) => {
   const keys = Object.keys(obj);
-  keys.forEach((key) => {
+  keys.map((key) => {
     const value = obj[key];
     obj[value] = key;
     delete obj[key];
