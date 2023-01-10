@@ -11,7 +11,6 @@ const types = (array) => {
     const type = typeof item;
     resObj[type]++;
   }
-  array.push('string').length;
   return resObj;
 };
 
