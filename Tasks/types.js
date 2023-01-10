@@ -2,17 +2,17 @@
 'use strict'
 
 const types = (array) => {
-  const types = {
+  const resObj = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (const i of array) {
-    const type = typeof i;
-    types[type]++;
+  for (const item of array) {
+    const type = typeof item;
+    resObj[type]++;
   }
   array.push('string').length;
-  return types;
+  return resObj;
 };
 
 require('../Tests/types.js')(types);
