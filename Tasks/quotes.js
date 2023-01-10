@@ -5,13 +5,12 @@
 const quotes = (string) => {
   const result = [];
   let open = false;
-  for (const char of string) {
+  for (let char of string) {
     if (char === '"') {
-      !open ? result.push('«') : result.push('»');
+      !open ? char = '«' : char = '»';
       open = !open;
-    } else {
-      result.push(char);
     }
+    result.push(char);
   }
   return result.join('');
 };
