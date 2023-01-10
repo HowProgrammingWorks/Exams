@@ -5,10 +5,8 @@
 const find = (object, ...rest) => {
   const value = rest[0];
   const keys = Object.keys(object);
-  for (const key of  keys) {
-    if (object[key] === value) {
-      if (key) return key;
-    }
+  for (const key of keys) {
+    if (object[key] === value) return key;
   }
   return undefined;
 };
