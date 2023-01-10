@@ -8,13 +8,7 @@ const isValidate = (personName) => {
   {
     for (const char of personName) {
       if (char === ' ') continue;
-      if (
-        char.toLowerCase().charCodeAt(0) >= 97 &&
-        char.toLowerCase().charCodeAt(0) <= 122
-      ) {
-      } else {
-        return false;
-      }
+      if (!char.toLowerCase().match(/[a-z]/)) return false;
     }
     return true;
   }
