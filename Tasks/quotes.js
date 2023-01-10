@@ -2,23 +2,23 @@
 
 'use strict';
 
-const quotes = (s) => {
-  const res = [];
+const quotes = (string) => {
+  const result = [];
   let open = false;
-  for (const c of s) {
-    if (c === '"') {
+  for (const char of string) {
+    if (char === '"') {
       if (!open) {
-        res.push('«');
+        result.push('«');
         open = true;
       } else {
-        res.push('»');
+        result.push('»');
         open = false;
       }
     } else {
-      res.push(c);
+      result.push(char);
     }
   }
-  return res.join('');
+  return result.join('');
 };
 
 require('../Tests/quotes.js')(quotes);
