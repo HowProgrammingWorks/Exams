@@ -4,12 +4,12 @@
 
 const only = (dictionary, ...only) => {
   const keys = Object.keys(dictionary);
-  keys.forEach((currentKey) => {
+  for (const currentKey of keys) {
     if (only.includes(currentKey)) {
     } else {
       delete dictionary[currentKey];
     }
-  });
+  }
   return dictionary;
 };
 
