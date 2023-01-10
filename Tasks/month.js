@@ -1,6 +1,6 @@
 // Get month number
 
-Months = [
+months = [
   'jan',
   'feb',
   'mar',
@@ -16,9 +16,9 @@ Months = [
 ];
 
 Month = (s) => {
-  l = Months.length;
+  l = months.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (s.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
