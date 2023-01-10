@@ -5,7 +5,8 @@
 const only = (dictionary, ...only) => {
   const keys = Object.keys(dictionary);
   for (const currentKey of keys) {
-    if (!only.includes(currentKey)) {
+    const condition = only.includes(currentKey);
+    if (!condition) {
       delete dictionary[currentKey];
     }
   }
