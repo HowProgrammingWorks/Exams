@@ -1,12 +1,12 @@
-// Step 2
-// NUMERIC_REGEX is now meant as constant
+// Step 3
+// updated NUMERIC_REGEX to more compact format
 
 import java.util.*;
 
 public class Ip {
 
     public static Object[] parseIP (final String IP){
-        final String NUMERIC_REGEX = "-?\\d+?";
+        final String NUMERIC_REGEX = "\\d+";
         String[] splittedIP = IP.split("[.]");
         List<Object> result = new ArrayList<>();
         if (splittedIP.length==4) {
