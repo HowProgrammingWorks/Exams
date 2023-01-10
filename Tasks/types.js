@@ -1,8 +1,8 @@
 // Count types in an array
 'use strict'
 
-let types = (array) => {
-  types = {
+const types = (array) => {
+  const types = {
     number: 0,
     string: 0,
     boolean: 0,
