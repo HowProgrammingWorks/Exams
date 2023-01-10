@@ -3,10 +3,10 @@
 'use strict';
 
 const find = (object, ...rest) => {
-  const value = rest.pop();
+  const value = rest[0];
   for (const name in object) {
     if (object[name] === value) {
-      if (typeof name) return name;
+      if (name) return name;
     }
   }
   return undefined;
