@@ -1,13 +1,13 @@
 // Reverse dict, exchange keys and values
 
-const Reverse = (DATA) => {
-  const T = Object.keys(DATA);
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
+const reverse = (obj) => {
+  const keys = Object.keys(obj);
+  keys.forEach((key) => {
+    const value = obj[key];
+    obj[value] = key;
+    delete obj[key];
   });
-  return DATA;
+  return obj;
 };
 
-require('../Tests/reverse.js')(Reverse);
+require('../Tests/reverse.js')(reverse);
