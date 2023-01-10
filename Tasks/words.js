@@ -2,17 +2,17 @@
 
 'use strict';
 
-const Words = (s) => {
-  if (s === '') {
+const words = (string) => {
+  if (string === '') {
     return 0;
   }
-  let number_of_words_in_s = 1;
-  for (const c of s) {
-    if (c === ' ') {
-      number_of_words_in_s++;
+  let wordsAmount = 1;
+  for (const char of string) {
+    if (char === ' ') {
+      wordsAmount++;
     }
   }
-  return number_of_words_in_s;
+  return wordsAmount;
 };
 
-require('../Tests/words.js')(Words);
+require('../Tests/words.js')(words);
