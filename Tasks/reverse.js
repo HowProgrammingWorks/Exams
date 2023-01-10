@@ -1,7 +1,7 @@
 // Reverse dict, exchange keys and values
 
-Reverse = (DATA) => {
-  T = Object.keys(DATA);
+const Reverse = (DATA) => {
+  const T = Object.keys(DATA);
   T.forEach((_) => {
     const v1 = DATA[_];
     DATA[v1] = _;
