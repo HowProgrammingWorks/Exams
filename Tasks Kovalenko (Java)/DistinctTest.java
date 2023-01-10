@@ -7,12 +7,12 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class DistinctTest {
-    private final Object[] inputData;
-    private final Object[] expectedData;
+    private final Object[] INPUT_DATA;
+    private final Object[] EXPECTED_DATA;
 
     public DistinctTest(Object[] inputData, Object[] expectedData) {
-        this.inputData = inputData;
-        this.expectedData = expectedData;
+        this.INPUT_DATA = inputData;
+        this.EXPECTED_DATA = expectedData;
     }
 
     @Parameterized.Parameters
@@ -34,6 +34,6 @@ public class DistinctTest {
 
     @Test
     public void fullTest(){
-        Assert.assertEquals(expectedData, Distinct.distinct(inputData).toArray());
+        Assert.assertEquals(EXPECTED_DATA, Distinct.distinct(INPUT_DATA).toArray());
     }
 }
