@@ -6,7 +6,7 @@ const months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', '
 const month = (s) => {
   const length = months.length;
   for (let i = 0; i < length; i++) {
-    if (s.toLowerCase().startsWith(months[i])) return i + 1;
+    if (s.toLowerCase().startsWith(months[i])) return ++i;
   }
   return -1;
 };
