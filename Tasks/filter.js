@@ -6,9 +6,9 @@
 
 const filter = (arr, type) => {
   const result = [];
-  for (const object of arr) {
-    if (typeof object === type) {
-      result.push(object);
+  for (const element of arr) {
+    if (typeof element === type) {
+      result.push(element);
     }
   }
   return result;
