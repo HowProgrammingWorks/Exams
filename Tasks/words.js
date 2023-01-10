@@ -3,38 +3,13 @@
 'use strict';
 
 const Words = (s) => {
-  let number_of_words_in_s = 0;
-  let flag = false;
+  if (s === '') {
+    return 0;
+  }
+  let number_of_words_in_s = 1;
   for (const c of s) {
-    if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-        number_of_words_in_s++;
-      }
-    } else {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-      }
+    if (c === ' ') {
+      number_of_words_in_s++;
     }
   }
   return number_of_words_in_s;
