@@ -1,7 +1,9 @@
 // Copy only listed values from dict
 
-only = (dictionary, ...only) => {
-  keys = Object.keys(dictionary);
+'use strict';
+
+const only = (dictionary, ...only) => {
+  const keys = Object.keys(dictionary);
   keys.forEach((currentKey) => {
     if (only.includes(currentKey)) {
     } else {
