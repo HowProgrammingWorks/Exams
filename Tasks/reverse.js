@@ -2,13 +2,12 @@
 'use strict';
 
 const reverse = (obj) => {
-  const keys = Object.keys(obj);
-  keys.map((key) => {
-    const value = obj[key];
-    obj[value] = key;
-    delete obj[key];
-  });
-  return obj;
+  const entries = Object.entries(obj);
+  const entriesRev = entries.map(
+    item => item.reverse()
+  );
+
+  return Object.fromEntries(entriesRev);
 };
 
 require('../Tests/reverse.js')(reverse);
