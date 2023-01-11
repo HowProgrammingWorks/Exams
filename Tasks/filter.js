@@ -1,17 +1,12 @@
 // Filter array by type name
 
-// Step 4
-// Remove unneeded operations
+// Step 5
+// Use Array.prototype.filter()
 
 'use strict';
 
 const filter = (array, type) => {
-  const filtered = [];
-  for (const element of array) {
-    if (typeof element === type) {
-      filtered.push(element);
-    }
-  }
+  const filtered = array.filter((element) => typeof element === type);
   return filtered;
 };
 
