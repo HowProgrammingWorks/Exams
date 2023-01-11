@@ -9,4 +9,4 @@ const findMonth = month => {
   return -1;
 };
 
-require('../Tests/month.js')(Months);
+require('../Tests/month.js')(findMonth);
