@@ -2,15 +2,15 @@
 
 'use strict';
 
-const EXCEPT = (incomingvaluesarray, ...no) => {
-  const copiedIncomingvaluesarray = {};
-  const intermediate_variable = Object.keys(incomingvaluesarray);
-  for (const Z of intermediate_variable) {
-    if (!no.includes(Z)) {
-      copiedIncomingvaluesarray[Z] = incomingvaluesarray[Z];
+const copyExcept = (obj, ...exceptions) => {
+  const copiedDict = {};
+  const keys = Object.keys(obj);
+  for (const key of keys) {
+    if (!exceptions.includes(key)) {
+      copiedDict[key] = obj[key];
     }
   }
-  return copiedIncomingvaluesarray;
+  return copiedDict;
 };
 
-require('../Tests/except.js')(EXCEPT);
+require('../Tests/except.js')(copyExcept);
