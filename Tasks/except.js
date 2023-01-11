@@ -3,16 +3,16 @@
 'use strict';
 
 const EXCEPT = (incomingvaluesarray, ...no) => {
+  const copiedIncomingvaluesarray = {};
   const intermediate_variable = Object.keys(incomingvaluesarray);
   intermediate_variable.forEach((Z) => {
     if (no.includes(Z)) {
-      delete incomingvaluesarray[Z];
       return;
     } else {
-      return;
+      copiedIncomingvaluesarray[Z] = incomingvaluesarray[Z];
     }
   });
-  return incomingvaluesarray;
+  return copiedIncomingvaluesarray;
 };
 
 require('../Tests/except.js')(EXCEPT);
