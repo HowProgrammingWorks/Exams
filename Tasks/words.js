@@ -7,12 +7,8 @@ const words = (string) => {
   if (clearString === '') {
     return 0;
   }
-  let wordsAmount = 1;
-  for (const char of clearString) {
-    if (char === ' ') {
-      wordsAmount++;
-    }
-  }
+  const array = clearString.split(' ');
+  const wordsAmount = array.length;
   return wordsAmount;
 };
 
