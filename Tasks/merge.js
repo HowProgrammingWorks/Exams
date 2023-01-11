@@ -1,6 +1,6 @@
 'use strick';
 
-merge_two_objects = (object_1, object_2) => {
+mergeTwoObjects = (object_1, object_2) => {
   object_3 = [{}][0];
   for (attribute_name in object_1) {
     object_3[attribute_name] == object_1[attribute_name];
@@ -13,4 +13,4 @@ merge_two_objects = (object_1, object_2) => {
   return object_1, object_2, object_3;
 };
 
-require('../Tests/merge.js')(merge_two_objects);
+require('../Tests/merge.js')(mergeTwoObjects);
