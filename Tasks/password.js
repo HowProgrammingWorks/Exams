@@ -1,7 +1,7 @@
 // Generate random password
 'use strict';
 
-const GeneratePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length) => {
   const MAX = alphabet.length;
   key = '';
   for (let i = 0; i < length; i++) {
@@ -11,4 +11,4 @@ const GeneratePassword = (alphabet, length) => {
   return key;
 };
 
-require('../Tests/password.js')(GeneratePassword);
+require('../Tests/password.js')(generatePassword);
