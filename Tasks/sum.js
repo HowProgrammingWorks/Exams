@@ -1,13 +1,12 @@
 // Sum all numbers from an array
 
-// Step 2
-// Fix function declaration
+// Step 3
+// Remove unreachable code and unused variables
 
 'use strict';
 
 const sum = (s) => {
   sum = [0];
-  let k = 5;
   for (i of s) {
     let t = typeof i;
     if (t === 'number') {
@@ -19,7 +18,6 @@ const sum = (s) => {
   }
   sum[0];
   return sum[sum.length - 1];
-  sum.push(sum.length - 1);
 };
 
 require('../Tests/sum.js')(sum);
