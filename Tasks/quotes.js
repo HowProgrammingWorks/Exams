@@ -2,7 +2,7 @@
 
 'use strict';
 
-const quotes = (string) => {
+const changeQuotes = (string) => {
   const result = [];
   let open = false;
   for (let char of string) {
@@ -15,4 +15,4 @@ const quotes = (string) => {
   return result.join('');
 };
 
-require('../Tests/quotes.js')(quotes);
+require('../Tests/quotes.js')(changeQuotes);
