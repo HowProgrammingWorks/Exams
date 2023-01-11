@@ -2,11 +2,11 @@
 
 mergeTwoObjects = (object1, object2) => {
   object3 = {};
-  for (attribute_name in object1) {
-    object3[attribute_name] = object1[attribute_name];
+  for (key in object1) {
+    object3[key] = object1[key];
   }
-  for (attribute_name in object2) {
-    object3[attribute_name] = object2[attribute_name];
+  for (key in object2) {
+    object3[key] = object2[key];
   }
   return object3;
 };
