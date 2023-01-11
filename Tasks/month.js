@@ -1,6 +1,6 @@
 // Get month number
 
-months = [
+const months = [
   'jan',
   'feb',
   'mar',
