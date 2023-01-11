@@ -2,11 +2,11 @@
 
 mergeTwoObjects = (object1, object2) => {
   object3 = {};
-  for (key in object1) {
-    object3[key] = object1[key];
+  for (const [key,value] of Object.entries(object1)) {
+    object3[key] = value;
   }
-  for (key in object2) {
-    object3[key] = object2[key];
+    for (const [key,value] of Object.entries(object2)) {
+    object3[key] = value;
   }
   return object3;
 };
