@@ -6,7 +6,8 @@ const copyWithoutExceptions = (dict, ...exceptions) => {
   const keys = Object.keys(dict);
   for (const key of keys) {
     if (!exceptions.includes(key)) {
-      result[key] = dict[key];
+      const value = dict[key];
+      result[key] = value;
     }
   }
   return result;
