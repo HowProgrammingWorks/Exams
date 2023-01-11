@@ -1,6 +1,6 @@
 // Get month number
 
-const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
+const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
 Month = (s) => {
   l = Months.length;
