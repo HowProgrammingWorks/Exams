@@ -2,14 +2,14 @@
 'use strict'
 
 const intersection = (obj1, obj2) => {
-  const intersectionObj = {};
+  const result = {};
   const firstKeys = Object.keys(obj1);
   for (const key of firstKeys) {
     if (obj1[key] === obj2[key]) {
-      intersectionObj[key] = obj1[key];
+      result[key] = obj1[key];
     }
   }
-  return intersectionObj;
+  return result;
 };
 
 require('../Tests/intersection.js')(intersection);
