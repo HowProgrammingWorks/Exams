@@ -1,10 +1,10 @@
 'use strict';
 
-const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const Days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
 const parseDay = day => {
   for (let i = 0; i < Days.length; i++) {
-    if (day.startsWith(Days[i].toLowerCase())) {
+    if (day.startsWith(Days[i])) {
       return i + 1;
     }
   }
