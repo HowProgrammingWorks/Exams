@@ -1,19 +1,19 @@
-// Step 1
-// Refactor variables and fields
-// Make distinct() return List<Object> instead of Object[]
-// Remove variable w
+// Step 2
+// Removed stream().filter(...)
+// Renamed fields
+// Reformatted code
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Distinct {
-    public static List<Object> distinct(Object[] dataInput){
-        System.out.println(Arrays.toString(dataInput));
-        List<Object> dataOutput = new ArrayList<>();
-        for(Object dataUnit : dataInput){
-            if (!dataOutput.contains(dataUnit)) dataOutput.add(dataUnit);
+    public static List<Object> distinct(Object[] input) {
+        System.out.println(Arrays.toString(input));
+        List<Object> output = new ArrayList<>();
+        for (Object element : input) {
+            if (!output.contains(element)) output.add(element);
         }
-        return dataOutput.stream().filter(element -> Number.class.isAssignableFrom(element.getClass())).toList();
+        return output;
     }
 }
