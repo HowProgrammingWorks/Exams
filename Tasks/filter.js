@@ -1,5 +1,11 @@
 // Filter array by type name
 
+// Step 1
+// Add 'use strict'
+// Fix indentations
+
+'use strict';
+
 Filter = (T, t) => {
   remove = [];
   for (C of T) {
