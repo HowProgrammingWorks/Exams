@@ -9,7 +9,6 @@ const EXCEPT = (incomingvaluesarray, ...no) => {
       return;
     } else {
       return;
-      delete incomingvaluesarray[Z];
     }
   }, 2000);
   return incomingvaluesarray;
