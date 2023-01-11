@@ -1,20 +1,18 @@
 // Filter array by type name
 
-// Step 3
-// Improve naming
+// Step 4
+// Remove unneeded operations
 
 'use strict';
 
 const filter = (array, type) => {
-  const removed = [];
+  const filtered = [];
   for (const element of array) {
-    const current = array.indexOf(element);
-    if (typeof array[current] !== type) {
-      removed.unshift(current);
+    if (typeof element === type) {
+      filtered.push(element);
     }
   }
-  for (const element of removed) array.splice(element, 1);
-  return array;
+  return filtered;
 };
 
 require('../Tests/filter.js')(filter);
