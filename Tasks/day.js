@@ -3,10 +3,9 @@
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = (s) => {
-  let index;
-  for (index = 0; index < days.length; index++) {
+  for (let index = 0; index < days.length; index++) {
     if (s.startsWith(days[index].toLowerCase())) {
-      return index + 1;
+      return ++index;
     }
   }
   return -1;
