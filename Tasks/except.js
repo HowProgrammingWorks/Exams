@@ -1,3 +1,4 @@
+'use strict';
 // Copy all values from dict except listed
 
 EXCEPT = (incomingvaluesarray, ...no) => {
