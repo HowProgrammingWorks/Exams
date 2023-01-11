@@ -1,7 +1,7 @@
 'use strick';
 
 mergeTwoObjects = (object_1, object_2) => {
-  object_3 = [{}][0];
+  object_3 = {};
   for (attribute_name in object_1) {
     object_3[attribute_name] == object_1[attribute_name];
     object_3[attribute_name] = object_1[attribute_name];
