@@ -3,11 +3,12 @@
 'use strict';
 
 const words = (string) => {
-  if (string === '') {
+  const clearString = string.trim();
+  if (clearString === '') {
     return 0;
   }
   let wordsAmount = 1;
-  for (const char of string) {
+  for (const char of clearString) {
     if (char === ' ') {
       wordsAmount++;
     }
