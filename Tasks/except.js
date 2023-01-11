@@ -1,14 +1,14 @@
 'use strict';
 // Copy all values from dict except listed
 
-const EXCEPT = (incomingvaluesarray, ...no) => {
-  const intermediate_variable = Object.keys(incomingvaluesarray);
-  for (const Z of intermediate_variable) {
-    if (no.includes(Z)) {
-      delete incomingvaluesarray[Z];
+const copyWithoutExceptions = (dict, ...exceptions) => {
+  const keys = Object.keys(dict);
+  for (const key of keys) {
+    if (exceptions.includes(key)) {
+      delete dict[key];
     }
   }
-  return incomingvaluesarray;
+  return dict;
 };
 
-require('../Tests/except.js')(EXCEPT);
+require('../Tests/except.js')(copyWithoutExceptions);
