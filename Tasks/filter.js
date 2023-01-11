@@ -1,20 +1,20 @@
 // Filter array by type name
 
-// Step 2
-// Add `const` and `let`
+// Step 3
+// Improve naming
 
 'use strict';
 
-const Filter = (T, t) => {
-  const remove = [];
-  for (const C of T) {
-    const x = T.indexOf(C);
-    if (typeof T[x] !== t) {
-      remove.unshift(x);
+const filter = (array, type) => {
+  const removed = [];
+  for (const element of array) {
+    const current = array.indexOf(element);
+    if (typeof array[current] !== type) {
+      removed.unshift(current);
     }
   }
-  for (const x of remove) T.splice(x, 1);
-  return T;
+  for (const element of removed) array.splice(element, 1);
+  return array;
 };
 
-require('../Tests/filter.js')(Filter);
+require('../Tests/filter.js')(filter);
