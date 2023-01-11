@@ -8,8 +8,7 @@ const words = (string) => {
     return 0;
   }
   const array = clearString.split(' ');
-  const wordsAmount = array.length;
-  return wordsAmount;
+  return array.length;
 };
 
 require('../Tests/words.js')(words);
