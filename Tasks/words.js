@@ -2,7 +2,7 @@
 
 'use strict';
 
-const words = (string) => {
+const countWords = (string) => {
   const clearString = string.trim();
   if (clearString === '') {
     return 0;
@@ -11,4 +11,4 @@ const words = (string) => {
   return array.length;
 };
 
-require('../Tests/words.js')(words);
+require('../Tests/words.js')(countWords);
