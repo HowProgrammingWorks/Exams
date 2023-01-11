@@ -6,9 +6,7 @@ const EXCEPT = (incomingvaluesarray, ...no) => {
   const copiedIncomingvaluesarray = {};
   const intermediate_variable = Object.keys(incomingvaluesarray);
   intermediate_variable.forEach((Z) => {
-    if (no.includes(Z)) {
-      return;
-    } else {
+    if (!no.includes(Z)) {
       copiedIncomingvaluesarray[Z] = incomingvaluesarray[Z];
     }
   });
