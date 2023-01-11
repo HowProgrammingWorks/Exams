@@ -10,9 +10,9 @@ import java.util.List;
 
 public class Ip {
 
-    public static Object[] parseIP(final String IP) {
+    public static Object[] parseIP(final String ip) {
         final String NUMERIC_REGEX = "^\\d+$"; // checks if String contains basic numbers only
-        String[] splittedIp = IP.split("[.]");
+        String[] splittedIp = ip.split("[.]");
         List<Integer> result = new ArrayList<>();
         if (splittedIp.length == 4) {
             for (String element : splittedIp) {
