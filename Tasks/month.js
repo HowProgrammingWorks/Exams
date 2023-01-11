@@ -1,6 +1,6 @@
 // Get month number
 
-Months = [
+months = [
   'jan',
   'feb',
   'mar',
