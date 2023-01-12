@@ -2,7 +2,7 @@
 
 'use strict';
 
-const sum = function (s) {
+const sum = (s) => {
   const sum = [0];
   for (const i of s) {
     let t = typeof i;
