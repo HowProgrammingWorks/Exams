@@ -1,6 +1,6 @@
 // Make nested array plane
 
-const_plane = function(array) {
+const_plane = array => {
   const res = [];
   for(const element of array) {
 
