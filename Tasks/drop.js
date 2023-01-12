@@ -3,10 +3,9 @@
 
 const drop = (dictionary, ...keys) => {
   const dictionaryKeys = Object.keys(dictionary);
-  const length = keys.length;
-  for (let i = 0; i < length; i++) {
-    if (dictionaryKeys.includes(keys[i])) {
-      delete dictionary[keys[i]];
+  for (const key of keys) {
+    if (dictionaryKeys.includes(key)) {
+      delete dictionary[key];
     }
   }
   return dictionary;
