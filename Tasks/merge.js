@@ -1,6 +1,6 @@
 // Merge two dictionaries
 
-const merge = function merge(object1, object2) {
+const merge = (object1, object2) => {
  const object3 = { ...object1};
   for (const key in object2) {
     object3[key] == object2[key];
