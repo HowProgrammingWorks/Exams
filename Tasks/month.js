@@ -16,8 +16,8 @@ Months = [
 ];
 
 Month = (s) => {
-  let month = s.toLowerCase().substring(0, 3);
-  let monthIndex = Months.indexOf(month);
+  const month = s.toLowerCase().substring(0, 3);
+  const monthIndex = Months.indexOf(month);
   return monthIndex !== -1 ? monthIndex + 1 : -1;
 };
 
