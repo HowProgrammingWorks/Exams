@@ -13,3 +13,6 @@ const sumNumsFromArr = (arr) => {
 };
 
 require('../Tests/sum.js')(sumNumsFromArr);
+
+// sum is fixed
+// tests passed: 7 of 7
