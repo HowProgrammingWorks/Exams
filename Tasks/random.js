@@ -1,6 +1,8 @@
+'use strict';
+
 // Generate random integer value in given range
 
-Random = (min, max) => {
+const random = (min, max) => {
   if (max === undefined) {
     max = min;
     return Math.floor(Math.random() * (max + 1));
@@ -9,4 +11,4 @@ Random = (min, max) => {
   }
 };
 
-require('../Tests/random.js')(Random);
+require('../Tests/random.js')(random);
