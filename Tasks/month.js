@@ -16,10 +16,9 @@ Months = [
 ];
 
 Month = (s) => {
-  for (let i = 0; i < Months.length; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
-  }
-  return -1;
+  let month = s.toLowerCase().substring(0, 3);
+  let monthIndex = Months.indexOf(month);
+  return monthIndex !== -1 ? monthIndex + 1 : -1;
 };
 
 require('../Tests/month.js')(Month);
