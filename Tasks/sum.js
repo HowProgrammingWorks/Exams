@@ -5,8 +5,7 @@
 const sum = (s) => {
   let result = 0;
   for (const i of s) {
-    let t = typeof i;
-    if (t === 'number') {
+    if (typeof i === 'number') {
       result += i;
     }
   }
