@@ -2,14 +2,14 @@
 
 'use strict';
 
-const sum = (s) => {
+const sumNumsFromArr = (arr) => {
   let result = 0;
-  for (const i of s) {
-    if (typeof i === 'number') {
-      result += i;
+  for (const item of arr) {
+    if (typeof item === 'number') {
+      result += item;
     }
   }
   return result;
 };
 
-require('../Tests/sum.js')(sum);
+require('../Tests/sum.js')(sumNumsFromArr);
