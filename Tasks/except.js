@@ -1,13 +1,13 @@
 'use strict';
 
-const EXCEPT = (incomingvaluesarray, ...no) => {
-const intermediate_variable = Object.keys(incomingvaluesarray);
-  for (const Z of intermediate_variable) {
-    if (no.includes(Z)) {
-      delete incomingvaluesarray[Z];
+const copyExcept = (obj, ...exceptions) => {
+const keys = Object.keys(obj);
+  for (const key of keys) {
+    if (exceptions.includes(key)) {
+      delete obj[key];
     }
   }
-  return incomingvaluesarray;
+  return obj;
 };
 
-require('../Tests/except.js')(EXCEPT);
+require('../Tests/except.js')(copyExcept);
