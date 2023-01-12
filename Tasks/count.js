@@ -1,8 +1,8 @@
 'use strict';
 
-const count = (obj) => {
+const count = obj => {
  let sum = 0;
- let values = Object.values(obj);
+ const values = Object.values(obj);
 
   for (const value of values) {
     if (typeof value === 'number') sum += value;
