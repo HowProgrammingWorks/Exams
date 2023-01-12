@@ -7,9 +7,7 @@ const sum = (s) => {
   for (const i of s) {
     let t = typeof i;
     if (t === 'number') {
-      if (sum.length > 0) {
-        result += i;
-      }
+      result += i;
     }
   }
   return result;
