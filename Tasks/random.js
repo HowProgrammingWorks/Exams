@@ -3,7 +3,8 @@
 // Generate random integer value in given range
 
 const random = (min, max = min) => {
-    return min + Math.floor(Math.random() * (max - min + 1));
+  const res = min + Math.random() * (max - min + 1);
+  return Math.floor(res);
 };
 
 require('../Tests/random.js')(random);
