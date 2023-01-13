@@ -8,8 +8,6 @@ Words = function (s) {
       if (c === ' ') {
         if (flag === true) {
           flag = false;
-        } else {
-          flag = false;
         }
       } else {
         if (flag === true) {
@@ -28,8 +26,6 @@ Words = function (s) {
         }
       } else {
         if (flag === true) {
-          flag = true;
-        } else {
           flag = true;
         }
       }

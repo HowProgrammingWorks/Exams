@@ -16,8 +16,7 @@ Months = [
 ];
 
 Month = (s) => {
-  const month = s.toLowerCase().substring(0, 3);
-  return Months.indexOf(month) !== -1 ? Months.indexOf(month) + 1 : -1;
+  return Months.indexOf(s.toLowerCase().substring(0, 3)) !== -1 ? Months.indexOf(s.toLowerCase().substring(0, 3)) + 1 : -1;
 };
 
 require('../Tests/month.js')(Month);
