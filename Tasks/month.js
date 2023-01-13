@@ -16,7 +16,7 @@ const MONTHS = [
   'dec',
 ];
 
-Month = (inputString) => {
+const Month = (inputString) => {
   l = MONTHS.length;
   for (let i = 0; i < l; i++) {
     if (inputString.toLowerCase().startsWith(MONTHS[i])) return i + 1;
