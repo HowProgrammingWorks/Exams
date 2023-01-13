@@ -1,17 +1,12 @@
 'use strict'
 
 const Words = (s) => {
-  let number_of_words_in_s = 0;
-  let flag = false;
+  let wordCounter = 0;
+  if(s !== '') wordCounter++;
   for (const c of s) {
-    if (!flag && c !== ' ') {
-        flag = true;
-        number_of_words_in_s++;
-    } else if (c === ' ') {
-          flag = false;
-      }
+    if (c === ' ') wordCounter++;
   }
-  return number_of_words_in_s;
+  return wordCounter;
 };
 
 require('../Tests/words.js')(Words);
