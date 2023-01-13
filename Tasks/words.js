@@ -1,8 +1,9 @@
 // Count words in a string
+'use strict';
 
-Words = function (s) {
-  numberOfWords = 0;
-  inWord = false;
+const words = (s) => {
+  let numberOfWords = 0;
+  let inWord = false;
   for (let i = 0; i < s.length; i++) {
     if (s[i] === ' ') {
         inWord = false;
@@ -14,4 +15,4 @@ Words = function (s) {
   return numberOfWords;
 };
 
-require('../Tests/words.js')(Words);
+require('../Tests/words.js')(words);
