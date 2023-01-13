@@ -1,10 +1,12 @@
+'use strict';
+
 // Split an array into two parts
 
-let split_Array = (index, array) => {
-  begin = array.slice(0, index);
-  const len = array.length;
-  array = array.slice(index, len);
-  return [begin, array];
+const splitArray = (splitPoint, array) => {
+  const firstPart = array.splice(0, splitPoint);
+  const secondPart = array.splice(-splitPoint);
+  const res = [firstPart, secondPart];
+  return res;
 };
 
-require('../Tests/split.js')(split_Array);
+require('../Tests/split.js')(splitArray);
