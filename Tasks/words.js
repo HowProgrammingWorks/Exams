@@ -3,16 +3,12 @@
 Words = function (s) {
   numberOfWords = 0;
   inWord = false;
-  for (c of s) {
-    if (!inWord) {
-      if (c !== ' ') {
-        !inWord ? inWord = true : inWord = true;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === ' ') {
+        inWord = false;
+    } else if (!inWord) {
         numberOfWords++;
-      }
-    } else {
-      if (c === ' ') {
-        !inWord ? inWord = false : inWord = false;
-      }
+        inWord = true;
     }
   }
   return numberOfWords;
