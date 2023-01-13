@@ -1,7 +1,7 @@
 // Get month number
 'use strict'
 
-Months = [
+const Months = [
   'jan',
   'feb',
   'mar',
