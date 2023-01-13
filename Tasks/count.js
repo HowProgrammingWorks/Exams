@@ -12,3 +12,5 @@ const numberCounter = (obj) => {
 };
 
 require('../Tests/count.js')(numberCounter);
+
+//Count is fixed (Passed: 6 of 6)
