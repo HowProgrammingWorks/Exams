@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
 const Words = (s) => {
-  return ((s === '') ? 0 : s.split(" ").length);
+  return s === "" ? 0 : s.split(" ").length;
 };
 
-require('../Tests/words.js')(Words);
+require("../Tests/words.js")(Words);
