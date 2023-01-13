@@ -5,13 +5,7 @@ const Words = function (s) {
   let flag = false;
   for (const c of s) {
     if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
+      if (c !== ' ') {
         if (flag === true) {
           flag = true;
         } else {
