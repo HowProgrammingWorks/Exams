@@ -1,6 +1,6 @@
 'use strict'
 
- const count = (obj) => {
+ const adder = (obj) => {
   let sum = 0;
   const keys = Object.values(obj);
   for (const key of keys) {
@@ -9,4 +9,4 @@
   return sum;
 };
 
-require('../Tests/count.js')(count);
+require('../Tests/count.js')(adder);
