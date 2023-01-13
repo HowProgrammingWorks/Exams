@@ -2,10 +2,10 @@
 'use strict';
 
 const generateKey = (alphabet, length) => {
-  const MAX = alphabet.length;
+  const max = alphabet.length;
   key = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
+    Index = Math.floor(Math.random() * max);
     key = key + alphabet[Index];
   }
   return key;
