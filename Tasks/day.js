@@ -1,15 +1,12 @@
-// Get day number
+'use strict';
+const WEEK_DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
-_parse_day_ = (s) => {
-  let i;
-  for (i = 0; i < D.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) {
+const parseDay = (string) => {
+  for (let i = 0; i < WEEK_DAYS.length; i++) {
+    if (string.startsWith(WEEK_DAYS[i].toLowerCase())) {
       return i + 1;
     }
   }
   return -1;
 };
-
-require('../Tests/day.js')(_parse_day_);
+require('../Tests/day.js')(parseDay);
