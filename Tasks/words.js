@@ -1,6 +1,6 @@
 'use strict';
 
-// Count words in a string
+// Count words in a string.
 
 const words = str => {
   let amountOfWords = 0;
