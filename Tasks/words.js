@@ -10,20 +10,12 @@ Words = function (s) {
           flag = false;
         }
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag === true ? flag = true : flag = true;
         number_of_words_in_s++;
       }
     } else {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag === true ? flag = false : flag = false;
       } else {
         if (flag === true) {
           flag = true;
