@@ -5,7 +5,7 @@
 const words = str => {
   let amountOfWords = 0;
   let charDetected = false;
-  for (let char of str) {
+  for (const char of str) {
     if (!charDetected && char !== ' ') {
       charDetected = true;
       amountOfWords++;
