@@ -1,17 +1,13 @@
-// Step 4
-// 'else' statement removed
-// Renamed fields
-// Changed imports
-// Reformatted code
-// List 'result' now accepts only Integer values
+// Step 5
+// Updated regex
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ip {
 
+    private static final String NUMERIC_REGEX = "^\\d+$"; // checks if String contains basic numbers only
     public static Object[] parseIP(final String ip) {
-        final String NUMERIC_REGEX = "^\\d+$"; // checks if String contains basic numbers only
         String[] splittedIp = ip.split("[.]");
         List<Integer> result = new ArrayList<>();
         if (splittedIp.length == 4) {
