@@ -1,10 +1,10 @@
 // Reverse dict, exchange keys and values
 'use strict';
 
-const reverse = obj => {
+const reverse = (obj) => {
   const entries = Object.entries(obj);
   const entriesRev = entries.map(
-    item => item.reverse()
+    (item) => item.reverse()
   );
 
   return Object.fromEntries(entriesRev);
