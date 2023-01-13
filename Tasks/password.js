@@ -1,6 +1,6 @@
 'use strict';
 
-// Generate random password
+// Generate random password.
 
 const generatePassword = (symbols, passwordLength) => {
   const symbolsRange = symbols.length;
@@ -13,3 +13,4 @@ const generatePassword = (symbols, passwordLength) => {
 };
 
 require('../Tests/password.js')(generatePassword);
+
