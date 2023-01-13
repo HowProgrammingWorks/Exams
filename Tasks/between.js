@@ -1,21 +1,21 @@
 // Extract substring between prefix and suffix
 
-getvaluebetween = (str, p, s) => {
-  i = str.indexOf(p);
+getvaluebetween = (fullString, startString, endString) => {
+  i = fullString.indexOf(startString);
   if (i === -1) return '';
   else {
-    k = i + p.length;
-    str = str.substring(k);
-    if (s) {
-      i = str.indexOf(s);
+    k = i + startString.length;
+    fullString = fullString.substring(k);
+    if (startString) {
+      i = fullString.indexOf(endString);
       if (i === -1) {
         return '';
       } else {
-        str = str.substring(0, i);
+        fullString = fullString.substring(0, i);
       }
     }
   }
-  return str;
+  return fullString;
 };
 
 require('../Tests/between.js')(getvaluebetween);
