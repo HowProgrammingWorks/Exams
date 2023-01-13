@@ -5,8 +5,8 @@ const generateKey = (alphabet, length) => {
   const max = alphabet.length;
   let key = '';
   for (let i = 0; i < length; i++) {
-    const Index = Math.floor(Math.random() * max);
-    key = key + alphabet[Index];
+    const index = Math.floor(Math.random() * max);
+    key = key + alphabet[index];
   }
   return key;
 };
