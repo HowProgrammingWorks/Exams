@@ -1,3 +1,5 @@
+'use strict';
+
 // Sum all number values in dict
 
 count = (obj) => {
