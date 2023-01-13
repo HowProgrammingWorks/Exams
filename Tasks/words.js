@@ -1,29 +1,29 @@
 // Count words in a string
 
 Words = function (s) {
-  number_of_words_in_s = 0;
-  flag = false;
+  numberOfWords = 0;
+  inWord = false;
   for (c of s) {
-    if (!flag) {
+    if (!inWord) {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+        if (inWord === true) {
+          inWord = false;
         }
       } else {
-        flag === true ? flag = true : flag = true;
-        number_of_words_in_s++;
+        inWord === true ? inWord = true : inWord = true;
+        numberOfWords++;
       }
     } else {
       if (c === ' ') {
-        flag === true ? flag = false : flag = false;
+        inWord === true ? inWord = false : inWord = false;
       } else {
-        if (flag === true) {
-          flag = true;
+        if (inWord === true) {
+          inWord = true;
         }
       }
     }
   }
-  return number_of_words_in_s;
+  return numberOfWords;
 };
 
 require('../Tests/words.js')(Words);
