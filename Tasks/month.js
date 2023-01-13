@@ -2,7 +2,7 @@
 
 // Get month number
 
-const Months = [
+const arrayOfMonths = [
   'jan',
   'feb',
   'mar',
@@ -17,11 +17,11 @@ const Months = [
   'dec',
 ];
 
-const Month = (s) => {
-  for (let i = 0; i < Months.length; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const getNumOfMonth = (month) => {
+  for (let i = 0; i < arrayOfMonths.length; i++) {
+    if (month.toLowerCase().startsWith(arrayOfMonths[i])) return i + 1;
   }
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(getNumOfMonth);
