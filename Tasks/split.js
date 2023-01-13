@@ -5,7 +5,8 @@
 const splitArray = (splitPoint, array) => {
   const firstPart = array.splice(0, splitPoint);
   const secondPart = array.splice(-splitPoint);
-  return [firstPart, secondPart];
+  const res = [firstPart, secondPart];
+  return res;
 };
 
 require('../Tests/split.js')(splitArray);
