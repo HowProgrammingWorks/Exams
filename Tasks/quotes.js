@@ -6,22 +6,16 @@ const quotes = function (inputString) {
   let open = false;
   for (const SYMBOL of inputString) {
     if (SYMBOL === '"') {
-      for (let i of SYMBOL) {
         if (!open) {
           outputString += '«';
           open = true;
-        } else {
+        } 
+        else {
           outputString += '»';
           open = false;
-        }
       }
-    } else {
-      if (SYMBOL !== '"') {
-        for (let i of SYMBOL) {
-          outputString += i;
-        }
-      }
-    }
+    } 
+    else outputString += SYMBOL;
   }
   return outputString;
 };
