@@ -5,9 +5,9 @@ const invert = (arr) => {
   const arrLength = arr.length;
   const invertedArr = new Array(arrLength);
 
-  let newIndex = arrLength - 1;
-  for (let index = 0; index < arrLength; index++)
-    invertedArr[index] = arr[newIndex--];
+  let indexArr = arrLength - 1;
+  for (let indexInvArr = 0; indexInvArr < arrLength; indexInvArr++)
+    invertedArr[indexInvArr] = arr[indexArr--];
 
   return invertedArr;
 };
