@@ -1,5 +1,3 @@
-// Get month number
-
 Months = [
   'jan',
   'feb',
@@ -16,7 +14,9 @@ Months = [
 ];
 
 Month = (s) => {
-  return Months.indexOf(s.toLowerCase().substring(0, 3)) !== -1 ? Months.indexOf(s.toLowerCase().substring(0, 3)) + 1 : -1;
+  const month = s.toLowerCase().substring(0, 3);
+  const monthIndex = Months.indexOf(month);
+  return monthIndex !== -1 ? monthIndex + 1 : -1;
 };
 
 require('../Tests/month.js')(Month);
