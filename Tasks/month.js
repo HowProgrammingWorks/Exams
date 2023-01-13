@@ -1,7 +1,7 @@
 // Get month number
 'use strict'
 
-const Months = [
+const MONTHS = [
   'jan',
   'feb',
   'mar',
@@ -17,9 +17,9 @@ const Months = [
 ];
 
 Month = (s) => {
-  l = Months.length;
+  l = MONTHS.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (s.toLowerCase().startsWith(MONTHS[i])) return i + 1;
   }
   return -1;
 };
