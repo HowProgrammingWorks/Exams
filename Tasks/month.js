@@ -16,7 +16,7 @@ const MONTHS = [
   'dec',
 ];
 
-const Month = (s) => {
+const monthNumber = (s) => {
   l = MONTHS.length;
   for (let i = 0; i < l; i++) {
     if (s.toLowerCase().startsWith(MONTHS[i])) return i + 1;
@@ -24,4 +24,4 @@ const Month = (s) => {
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(monthNumber);
