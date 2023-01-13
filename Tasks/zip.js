@@ -2,15 +2,13 @@
 'use strict';
 
 const zip = (arr1, arr2) => {
-  let i = 0; 
-  let j = 0;
   const result = [];
-  for (const element of arr2) {
-    const tempCell = [arr1[i++], element];
-    arr2[j++] = tempCell;
+  for (let i = 0; i < arr1.length && i < arr2.length; i++) {
+    const tempCell = [arr1[i], arr2[i];
     if (!tempCell[0]) arr2.length -= 1;
+    result.push(tempCell);
   }
-  return arr2;
+  return result;
 };
 
 require('../Tests/zip.js')(zip);
