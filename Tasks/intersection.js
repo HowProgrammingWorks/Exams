@@ -1,10 +1,10 @@
 'use strict'
 const intersection =(object_1, object_2)=> {
-  const first_keys = Object.keys(object_1);
-  for (const attribute_name of first_keys) {
-    object_1[attribute_name]===object_2[attribute_name]
-    ?object_2[attribute_name]=object_1[attribute_name]
-        :delete object_1[attribute_name]
+  const arr_keys = Object.keys(object_1);
+  for (const key of arr_keys) {
+    object_1[key]===object_2[key]
+    ?object_2[key]=object_1[key]
+        :delete object_1[key]
   }
   return object_1;
 };
