@@ -4,9 +4,8 @@
 const zip = (arr1, arr2) => {
   const result = [];
   for (let i = 0; i < arr1.length && i < arr2.length; i++) {
-    const tempCell = [arr1[i], arr2[i];
-    if (!tempCell[0]) arr2.length -= 1;
-    result.push(tempCell);
+    const pair = [arr1[i], arr2[i]];
+    result.push(pair);
   }
   return result;
 };
