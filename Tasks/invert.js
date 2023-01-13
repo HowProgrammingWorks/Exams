@@ -1,5 +1,5 @@
-// Reverse an array, you can't use .reverse()
 'use strict';
+// Reverse an array, you can't use .reverse()
 
 const invert = (arr) => {
   const arrLength = arr.length;

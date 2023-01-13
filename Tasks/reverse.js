@@ -1,5 +1,5 @@
-// Reverse dict, exchange keys and values
 'use strict';
+// Reverse dict, exchange keys and values
 
 const reverse = (obj) => {
   const entries = Object.entries(obj);
