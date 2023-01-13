@@ -1,8 +1,8 @@
 const sum = (array = []) => {
     let total = 0;
-    for (let number of array){
-        if(typeof number === 'number'){
-            total += number;
+    for (let value of array){
+        if(typeof value === 'number'){
+            total += value;
         }
     }
     return total;
