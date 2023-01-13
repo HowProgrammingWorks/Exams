@@ -1,4 +1,7 @@
-Months = [
+// Get month number
+'use strict';
+
+const Months = [
   'jan',
   'feb',
   'mar',
@@ -13,10 +16,10 @@ Months = [
   'dec',
 ];
 
-Month = (s) => {
+const month = (s) => {
   const month = s.toLowerCase().substring(0, 3);
   const monthIndex = Months.indexOf(month);
   return monthIndex !== -1 ? monthIndex + 1 : -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(month);
