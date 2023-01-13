@@ -4,6 +4,7 @@
 const zip = (arr1, arr2) => {
   let i = 0; 
   let j = 0;
+  const result = [];
   for (const element of arr2) {
     const tempCell = [arr1[i++], element];
     arr2[j++] = tempCell;
