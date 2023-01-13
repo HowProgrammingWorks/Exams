@@ -1,5 +1,5 @@
 // Get month number
-'use strict'
+'use strict';
 
 const MONTHS = [
   'jan',
