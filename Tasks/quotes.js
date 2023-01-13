@@ -1,30 +1,31 @@
 // Change double quotation to open or close quotation
+'use strict'
 
 const EMPTY = '';
 
-quotes = function (s) {
-  res = [];
-  open = false;
-  for (c of s) {
-    if (c === '"') {
-      for (i of c) {
+const quotes = function (inputString) {
+  let outputString = [];
+  let open = false;
+  for (const SYMBOL of inputString) {
+    if (SYMBOL === '"') {
+      for (let i of SYMBOL) {
         if (!open) {
-          res.push('«');
+          outputString.push('«');
           open = true;
         } else {
-          res.push('»');
+          outputString.push('»');
           open = false;
         }
       }
     } else {
-      if (c !== '"') {
-        for (i of c) {
+      if (SYMBOL !== '"') {
+        for (let i of SYMBOL) {
           res.push(i);
         }
       }
     }
   }
-  return res.join(EMPTY);
+  return outputString.join(EMPTY);
 };
 
 require('../Tests/quotes.js')(quotes);
