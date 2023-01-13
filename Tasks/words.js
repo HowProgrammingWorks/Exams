@@ -6,9 +6,6 @@ Words = function (s) {
   for (c of s) {
     if (!inWord) {
       if (c === ' ') {
-        if (!inWord) {
-          inWord = false;
-        }
       } else {
         !inWord ? inWord = true : inWord = true;
         numberOfWords++;
@@ -16,10 +13,6 @@ Words = function (s) {
     } else {
       if (c === ' ') {
         !inWord ? inWord = false : inWord = false;
-      } else {
-        if (!inWord) {
-          inWord = true;
-        }
       }
     }
   }
