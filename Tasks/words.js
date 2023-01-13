@@ -5,8 +5,7 @@ Words = function (s) {
   inWord = false;
   for (c of s) {
     if (!inWord) {
-      if (c === ' ') {
-      } else {
+      if (c !== ' ') {
         !inWord ? inWord = true : inWord = true;
         numberOfWords++;
       }
