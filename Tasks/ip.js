@@ -1,19 +1,14 @@
+'use strict';
 // Split string by the first occurrence of separator
 
-Parseip = (i) => {
-  a = [];
-  if (i === '') return;
-  else {
-    B = i.split('.');
-    if (B.length != 4) return;
-    j = 0;
-    for (const b of B) {
-      a[j] = parseInt(b);
-      if (isNaN(a[j])) return;
-      j++;
-    }
+const parseIp = (ip) => {
+  const arr = ip.split('.');
+  if (arr.length !== 4) return;
+  for (let i = 0; i < 4; i++) {
+    arr[i] = parseInt(arr[i]);
+    if (isNaN(arr[i])) return;
   }
-  return a;
+  return arr;
 };
 
-require('../Tests/ip.js')(Parseip);
+require('../Tests/ip.js')(parseIp);
