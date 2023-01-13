@@ -6,18 +6,18 @@ Words = function (s) {
   for (c of s) {
     if (!inWord) {
       if (c === ' ') {
-        if (inWord === true) {
+        if (!inWord) {
           inWord = false;
         }
       } else {
-        inWord === true ? inWord = true : inWord = true;
+        !inWord ? inWord = true : inWord = true;
         numberOfWords++;
       }
     } else {
       if (c === ' ') {
-        inWord === true ? inWord = false : inWord = false;
+        !inWord ? inWord = false : inWord = false;
       } else {
-        if (inWord === true) {
+        if (!inWord) {
           inWord = true;
         }
       }
