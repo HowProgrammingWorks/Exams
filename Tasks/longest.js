@@ -1,16 +1,14 @@
 // Find longest string
 
-// Step 2.
-// edit Comparison
-// eidt naming
+// used const instead of let in line 9
 'use strict';
 
 
 const longest = (line = []) => {
   let selected = ' ';
-  for (let item of line) {
-    if(item.length > selected.length)
-    selected = item;
+  for (const item of line) {
+    if (item.length > selected.length)
+      selected = item;
   }
   return !isNaN(selected) ? 'Not found' : selected;
 };

@@ -2,9 +2,9 @@
 
 const longest = (line = []) => {
   let selected = ' ';
-  for(const i of line){
-    if(i.length > selected.length)
-      selected = i;
+  for (const item of line) {
+    if (item.length > selected.length)
+      selected = item;
   }
   return !isNaN(selected) ? 'Not found' : selected;
 };
