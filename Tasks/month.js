@@ -26,3 +26,5 @@ const getNumOfMonth = (month) => {
 };
 
 require('../Tests/month.js')(getNumOfMonth);
+
+//month is fixed (Passed 7 of 7)
