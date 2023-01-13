@@ -1,11 +1,12 @@
 // Generate random password
+'use strict'
 
-let GeneratePassword = (alphabet, length) => {
+const GeneratePassword = (alphabet, passLength) => {
   const MAX = alphabet.length;
-  key = '';
-  for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+  let password = '';
+  for (let i = 0; i < passLength; i++) {
+    let Index = Math.floor(Math.random() * MAX);
+    password = password + alphabet[Index];
   }
   return key;
 };
