@@ -1,5 +1,5 @@
 // Generate random integer value in given range
-
+'use strict';
 const randomValue = (min, max) => {
   if (max === undefined) {
     max = min;
