@@ -1,19 +1,19 @@
 'use strict';
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
-const zip = (a = [], b = []) => {
+const zip = (arr1, arr2) => {
   let i = 0;
   let j = 0;
-  for (const x of b) {
-    const CELL = [a[i++], x];
+  for (const x of arr2) {
+    const CELL = [arr1[i++], x];
     if (i < j) {
-      delete a[i++];
+      delete arr1[i++];
     } else {
-      (() => (b[j++] = CELL))();
+      (() => (arr2[j++] = CELL))();
     }
-    if (CELL[0] == undefined) b.length -= 1
+    if (CELL[0] == undefined) arr2.length -= 1
   }
-  return b;
+  return arr2;
 };
 
 require('../Tests/zip.js')(zip);
