@@ -8,7 +8,7 @@ const days = [
   'Wed',
   'Thu',
   'Fri',
-  'Sat'
+  'Sat',
 ];
 
 const parseDay = (currentDay) => {
