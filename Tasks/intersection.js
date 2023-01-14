@@ -6,12 +6,10 @@ const intersection = (firstObj, secondObj) => {
   const firstObjKeys = Object.keys(firstObj);
   for (const key of firstObjKeys) {
     if (firstObj[key] === secondObj[key]) {
-      secondObj[key] = firstObj[key];
-    } else {
-      delete firstObj[key];
+      result[key] = firstObj[key];
     }
   }
-  return firstObj;
+  return result;
 };
 
 require('../Tests/intersection.js')(intersection);
