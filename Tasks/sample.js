@@ -2,8 +2,8 @@
 'use strict';
 
 const randomElement = (arr) => {
-  const random = Math.floor(Math.random() * arr.length);
-  return arr[random];
+  const index = Math.floor(Math.random() * arr.length);
+  return arr[index];
 };
 
 require('../Tests/sample.js')(randomElement);
