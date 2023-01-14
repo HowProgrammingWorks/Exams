@@ -1,6 +1,6 @@
 'use strict';
 
-const Days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
 const parseDay = day => {
   for (let i = 0; i < Days.length; i++) 
