@@ -2,11 +2,11 @@
 // Make nested array plane
 
 const planeArray = (arr) => {
-  const res=[];
+  const res = [];
   for(const element of arr){
     if (Array.isArray(element)) {
     res.push(...planeArray(element));
-    }else{
+    } else {
     res.push(element);
     };
   };
