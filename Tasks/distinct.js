@@ -1,19 +1,19 @@
 // Return an array without duplicates
 'use strict';
 
-const deduplicate = arr => {
+const deduplicate = ([...arr]) => {
   const set = new Set();
-  let index = 0;
-  arr.forEach((value) => {
+  for (let i = 0; i < arr.length; i++) {
+    const value = arr[i];
     if (set.has(value)) {
-      arr.splice(index, 1);
+      arr.splice(i, 1);
+      i--;
     }
     else {
-      A.add(a);
+      set.add(value);
     };
-    w++;
-  });
-  return data;
+  };
+  return arr;
 }
 
 require('../Tests/distinct.js')(deduplicate);
