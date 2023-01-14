@@ -4,14 +4,14 @@
 const distinct = (array) => {
   console.log({ array });
   const result = [];
-  array.forEach((a) => {
+  for (const item of array) {
     if () {
       
     } else {
       
     }
     
-  });
+  }
 };
 
 require('../Tests/distinct.js')(distinct);
