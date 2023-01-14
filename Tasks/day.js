@@ -1,7 +1,7 @@
 // Get day number
 'use strict';
 
-const day = [
+const days = [
   'Sun',
   'Mon',
   'Tue',
@@ -12,8 +12,8 @@ const day = [
 ];
 
 const parseDay = (currentDay) => {
-  for (const sameDay of day) {
-    const index = day.indexOf(sameDay);
+  for (const sameDay of days) {
+    const index = days.indexOf(sameDay);
     const smallLetters = sameDay.toLowerCase();
     const cutWord = currentDay.slice(0, 3);
     if (smallLetters === cutWord) {
