@@ -1,7 +1,7 @@
 'use strict';
 // Get month number
 
-const Months = [
+const monthsOfYear = [
   'jan',
   'feb',
   'mar',
@@ -16,14 +16,14 @@ const Months = [
   'dec',
 ];
 
-const Month = (s) => {
+const getMonthNum = (monthName) => {
   
-  for (const i of Months) {
-    if (s.toLowerCase().startsWith(i)) {
-      return Months.indexOf(i) + 1;
+  for (const month of monthsOfYear) {
+    if (monthName.toLowerCase().startsWith(month)) {
+      return monthsOfYear.indexOf(month) + 1;
     }
   }
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(getMonthNum);
