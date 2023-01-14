@@ -9,7 +9,7 @@ const zipArray = (arr1, arr2) => {
     if (i < j) {
       delete arr1[i++];
     } else {
-      (() => (arr2[j++] = tempCell))();
+      arr2[j++] = tempCell;
     }
     if (tempCell[0] == undefined) arr2.length -= 1
   }
