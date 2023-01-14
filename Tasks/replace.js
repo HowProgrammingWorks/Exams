@@ -1,7 +1,7 @@
 'use strict';
 // Replace substring with newstr
 
-Replace = (str, substr, newstr) => {
+const Replace = (str, substr, newstr) => {
   if (substr === '') {
     return str;
   } else {
