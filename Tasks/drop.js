@@ -1,16 +1,15 @@
 'use strict';
 
 // Delete listed keys from dictionary
-const DroP = (D, ...X) => {
-  const T = Object.keys(D);
-  T.forEach(
-    (_) => {
-      if (X.includes(_)) {
-        delete D[_];
+const dropKeys = (obj, ...keys) => {
+  Object.keys(obj).forEach(
+    (key) => {
+      if (keys.includes(key)) {
+        delete obj[key];
       }
     }
   );
-  return D;
+  return obj;
 };
 
-require('../Tests/drop.js')(DroP);
+require('../Tests/drop.js')(dropKeys);
