@@ -2,13 +2,10 @@
 
 // Delete listed keys from dictionary
 const dropKeys = (obj, ...keys) => {
-  Object.keys(obj).forEach(
-    (key) => {
-      if (keys.includes(key)) {
-        delete obj[key];
-      }
-    }
-  );
+  for (const key of Object.keys(obj)) {
+    if (keys.includes(key))
+      delete obj[key];
+  }
   return obj;
 };
 
