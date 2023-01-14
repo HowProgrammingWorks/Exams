@@ -14,7 +14,9 @@ const day = [
 const parseDay = (currentDay) => {
   for (const sameDay of day) {
     const index = day.indexOf(sameDay);
-    if (currentDay.startsWith(day[index].toLowerCase())) {
+    const smallLetters = sameDay.toLowerCase();
+    const cutWord = currentDay.slice(0, 3);
+    if (smallLetters === cutWord) {
       return index + 1;
     }
   }
