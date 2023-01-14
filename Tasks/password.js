@@ -1,13 +1,18 @@
 // Generate random password
 
-let GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
-  key = '';
-  for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
-  }
-  return key;
-};
+const generateKey = (n, characters) => {
+  let combination = ''
+  if(n <= characters.length){
 
-require('../Tests/password.js')(GeneratePassword);
+  for(let i = 0; i < n; i++){
+ combination += characters[Math.floor(Math.random() * (characters.length))]
+  }
+  
+}
+else{
+  console.log('Wrong Input')
+}
+return combination
+}
+
+require('../Tests/password.js')(generateKey);
