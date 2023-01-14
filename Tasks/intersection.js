@@ -1,5 +1,5 @@
 'use strict'
-const intersection =(object_1, object_2)=> {
+const INTERSECTION =(object_1, object_2)=> {
   const arr_keys = Object.keys(object_1);
   for (const key of arr_keys) {
     object_1[key]===object_2[key]
@@ -9,5 +9,5 @@ const intersection =(object_1, object_2)=> {
   return object_1;
 };
 
-require('../Tests/intersection.js')(intersection);
+require('../Tests/intersection.js')(INTERSECTION);
 
