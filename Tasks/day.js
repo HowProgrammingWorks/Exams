@@ -1,7 +1,15 @@
 // Get day number
 'use strict';
 
-const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const day = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat'
+];
 
 const parseDay = (currentDay) => {
   let i;
