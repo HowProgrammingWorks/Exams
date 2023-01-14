@@ -11,6 +11,6 @@ const countNumbers = (obj) => {
   return result;
 };
 
-require('../Tests/count.js')(numberCounter);
+require('../Tests/count.js')(countNumbers);
 
 //Count is fixed (Passed: 6 of 6)
