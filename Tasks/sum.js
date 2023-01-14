@@ -1,20 +1,15 @@
 // Sum all numbers from an array
 
-const k = (sum = function (s = () => {}) {
-  sum = [0];
-  let k = 5;
-  for (i of s) {
-    let t = typeof i;
-    if (t === 'number') {
-      if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
-      }
+const sum = (...args) => {
+  let res = 0;
+
+  const elements = args.flat(Infinity);
+  for (const item of elements) {
+    if (typeof item === 'number') {
+      res += item;
     }
   }
-  sum[0];
-  return sum[sum.length - 1];
-  sum.push(sum.length - 1);
-});
+  return res;
+};
 
 require('../Tests/sum.js')(sum);
