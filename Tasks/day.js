@@ -2,7 +2,7 @@
 
 const Week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-_parse_day_ = (s) => {
+const parseWeek = (s) => {
   for (let i = 0; i < Week.length; i++) {
     if (s.startsWith(Week[i].toLowerCase())) {
       return i + 1;
@@ -11,4 +11,4 @@ _parse_day_ = (s) => {
   return -1;
 };
 
-require('../Tests/day.js')(_parse_day_);
+require('../Tests/day.js')(parseWeek);
