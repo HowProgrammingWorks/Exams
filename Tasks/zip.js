@@ -11,7 +11,9 @@ const zipArray = (arr1, arr2) => {
     } else {
       arr2[j++] = tempCell;
     }
-    if (tempCell[0] == null) arr2.length -= 1
+    if (tempCell[0] == null) {
+      arr2.length -= 1
+    }
   }
   return arr2;
 };
