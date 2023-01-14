@@ -5,7 +5,8 @@ const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const parseDay = (day) => {
 
   for (let i = 0; i < days.length; i++) {
-    if (day.startsWith(days[i].toLowerCase())) {
+    const lowerDayName = days[i].toLowerCase();
+    if (day.startsWith(lowerDayName)) {
       return i + 1;
     }
   }
