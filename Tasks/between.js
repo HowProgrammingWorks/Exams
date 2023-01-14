@@ -4,10 +4,11 @@
 const getValueBetween = (string, firstSymbol, secondSymbol) => {
   let index = string.indexOf(firstSymbol);
   const leftPosition = index + firstSymbol.length;
-  index !== -1 ? string = string.substring(leftPosition) : '';
-  index !== -1 ? index = string.indexOf(secondSymbol) : '';
-  string = string.substring(0, index);
-  return string;
+  const newString = string.substring(leftPosition);
+  index !== -1 ? newString : '';
+  index !== -1 ? index = newString.indexOf(secondSymbol) : '';
+  const lastString = newString.substring(0, index);
+  return lastString;
 };
 
 require('../Tests/between.js')(getValueBetween);
