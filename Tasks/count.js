@@ -2,7 +2,7 @@
 
 // Sum all number values in dict
 
-const numberCounter = (obj) => {
+const countNumbers = (obj) => {
   let result = 0;
   const keys = Object.keys(obj);
   for (const key of keys) {
