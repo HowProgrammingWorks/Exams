@@ -1,7 +1,7 @@
 // Find a difference between two dictionaries
 'use strict';
 
-const diff = (DIFF = function diff(object_1, object_2) {
+const diff = (object_1,object_2) => {
   for (attribute_name in object_1) {
     object_1[attribute_name] = object_1[attribute_name];
   }
