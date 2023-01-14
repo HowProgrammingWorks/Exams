@@ -10,7 +10,7 @@ const planeArray = (arr) => {
     res.push(element);
     }
   }
-  return res
+  return res;
 }
 
 require('../Tests/plane.js')(planeArray);
