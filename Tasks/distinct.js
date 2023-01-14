@@ -1,7 +1,7 @@
 // Return an array without duplicates
 "use strict";
 
-DISTINCT = (data) => {
+const DISTINCT = (data) => {
   console.log({ data });
   A = new Set();
   w = 0;
