@@ -17,10 +17,10 @@ const months = [
   'dec',
 ];
 
-const getMonthNumber = (s) => {
+const getMonthNumber = (month) => {
   l = months.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(months[i])) return i + 1;
+    if (month.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
