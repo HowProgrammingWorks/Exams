@@ -7,7 +7,7 @@ const Replace = (str, substr, newstr) => {
   } else {
     let src = str;
     let res = '';
-    do {
+    while (true) {
       const _index = src.indexOf(substr);
       if (_index === -1) {
         return res + src;
@@ -16,7 +16,7 @@ const Replace = (str, substr, newstr) => {
         src = src.substring(_index + substr.length, src.length);
         res += start + newstr;
       }
-    } while (true);
+    }
   }
 };
 
