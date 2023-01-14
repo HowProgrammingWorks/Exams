@@ -3,7 +3,7 @@
 
 const zip = (a = [], b = []) => {
   let i = 0;
-  j = 0;
+  let j = 0;
   for (x of b) {
     CELL = [a[i++], x];
     if (i < j) {
