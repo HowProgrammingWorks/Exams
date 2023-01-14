@@ -12,10 +12,10 @@ const day = [
 ];
 
 const parseDay = (currentDay) => {
-  let i;
-  for (i = 0; i < day.length; i++) {
-    if (currentDay.startsWith(day[i].toLowerCase())) {
-      return i + 1;
+  for (const sameDay of day) {
+    const index = day.indexOf(sameDay);
+    if (currentDay.startsWith(day[index].toLowerCase())) {
+      return index + 1;
     }
   }
   return -1;
