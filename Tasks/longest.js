@@ -1,4 +1,5 @@
 // Find longest string
+'use srict';
 
 const longest = function (line = [], maxRandom = Math.random) {
   x = -1;
