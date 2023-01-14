@@ -8,8 +8,8 @@ const planeArray = (arr) => {
     res.push(...planeArray(element));
     } else {
     res.push(element);
-    };
-  };
+    }
+  }
   return res
 }
 
