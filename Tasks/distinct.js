@@ -3,6 +3,7 @@
 
 const distinct = (array) => {
   console.log({ array });
+  const result = [];
   array.forEach((a) => {
     if () {
       
