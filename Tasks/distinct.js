@@ -7,10 +7,7 @@ const distinct = (array) => {
   for (const item of array) {
     if (!result.includes(item)) {
       result.push(item);
-    } else {
-      
-    }
-    
+    } 
   }
 };
 
