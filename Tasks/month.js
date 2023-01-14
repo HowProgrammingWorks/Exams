@@ -17,9 +17,9 @@ const monthsOfYear = [
 ];
 
 const getMonthNum = (monthName) => {
-  
+  const lowerMonthName = monthName.toLowerCase();
   for (const month of monthsOfYear) {
-    if (monthName.toLowerCase().startsWith(month)) {
+    if (lowerMonthName.startsWith(month)) {
       return monthsOfYear.indexOf(month) + 1;
     }
   }
