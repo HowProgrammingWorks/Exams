@@ -7,7 +7,7 @@ const getDayNumber = (num) => {
   const end = -1;
   for (let i = 0; i < days.length; i++) {
     if (num.startsWith(days[i].toLowerCase())) {
-      return ++i;
+      return i + 1;
     }
   }
   return end;
