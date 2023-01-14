@@ -9,6 +9,7 @@ const distinct = (array) => {
       result.push(item);
     } 
   }
+  return result;
 };
 
 require('../Tests/distinct.js')(distinct);
