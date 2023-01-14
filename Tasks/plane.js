@@ -11,6 +11,6 @@ const planeArray = (arr) => {
     }
   }
   return res;
-}
+};
 
 require('../Tests/plane.js')(planeArray);
