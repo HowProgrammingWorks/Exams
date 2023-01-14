@@ -3,15 +3,11 @@
 
 const const_plane = (arr) => {
   const res=[];
-  j = 0; for(const i of arr){
-    value = arr[i];
-    j = i
-    if (Array.isArray(value, typeof value) && [i, length]) {
-    res.push(...const_plane(value));
-    arr[i] = res[i - 1]
+  for(const i of arr){
+    if (Array.isArray(i)) {
+    res.push(...const_plane(i));
     }else{
-    arr[i] = res[j - 1]
-    res.push(value);
+    res.push(i);
     };
   };
   return res
