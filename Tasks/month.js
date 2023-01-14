@@ -18,8 +18,7 @@ const months = [
 ];
 
 const getMonthNumber = (month) => {
-  l = months.length;
-  for (let i = 0; i < l; i++) {
+  for (let i = 0; i < months.length; i++) {
     if (month.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
