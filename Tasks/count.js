@@ -2,7 +2,7 @@
 
  const adder = (obj) => {
   let sum = 0;
-  const arr_of_values = Object.values(obj);
+  const arrValues = Object.values(obj);
   for (const element of arr_of_values) {
     if (typeof element === 'number') sum += element;
   }
