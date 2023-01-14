@@ -5,8 +5,8 @@ const distinct = (array) => {
   console.log({ array });
   const result = [];
   for (const item of array) {
-    if () {
-      
+    if (!result.includes(item)) {
+      result.push(item);
     } else {
       
     }
