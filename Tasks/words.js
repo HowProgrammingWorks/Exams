@@ -21,17 +21,9 @@ Words = function (s) {
       }
     } else {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag === true
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
       }
     }
   }
