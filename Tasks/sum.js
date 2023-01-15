@@ -4,9 +4,9 @@
 const sum = (args) => {
   let res = 0;
   const array = args.flat(Infinity);
-  for(let i = 0; i < array.length; i++){
-    if (typeof array[i] === 'number'){
-      res += array[i];
+  for(const value of array){
+    if (typeof value === 'number'){
+      res += value;
     }
   }
   return res;
