@@ -1,19 +1,19 @@
 // Sum all numbers from an array
 'use strict';
 
-let sum;
-const k = (sum = function (s = () => {}) {
-  sum = [0];
-  for (let i of s) {
-    let t = typeof i;
-    if (t === 'number') {
-      if (sum.length > 0) {
-        const new_Sum = sum[sum.length - 1] + i;
-        sum.push(new_Sum);
-      }
+function sum(...args) {
+  let res = 0;
+  let array;
+  array = args.flat(Infinity);
+  for(let i = 0; i<array.length; i++){
+    if (typeof array[i] === 'number'){
+      res += array[i];
+    }
+    else {
+      continue;
     }
   }
-  return sum[sum.length - 1];
-});
+  return res;
+}
 
 require('../Tests/sum.js')(sum);
