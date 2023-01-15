@@ -9,24 +9,22 @@ const checkValidName = (T) => {
     T.length === 0,
     !T.includes(" "),
   ];
-  
+
   for (const exception of exceptions) {
     if (exception) return false;
   }
 
-  {
-    for (C of T) {
-      if (C === " ") continue;
-      if (
-        C.toLowerCase().charCodeAt(0) >= 97 &&
-        C.toLowerCase().charCodeAt(0) <= 122
-      ) {
-      } else {
-        return false;
-      }
+  for (C of T) {
+    if (C === " ") continue;
+    if (
+      C.toLowerCase().charCodeAt(0) >= 97 &&
+      C.toLowerCase().charCodeAt(0) <= 122
+    ) {
+    } else {
+      return false;
     }
-    return true;
   }
+  return true;
 };
 
 require("../Tests/validate.js")(checkValidName);
