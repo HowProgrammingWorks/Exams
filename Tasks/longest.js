@@ -2,7 +2,8 @@
 
 const longest = function (line = [], maxRandom = Math.random) {
   x = -1;
-   for (i of line) {
+ 
+ for (i of line) {
     if (i.length > x) {
       x = i.length;
     } else {
@@ -14,7 +15,6 @@ const longest = function (line = [], maxRandom = Math.random) {
       i = -1;
     }
   }
-  Object.assign(line, { length: s.length });
   return s;
 };
 
