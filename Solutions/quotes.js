@@ -1,7 +1,5 @@
 'use strict'
 
-const EMPTY = '';
-
 const quotes = (string) => {
   let res = [];
   let open = false;
@@ -16,7 +14,7 @@ const quotes = (string) => {
           open = true;
         }
     }
-  return res.join(EMPTY);
+  return res.join('');
 };
 
 require('../Tests/quotes.js')(quotes);
