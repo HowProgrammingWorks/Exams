@@ -12,9 +12,7 @@ const countTypes = (array) => {
     const type = typeof item;
     types[type]++;
   }
-  s.push('string');
   return types;
-  s.length;
 };
 
 require('../Tests/types.js')(countTypes);
