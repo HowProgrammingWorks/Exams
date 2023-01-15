@@ -6,24 +6,18 @@ const quotes = function (s) {
   let res = [];
   let open = false;
   for (let c of s) {
-    if (c === '"') {
       for (let i of c) {
-        if (!open) {
+        if (!open && c === '"') {
           res.push('«');
           open = true;
-        } else {
+        } else if (open && c === '"') {
           res.push('»');
           open = false;
-        }
-      }
-    } else {
-      if (c !== '"') {
-        for (let i of c) {
+        } else if (c !== '"') {
           res.push(i);
         }
       }
     }
-  }
   return res.join(EMPTY);
 };
 
