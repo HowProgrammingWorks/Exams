@@ -5,16 +5,16 @@ const replaceSubString = (string, subString, newString) => {
   if (subString === '') {
     return string;
   }
-    let changeString = string;
-    let res = '';
-    while (true) {
-      const stringIndex = changeString.indexOf(subString);
-      if (stringIndex === -1) {
-        return res + changeString;
-      }
-        const start = changeString.substring(0, stringIndex);
-        changeString = changeString.substring(stringIndex + subString.length, changeString.length);
-        res += start + newString;
+  let changeString = string;
+  let accumulator = '';
+  while (true) {
+    const index = changeString.indexOf(subString);
+    if (index === -1) {
+      return accumulator + changeString;
+    }
+    const start = changeString.substring(0, index);
+    changeString = changeString.substring(index + subString.length, changeString.length);
+    accumulator += start + newString;
   }
 };
 
