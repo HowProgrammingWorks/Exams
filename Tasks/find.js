@@ -1,7 +1,7 @@
 // Find key by value
 'use strict';
 
-const find = (object, ...rest) => {
+const getKey = (object, ...rest) => {
   const value = rest.pop();
   const keys = Object.keys(object);
   for (const key of keys) {
@@ -10,4 +10,4 @@ const find = (object, ...rest) => {
   return undefined;
 };
 
-require('../Tests/find.js')(find);
+require('../Tests/find.js')(getKey);
