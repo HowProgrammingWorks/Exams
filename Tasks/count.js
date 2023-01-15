@@ -3,7 +3,7 @@ use 'strict'
 const count = (obj) => {
   let sum = 0;
   const values = Object.values(obj);
-  keys.forEach((key) => {
+  for (const key of keys) {
     const value = obj[key];
     if (typeof value === 'number') sum += value;
   });
