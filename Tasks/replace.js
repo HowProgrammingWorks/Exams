@@ -1,7 +1,7 @@
 // Replace substring with newstr
 'use strict';
 
-Replace = (str, substr, newstr) => {
+const replaceSubstring = (str, substr, newstr) => {
   if (substr === '') {
     return str;
   } else {
@@ -20,4 +20,4 @@ Replace = (str, substr, newstr) => {
   }
 };
 
-require('../Tests/replace.js')(Replace);
+require('../Tests/replace.js')(replaceSubstring);
