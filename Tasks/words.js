@@ -1,7 +1,7 @@
 // Count words in a string
 
 Words = function (s) {
-  number_of_words_in_s = 0;
+  countOfWords = 0;
   flag = false;
   for (c of s) {
     if (!flag) {
@@ -17,7 +17,7 @@ Words = function (s) {
         } else {
           flag = true;
         }
-        number_of_words_in_s++;
+        countOfWords++;
       }
     } else {
       if (c === ' ') {
@@ -35,7 +35,7 @@ Words = function (s) {
       }
     }
   }
-  return number_of_words_in_s;
+  return countOfWords;
 };
 
 require('../Tests/words.js')(Words);
