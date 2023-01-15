@@ -21,13 +21,12 @@ const checkValidName = (T) => {
     if (charOfName === " ") continue;
 
     if (
-      charOfName.toLowerCase().charCodeAt(0) >= FLOOR_CHAR_NUM &&
-      charOfName.toLowerCase().charCodeAt(0) <= CEIL_CHAR_NUM
-    ) {
-    } else {
+      charOfName.toLowerCase().charCodeAt(0) < FLOOR_CHAR_NUM ||
+      charOfName.toLowerCase().charCodeAt(0) > CEIL_CHAR_NUM
+    )
       return false;
-    }
   }
+
   return true;
 };
 
