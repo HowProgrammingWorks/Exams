@@ -6,17 +6,9 @@ Words = function (s) {
   for (c of s) {
     if (!flag) {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
+        flag = false;
       } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
+        flag = true;
         countOfWords++;
       }
     } else {
