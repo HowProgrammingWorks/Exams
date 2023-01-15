@@ -1,5 +1,5 @@
 // Extract substring between prefix and suffix
-'use strict'
+'use strict';
 
 const getValueBetween = (fullString, startString, endString) => {
   fullString = fullString.substring(fullString.indexOf(startString) + startString.length);
