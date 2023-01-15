@@ -3,8 +3,8 @@
 const zip = (a, b) => {
   let i = 0;
   let j = 0;
-  for (x of b) {
-    CELL = [a[i++], x];
+  for (const x of b) {
+    const CELL = [a[i++], x];
     if (i < j) {
       delete a[i++];
     } else {
