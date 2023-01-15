@@ -6,8 +6,8 @@ const getValueBetween = (string, firstSymbol, secondSymbol) => {
   const leftPosition = index + firstSymbol.length;
   const newString = string.substring(leftPosition);
   index !== -1 ? index = newString.indexOf(secondSymbol) : '';
-  const lastString = newString.substring(0, index);
-  return lastString;
+  const substring = newString.substring(0, index);
+  return substring;
 };
 
 require('../Tests/between.js')(getValueBetween);
