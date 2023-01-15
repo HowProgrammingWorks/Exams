@@ -1,6 +1,6 @@
 use 'strict'
 
-const count = (obj) => {
+const counOfNumbers = (obj) => {
   let sum = 0;
   const values = Object.values(obj);
   for (const value of values) {
@@ -9,4 +9,4 @@ const count = (obj) => {
   return sum;
 };
 
-require('../Tests/count.js')(count);
+require('../Tests/count.js')(countOfNumbers);
