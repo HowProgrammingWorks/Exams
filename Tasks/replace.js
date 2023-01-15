@@ -1,4 +1,5 @@
 // Replace substring with newstr
+'use strict';
 
 Replace = (str, substr, newstr) => {
   if (substr === '') {
