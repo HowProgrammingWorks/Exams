@@ -2,9 +2,9 @@
 'use strict';
 const randomValue = (min, max) => {
   if (max === undefined) {
-    return Math.floor(Math.random() * (max + 1));
+    return Math.floor(Math.random() * max);
   } else {
-    return min + Math.floor(Math.random() * (max - min + 1));
+    return min + Math.floor(Math.random() * (max - min));
   }
 };
 
