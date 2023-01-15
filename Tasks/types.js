@@ -2,13 +2,13 @@
 
 'use strict';
 
-const countTypes = function (s) {
+const countTypes = (array) => {
   const types_ = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (const i of s) {
+  for (const i of array) {
     const t = typeof i;
     types_[t]++;
   }
