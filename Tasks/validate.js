@@ -9,6 +9,11 @@ const checkValidName = (T) => {
     T.length === 0,
     !T.includes(" "),
   ];
+  
+  for (const exception of exceptions) {
+    if (exception) return false;
+  }
+
   {
     for (C of T) {
       if (C === " ") continue;
