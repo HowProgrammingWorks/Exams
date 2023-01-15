@@ -1,5 +1,5 @@
 // Generate random password
-'use strict'
+'use strict';
 
 const GeneratePassword = (alphabet, passLength) => {
   let password = '';
