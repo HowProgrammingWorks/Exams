@@ -1,6 +1,6 @@
 // Generate random password
 'use strict'
-const GeneratePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length) => {
   const max = alphabet.length;
   let key = '';
   for (let i = 0; i < length; i++) {
