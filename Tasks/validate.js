@@ -1,7 +1,7 @@
 // Validate person name
 "use strict";
 
-const isValidate = (T) => {
+const checkValidName = (T) => {
   if (!T) return false;
   if (T === "") return false;
   if (typeof T !== "string") return false;
@@ -22,4 +22,4 @@ const isValidate = (T) => {
   }
 };
 
-require("../Tests/validate.js")(isValidate);
+require("../Tests/validate.js")(checkValidName);
