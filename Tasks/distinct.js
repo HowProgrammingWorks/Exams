@@ -2,8 +2,7 @@
 
 "use strict";
 
-const distinct = (array) => {
-  console.log({ array });
+const distinct = array => {
   const result = [];
   for (const item of array) {
     if (!result.includes(item)) {
