@@ -6,8 +6,8 @@ const zip = (arrFirst, arrLast) => {
   for (const x of arrLast) {
     const CELL = [arrFirst[i++], x];
     (i < j) ? (delete arrFirst[i++]) : (arrLast[j++] = CELL);   
+    CELL[0] == null ? arrLast.length -= 1 : arrLast.length;
     }
-    if (CELL[0] == null) arrLast.length -= 1
   }
   return arrLast;
 };
