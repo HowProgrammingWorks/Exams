@@ -13,7 +13,7 @@ Words = function (s) {
       }
     } else {
       if (c === ' ') {
-        flag === true
+        flag = true
       } else {
         flag = true;
       }
