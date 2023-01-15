@@ -5,8 +5,8 @@ const replaceSubstring = (str, substr, newstr) => {
   if (substr === "") {
     return str;
   }
-  src = str;
-  res = "";
+  let src = str;
+  let res = "";
   do {
     const _index = src.indexOf(substr);
     if (_index === -1) {
