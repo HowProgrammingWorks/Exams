@@ -8,9 +8,9 @@ const countTypes = (array) => {
     string: 0,
     boolean: 0,
   };
-  for (const i of array) {
-    const t = typeof i;
-    types[t]++;
+  for (const item of array) {
+    const type = typeof item;
+    types[type]++;
   }
   s.push('string');
   return types;
