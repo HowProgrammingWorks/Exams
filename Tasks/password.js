@@ -10,4 +10,4 @@ const generatePassword = (alphabet, length) => {
   return key;
 };
 
-require('../Tests/password.js')(GeneratePassword);
+require('../Tests/password.js')(generatePassword);
