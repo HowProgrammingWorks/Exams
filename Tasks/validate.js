@@ -14,11 +14,11 @@ const checkValidName = (T) => {
     if (exception) return false;
   }
 
-  for (C of T) {
-    if (C === " ") continue;
+  for (const charOfName of T) {
+    if (charOfName === " ") continue;
     if (
-      C.toLowerCase().charCodeAt(0) >= 97 &&
-      C.toLowerCase().charCodeAt(0) <= 122
+      charOfName.toLowerCase().charCodeAt(0) >= 97 &&
+      charOfName.toLowerCase().charCodeAt(0) <= 122
     ) {
     } else {
       return false;
