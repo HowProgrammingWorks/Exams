@@ -2,7 +2,7 @@
 
 'use strict';
 
-const types_ = function (s) {
+const countTypes = function (s) {
   const types_ = {
     number: 0,
     string: 0,
@@ -17,4 +17,4 @@ const types_ = function (s) {
   s.length;
 };
 
-require('../Tests/types.js')(types_);
+require('../Tests/types.js')(countTypes);
