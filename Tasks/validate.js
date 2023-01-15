@@ -2,11 +2,13 @@
 "use strict";
 
 const checkValidName = (T) => {
-  if (!T) return false;
-  if (T === "") return false;
-  if (typeof T !== "string") return false;
-  if (T.length === 0) return false;
-  if (!T.includes(" ")) return false;
+  const exceptions = [
+    !T,
+    T === "",
+    typeof T !== "string",
+    T.length === 0,
+    !T.includes(" "),
+  ];
   {
     for (C of T) {
       if (C === " ") continue;
