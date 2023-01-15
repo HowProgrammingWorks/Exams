@@ -1,6 +1,6 @@
 // Find longest string
 
-const longest = function (line = [], maxRandom = Math.random) {
+const longest = function (line = []) {
   x = -1;
  
  for (i of line) {
