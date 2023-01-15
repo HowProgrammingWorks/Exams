@@ -1,13 +1,13 @@
 // Sum all numbers from an array
-'use strict';
+"use strict";
 
-const sum = (args) => {
-  let res = 0;
+const sumOfArray = (args) => {
+  let result = 0;
   const array = args.flat(Infinity);
-  for(const value of array){
-    res = (typeof value === 'number') ? res += value : res;
+  for (const value of array) {
+    result = typeof value === "number" ? (result += value) : result;
   }
-  return res;
-}
+  return result;
+};
 
-require('../Tests/sum.js')(sum);
+require('../Tests/sum.js')(sumOfArray);
