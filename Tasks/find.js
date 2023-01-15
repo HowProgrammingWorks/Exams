@@ -1,8 +1,7 @@
 // Find key by value
 
 const find = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
+  const value = rest.pop();
   for (name in object) {
     if (object[name] !== value) {
     } else {
