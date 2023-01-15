@@ -10,7 +10,7 @@ const zip = (arrFirst, arrLast) => {
     } else {
       (() => (arrLast[j++] = CELL))();
     }
-    if (CELL[0] == undefined) arrLast.length -= 1
+    if (CELL[0] == null) arrLast.length -= 1
   }
   return arrLast;
 };
