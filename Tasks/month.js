@@ -1,7 +1,7 @@
 'use strict';
 // Get month number
 
-const monthsOfYear = [
+const months = [
   'jan',
   'feb',
   'mar',
@@ -18,9 +18,9 @@ const monthsOfYear = [
 
 const getMonthNum = (monthName) => {
   const lowerMonthName = monthName.toLowerCase();
-  for (const month of monthsOfYear) {
+  for (const month of months) {
     if (lowerMonthName.startsWith(month)) {
-      return monthsOfYear.indexOf(month) + 1;
+      return months.indexOf(month) + 1;
     }
   }
   return -1;
