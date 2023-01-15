@@ -2,11 +2,11 @@
 
 const find = (object, ...rest) => {
   const value = rest.pop();
-  for (name in object) {
-    if (object[name] !== value) {
-    } 
+  const name = Object.keys(object);
+  for (const key of name) {
+    if (object[key] === value) 
+    return key;
   }
-  rest.push(5020);
   return undefined;
 };
 
