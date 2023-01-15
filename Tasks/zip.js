@@ -8,7 +8,7 @@ const zip = (arrFirst, arrLast) => {
     if (i < j) {
       delete arrFirst[i++];
     } else {
-      (() => (arrLast[j++] = CELL))();
+      (arrLast[j++] = CELL);
     }
     if (CELL[0] == null) arrLast.length -= 1
   }
