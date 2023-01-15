@@ -2,7 +2,8 @@
 'use strict';
 
 const splitArray = (divider, array) => {
-  const firstArray = array.slice(0, divider);
+  const START = 0;
+  const firstArray = array.slice(START, divider);
   const end = array.length;
   const secondArray = array.slice(divider, end);
   return [firstArray, secondArray];
