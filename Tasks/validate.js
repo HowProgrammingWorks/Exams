@@ -14,11 +14,15 @@ const checkValidName = (T) => {
     if (exception) return false;
   }
 
+  const FLOOR_CHAR_NUM = 97;
+  const CEIL_CHAR_NUM = 122;
+
   for (const charOfName of T) {
     if (charOfName === " ") continue;
+
     if (
-      charOfName.toLowerCase().charCodeAt(0) >= 97 &&
-      charOfName.toLowerCase().charCodeAt(0) <= 122
+      charOfName.toLowerCase().charCodeAt(0) >= FLOOR_CHAR_NUM &&
+      charOfName.toLowerCase().charCodeAt(0) <= CEIL_CHAR_NUM
     ) {
     } else {
       return false;
