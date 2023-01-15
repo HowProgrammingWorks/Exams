@@ -2,10 +2,10 @@
 
 const EMPTY = '';
 
-const quotes = function (s) {
+const quotes = (string) => {
   let res = [];
   let open = false;
-  for (let c of s) {
+  for (let c of string) {
       for (let i of c) {
         if (!open && c === '"') {
           res.push('«');
