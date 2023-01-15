@@ -1,24 +1,30 @@
 // Validate person name
 
-const isValidate = (T) => {
-  if (!T) return false;
-  if (T === '') return false;
-  if (typeof T !== 'string') return false;
-  if (T.length === 0) return false;
-  if (!T.includes(' ')) return false;
-  {
-    for (C of T) {
-      if (C === ' ') continue;
-      if (
-        C.toLowerCase().charCodeAt(0) >= 97 &&
-        C.toLowerCase().charCodeAt(0) <= 122
-      ) {
-      } else {
-        return false;
-      }
-    }
-    return true;
-  }
+//Add use strict
+//Change variables
+//Remove "Magic values"
+//delete needless IF
+
+'use strict';
+const isValidate = (name) => {
+	if (!name) return false;
+	if (typeof name !== 'string') return false;
+	if (name.length === 0) return false;
+	if (!name.includes(' ')) return false;
+	{
+		const LOWER_BORDER = 97;
+		const UPPER_BORDER = 122;
+		for (const letterOfName of name) {
+			if (letterOfName === ' ') continue;
+
+			const checkingSymbol = letterOfName.toLowerCase().charCodeAt(0);
+
+			if (checkingSymbol < LOWER_BORDER || checkingSymbol > UPPER_BORDER) {
+				return false;
+			}
+		}
+		return true;
+	}
 };
 
 require('../Tests/validate.js')(isValidate);
