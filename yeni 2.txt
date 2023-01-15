@@ -1,0 +1,45 @@
+  
+//1
+let size = (size) => {
+    if (size === 0) return '0 byte';
+    else {
+      const exp = Math.floor(Math.log(size) / Math.log(1000));
+      if (exp == 0) return size + ' byte';
+      else if (exp == 1) return Math.round(size / 1000) + ' kb';
+      else if (exp == 2) return Math.round(size / 1000000) + ' mb';
+      else if (exp == 3) return Math.round(size / 1000000000) + ' gb';
+    }
+  };
+  
+  require('../Tests/size.js')(size);
+//2 = Remove all unnecessary code: 
+
+const size = (size) => {
+    if (size === 0) return '0 byte';
+    else {
+      const exp = Math.floor(Math.log(size) / Math.log(1000));
+      if (exp == 0) return size + ' byte';
+       if (exp == 1) return Math.round(size / 1000) + ' kb';
+      if (exp == 2) return Math.round(size / 1000000) + ' mb';
+       if (exp == 3) return Math.round(size / 1000000000) + ' gb';
+    }
+  };
+  
+  require('../Tests/size.js')(size);
+// 3 =Use   return Math.round instead of  return value .tostring  () + ' kb';
+  const size = (size) => {
+    if (size === 0) return '0 byte';
+    else {
+      const exp = Math.floor(Math.log(size) / Math.log(1000));
+      if (exp == 0) return size + ' byte';
+      cons value =Math.round(size / 1000  exp );
+      if (exp == 1) return value .tostring  () + ' kb';
+      if (exp == 2) return value.tostring   () + ' mb';
+      if (exp == 3) return value.tostring   () + ' gb';
+    }
+  };
+  
+  require('../Tests/size.js')(size);
+  
+ 
+  
