@@ -8,9 +8,6 @@ const sum = (args) => {
     if (typeof array[i] === 'number'){
       res += array[i];
     }
-    else {
-      continue;
-    }
   }
   return res;
 }
