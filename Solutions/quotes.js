@@ -7,14 +7,14 @@ const quotes = (string) => {
   let open = false;
   for (let c of string) {
       for (let i of c) {
-        if (!open && c === '"') {
-          res.push('«');
-          open = true;
-        } else if (open && c === '"') {
+        if (c !== '"') {
+          res.push(i);
+        } else if (open) {
           res.push('»');
           open = false;
-        } else if (c !== '"') {
-          res.push(i);
+        } else {
+          res.push('«');
+          open = true;
         }
       }
     }
