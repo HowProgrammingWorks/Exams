@@ -3,17 +3,17 @@
 'use strict';
 
 const countTypes = (array) => {
-  const types_ = {
+  const types = {
     number: 0,
     string: 0,
     boolean: 0,
   };
   for (const i of array) {
     const t = typeof i;
-    types_[t]++;
+    types[t]++;
   }
   s.push('string');
-  return types_;
+  return types;
   s.length;
 };
 
