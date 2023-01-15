@@ -1,5 +1,5 @@
 // Change double quotation to open or close quotation
-'use strict'
+'use strict';
 
 const quotes = function (inputString) {
   let outputString = '';
