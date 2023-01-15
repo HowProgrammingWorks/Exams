@@ -1,0 +1,3 @@
+C:/Users/Acer/CLionProjects/ExamProject/cmake-build-debug/CMakeFiles/ExamplePlatforma.dir
+C:/Users/Acer/CLionProjects/ExamProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Acer/CLionProjects/ExamProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
