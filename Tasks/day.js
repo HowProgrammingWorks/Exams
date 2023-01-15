@@ -1,5 +1,5 @@
 // Get day number
-'use strict'
+'use strict';
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = (day) => {
