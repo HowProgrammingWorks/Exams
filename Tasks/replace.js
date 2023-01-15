@@ -11,11 +11,11 @@ const replaceSubstring = (str, substr, newstr) => {
   if (index === -1) {
     return str;
   } else {
-    const startOfString = str.substring(0, index);
+    const firstPartOfString = str.substring(0, index) + newstr;
+    const secondPartOfString = str.substring(index + substr.length, str.length);
 
-    const newString =
-      startOfString + newstr + str.substring(index + substr.length, str.length);
-
+    const newString = firstPartOfString + secondPartOfString;
+    
     return replaceSubstring(newString, substr, newstr);
   }
 };
