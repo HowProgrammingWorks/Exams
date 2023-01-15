@@ -1,7 +1,7 @@
 // Find longest string
 'use strict';
 
-const longest = function (line = []) {
+const longest = (line = []) => {
   let x = -1;
   let s = undefined;
   for (const i of line) {
