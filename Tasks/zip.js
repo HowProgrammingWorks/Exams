@@ -7,12 +7,7 @@ const zipArray = (arr1, arr2) => {
   const res = [];
   for (let i = 0; i < length; i++) {
     const tempCell = [arr1[i], arr2[i]];
-    if (i >= j) {
-      arr2[j++] = tempCell;
-    }
-    if (tempCell[0] == null) {
-      arr2.length -= 1;
-    }
+    res.push(tempCell);
   }
   return arr2;
 };
