@@ -8,7 +8,7 @@ const zipArray = (arr1, arr2) => {
     const tempCell = [arr1[i], arr2[i]];
     res.push(tempCell);
   }
-  return arr2;
+  return res;
 };
 
 require('../Tests/zip.js')(zipArray);
