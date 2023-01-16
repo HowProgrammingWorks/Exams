@@ -2,12 +2,11 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
 const zipArray = (arr1, arr2) => {
-  let i = 0;
   let j = 0;
   const length = arr1.length > arr2.length ? arr2.length : arr1.length;
   const res = [];
-  for (const element of arr2) {
-    const tempCell = [arr1[i++], element];
+  for (let i = 0; i < length; i++) {
+    const tempCell = [arr1[i], i];
     if (i >= j) {
       arr2[j++] = tempCell;
     }
