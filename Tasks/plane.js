@@ -3,11 +3,11 @@
 
 const planeArray = (arr) => {
   const res = [];
-  for(const element of arr){
+  for (const element of arr) {
     if (Array.isArray(element)) {
-    res.push(...planeArray(element));
+      res.push(...planeArray(element));
     } else {
-    res.push(element);
+      res.push(element);
     }
   }
   return res;
