@@ -1,22 +1,19 @@
 // Count words in a string
 
 Words = function (s) {
-  countOfWords = 0;
+  let countOfWords = 0;
   flag = false;
   for (c of s) {
     if (!flag) {
-      if (c === ' ') {
-        flag = false;
-      } else {
+      if (c === ' '); 
+      else {
         flag = true;
         countOfWords++;
       }
     } else {
       if (c === ' ') {
         flag = false
-      } else {
-        flag = true;
-      }
+      } 
     }
   }
   return countOfWords;
