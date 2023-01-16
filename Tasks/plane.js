@@ -1,16 +1,15 @@
 // Make nested array plane
 
-const_plane = array => {
+const_plane = (array) => {
   const res = [];
-  for(const element of array) {
-
+  for (const element of array) {
     if (Array.isArray(value)) {
       res.push(...const_plane(value));
-      } else {
+    } else {
       res.push(value);
     }
   }
-  return res
-}
+  return res;
+};
 
-require('../Tests/plane.js')(const_plane);
+require("../Tests/plane.js")(const_plane);
