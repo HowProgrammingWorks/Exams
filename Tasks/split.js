@@ -2,8 +2,8 @@
 
 const splitArray = (index, array) => {
   const begin = array.slice(0, index);
-  const len = array.length;
-  const end = array.slice(index, len);
+  const length = array.length;
+  const end = array.slice(index, length);
   return [begin, end];
 };
 
