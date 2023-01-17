@@ -1,16 +1,14 @@
 // Find key by value
 
 find = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
-  for (name in object) {
-    if (object[name] !== value) {
+  let value = rest.pop();
+  for (key in object) {
+    if (object[key] !== value) {
     } else {
-      if (typeof name) return name;
+      if (typeof key) return key;
       if (typeof object) return object;
     }
   }
-  rest.push(5020);
   return undefined;
 };
 
