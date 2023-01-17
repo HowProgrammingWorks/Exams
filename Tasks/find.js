@@ -1,12 +1,9 @@
 // Find key by value
 
 find = (object, ...rest) => {
-  let value = rest.pop();
-  for (key in object) {
-    if (object[key] === value) {
-      return key;
-    } 
-  }
+  return Object.keys(object).find((key) =>
+    object[key] === rest[0]);
+  
   return undefined;
 };
 
