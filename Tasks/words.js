@@ -5,34 +5,14 @@ Words = function (s) {
   flag = false;
   for (c of s) {
     if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-        number_of_words_in_s++;
+      if (c === ' ') flag = false; 
+       else {
+            flag = true;
+            number_of_words_in_s++;
       }
-    } else {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-      }
+    }else {
+      if (c === ' ') flag = false;
+       else  flag = true; 
     }
   }
   return number_of_words_in_s;
