@@ -3,7 +3,7 @@
 //Step 2
 //Add `const` and `let`
 
-'use strict'
+'use strict';
 
 const Words = function (s) {
   let number_of_words_in_s = 0;
