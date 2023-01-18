@@ -1,4 +1,6 @@
 // Convert number to file size in bytes, kb, mb, and gb
+'use strict';
+
 const size_units = ["unit", "kb", "mb", "gb"];
 
 const size = (size) => {
