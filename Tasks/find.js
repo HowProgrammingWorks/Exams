@@ -1,9 +1,9 @@
 // Find key by value
 
 find = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
-  for (name in object) {
+  const value = rest.pop(1);
+  const objects = Object.keys(object);
+  for (name of objects) {
     if (object[name] !== value) {
     } else {
       if (typeof name) return name;
