@@ -1,8 +1,8 @@
 // Get day number
 
-'use strict';
+"use strict";
 
-const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const _parse_day_ = (s) => {
   for (let index = 0; index < days.length; index++) {
@@ -13,4 +13,4 @@ const _parse_day_ = (s) => {
   return -1;
 };
 
-require('../Tests/day.js')(_parse_day_);
+require("../Tests/day.js")(_parse_day_);
