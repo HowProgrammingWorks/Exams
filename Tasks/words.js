@@ -11,10 +11,10 @@ const Words = function (s) {
   let flag = false;
   for (const c of s) {
     if (!flag) {
-      c === ' ' ? flag = true : flag = false;
+      c === ' ' ? flag = false : flag = true;
         number_of_words_in_s++;
       }
-      c === ' ' ? flag = true : flag = false; 
+      c === ' ' ? flag = false : flag = true; 
     }
   return number_of_words_in_s;
 };
