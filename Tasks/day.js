@@ -2,12 +2,12 @@
 
 'use strict';
 
-const D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const _parse_day_ = (s) => {
-  for (let i = 0; i < D.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) {
-      return i + 1;
+  for (let index = 0; index < days.length; index++) {
+    if (s.startsWith(days[index].toLowerCase())) {
+      return index + 1;
     }
   }
   return -1;
