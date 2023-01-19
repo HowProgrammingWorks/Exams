@@ -1,21 +1,11 @@
-// Extract substring between prefix and suffix
-
-getvaluebetween = (str, p, s) => {
-    i = str.indexOf(p);
-    if (i === -1) return '';
-    else {
-      k = i + p.length;
-      str = str.substring(k);
-      if (s) {
-        i = str.indexOf(s);
-        if (i === -1) {
-          return '';
-        } else {
-          str = str.substring(0, i);
-        }
-      }
-    }
-    return str;
-  };
-  
-  require('../Tests/between.js')(getvaluebetween);
+const Word = 'different';
+const Prefix = 'di';
+const Suffix = 'en';
+const IndexPrefixInWord = Word.indexOf(Prefix);
+if (IndexPrefixInWord == -1) return;
+const IndexSuffixInWord = Word.indexOf(Suffix);
+if (IndexSuffixInWord == -1) return;
+const AmountCharInPrefix = Prefix.length;
+const EndIndexCharInPrefix = IndexPrefixInWord + AmountCharInPrefix;
+const SubstringBetweenPrefixAndSuffix = Word.substring(EndIndexCharInPrefix, IndexSuffixInWord);
+console.log(`Substring between prefix and suffix: ${SubstringBetweenPrefixAndSuffix}`);
