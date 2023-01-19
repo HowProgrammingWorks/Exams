@@ -1,14 +1,18 @@
 // Return an array without duplicates
 
-duplicate = (value, N) => {
+// Step 1
+// Added declaration of variables where needed
+// Added push method
+
+const duplicate = (value, N) => {
   if (N <= 0) return [];
   else {
-    res = [];
+    const res = [];
     for (let i = 0; i < N; i++) {
-      res[i] = value;
+      res.push(value);
     }
     return res;
   }
 };
 
-require('../Tests/duplicate.js')(duplicate);
+require("../Tests/duplicate.js")(duplicate);
