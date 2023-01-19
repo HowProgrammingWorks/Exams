@@ -2,19 +2,19 @@
 
 "use strict";
 
-// Step 2
-// Enabled strict mode
-// Destructurize incoming array into 2 object
+// Step 3
+// Changed if else construstion to ternar operator
+// Changed way to desctrusture
+// Changed some other variables name
 
 const intersection = (...argsOfObjects) => {
   const [firstObject, secondObject] = argsOfObjects;
-  for (const attribute_name of Object.keys(firstObject)) {
-    if (firstObject[attribute_name] === secondObject[attribute_name]) {
-      secondObject[attribute_name] = firstObject[attribute_name];
-    } else {
-      delete firstObject[attribute_name];
-    }
+  for (const key of Object.keys(firstObject)) {
+    firstObject[key] === secondObject[key]
+      ? (secondObject[key] = firstObject[key])
+      : delete firstObject[key];
   }
+
   return firstObject;
 };
 
