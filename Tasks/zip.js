@@ -6,13 +6,13 @@ const zip = (array1 = [], array2 = []) => {
 
   for (element of array2) {
 
-    CELL = [array1[indx1++], element];
+    const cell = [array1[indx1++], element];
 
     if (indx1 < indx2)   delete array1[indx2++];
 
-    else {array2[indx2++] = CELL;}
+    else {array2[indx2++] = cell;}
 
-    if (CELL[0] == undefined) array2.length -= 1
+    if (cell[0] == undefined) array2.length -= 1
   }
 
   return array2;
