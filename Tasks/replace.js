@@ -2,6 +2,14 @@
 // Replace substring with newstr
 
 const replace = (str, substr, newstr) => {
+  if (
+    typeof str !== 'string' ||
+    typeof substr !== 'string' ||
+    typeof newstr !== 'string'
+  ) {
+    throw new Error('str, substr or newstr are not a String');
+  }
+
   if (substr === '') {
     return str;
   }
