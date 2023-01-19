@@ -10,11 +10,10 @@ const generatePassword = (alphabet, length = 8) => {
     throw new Error('Argument [length] is not a Number');
   }
 
-  const MAX = alphabet.length;
   let password = '';
 
   for (let i = 0; i < length; i++) {
-    const index = Math.floor(Math.random() * MAX);
+    const index = Math.floor(Math.random() * alphabet.length);
     password += alphabet[index];
   }
 
