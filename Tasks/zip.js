@@ -8,9 +8,9 @@ const zip = function (array1 = [], array2 = []) {
 
     CELL = [array1[indx1++], element];
 
-    if (indx1 < indx2) {  delete array1[indx2++];
+    if (indx1 < indx2)   delete array1[indx2++];
 
-    } else { (() => (array2[indx2++] = CELL))();}
+    else { (() => (array2[indx2++] = CELL))();}
 
     if (CELL[0] == undefined) array2.length -= 1
   }
