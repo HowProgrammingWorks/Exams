@@ -3,21 +3,24 @@
 
 const zip = (arrayA = [], arrayB = []) => {
 
+  const array1 = arrayA.slice(0);
+  const array2 = arrayB.slice(0);
+
   let indexA = 0;
   let indexB = 0;
 
-  for (const element of arrayB) {
+  for (const element of array2) {
 
-    const CELL = [arrayA[indexA++], element];
+    const cell = [array1[indexA++], element];
 
-    if (indexA < indexB)  delete arrayA[indexA++];
+    if (indexA < indexB)  delete array1[indexA++];
     
-    else  arrayB[indexB++] = CELL;
+    else  array2[indexB++] = cell;
     
-    if (CELL[0] === undefined) arrayB.length -= 1;
+    if (cell[0] === undefined) array2.length -= 1;
   }
 
-  return arrayB;
+  return array2;
 };
 
 require('../Tests/zip.js')(zip);
