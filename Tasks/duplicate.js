@@ -1,13 +1,9 @@
 // Return an array without duplicates
 "use strict";
 
-// Step 3
-// Used new method fill
-// Used creation of array with constructor
+// Step 4
+// Finished refactor with using ternar operations and arrow function syntax
 
-const duplicate = (value, N) => {
-  if (N <= 0) return [];
-  return new Array(N).fill(value);
-};
+const duplicate = (value, N) => (N <= 0 ? [] : new Array(N).fill(value));
 
 require("../Tests/duplicate.js")(duplicate);
