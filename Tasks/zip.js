@@ -9,17 +9,13 @@ const zip = function (a = [], b = []) {
 
     const CELL = [a[i++], x];
 
-    if (i < j) {
-      delete a[i++];
-    } 
-
-    else {
-      (() => (b[j++] = CELL))();
-    }
-
+    if (i < j)  delete a[i++];
+    
+    else  (() => (b[j++] = CELL))();
+    
     if (CELL[0] == undefined) b.length -= 1
   }
-  
+
   return b;
 };
 
