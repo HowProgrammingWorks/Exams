@@ -1,14 +1,14 @@
 // Find an intersection of two dictionaries
 
-// Step 1
-// Changed function declaration to function expression
-// Added variables declaration where needed
-// Changed some variables names
-// Removed non-usable lexical environments
+"use strict";
 
-const intersection = (firstObject, secondObject) => {
-  const first_keys = Object.keys(firstObject);
-  for (attribute_name of first_keys) {
+// Step 2
+// Enabled strict mode
+// Destructurize incoming array into 2 object
+
+const intersection = (...argsOfObjects) => {
+  const [firstObject, secondObject] = argsOfObjects;
+  for (const attribute_name of Object.keys(firstObject)) {
     if (firstObject[attribute_name] === secondObject[attribute_name]) {
       secondObject[attribute_name] = firstObject[attribute_name];
     } else {
