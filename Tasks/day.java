@@ -16,7 +16,7 @@ public class parseDay {
         String[] D = {"sunday", "monday", "tuesday", "wednesday", " thursday", "friday", "saturday"};
         int i;
         for (i = 0; i < D.length; i++) {
-            if (s.startsWith(D[i].toLowerCase())) {
+            if (s.equals(D[i])) {
                 return i + 1;
             }
         }
