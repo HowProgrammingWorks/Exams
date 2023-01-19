@@ -1,23 +1,23 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 'use strict';
 
-const zip = (a = [], b = []) => {
+const zip = (arrayA = [], arrayB = []) => {
 
-  let i = 0;
-  let j = 0;
+  let indexA = 0;
+  let indexB = 0;
 
-  for (const x of b) {
+  for (const element of arrayB) {
 
-    const CELL = [a[i++], x];
+    const CELL = [arrayA[indexA++], element];
 
-    if (i < j)  delete a[i++];
+    if (indexA < indexB)  delete arrayA[indexA++];
     
-    else  b[j++] = CELL;
+    else  arrayB[indexB++] = CELL;
     
-    if (CELL[0] == undefined) b.length -= 1
+    if (CELL[0] === undefined) arrayB.length -= 1;
   }
 
-  return b;
+  return arrayB;
 };
 
 require('../Tests/zip.js')(zip);
