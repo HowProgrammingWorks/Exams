@@ -6,7 +6,7 @@ package Password;
 public class Password {
 
     public static void main(String[] args) {
-        String alphabet = "";
+        String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         int length = ;
         System.out.println("Password: " + GeneratePassword(alphabet, length));
     }
