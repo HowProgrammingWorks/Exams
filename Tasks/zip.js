@@ -1,14 +1,14 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
-const zip = function (a = [], b = []) {
+const zip = function (array1 = [], array2 = []) {
   let i = 0;
   j = 0;
   for (x of b) {
-    CELL = [a[i++], x];
+    CELL = [array1[i++], x];
     if (i < j) {
-      delete a[i++];
+      delete array1[i++];
     } else {
-      (() => (b[j++] = CELL))();
+      (() => (array2[j++] = CELL))();
     }
     if (CELL[0] == undefined) b.length -= 1
   }
