@@ -1,6 +1,6 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
-const zip = function (array1 = [], array2 = []) {
+const zip = (array1 = [], array2 = []) => {
   let indx1 = 0;
   let indx2 = 0;
 
