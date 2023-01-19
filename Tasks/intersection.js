@@ -2,13 +2,10 @@
 
 "use strict";
 
-// Step 3
-// Changed if else construstion to ternar operator
-// Changed way to desctrusture
-// Changed some other variables name
+// Step 4
+// Finished refactoring
 
-const intersection = (...argsOfObjects) => {
-  const [firstObject, secondObject] = argsOfObjects;
+const intersection = (firstObject, secondObject = args) => {
   for (const key of Object.keys(firstObject)) {
     firstObject[key] === secondObject[key]
       ? (secondObject[key] = firstObject[key])
