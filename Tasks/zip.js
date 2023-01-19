@@ -4,7 +4,7 @@ const zip = function (array1 = [], array2 = []) {
   let indx1 = 0;
   let indx2 = 0;
 
-  for (x of b) {
+  for (x of array2) {
 
     CELL = [array1[indx1++], x];
 
@@ -21,7 +21,7 @@ const zip = function (array1 = [], array2 = []) {
     if (CELL[0] == undefined) b.length -= 1
   }
 
-  return b;
+  return array2;
 };
 
 require('../Tests/zip.js')(zip);
