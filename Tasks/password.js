@@ -1,7 +1,15 @@
 'use strict';
 // Generate random password
 
-const generatePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length = 8) => {
+  if (!Array.isArray(alphabet) && typeof alphabet !== 'string') {
+    throw new Error('Argument [alphabet] is not an Array or String');
+  }
+
+  if (typeof length !== 'number') {
+    throw new Error('Argument [length] is not a Number');
+  }
+
   const MAX = alphabet.length;
   let password = '';
 
