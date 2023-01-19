@@ -1,22 +1,25 @@
+'use strict';
 // Replace substring with newstr
 
-Replace = (str, substr, newstr) => {
+const replace = (str, substr, newstr) => {
   if (substr === '') {
     return str;
-  } else {
-    src = str;
-    res = '';
-    do {
-      const _index = src.indexOf(substr);
-      if (_index === -1) {
-        return res + src;
-      } else {
-        const start = src.substring(0, _index);
-        src = src.substring(_index + substr.length, src.length);
-        res += start + newstr;
-      }
-    } while (true);
   }
+
+  let src = str;
+  let result = '';
+
+  do {
+    const startIndex = src.indexOf(substr);
+
+    if (startIndex === -1) {
+      return result + src;
+    }
+
+    const start = src.substring(0, startIndex);
+    src = src.substring(startIndex + substr.length, src.length);
+    result += start + newstr;
+  } while (true);
 };
 
-require('../Tests/replace.js')(Replace);
+require('../Tests/replace.js')(replace);
