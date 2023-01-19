@@ -1,18 +1,13 @@
 // Return an array without duplicates
 "use strict";
 
-// Step 2
-// Removed useless else (we already got early return)
-// Enabled use strict mode
-// Changed for to while for less operations
+// Step 3
+// Used new method fill
+// Used creation of array with constructor
 
 const duplicate = (value, N) => {
-  const res = [];
-  if (N <= 0) res;
-  while (res.length < N) {
-    res.push(value);
-  }
-  return res;
+  if (N <= 0) return [];
+  return new Array(N).fill(value);
 };
 
 require("../Tests/duplicate.js")(duplicate);
