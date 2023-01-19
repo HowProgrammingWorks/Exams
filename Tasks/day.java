@@ -1,6 +1,6 @@
 // Get day number
-
 package parseDay;
+
 
 import java.util.Scanner;
 
@@ -13,13 +13,13 @@ public class parseDay {
     }
 
     public static int parseDay(String s) {
-        String[] D = {"sunday", "monday", "tuesday", "wednesday", " thursday", "friday", "saturday"};
+        String[] D = {"Sun", "Mon", "Tue", "Wed", " Thu", "Fri", "Sat"};
         int i;
         for (i = 0; i < D.length; i++) {
-            if (s.equals(D[i])) {
+            if (s.startsWith(D[i].toLowerCase())) {
                 return i + 1;
             }
         }
         return -1;
     }
-}
+} 
