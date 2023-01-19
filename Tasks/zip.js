@@ -12,7 +12,7 @@ const zip = (a = [], b = []) => {
 
     if (i < j)  delete a[i++];
     
-    else  (() => (b[j++] = CELL))();
+    else  b[j++] = CELL;
     
     if (CELL[0] == undefined) b.length -= 1
   }
