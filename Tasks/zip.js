@@ -3,12 +3,12 @@
 const zip = function (array1 = [], array2 = []) {
   let indx1 = 0;
   let indx2 = 0;
-  
+
   for (x of b) {
 
     CELL = [array1[indx1++], x];
 
-    if (i < j) {
+    if (indx1 < indx2) {
 
       delete array1[indx2++];
 
