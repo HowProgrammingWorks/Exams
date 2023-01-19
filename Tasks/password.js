@@ -3,8 +3,7 @@
 const GeneratePassword = (alphabet, length) => {
   key = '';
   for (let i = 0, MAX = alphabet.length; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    key += alphabet.charAt(Math.floor(Math.random() * MAX));
   }
   return key;
 };
