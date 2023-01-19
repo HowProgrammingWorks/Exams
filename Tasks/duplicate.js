@@ -1,18 +1,18 @@
 // Return an array without duplicates
+"use strict";
 
-// Step 1
-// Added declaration of variables where needed
-// Added push method
+// Step 2
+// Removed useless else (we already got early return)
+// Enabled use strict mode
+// Changed for to while for less operations
 
 const duplicate = (value, N) => {
-  if (N <= 0) return [];
-  else {
-    const res = [];
-    for (let i = 0; i < N; i++) {
-      res.push(value);
-    }
-    return res;
+  const res = [];
+  if (N <= 0) res;
+  while (res.length < N) {
+    res.push(value);
   }
+  return res;
 };
 
 require("../Tests/duplicate.js")(duplicate);
