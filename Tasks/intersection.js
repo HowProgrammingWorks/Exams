@@ -1,15 +1,15 @@
 // Find an intersection of two dictionaries
 
-const intersection = (object_1, object_2) => {
-  for (attribute_name of Object.keys(object_1)) {
-    if (object_1[attribute_name] === object_2[attribute_name]) {
-      object_2[attribute_name] = object_1[attribute_name];
+const intersection = (object1, object2) => {
+  for (const key of Object.keys(object1)) {
+    if (object1[key] === object2[key]) {
+      object2[key] = object1[key];
     } 
     else {
-      delete object_1[attribute_name];
+      delete object1[key];
     }
   }
-  return object_1;
+  return object1;
 };
 
 require('../Tests/intersection.js')(intersection);
