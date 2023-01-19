@@ -13,7 +13,7 @@ public class parseDay {
     }
 
     public static int parseDay(String s) {
-        String[] D = {"Sun", "Mon", "Tue", "Wed", " Thu", "Fri", "Sat"};
+        String[] D = {"sunday", "monday", "tuesday", "wednesday", " thursday", "friday", "saturday"};
         int i;
         for (i = 0; i < D.length; i++) {
             if (s.startsWith(D[i].toLowerCase())) {
