@@ -1,9 +1,9 @@
-//Step 1
-//Removed unnecessary symbols
-//changed identifierі names
+//Step 2
+//added const let for variables
+//changed function declaration for arrow expression
 
-intersection = function intersection(firstDictionaries, secondDictionaries) {
-  first_keys = Object.keys(firstDictionaries);
+const intersection = (firstDictionaries, secondDictionaries) => {
+  const first_keys = Object.keys(firstDictionaries);
   for (attribute_name of first_keys) {
     if (firstDictionaries[attribute_name] === secondDictionaries[attribute_name]) {
       secondDictionaries[attribute_name] = firstDictionaries[attribute_name];
