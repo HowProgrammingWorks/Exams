@@ -1,12 +1,17 @@
 // Get month number
 
-Months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
+const monthNames = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec',];
+l = monthNames.length;
 
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const Month = (s) => {
+
+  for (let variable = 0; variable < l; variable++) {
+
+    if (s.toLowerCase().startsWith(monthNames[variable])) 
+    
+    return variable + 1;
   }
+
   return -1;
 };
 
