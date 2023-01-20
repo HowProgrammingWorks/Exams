@@ -1,13 +1,14 @@
-// Step 3
-// Removed other useless variables
-// Added boolean operator to reduce number of if structure
-const sum = (s) =>  {
+// Step 4
+// Enabled use strict mode
+"use strict"
+const sum = (argArray) =>  {
   const res = [0];
-  s.map((i) => {
-    if (typeof i === "number" && res.length > 0) {
-        res.push(res[res.length - 1] + i);
+  argArray.map((arrayElem) => {
+    if (typeof arrayElem === "number" ) {
+        res.push(res[res.length - 1] + arrayElem);
       }
   });
+  if (res.length === 0) 0;
   return res[res.length - 1];
 };
 
