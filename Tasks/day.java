@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class day
 {
   //create class
@@ -17,12 +19,11 @@ public class day
   }
   public static void main(String[] args)
   {
-    //tests from repo
-    System.out.println(parseDay("friday"));
-    System.out.println(parseDay("Friday"));
-    System.out.println(parseDay("Fri"));
-    System.out.println(parseDay("monday"));
-    System.out.println(parseDay("abc"));
+    //upgraded tests v2
+    System.out.print("Enter day: ");
+    Scanner scanner = new Scanner(System.in);
+    String user_day = scanner.nextLine();
+    System.out.println(parseDay(user_day));
   }
 } 
 
