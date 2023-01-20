@@ -9,6 +9,6 @@ const words = (s) => {
     }
   }
   return wordsCount;
-};
+
 
 require('../Tests/words.js')(words);
