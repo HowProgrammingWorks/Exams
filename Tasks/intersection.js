@@ -1,19 +1,18 @@
-// Step 1
-//Added 'use strict'
-//Removed unnecessary blocks
-//Added "const" and "let" to variables 
+// Step 2
+//Changed function declaration for arrow expression
+//Changed names for some variables
 'use strict'
 
-const intersection = function intersection(object_1, object_2) {
-  const first_keys = Object.keys(object_1);
+const intersection = (firstObject, secondObject) => {
+  const first_keys = Object.keys(firstObject);
   for (let attribute_name of first_keys) {
-    if (object_1[attribute_name] === object_2[attribute_name]) {
-      object_2[attribute_name] = object_1[attribute_name];
+    if (firstObject[attribute_name] === secondObject[attribute_name]) {
+      firstObject[attribute_name] = secondObject[attribute_name];
       } else {
-      delete object_1[attribute_name];
+      delete firstObject[attribute_name];
        }
     }
- return object_1;
+ return firstObject;
 };
 
 require('../Tests/intersection.js')(intersection);
