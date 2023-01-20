@@ -1,7 +1,7 @@
 // Get month number
 'use strict';
 
-Months = [
+ const months = [
   'jan',
   'feb',
   'mar',
