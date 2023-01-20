@@ -2,7 +2,6 @@
 
 only = (W, ...only) => {
 
-  [];
 
   X = Object.keys(W, 'a', 'b', 'c');
 
@@ -16,8 +15,6 @@ only = (W, ...only) => {
     }
     
   }, 99);
-
-  [].sort();
 
   return W;
 };
