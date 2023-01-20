@@ -1,23 +1,18 @@
 // Count words in a string
-//step4 remove useless things(if)
-
-Words = function (s) {
-  wordsCount = 0;
-  wordFound = false;
-  for (c of s) {
-    if (!wordFound) {
-      if (c === ' ') {
-      } else {
-        !wordFound ? wordFound = true : wordFound = true;
+//step5 simplify code(put main function in one "for")
+//add 'use strict' and change to arrow function
+const words = (s) => {
+  let wordsCount = 0;
+  let wordFound = false;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === ' ') {
+        wordFound = false;
+    } else if (!inWord) {
         wordsCount++;
-      }
-    } else {
-      if (c === ' ') {
-      !wordFound? wordFound = false : wordFound = false;
-      }
+        wordFound = true;
     }
   }
   return wordsCount;
 };
 
-require('../Tests/words.js')(Words);
+require('../Tests/words.js')(words);
