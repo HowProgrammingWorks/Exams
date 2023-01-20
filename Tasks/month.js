@@ -2,26 +2,30 @@
 'use strict';
 
  const months = [
-  'jan',
-  'feb',
-  'mar',
-  'apr',
+  'january',
+  'february',
+  'march',
+  'april',
   'may',
-  'jun',
-  'jul',
-  'aug',
-  'sep',
-  'oct',
-  'nov',
-  'dec',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
 ];
 
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+ const month = (s) => {
+  for (let i = 0; i < months.length; i++){
+    const currentMonth = months[i]
+    const loweredMonth = s.toLowerCase()
+
+    if (loweredMonth && currentMonth.indexOf(loweredMonth) >= 0) {
+      return i + 1
+    }
   }
-  return -1;
+  return -1
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(month);
