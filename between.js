@@ -6,5 +6,6 @@ if (IndexPrefixInWord == -1) return;
 const IndexSuffixInWord = Word.indexOf(Suffix);
 if (IndexSuffixInWord == -1) return;
 const AmountCharInPrefix = Prefix.length;
-k = i + p.length;
-str = str.substring(0, i);
+const EndIndexCharInPrefix = IndexPrefixInWord + AmountCharInPrefix;
+const SubstringBetweenPrefixAndSuffix = Word.substring(EndIndexCharInPrefix, IndexSuffixInWord);
+console.log(`Substring between prefix and suffix: ${SubstringBetweenPrefixAndSuffix}`);
