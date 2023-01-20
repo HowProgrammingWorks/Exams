@@ -1,15 +1,11 @@
 // Count words in a string
-//step5 simplify code(put main function in one "for")
-//add 'use strict' and change to arrow function
+//step6 change if, else if to ternar operator
 const words = (s) => {
   let wordsCount = 0;
   let wordFound = false;
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === ' ') {
-        wordFound = false;
-    } else if (!inWord) {
-        wordsCount++;
-        wordFound = true;
+    s[i] === ' ' ? inWord = false : !inWord ? wordsCount++ : null;
+    wordFound = true;
     }
   }
   return wordsCount;
