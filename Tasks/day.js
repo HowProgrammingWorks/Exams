@@ -1,11 +1,32 @@
-//Step 1
+//Step 2
 
 'use strict';
 
-const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', ];
-const day = (s) => {
-  const hit = days.indexOf(s);
-  return hit +1 || -1;
-  };
-  
-require('../Tests/day.js')(day);
+ const months = [
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
+];
+
+ const month = (s) => {
+  for (let i = 0; i < months.length; i++){
+    const currentMonth = months[i]
+    const loweredMonth = s.toLowerCase()
+
+    if (loweredMonth && currentMonth.indexOf(loweredMonth) >= 0) {
+      return i + 1
+    }
+  }
+  return -1
+};
+
+require('../Tests/month.js')(month);
