@@ -1,12 +1,15 @@
-// Step 2 
-// Reduced code in function, removed useless variables
+// Step 3 
+// Sort and sum elements using array methods
 
 const count = (obj) => {
   let sum = 0;
-  Object.keys(obj).forEach((key) => { 
-    if (typeof obj[key] === 'number') sum += obj[key];
-  });
+  Object.values(obj)
+    .filter((value) => typeof value === "number")
+    .map((key) => {
+      sum += Number(key);
+    });
+
   return sum;
-};
+}
 
 require('../Tests/count.js')(count);
