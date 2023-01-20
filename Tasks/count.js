@@ -9,3 +9,4 @@ const count = (obj) => Object.values(obj)
     .reduce((acc, key) => acc + Number(key), 0);
 
 require('../Tests/count.js')(count);
+
