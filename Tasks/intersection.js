@@ -1,15 +1,14 @@
-// Step 2
-//Changed function declaration for arrow expression
-//Changed names for some variables
+// Step 3
+//Renamed variables
+//Formated code
 'use strict'
 
 const intersection = (firstObject, secondObject) => {
-  const first_keys = Object.keys(firstObject);
-  for (let attribute_name of first_keys) {
-    if (firstObject[attribute_name] === secondObject[attribute_name]) {
-      firstObject[attribute_name] = secondObject[attribute_name];
+  for (let attribute_name of Object.keys(firstObject)) {
+    if (firstObject[key] === secondObject[key]) {
+      firstObject[key] = secondObject[key];
       } else {
-      delete firstObject[attribute_name];
+      delete firstObject[key];
        }
     }
  return firstObject;
