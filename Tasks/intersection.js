@@ -1,25 +1,16 @@
-// Find an intersection of two dictionaries
+//Step 1
+//Removed unnecessary symbols
+//changed identifierі names
 
-intersection = function intersection(object_1, object_2) {
-  first_keys = Object.keys(object_1);
-  {
-  }
+intersection = function intersection(firstDictionaries, secondDictionaries) {
+  first_keys = Object.keys(firstDictionaries);
   for (attribute_name of first_keys) {
-    if (object_1[attribute_name] === object_2[attribute_name]) {
-      object_2[attribute_name] = object_1[attribute_name];
-      {
-      }
-    } else {
-      delete object_1[attribute_name];
-      {
-      }
-    }
-    {
+    if (firstDictionaries[attribute_name] === secondDictionaries[attribute_name]) {
+      secondDictionaries[attribute_name] = firstDictionaries[attribute_name];
+    }else {
+      delete firstDictionaries[attribute_name];
     }
   }
-  {
-  }
-  return object_1;
+  return firstDictionaries;
 };
-
 require('../Tests/intersection.js')(intersection);
