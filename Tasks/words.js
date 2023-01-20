@@ -1,5 +1,6 @@
 // Count words in a string
-//step2 change names
+//step3 change if to ternar operator
+//with simplified conditions 
 
 Words = function (s) {
   wordsCount = 0;
@@ -7,26 +8,18 @@ Words = function (s) {
   for (c of s) {
     if (!wordFound) {
       if (c === ' ') {
-        if (wordFound === true) {
+        if (!wordFound) {
           wordFound = false;
         }
       } else {
-        if (wordFound === true) {
-          wordFound = true;
-        } else {
-          wordFound = true;
-        }
+        !wordFound ? wordFound = true : wordFound = true;
         wordsCount++;
       }
     } else {
       if (c === ' ') {
-        if (wordFound === true) {
-          wordFound = false;
-        } else {
-          wordFound = false;
-        }
+      !wordFound? wordFound = false : wordFound = false;
       } else {
-        if (wordFound === true) {
+        if (!wordFound) {
           wordFound = true;
         }
       }
