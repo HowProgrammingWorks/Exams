@@ -1,13 +1,10 @@
-// Step 1 
-// Added let and const for creating variables
-// Removed useless lexical environment creations like {}
+// Step 2 
+// Reduced code in function, removed useless variables
 
 const count = (obj) => {
   let sum = 0;
-  const keys = Object.keys(obj);
-  keys.forEach((key) => { 
-    const value = obj[key];
-    if (typeof value === 'number') sum += value;
+  Object.keys(obj).forEach((key) => { 
+    if (typeof obj[key] === 'number') sum += obj[key];
   });
   return sum;
 };
