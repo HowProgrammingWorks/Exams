@@ -1,8 +1,8 @@
 // Get day number
 
-let week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-parseDay = (days) => {
+const parseDay = (days) => {
   let i;
   for (i = 0; i < week.length; i++) {
     if (days.startsWith(week[i].toLowerCase())) {
