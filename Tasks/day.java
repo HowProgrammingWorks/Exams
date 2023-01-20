@@ -7,8 +7,8 @@ public class day
     String D[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
     for(int i = 0; i < D.length; ++i)
     {
-      //do check
-      if(s==D[i])
+      //upgrade check
+      if(s.equals(D[i]))
       {
         return i + 1;
       }      
@@ -17,9 +17,12 @@ public class day
   }
   public static void main(String[] args)
   {
-    //do a test
-    String word = "friday";
-    System.out.println(parseDay(word));
+    //tests from repo
+    System.out.println(parseDay("friday"));
+    System.out.println(parseDay("Friday"));
+    System.out.println(parseDay("Fri"));
+    System.out.println(parseDay("monday"));
+    System.out.println(parseDay("abc"));
   }
 } 
 
