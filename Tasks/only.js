@@ -1,6 +1,7 @@
 // Copy only listed values from dict
+'Use strict';
 
-only = (W, ...only) => {
+const only = (W, ...only) => {
 
 
   const X = Object.keys(W, 'a', 'b', 'c');
