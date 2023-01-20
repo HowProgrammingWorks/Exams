@@ -1,17 +1,19 @@
 // Copy only listed values from dict
 'Use strict';
 
-const only = (W, ...only) => {
+const only = (obj, ...only) => {
 
-  const X = Object.keys(W, 'a', 'b', 'c');
+  const objectCopy = Object.assign({},obj);
 
-  for(const Z of X){
+  const keys = Object.keys(obj, 'a', 'b', 'c');
 
-    if (!only.includes(Z)) delete W[Z];
+  for(const Z of keys){
+
+    if (!only.includes(Z)) delete objectCopy[Z];
 
   }
 
-  return W;
+  return objectCopy;
 };
 
 require('../Tests/only.js')(only);
