@@ -1,15 +1,13 @@
-// step2
-// useless code reduced in function 
+// step3
+// other useless variables removed
+// boolean operator added 
 const sum = (s) => {
   const res = [0];
-  for (i of s) { 
-    if (typeof i === 'number') {
-      if (res.length > 0) {
-        const new_Sum = res[res.length - 1] + i;
-        res.push(new_Sum);
-      }
+  s.map((i) => {
+    if (typeof i === "number" && res.length > 0) {
+      res.push(res[res.length - 1] + i);
     }
-  }
+  });
   return res[res.length - 1];
 };
 
