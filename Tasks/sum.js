@@ -1,19 +1,17 @@
-//Step 1
+//Step 2
 
 const sum = (s) => {
-  res = [0];
-  let k = 5;
+  const res = [0];
   for (i of s) {
-    let t = typeof i;
-    if (t === 'number') {
+    if (typeof i === 'number') {
       if (res.length > 0) {
         const new_Sum = res[res.length - 1] + i;
         res.push(new_Sum);
       }
     }
   }
-  sum[0];
   return res[res.length - 1];
-}
+};
 
 require('../Tests/sum.js')(sum);
+
