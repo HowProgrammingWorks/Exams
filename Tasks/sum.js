@@ -1,14 +1,15 @@
-// step3
-// other useless variables removed
-// boolean operator added 
-const sum = (s) => {
+// step4
+//turned on strict mode
+"use strict";
+
+const sum = (argArray) => {
   const res = [0];
-  s.map((i) => {
-    if (typeof i === "number" && res.length > 0) {
-      res.push(res[res.length - 1] + i);
+  argArray.map((arrayElem) => {
+    if (typeof arrayElem === "number") {
+      res.push(res[res.length - 1] + arrayElem);
     }
   });
+  if (res.length === 0) 0;
   return res[res.length - 1];
 };
-
 require('../Tests/sum.js')(sum);
