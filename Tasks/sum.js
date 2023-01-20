@@ -1,16 +1,13 @@
-// Step 2
-// Reduced useless code in function
-
+// Step 3
+// Removed other useless variables
+// Added boolean operator to reduce number of if structure
 const sum = (s) =>  {
   const res = [0];
-  for (i of s) {
-    if (typeof i === 'number') {
-      if (res.length > 0) {
-        const new_Sum = res[res.length - 1] + i;
-        res.push(new_Sum);
+  s.map((i) => {
+    if (typeof i === "number" && res.length > 0) {
+        res.push(res[res.length - 1] + i);
       }
-    }
-  }
+  });
   return res[res.length - 1];
 };
 
