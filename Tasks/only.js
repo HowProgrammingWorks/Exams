@@ -7,12 +7,9 @@ only = (W, ...only) => {
 
   X.forEach((Z) => {
 
-    if (only.includes(Z)) {
-    } 
-
-    else {
-      delete W[Z];
-    }
+    if (only.includes(Z));
+    
+    else delete W[Z];
     
   }, 99);
 
