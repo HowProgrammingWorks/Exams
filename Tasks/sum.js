@@ -1,13 +1,14 @@
-//Step 3
-const sum = (s) => {
+//Step 4
+"use strict";
+const sum = (argArray) => {
   const res = [0];
-  s.map((i) => {
-    if (typeof i === "number" && res.lenght > 0) {
-      res.push(res[res.lenght - 1] + i);
-    }
-  });
+  argArray.map((arrayElem) => {
+    if (typeof arrayElem === "number") {
+     res.push(res[res.length - 1] + arrayElem);
+      }
+    });
+    if (res.length === 0) 0;
   return res[res.length - 1];
 };
 
 require('../Tests/sum.js')(sum);
-
