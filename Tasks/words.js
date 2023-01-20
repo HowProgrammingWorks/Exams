@@ -1,4 +1,5 @@
 // Count words in a string
+//step1 remove useless else
 
 Words = function (s) {
   number_of_words_in_s = 0;
@@ -7,8 +8,6 @@ Words = function (s) {
     if (!flag) {
       if (c === ' ') {
         if (flag === true) {
-          flag = false;
-        } else {
           flag = false;
         }
       } else {
@@ -28,8 +27,6 @@ Words = function (s) {
         }
       } else {
         if (flag === true) {
-          flag = true;
-        } else {
           flag = true;
         }
       }
