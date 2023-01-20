@@ -1,38 +1,38 @@
 // Count words in a string
-//step1 remove useless else
+//step2 change names
 
 Words = function (s) {
-  number_of_words_in_s = 0;
-  flag = false;
+  wordsCount = 0;
+  wordFound = false;
   for (c of s) {
-    if (!flag) {
+    if (!wordFound) {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+        if (wordFound === true) {
+          wordFound = false;
         }
       } else {
-        if (flag === true) {
-          flag = true;
+        if (wordFound === true) {
+          wordFound = true;
         } else {
-          flag = true;
+          wordFound = true;
         }
-        number_of_words_in_s++;
+        wordsCount++;
       }
     } else {
       if (c === ' ') {
-        if (flag === true) {
-          flag = false;
+        if (wordFound === true) {
+          wordFound = false;
         } else {
-          flag = false;
+          wordFound = false;
         }
       } else {
-        if (flag === true) {
-          flag = true;
+        if (wordFound === true) {
+          wordFound = true;
         }
       }
     }
   }
-  return number_of_words_in_s;
+  return wordsCount;
 };
 
 require('../Tests/words.js')(Words);
