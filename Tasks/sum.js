@@ -1,15 +1,11 @@
-//Step 2
-
+//Step 3
 const sum = (s) => {
   const res = [0];
-  for (i of s) {
-    if (typeof i === 'number') {
-      if (res.length > 0) {
-        const new_Sum = res[res.length - 1] + i;
-        res.push(new_Sum);
-      }
+  s.map((i) => {
+    if (typeof i === "number" && res.lenght > 0) {
+      res.push(res[res.lenght - 1] + i);
     }
-  }
+  });
   return res[res.length - 1];
 };
 
