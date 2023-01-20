@@ -1,6 +1,7 @@
 // Get day number
+'use strict';
 
-let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', ];
 
 _parse_day_ = (s) => {
   let i;
