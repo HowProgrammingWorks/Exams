@@ -1,18 +1,15 @@
-//Step 2
-//reduced code in function 
+//Step 3
+//added const for variables
+//removed other useless variables
+//added boolean operator to reduce number of if structure
 
 const sum = (s) => {
-  res = [0];
-  let k = 5;
-  for (i of s) {
-    if (typeof i === 'number') {
-      if (res.length > 0) {
-        const new_Sum = res[res.length - 1] + i;
-        res.push(new_Sum);
+  const res = [0];
+  s.map((i) => {
+    if (typeof i === 'number' && res.length>0) {
+      res.push(res[res.length-1]+i);
       }
-    }
-  }
-  return sum[sum.length - 1];
+    });  
+  return res[res.length - 1];
 };
-
 require('../Tests/sum.js')(sum);
