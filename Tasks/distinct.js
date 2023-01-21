@@ -8,7 +8,6 @@ const result = []
   for (const element of data) {
     if (!result.includes(element)) {
       result.push(element);
-  return;
     } 
   }
 return result;
