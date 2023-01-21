@@ -1,7 +1,8 @@
 // Return an array without duplicates
-//step1 use const and let. change names
+//step2 delete useless thing and add  "use strict"
+
+"use strict";
 const distinct = (data) => {
-  console.log({ data });
  const A = new Set();
  let w = 0;
   data.forEach((a) => {
