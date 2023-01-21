@@ -2,6 +2,8 @@
 // Reverse an array, you can't use .reverse()
 
 const invert = (arr) => {
+  if (!arr) return []; // [] is declared as a result for null values
+
   const arrLength = arr.length;
   const invertedArr = new Array(arrLength);
 

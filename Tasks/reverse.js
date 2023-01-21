@@ -2,6 +2,8 @@
 // Reverse dict, exchange keys and values
 
 const reverse = (obj) => {
+  if (!obj) return {}; // {} is declared as a result for null values
+
   const entries = Object.entries(obj);
   const entriesRev = entries.map(
     (item) => item.reverse()
