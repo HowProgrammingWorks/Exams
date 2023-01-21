@@ -1,6 +1,6 @@
 // Get month number
-
-Months = [
+'use strict'
+const months = [
   'jan',
   'feb',
   'mar',
@@ -12,9 +12,8 @@ Months = [
   'sep',
   'oct',
   'nov',
-  'dec',
+  'dec'
 ];
-
 Month = (s) => {
   l = Months.length;
   for (let i = 0; i < l; i++) {
