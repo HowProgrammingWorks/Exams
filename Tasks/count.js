@@ -3,13 +3,12 @@
 
 const count = (obj) => {
   	let sum = 0;
-  	const values = Object.values(obj);
-    values.forEach((value) => {
+  	for (const value of Object.values(obj)) {
     
     const value = obj[key];
     if (typeof value === 'number')
       sum += value;
-  });
+  }
   
   return sum;
 };
