@@ -14,12 +14,11 @@ const months = [
   'nov',
   'dec'
 ];
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+const findMonth = month => {
+  for (let i = 0; i < months.length; i++) {
+    if (month.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
 
-require('../Tests/month.js')(Month);
+require('../Tests/month.js')(findMonth);
