@@ -4,9 +4,9 @@
 
 const countNumbers = (obj) => {
   let result = 0;
-  const keys = Object.keys(obj);
-  for (const key of keys) {
-    if (typeof obj[key] === 'number') result += obj[key];
+  const values = Object.values(obj);
+  for (const value of values) {
+    if (typeof value === 'number') result += value;
   }
   return result;
 };
