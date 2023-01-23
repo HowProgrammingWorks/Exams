@@ -6,7 +6,7 @@ public class RandomElementFromArray {
         for (int i = 0; i <= 5; i++) {
             array[i] = random.nextInt(6);
         }
-        int n = (int) Math.floor(Math.random() * array.length);
-        System.out.println(array[n]);
+        int randomElement = (int) Math.floor(Math.random() * array.length);
+        System.out.println(array[randomElement]);
     }
 }
