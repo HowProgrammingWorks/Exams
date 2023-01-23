@@ -1,13 +1,13 @@
 // Sum all number values in dict
 'use strict';
 
-const count = (obj) => {
-  let sum = 0;
-  const values = Object.values(obj);
-  for(const value of values) {
-    if (typeof value === 'number') sum += value;
-  }
-  return sum;
-};
+const sum = (obj) => {
+    let result = 0;
+        const values = Object.values(obj);
+        for(const value of values) {
+            if (typeof value === 'number') result += value;
+        }
+        return result;
+    };
 
-require('../Tests/count.js')(count);
+require('../Tests/count.js')(sum)
