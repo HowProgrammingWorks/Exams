@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 public class CreateThePassword  {
     public static String generateRandomPassword(int len, int randNumOrigin, int randNumBound) {
         SecureRandom random = new SecureRandom();
