@@ -1,14 +1,17 @@
-import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
-public class CreateThePassword {
-    public static void main(String[] args) {
-        System.out.println("Please, enter password length");
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        final String alphabet = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
-        System.out.println("Here's your password:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(alphabet.charAt(ThreadLocalRandom.current().nextInt(0, alphabet.length())));
-        }
+public class CreateThePassword  {
+    public static String generateRandomPassword(int len, int randNumOrigin, int randNumBound) {
+        SecureRandom random = new SecureRandom();
+        return random.ints(randNumOrigin, randNumBound + 1)
+                .filter(i -> Character.isAlphabetic(i) || Character.isDigit(i))
+                .limit(len)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint,
+                        StringBuilder::append)
+                .toString();
     }
-}
+    public static void main(String[] args) {
+        final int len = 10;
+        final int randNumOrigin = 48, randNumBound = 122;
+
+        System.out.println(generateRandomPassword(len, randNumOrigin, randNumBound));
+    }
+} 
