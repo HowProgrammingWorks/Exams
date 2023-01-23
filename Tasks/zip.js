@@ -5,7 +5,7 @@ const zip = (arr1, arr2) => {
   const result = [];
  for (const [i, value] of arr1.entries()) {
     const pair = [value, arr2[i]];
-    result.push(pair);
+    if (i < arr2.length) result.push(pair);
   }
   return result;
 };
