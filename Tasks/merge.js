@@ -2,7 +2,7 @@
 
 const mergeTwoObjects = (object1, object2) => {
   const object3 = {};
-  const addTo = object => {
+  const addTo = (object) => {
     for (const [key, value] of Object.entries(object))
       object3[key] = value;
     return object3;
