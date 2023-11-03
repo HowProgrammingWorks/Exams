@@ -1,6 +1,6 @@
 'use strict';
 
-const assert = require('assert').strict;
+const assert = require('node:assert').strict;
 
 const COLOR_ERROR = '\x1b[0;31m';
 const COLOR_INFO = '\x1b[1;37m';
